@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Tool and editor noise
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Hugging Face / model caches
+.cache/
+cache/
+models/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Generated multimedia data
+data/image/en/*.jpg
+data/image/en/_metadata/*.json
+data/audio/en/*.mp3
+data/description/en/*.txt

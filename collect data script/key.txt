@@ -1,0 +1,500 @@
+apple fruit
+banana fruit
+orange fruit
+grape fruit
+lemon fruit
+watermelon fruit
+strawberry fruit
+pineapple fruit
+mango fruit
+peach fruit
+pear fruit
+cherry fruit
+coconut fruit
+tomato vegetable
+potato vegetable
+carrot vegetable
+onion vegetable
+garlic bulb
+rice food
+bread food
+cake food
+cookie food
+cheese food
+egg food
+milk food
+coffee food
+tea food
+drinking water glass
+juice food
+chicken food
+beef food
+pork food
+fish food
+meat food
+salt food
+sugar food
+breakfast food
+lunch food
+dinner food
+food meal
+cat animal
+dog animal
+bird animal
+horse animal
+cow animal
+pig animal
+sheep animal
+goat animal
+rabbit animal
+mouse animal
+lion animal
+tiger animal
+bear animal
+elephant animal
+monkey animal
+panda animal
+wolf animal
+fox animal
+tree nature
+flower nature
+grass nature
+forest nature
+mountain nature
+river nature
+lake nature
+sea nature
+beach nature
+island nature
+sun nature
+moon nature
+star nature
+sky nature
+cloud nature
+rain nature
+snow nature
+wind nature
+fire flame
+weather forecast
+house building
+home building
+room building
+door house
+window house
+wall house
+floor room
+roof house
+table furniture
+chair furniture
+bed furniture
+sofa furniture
+desk furniture
+kitchen building
+bathroom building
+garden plants
+school building
+classroom building
+library building
+office building
+hospital building
+station building
+airport building
+bank financial institution
+market building
+store building
+restaurant building
+hotel building
+park building
+city street
+car vehicle
+bus vehicle
+train vehicle
+airplane vehicle
+bicycle vehicle
+motorcycle vehicle
+boat vehicle
+ship vehicle
+truck vehicle
+taxi vehicle
+road highway
+bridge structure
+map navigation
+travel ticket
+travel luggage
+travel trip destination
+city skyline
+country landscape
+village houses
+book object
+pen object
+pencil object
+paper sheet
+bag object
+cardboard box
+phone technology
+computer technology
+keyboard technology
+screen technology
+camera technology
+clock object
+wristwatch
+door key
+umbrella object
+bottle food
+cup object
+plate food
+spoon food
+knife food
+shirt clothing
+pants clothing
+dress clothing
+shoe clothing
+sock clothing
+hat clothing
+coat clothing
+jacket clothing
+glove clothing
+man person
+woman person
+boy person
+girl person
+child person
+baby person
+family group
+father person
+mother person
+brother person
+sister person
+friends people
+teacher person
+student person
+doctor person
+nurse person
+driver person
+worker person
+engineer person
+farmer person
+person person
+people person
+name tag
+age number
+job occupation
+homework notebook
+lesson classroom
+school classroom class
+question mark
+answer sheet
+morning sunrise
+afternoon sun
+evening sunset
+night sky
+today calendar
+tomorrow calendar
+yesterday calendar
+week calendar
+month calendar
+year calendar
+time clock
+day sunlight
+hour clock
+minute clock
+second stopwatch
+weekend picnic
+holiday vacation
+summer beach
+winter snow
+spring flowers
+autumn leaves
+happy person smiling
+sad person crying
+angry person
+afraid person scared
+tired person
+hungry person eating
+thirsty person drinking water
+busy person working
+free time leisure
+good thumbs up
+bad thumbs down
+big object
+small object
+long ruler
+short ruler
+high mountain
+low valley
+old person
+young person
+new product
+easy puzzle
+difficult puzzle
+fast runner
+slow turtle sign
+hot fire
+cold ice
+warm sweater
+cool ice drink
+beautiful flower
+clean room
+dirty shoes
+strong athlete
+weak person tired
+rich person money
+poor person
+early morning clock
+late night clock
+near distance
+far distance
+red
+blue
+green
+yellow
+black
+white
+brown
+purple
+pink
+number one
+number two
+number three
+number four
+number five
+number six
+number seven
+number eight
+number nine
+number ten
+first place medal
+third place medal
+many objects
+few objects
+more objects
+less objects
+all objects
+some objects
+every checklist
+person going
+person coming
+person seeing
+person looking
+person hearing
+person listening
+person speaking
+person saying hello
+person telling story
+person reading
+person writing
+person learning
+student studying
+teacher teaching
+person working
+person playing
+person running
+person walking
+person sitting
+person standing
+person sleeping
+person waking up
+person eating
+person drinking
+person shopping
+person selling
+person giving
+person taking
+person making something
+person doing work
+person using tool
+person opening door
+person closing door
+person starting
+person finishing task
+stop sign
+person helping
+person asking question
+person knowing answer
+person thinking
+person understanding idea
+person remembering
+person forgetting
+person liking
+people in love
+person wanting
+person needing
+person holding object
+person receiving object
+person putting object on table
+person bringing gift
+person carrying box
+person sending package
+person receiving package
+person finding object
+lost object
+person choosing
+change arrows
+person moving
+person living in house
+person staying
+person waiting
+people meeting
+person making phone call
+person visiting
+person driving car
+person riding bicycle
+person cooking
+person washing
+person cutting with knife
+person building house
+person drawing
+person singing
+person dancing
+person swimming
+person jumping
+internet technology
+website technology
+software technology
+hardware technology
+computer software program
+computer programming code
+data technology
+network technology
+server technology
+database technology
+system technology
+file technology
+folder technology
+email technology
+message technology
+password technology
+account technology
+user technology
+video game
+music notes
+movie film reel
+video camera
+picture image frame
+photograph photo print
+sound wave
+human voice microphone
+language speech bubbles
+written word text
+story book
+news newspaper
+alphabet letters
+number symbols
+color palette
+location pin map
+thing object
+idea light bulb
+problem puzzle
+example sample
+road path
+world map
+human life cycle
+money cash
+business meeting
+company office
+team group
+group of people
+university
+university course
+project work
+exam paper
+test paper
+test result score
+practice training
+work experience
+skill training
+animal
+green plant
+fruit food
+vegetable food
+clothes clothing
+shop
+important warning sign
+interesting museum exhibit
+different objects
+same objects
+right direction arrow
+wrong answer
+true answer
+false answer
+ready start line
+safe safety sign
+dangerous warning sign
+possible check mark
+impossible cross mark
+special gift
+simple shape
+common objects
+popular crowd
+famous celebrity
+useful tool
+because reason diagram
+before and after comparison
+after result
+always infinity symbol
+never prohibition sign
+often calendar
+sometimes calendar
+usually routine
+together people group
+again repeat arrow
+here location pin
+there direction sign
+where question mark
+when calendar question
+why question mark
+how instruction steps
+what question mark
+who person question
+which choice options
+whose ownership label
+hello
+goodbye
+please
+thanks
+sorry
+yes
+no
+welcome
+goodnight
+okay
+apartment building
+building building
+bedroom building
+living room interior
+laptop technology
+tablet technology
+printer technology
+television technology
+radio technology
+newspaper
+magazine
+dictionary
+notebook
+schoolbag
+backpack
+drinking glass
+fork food
+bowl food
+supermarket
+bakery building
+pharmacy building
+museum building
+theater building
+desert nature
+ocean nature
+waterfall nature
+dentist
+police officer
+firefighter person
+pilot person
+chef person
+neighbor person
+parent person
+daughter person
+son person
+uncle person
+aunt person
+cousin person
+grandfather person
+grandmother person
