@@ -5,7 +5,8 @@ __pycache__/
 *.pyd
 .Python
 .agents
-
+PROJECT_CONTEXT.md
+command.txt
 # Virtual environments
 .venv/
 venv/
