@@ -1,2 +1,31 @@
 MULTIMEDIA - PROJECT 1
 Web-based Multimedia Vocabulary Learning Game
+
+Collectors run independently from the project root (see `comand.txt`):
+
+```powershell
+.\.venv\Scripts\python.exe "collect data script\imagecollector.py" --limit 10 --siglip-device cpu --siglip-dtype float32
+.\.venv\Scripts\python.exe "collect data script\audiocollector.py" --limit 10
+```
+
+`imagecollector.py` reads `data/vocabulary/en.txt` and `collect data script/key.txt`,
+downloads Openverse JPEGs, and ranks candidates with SigLIP. The model is loaded
+only when needed. Use `--no-siglip` for metadata-based ranking without the model.
+SigLIP requires the dependencies in `requirements.txt` and a locally cached model.
+
+`audiocollector.py` reads `data/vocabulary/jp.txt` and generates WAV files with
+Windows SAPI (an installed Japanese voice is required). It uses only the Python
+standard library. Audio filenames use the vocabulary text directly: `リンゴ`
+produces `data/audio/jp/リンゴ.wav` and `_metadata/リンゴ.json`. Repeated words
+share the same audio file. Previously generated numeric/hash filenames are not
+renamed automatically. Relative input paths are resolved against the project root.
+
+Shared CLI validation and helpers live in `collector_common.py`. Both scripts
+support `--help`. `collector.py` remains a compatibility launcher: its default
+mode runs images, and `--audio-only` runs audio (`--audio-vocabulary` is supported).
+
+Run offline regression checks:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s "collect data script" -p "test_*.py"
+```
