@@ -2,3 +2,4 @@ transformers==5.17.0
 torch==2.14.0
 Pillow==12.3.0
 safetensors==0.8.0
+ddgs==9.16.0

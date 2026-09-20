@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import argparse
+import ipaddress
+import io
 import json
 import re
 import shutil
@@ -9,23 +11,28 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
+from PIL import Image, UnidentifiedImageError
+
 from collector_common import (
-    PROJECT_ROOT, CollectionError, add_common_arguments, load_vocabulary, load_vocabulary_pairs,
+    PROJECT_ROOT, CollectionError, add_common_arguments, load_vocabulary,
     resolve_project_path, run_cli, validate_common_arguments,
 )
 
 VOCABULARY_PATH = PROJECT_ROOT / "data" / "vocabulary" / "en.txt"
-QUERY_PATH = PROJECT_ROOT / "collect data script" / "key.txt"
 IMAGE_DIR = PROJECT_ROOT / "data" / "image" / "en"
 METADATA_DIR = IMAGE_DIR / "_metadata"
 CANDIDATE_CACHE_DIR = IMAGE_DIR / "_candidates"
-OPENVERSE_IMAGES_ENDPOINT = "https://api.openverse.org/v1/images/"
+IMAGE_PROVIDER = "duckduckgo"
+DDG_REGION = "wt-wt"
+DDG_SAFESEARCH = "moderate"
 USER_AGENT = "MultimediaVocabularyCollector/1.0"
 DEFAULT_PAGE_SIZE = 7
 DEFAULT_SIGLIP_MODEL = "google/siglip2-so400m-patch16-384"
+MAX_IMAGE_BYTES = 20 * 1024 * 1024
+MAX_IMAGE_PIXELS = 40_000_000
 JPEG_SIGNATURES = (b"\xff\xd8\xff",)
 SAFE_FILENAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _.'()-]*$")
 
@@ -40,6 +47,19 @@ class ImageResult:
     selected_image: str | None = None
     siglip_score: float | None = None
     candidate_count: int = 0
+    search_result_count: int = 0
+    valid_candidate_count: int = 0
+    search_seconds: float = 0.0
+    download_seconds: float = 0.0
+    scoring_seconds: float = 0.0
+    total_seconds: float = 0.0
+
+
+@dataclass(frozen=True)
+class ImageSearchBatch:
+    candidates: list[dict[str, Any]]
+    raw_count: int
+    duration_seconds: float
 
 
 @dataclass
@@ -56,21 +76,6 @@ class Summary:
             self.success += 1
         else:
             self.failed.append((result.word, result.reason or "unknown error"))
-
-
-def load_query_file(path: Path, expected_count: int) -> list[str]:
-    if not path.exists():
-        raise CollectionError(f"Query file not found: {path}")
-
-    queries = [line.strip() for line in path.read_text(encoding="utf-8").splitlines()]
-    queries = [query for query in queries if query]
-
-    if len(queries) != expected_count:
-        raise CollectionError(
-            f"Query file count mismatch: expected {expected_count}, found {len(queries)}"
-        )
-
-    return queries
 
 
 def sanitize_filename(word: str) -> str:
@@ -102,6 +107,8 @@ def request_with_retry(
     retries: int,
     retry_delay: float,
 ) -> tuple[bytes, dict[str, str], int]:
+    if not is_supported_remote_url(url):
+        raise CollectionError("unsupported or unsafe image URL")
     last_error: Exception | None = None
 
     for attempt in range(retries + 1):
@@ -110,7 +117,15 @@ def request_with_retry(
             with urlopen(request, timeout=timeout) as response:
                 status = response.getcode()
                 headers = {key.lower(): value for key, value in response.headers.items()}
-                body = response.read()
+                try:
+                    content_length = int(headers.get("content-length", "0"))
+                except ValueError:
+                    content_length = 0
+                if content_length > MAX_IMAGE_BYTES:
+                    raise CollectionError(f"image payload exceeds {MAX_IMAGE_BYTES} bytes")
+                body = response.read(MAX_IMAGE_BYTES + 1)
+                if len(body) > MAX_IMAGE_BYTES:
+                    raise CollectionError(f"image payload exceeds {MAX_IMAGE_BYTES} bytes")
                 if 200 <= status < 300:
                     return body, headers, status
                 last_error = CollectionError(f"HTTP {status}")
@@ -127,92 +142,95 @@ def request_with_retry(
     raise CollectionError(str(last_error) if last_error else "request failed")
 
 
-def http_get_json(url: str, *, timeout: int, retries: int, retry_delay: float) -> dict[str, Any]:
-    body, headers, status = request_with_retry(
-        url,
-        timeout=timeout,
-        retries=retries,
-        retry_delay=retry_delay,
-    )
-    content_type = headers.get("content-type", "")
-    if "application/json" not in content_type:
-        raise CollectionError(f"expected JSON response, got {content_type or 'unknown'}")
+def is_supported_remote_url(value: Any) -> bool:
+    if not isinstance(value, str) or not value:
+        return False
     try:
-        return json.loads(body.decode("utf-8"))
-    except json.JSONDecodeError as error:
-        raise CollectionError(f"invalid JSON response after HTTP {status}: {error}") from error
+        parsed = urlsplit(value)
+    except ValueError:
+        return False
+    hostname = parsed.hostname
+    if parsed.scheme not in {"http", "https"} or not hostname or parsed.username or parsed.password:
+        return False
+    if hostname.lower() == "localhost" or hostname.lower().endswith(".localhost"):
+        return False
+    try:
+        return ipaddress.ip_address(hostname).is_global
+    except ValueError:
+        return True
 
 
-def build_openverse_search_url(query_text: str, page_size: int) -> str:
-    query = urlencode(
-        {
-            "q": query_text,
-            "page_size": page_size,
-            "mature": "false",
-            "filter_dead": "true",
-            "extension": "jpg,jpeg",
-        }
-    )
-    return f"{OPENVERSE_IMAGES_ENDPOINT}?{query}"
+def normalize_ddg_results(raw_results: Any) -> list[dict[str, Any]]:
+    if not isinstance(raw_results, list):
+        return []
+    normalized = []
+    seen_images: set[str] = set()
+    seen_pages: set[str] = set()
+    for raw in raw_results:
+        if not isinstance(raw, dict) or not is_supported_remote_url(raw.get("image")):
+            continue
+        image_url = raw["image"]
+        source_page_url = raw.get("url") if is_supported_remote_url(raw.get("url")) else None
+        if image_url in seen_images or source_page_url and source_page_url in seen_pages:
+            continue
+        seen_images.add(image_url)
+        if source_page_url:
+            seen_pages.add(source_page_url)
+        normalized.append({
+            "provider": IMAGE_PROVIDER,
+            "title": raw.get("title") if isinstance(raw.get("title"), str) else None,
+            "image_url": image_url,
+            "thumbnail_url": raw.get("thumbnail") if is_supported_remote_url(raw.get("thumbnail")) else None,
+            "source_page_url": source_page_url,
+            "width": raw.get("width") if isinstance(raw.get("width"), int) else None,
+            "height": raw.get("height") if isinstance(raw.get("height"), int) else None,
+            "source": raw.get("source") if isinstance(raw.get("source"), str) else None,
+        })
+    return normalized
 
 
-def search_image(
+def search_images(
     query_text: str,
     *,
     page_size: int,
     timeout: int,
     retries: int,
     retry_delay: float,
-) -> list[dict[str, Any]]:
-    data = http_get_json(
-        build_openverse_search_url(query_text, page_size),
-        timeout=timeout,
-        retries=retries,
-        retry_delay=retry_delay,
-    )
-    results = data.get("results")
-    if not isinstance(results, list):
-        raise CollectionError("Openverse response missing results list")
-    return results
+) -> ImageSearchBatch:
+    from ddgs import DDGS
+    from ddgs.exceptions import DDGSException
 
-
-def score_image_result(word: str, result: dict[str, Any]) -> int:
-    needle = word.lower()
-    title = str(result.get("title") or "").lower()
-    tags = result.get("tags") or []
-    tag_names = [
-        str(tag.get("name") or "").lower()
-        for tag in tags
-        if isinstance(tag, dict)
-    ]
-    filetype = str(result.get("filetype") or "").lower()
-    url = str(result.get("url") or "").lower()
-
-    score = 0
-    if title == needle:
-        score += 60
-    elif re.search(rf"\b{re.escape(needle)}\b", title):
-        score += 35
-    if needle in tag_names:
-        score += 30
-    if filetype in {"jpg", "jpeg"}:
-        score += 20
-    if url.endswith((".jpg", ".jpeg")):
-        score += 10
-    if result.get("foreign_landing_url"):
-        score += 5
-    return score
+    started = time.perf_counter()
+    last_error = "request failed"
+    for attempt in range(retries + 1):
+        try:
+            raw_results = DDGS(timeout=timeout).images(
+                query=query_text,
+                region=DDG_REGION,
+                safesearch=DDG_SAFESEARCH,
+                max_results=page_size,
+                backend="duckduckgo",
+            )
+            if not raw_results:
+                raise CollectionError("no image results")
+            candidates = normalize_ddg_results(raw_results)
+            if not candidates:
+                raise CollectionError("no valid image candidates")
+            return ImageSearchBatch(candidates, len(raw_results), time.perf_counter() - started)
+        except (CollectionError, DDGSException) as error:
+            last_error = str(error)
+        if attempt < retries:
+            time.sleep(retry_delay * (attempt + 1))
+    raise CollectionError(f"DuckDuckGo image search failed: {last_error}")
 
 
 def choose_image_result(word: str, results: list[dict[str, Any]]) -> dict[str, Any] | None:
-    usable = [result for result in results if isinstance(result, dict) and result.get("url")]
-    if not usable:
-        return None
-    return max(usable, key=lambda result: score_image_result(word, result))
+    usable = usable_image_results(results)
+    return usable[0] if usable else None
 
 
 def usable_image_results(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return [result for result in results if isinstance(result, dict) and result.get("url")]
+    return [result for result in results if isinstance(result, dict) and result.get("image_url")]
 
 
 def candidate_cache_path(word: str, index: int) -> Path:
@@ -240,13 +258,13 @@ def download_candidate_images(
     candidate_dir.mkdir(parents=True, exist_ok=True)
 
     for index, result in enumerate(usable_image_results(results), start=1):
-        image_url = str(result["url"])
+        image_url = str(result["image_url"])
         cache_path = candidate_cache_path(word, index)
         try:
             if is_valid_jpeg(cache_path):
                 candidates.append((result, cache_path))
                 continue
-            download_jpeg(
+            download_image_as_jpeg(
                 image_url,
                 cache_path,
                 timeout=timeout,
@@ -271,10 +289,10 @@ def choose_image_result_with_siglip(
     timeout: int,
     retries: int,
     retry_delay: float,
-) -> tuple[dict[str, Any] | None, float | None, int]:
+) -> tuple[dict[str, Any] | None, float | None, int, float, float]:
     from image_scorer import ImageScoringError
 
-    old_selected = choose_image_result(query_text, results)
+    download_started = time.perf_counter()
     candidates = download_candidate_images(
         word,
         results,
@@ -282,20 +300,20 @@ def choose_image_result_with_siglip(
         retries=retries,
         retry_delay=retry_delay,
     )
+    download_seconds = time.perf_counter() - download_started
     print("=" * 40)
     print(f"KEY: {word}")
     print(f"QUERY: {query_text}")
     print(f"CANDIDATES: {len(candidates)}")
-    if old_selected:
-        print(f"OLD SELECTED: {old_selected.get('url')}")
-
     if not candidates:
-        return None, None, 0
+        return None, None, 0, download_seconds, 0.0
 
+    scoring_started = time.perf_counter()
     try:
         score_results = scorer.score_batch(query_text, [path for _result, path in candidates])
     except ImageScoringError as error:
         raise CollectionError(str(error)) from error
+    scoring_seconds = time.perf_counter() - scoring_started
 
     scored_candidates = sorted(
         zip(candidates, score_results),
@@ -304,19 +322,19 @@ def choose_image_result_with_siglip(
     )
 
     for rank, ((result, _path), score_result) in enumerate(scored_candidates, start=1):
-        print(f"{rank}. {result.get('url')}")
+        print(f"{rank}. {result.get('image_url')}")
         print(f"   score={score_result.score:.4f}")
 
     (best_result, best_path), best_score = scored_candidates[0]
     print("SELECTED:")
-    print(best_result.get("url"))
+    print(best_result.get("image_url"))
     print(f"score={best_score.score:.4f}")
     print("=" * 40)
     best_result["_siglip_candidate_path"] = str(best_path)
-    return best_result, best_score.score, len(candidates)
+    return best_result, best_score.score, len(candidates), download_seconds, scoring_seconds
 
 
-def download_jpeg(
+def download_image_as_jpeg(
     image_url: str,
     destination: Path,
     *,
@@ -324,20 +342,24 @@ def download_jpeg(
     retries: int,
     retry_delay: float,
 ) -> None:
-    body, headers, _status = request_with_retry(
+    body, _headers, _status = request_with_retry(
         image_url,
         timeout=timeout,
         retries=retries,
         retry_delay=retry_delay,
     )
-    content_type = headers.get("content-type", "").split(";")[0].strip().lower()
-    if content_type not in {"image/jpeg", "image/jpg"}:
-        raise CollectionError(f"expected JPEG content-type, got {content_type or 'unknown'}")
-    if not any(body.startswith(signature) for signature in JPEG_SIGNATURES):
-        raise CollectionError("downloaded file does not have a JPEG signature")
-
     temporary_path = destination.with_suffix(".jpg.tmp")
-    temporary_path.write_bytes(body)
+    try:
+        with Image.open(io.BytesIO(body)) as downloaded:
+            width, height = downloaded.size
+            if width < 1 or height < 1 or width * height > MAX_IMAGE_PIXELS:
+                raise CollectionError(f"unsupported image dimensions: {width}x{height}")
+            downloaded.verify()
+        with Image.open(io.BytesIO(body)) as downloaded:
+            downloaded.convert("RGB").save(temporary_path, format="JPEG", quality=90)
+    except (OSError, UnidentifiedImageError, Image.DecompressionBombError) as error:
+        temporary_path.unlink(missing_ok=True)
+        raise CollectionError(f"downloaded payload is not a usable image: {error}") from error
     if not is_valid_jpeg(temporary_path):
         temporary_path.unlink(missing_ok=True)
         raise CollectionError("saved file failed JPEG validation")
@@ -353,15 +375,14 @@ def metadata_from_result(
     metadata = {
         "word": word,
         "search_query": query_text,
-        "source": result.get("source"),
-        "source_url": result.get("source_url"),
-        "image_url": result.get("url"),
+        "provider": result.get("provider"),
+        "image_url": result.get("image_url"),
+        "thumbnail_url": result.get("thumbnail_url"),
+        "source_page_url": result.get("source_page_url"),
         "title": result.get("title"),
-        "creator": result.get("creator"),
-        "creator_url": result.get("creator_url"),
-        "license": result.get("license"),
-        "license_url": result.get("license_url"),
-        "foreign_landing_url": result.get("foreign_landing_url"),
+        "width": result.get("width"),
+        "height": result.get("height"),
+        "source": result.get("source"),
     }
     if image_selection:
         metadata["image_selection"] = image_selection
@@ -385,6 +406,20 @@ def save_metadata(
     )
 
 
+def is_valid_image_cache(image_path: Path, metadata_path: Path, query_text: str) -> bool:
+    if not is_valid_jpeg(image_path) or not metadata_path.exists():
+        return False
+    try:
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError):
+        return False
+    return (
+        isinstance(metadata, dict)
+        and metadata.get("provider") == IMAGE_PROVIDER
+        and metadata.get("search_query") == query_text
+    )
+
+
 def process_word(
     word: str,
     query_text: str,
@@ -396,19 +431,23 @@ def process_word(
     scorer: Any | None = None,
     siglip_model: str = DEFAULT_SIGLIP_MODEL,
 ) -> ImageResult:
+    started = time.perf_counter()
     try:
         filename = sanitize_filename(word)
         image_path = IMAGE_DIR / f"{filename}.jpg"
         metadata_path = METADATA_DIR / f"{filename}.json"
 
-        if is_valid_jpeg(image_path) and metadata_path.exists():
+        if is_valid_image_cache(image_path, metadata_path, query_text):
             print(f"[IMAGE] {word} -> SUCCESS: cached")
-            return ImageResult(ok=True, word=word, query_text=query_text, status="cached")
+            return ImageResult(
+                ok=True, word=word, query_text=query_text, status="cached",
+                total_seconds=time.perf_counter() - started,
+            )
 
         if image_path.exists() and not is_valid_jpeg(image_path):
             raise CollectionError("existing image file is not a valid JPEG")
 
-        results = search_image(
+        search_batch = search_images(
             query_text,
             page_size=page_size,
             timeout=timeout,
@@ -417,32 +456,37 @@ def process_word(
         )
         siglip_score = None
         candidate_count = 0
+        download_seconds = 0.0
+        scoring_seconds = 0.0
         if scorer:
-            chosen, siglip_score, candidate_count = choose_image_result_with_siglip(
+            chosen, siglip_score, candidate_count, download_seconds, scoring_seconds = \
+                choose_image_result_with_siglip(
                 word,
                 query_text,
-                results,
+                search_batch.candidates,
                 scorer,
                 timeout=timeout,
                 retries=retries,
                 retry_delay=retry_delay,
             )
         else:
-            chosen = choose_image_result(query_text, results)
+            chosen = choose_image_result(query_text, search_batch.candidates)
         if not chosen:
-            raise CollectionError("no usable Openverse image result")
+            raise CollectionError("all DuckDuckGo candidate downloads failed")
 
         candidate_path = chosen.get("_siglip_candidate_path")
         if candidate_path:
             shutil.copyfile(candidate_path, image_path)
         else:
-            download_jpeg(
-                str(chosen["url"]),
+            download_started = time.perf_counter()
+            download_image_as_jpeg(
+                str(chosen["image_url"]),
                 image_path,
                 timeout=timeout,
                 retries=retries,
                 retry_delay=retry_delay,
             )
+            download_seconds = time.perf_counter() - download_started
         image_selection = None
         if siglip_score is not None:
             image_selection = {
@@ -454,19 +498,34 @@ def process_word(
         if candidate_path:
             cleanup_candidate_cache(word)
 
-        print(f"[IMAGE] {word} ({query_text}) -> SUCCESS")
+        total_seconds = time.perf_counter() - started
+        print(
+            f"[IMAGE] {word} ({query_text}) -> SUCCESS | raw={search_batch.raw_count} "
+            f"valid={len(search_batch.candidates)} downloaded={candidate_count or 1} "
+            f"search={search_batch.duration_seconds:.3f}s download={download_seconds:.3f}s "
+            f"siglip={scoring_seconds:.3f}s total={total_seconds:.3f}s"
+        )
         return ImageResult(
             ok=True,
             word=word,
             query_text=query_text,
             status="downloaded",
-            selected_image=str(chosen.get("url")),
+            selected_image=str(chosen.get("image_url")),
             siglip_score=siglip_score,
-            candidate_count=candidate_count,
+            candidate_count=candidate_count or 1,
+            search_result_count=search_batch.raw_count,
+            valid_candidate_count=len(search_batch.candidates),
+            search_seconds=search_batch.duration_seconds,
+            download_seconds=download_seconds,
+            scoring_seconds=scoring_seconds,
+            total_seconds=total_seconds,
         )
     except (CollectionError, OSError) as error:
         print(f"[IMAGE] {word} -> FAILED: {error}")
-        return ImageResult(ok=False, word=word, query_text=query_text, status="failed", reason=str(error))
+        return ImageResult(
+            ok=False, word=word, query_text=query_text, status="failed", reason=str(error),
+            total_seconds=time.perf_counter() - started,
+        )
 
 
 def print_summary(summary: Summary) -> None:
@@ -485,8 +544,11 @@ def print_summary(summary: Summary) -> None:
                 continue
             print(
                 f"{index}. {result.word} | query={result.query_text} | "
-                f"candidates={result.candidate_count} | "
-                f"score={result.siglip_score:.4f} | image={result.selected_image}"
+                f"raw={result.search_result_count} | valid={result.valid_candidate_count} | "
+                f"downloaded={result.candidate_count} | score={result.siglip_score:.4f} | "
+                f"search={result.search_seconds:.3f}s | download={result.download_seconds:.3f}s | "
+                f"siglip={result.scoring_seconds:.3f}s | total={result.total_seconds:.3f}s | "
+                f"image={result.selected_image}"
             )
         print()
         print(f"Average score: {sum(scores) / len(scores):.4f}")
@@ -521,25 +583,14 @@ class LazySiglipScorer:
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Collect English vocabulary images from Openverse.")
+    parser = argparse.ArgumentParser(description="Collect English vocabulary images using DuckDuckGo and SigLIP.")
     parser.add_argument(
         "--vocabulary",
         type=Path,
         default=VOCABULARY_PATH,
         help="Path to canonical vocabulary file used for output filenames.",
     )
-    parser.add_argument(
-        "--query-file",
-        type=Path,
-        default=QUERY_PATH,
-        help="Legacy search-query file, ignored with --qwen-queries. Must match vocabulary count.",
-    )
-    parser.add_argument("--qwen-queries", action="store_true",
-                        help="Prepare Qwen queries from aligned English/Vietnamese vocabulary before image collection.")
-    parser.add_argument("--vn-vocabulary", type=Path,
-                        default=PROJECT_ROOT / "data" / "vocabulary" / "vn.txt",
-                        help="Vietnamese meanings aligned by line with --vocabulary (Qwen mode only).")
-    # Resolve generator defaults inside the Qwen branch, keeping legacy imports light.
+    # Resolve generator defaults in main, keeping argument parsing imports light.
     parser.add_argument("--qwen-model", help="Qwen model name or path; defaults to query_generator.DEFAULT_QWEN_MODEL.")
     parser.add_argument("--qwen-batch-size", type=int,
                         help="Generation batch size; defaults to query_generator.DEFAULT_BATCH_SIZE.")
@@ -549,12 +600,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--page-size",
         type=int,
         default=DEFAULT_PAGE_SIZE,
-        help="Number of Openverse image candidates to request per word.",
+        help="Number of DuckDuckGo image candidates to request per word.",
     )
     parser.add_argument(
         "--no-siglip",
         action="store_true",
-        help="Use the old Openverse metadata heuristic instead of SigLIP ranking.",
+        help="Skip SigLIP and use the first valid DuckDuckGo result.",
     )
     parser.add_argument(
         "--siglip-model",
@@ -584,35 +635,29 @@ def main(argv: list[str] | None = None) -> int:
         raise CollectionError("--page-size must be at least 1")
 
     vocabulary_path = resolve_project_path(args.vocabulary)
-    if args.qwen_queries:
-        from query_generator import (
-            DEFAULT_BATCH_SIZE, DEFAULT_QUERY_CACHE, DEFAULT_QWEN_MODEL, prepare_queries,
-        )
+    from query_generator import (
+        DEFAULT_BATCH_SIZE, DEFAULT_QUERY_CACHE, DEFAULT_QWEN_MODEL, prepare_queries,
+    )
 
-        batch_size = DEFAULT_BATCH_SIZE if args.qwen_batch_size is None else args.qwen_batch_size
-        if batch_size < 1:
-            raise CollectionError("--qwen-batch-size must be at least 1")
-        pairs = load_vocabulary_pairs(vocabulary_path, resolve_project_path(args.vn_vocabulary))
-        words_to_process = [word for word, _meaning in pairs[: args.limit]]
-        # Phase A completes (including Qwen release) before any image/scorer work.
-        queries_to_process = prepare_queries(
-            pairs, limit=args.limit,
-            model_name=args.qwen_model if args.qwen_model is not None else DEFAULT_QWEN_MODEL,
-            batch_size=batch_size,
-            cache_path=resolve_project_path(args.qwen_cache if args.qwen_cache is not None else DEFAULT_QUERY_CACHE),
+    batch_size = DEFAULT_BATCH_SIZE if args.qwen_batch_size is None else args.qwen_batch_size
+    if batch_size < 1:
+        raise CollectionError("--qwen-batch-size must be at least 1")
+    words = load_vocabulary(vocabulary_path)
+    words_to_process = words[: args.limit]
+    # Phase A completes (including Qwen release) before any image/scorer work.
+    query_started = time.perf_counter()
+    queries_to_process = prepare_queries(
+        words, limit=args.limit,
+        model_name=args.qwen_model if args.qwen_model is not None else DEFAULT_QWEN_MODEL,
+        batch_size=batch_size,
+        cache_path=resolve_project_path(args.qwen_cache if args.qwen_cache is not None else DEFAULT_QUERY_CACHE),
+    )
+    print(f"[QWEN] query preparation: {time.perf_counter() - query_started:.3f}s")
+    if len(queries_to_process) != len(words_to_process):
+        raise CollectionError(
+            f"Qwen query count mismatch: expected {len(words_to_process)}, found {len(queries_to_process)}"
         )
-        if len(queries_to_process) != len(words_to_process):
-            raise CollectionError(
-                f"Qwen query count mismatch: expected {len(words_to_process)}, found {len(queries_to_process)}"
-            )
-        ensure_directories()
-    else:
-        query_path = resolve_project_path(args.query_file)
-        ensure_directories()
-        words = load_vocabulary(vocabulary_path)
-        queries = load_query_file(query_path, len(words)) if query_path else words
-        words_to_process = words[: args.limit]
-        queries_to_process = queries[: args.limit]
+    ensure_directories()
 
     # Phase B: existing search, candidate download, and SigLIP selection.
     scorer = None
