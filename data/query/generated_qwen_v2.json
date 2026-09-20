@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "model": "Qwen/Qwen3-1.7B",
+  "signature": "d083c460585c980ddbb51e3920ed7b55f0470cf57cde57a9c83f142c8eca8725",
+  "vocabulary_count": 100,
+  "records": [
+    {
+      "word": "apple",
+      "meaning": "quả táo",
+      "query": "apple fruit"
+    },
+    {
+      "word": "banana",
+      "meaning": "quả chuối",
+      "query": "banana fruit"
+    },
+    {
+      "word": "strawberry",
+      "meaning": "dâu tây",
+      "query": "strawberry fruit"
+    },
+    {
+      "word": "rice",
+      "meaning": "cơm",
+      "query": "rice grain"
+    }
+  ]
+}

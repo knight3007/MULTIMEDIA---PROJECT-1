@@ -38,6 +38,31 @@ def configure_console() -> None:
             stream.reconfigure(encoding="utf-8")
 
 
+def load_vocabulary_pairs(english_path: Path, vietnamese_path: Path) -> list[tuple[str, str]]:
+    """Preserve physical line alignment; reject blank records rather than shifting them."""
+    lists = []
+    for label, path in (("English", english_path), ("Vietnamese", vietnamese_path)):
+        try:
+            lines = [line.strip() for line in path.read_text(encoding="utf-8-sig").splitlines()]
+        except (OSError, UnicodeError) as error:
+            raise CollectionError(f"Cannot read {label} vocabulary {path}: {error}") from error
+        if not lines:
+            raise CollectionError(f"{label} vocabulary is empty: {path}")
+        for index, line in enumerate(lines, start=1):
+            if not line:
+                raise CollectionError(f"Blank {label} vocabulary at line {index}: {path}")
+        lists.append(lines)
+    words, meanings = lists
+    if len(words) != len(meanings):
+        raise CollectionError(
+            f"EN/VN line count mismatch: English={len(words)}, Vietnamese={len(meanings)}"
+        )
+    duplicates = sorted(word for word, count in Counter(words).items() if count > 1)
+    if duplicates:
+        raise CollectionError(f"Duplicate vocabulary found: {', '.join(duplicates)}")
+    return list(zip(words, meanings))
+
+
 def resolve_project_path(path: Path) -> Path:
     return path if path.is_absolute() else PROJECT_ROOT / path
 

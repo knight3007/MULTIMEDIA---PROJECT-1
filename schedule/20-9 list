@@ -1,0 +1,154 @@
+
+
+1. **Chuẩn hóa 100 vocabulary entries**
+
+   ```text
+   en + jp + vn
+   ```
+
+2. **Tích hợp Qwen3 1.7B local**
+   Nhiệm vụ:
+
+   * disambiguate nghĩa
+   * xác định category
+   * xác định visual intent
+   * tạo `canonical_visual`
+
+   Ví dụ:
+
+   ```text
+   bank
+   銀行
+   ngân hàng
+   ```
+
+   →
+
+   ```json
+   {
+     "sense": "financial institution",
+     "category": "place",
+     "visual_type": "building",
+     "canonical_visual": "financial bank building"
+   }
+   ```
+
+3. **Query Generator**
+   Dựa trên output của Qwen3 để sinh 3–5 query.
+
+   ```text
+   financial bank building
+   bank branch exterior
+   commercial bank building
+   financial institution building
+   ```
+
+4. **ImageSearchProvider**
+
+   * DuckDuckGo trước
+   * sau này có thể Google/Serper
+
+5. **Search 20–30 result metadata**
+   Chưa tải original.
+
+6. **Metadata filtering**
+   Lọc theo:
+
+   * resolution
+   * aspect ratio
+   * duplicate URL
+   * title xấu
+   * loại ảnh không phù hợp
+
+7. **Tải 5–8 thumbnail tốt nhất**
+
+8. **SigLIP reranking**
+   Dùng chính `canonical_visual` của Qwen làm text prompt.
+
+   Ví dụ:
+
+   ```text
+   "a clear photo of a financial bank building"
+   ```
+
+9. **Giữ top 3**
+
+10. **Download original của top 1**
+    Nếu fail → top 2 → top 3.
+
+11. **Crop + resize**
+    Ví dụ:
+
+    ```text
+    1:1
+    768 × 768
+    JPEG
+    ```
+
+12. **Benchmark đủ 100 từ**
+
+13. Sau đó mới thêm:
+
+    * confidence threshold
+    * retry query round 2
+    * tự regenerate query khi ảnh kém
+
+14. Khi pipeline ổn:
+
+    * bỏ `key.txt`
+    * unified dataset
+    * Excel upload
+    * web/game
+
+Kiến trúc cuối sẽ là:
+
+```text
+EN + JP + VN
+      ↓
+Qwen3 1.7B
+      ↓
+sense / category / visual intent
+      ↓
+Query Generator
+      ↓
+DuckDuckGo / Google
+      ↓
+metadata candidates
+      ↓
+filter
+      ↓
+thumbnails
+      ↓
+SigLIP
+      ↓
+top 3
+      ↓
+original image
+      ↓
+crop + resize
+      ↓
+flashcard
+```
+
+Và có một lợi ích nữa rất quan trọng: **Qwen và SigLIP sẽ dùng cùng một semantic target**.
+
+Ví dụ Qwen tạo:
+
+```text
+canonical_visual =
+"a person running outdoors"
+```
+
+thì:
+
+```text
+Search query
+→ person running outdoors
+
+SigLIP prompt
+→ a clear photo of a person running outdoors
+```
+
+Như vậy retrieval và ranking cùng tối ưu về **một concept**, thay vì search một kiểu rồi rank bằng một text khác.
+
+Nên đúng: nếu thiết kế lại từ đầu cho pipeline auto, **Qwen3 1.7B nên đứng ngay sau vocabulary input, trước ImageSearch**.

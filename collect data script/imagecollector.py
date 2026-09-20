@@ -13,7 +13,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from collector_common import (
-    PROJECT_ROOT, CollectionError, add_common_arguments, load_vocabulary,
+    PROJECT_ROOT, CollectionError, add_common_arguments, load_vocabulary, load_vocabulary_pairs,
     resolve_project_path, run_cli, validate_common_arguments,
 )
 
@@ -532,8 +532,19 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--query-file",
         type=Path,
         default=QUERY_PATH,
-        help="Path to search-query file. Must have the same number of lines as vocabulary.",
+        help="Legacy search-query file, ignored with --qwen-queries. Must match vocabulary count.",
     )
+    parser.add_argument("--qwen-queries", action="store_true",
+                        help="Prepare Qwen queries from aligned English/Vietnamese vocabulary before image collection.")
+    parser.add_argument("--vn-vocabulary", type=Path,
+                        default=PROJECT_ROOT / "data" / "vocabulary" / "vn.txt",
+                        help="Vietnamese meanings aligned by line with --vocabulary (Qwen mode only).")
+    # Resolve generator defaults inside the Qwen branch, keeping legacy imports light.
+    parser.add_argument("--qwen-model", help="Qwen model name or path; defaults to query_generator.DEFAULT_QWEN_MODEL.")
+    parser.add_argument("--qwen-batch-size", type=int,
+                        help="Generation batch size; defaults to query_generator.DEFAULT_BATCH_SIZE.")
+    parser.add_argument("--qwen-cache", type=Path,
+                        help="Query cache JSON; defaults to query_generator.DEFAULT_QUERY_CACHE.")
     parser.add_argument(
         "--page-size",
         type=int,
@@ -573,13 +584,37 @@ def main(argv: list[str] | None = None) -> int:
         raise CollectionError("--page-size must be at least 1")
 
     vocabulary_path = resolve_project_path(args.vocabulary)
-    query_path = resolve_project_path(args.query_file)
+    if args.qwen_queries:
+        from query_generator import (
+            DEFAULT_BATCH_SIZE, DEFAULT_QUERY_CACHE, DEFAULT_QWEN_MODEL, prepare_queries,
+        )
 
-    ensure_directories()
-    words = load_vocabulary(vocabulary_path)
-    queries = load_query_file(query_path, len(words)) if query_path else words
-    words_to_process = words[: args.limit]
-    queries_to_process = queries[: args.limit]
+        batch_size = DEFAULT_BATCH_SIZE if args.qwen_batch_size is None else args.qwen_batch_size
+        if batch_size < 1:
+            raise CollectionError("--qwen-batch-size must be at least 1")
+        pairs = load_vocabulary_pairs(vocabulary_path, resolve_project_path(args.vn_vocabulary))
+        words_to_process = [word for word, _meaning in pairs[: args.limit]]
+        # Phase A completes (including Qwen release) before any image/scorer work.
+        queries_to_process = prepare_queries(
+            pairs, limit=args.limit,
+            model_name=args.qwen_model if args.qwen_model is not None else DEFAULT_QWEN_MODEL,
+            batch_size=batch_size,
+            cache_path=resolve_project_path(args.qwen_cache if args.qwen_cache is not None else DEFAULT_QUERY_CACHE),
+        )
+        if len(queries_to_process) != len(words_to_process):
+            raise CollectionError(
+                f"Qwen query count mismatch: expected {len(words_to_process)}, found {len(queries_to_process)}"
+            )
+        ensure_directories()
+    else:
+        query_path = resolve_project_path(args.query_file)
+        ensure_directories()
+        words = load_vocabulary(vocabulary_path)
+        queries = load_query_file(query_path, len(words)) if query_path else words
+        words_to_process = words[: args.limit]
+        queries_to_process = queries[: args.limit]
+
+    # Phase B: existing search, candidate download, and SigLIP selection.
     scorer = None
     if not args.no_siglip:
         scorer = LazySiglipScorer(args)
