@@ -277,6 +277,8 @@ class QwenOutputTests(unittest.TestCase):
             "one two three four five six seven eight nine ten eleven twelve thirteen",
             "visual concept",
             "egg eggs",
+            "milk container milk bottle milk jug",
+            "apple fruit apples",
             "important thing",
         ]
         for raw in invalid:
@@ -309,11 +311,25 @@ class QwenOutputTests(unittest.TestCase):
         self.assertFalse(template_kwargs["enable_thinking"])
         messages = generator.tokenizer.apply_chat_template.call_args.args[0]
         self.assertIn("Query:", messages[-1]["content"])
-        self.assertEqual(messages[-1]["content"], "English word: apple\nQuery:")
+        self.assertEqual(
+            messages[-1]["content"],
+            "Input: apple\nQuery:",
+        )
         self.assertNotIn("Vietnamese", "\n".join(message["content"] for message in messages))
-        self.assertIn("Do not prefix", messages[0]["content"])
-        self.assertIn("Word: receive\nQuery: person receiving package", messages[0]["content"])
-        self.assertIn("Word: password\nQuery: password lock icon", messages[0]["content"])
+        prompt = messages[0]["content"]
+        self.assertIn("one common everyday sense", prompt)
+        self.assertIn("brand", prompt)
+        self.assertIn("1-12 lowercase English words", prompt)
+        self.assertIn("keyword stuffing", prompt)
+        self.assertIn("same thing", prompt)
+        self.assertIn("related object, part, effect, action, place, tool, environment, accessory, or infrastructure", prompt)
+        self.assertIn("short noun phrase", prompt)
+        self.assertIn("input word exactly once", prompt)
+        self.assertIn("disambiguation", prompt)
+        self.assertIn("association", prompt)
+        self.assertIn("Use each word at most once", prompt)
+        self.assertIn("Input: pear\nQuery: pear fruit", prompt)
+        self.assertIn("Input: autumn\nQuery: autumn season", prompt)
         generation_kwargs = generator.model.generate.call_args.kwargs
         self.assertEqual(generation_kwargs["max_new_tokens"], 32)
         self.assertFalse(generation_kwargs["do_sample"])
@@ -338,10 +354,16 @@ class QwenOutputTests(unittest.TestCase):
             self.assertEqual(generator.generate_batch(words), ["bread loaf", "chicken egg"])
         self.assertEqual(generate.call_count, 2)
         self.assertEqual(generate.call_args.args[0], ["egg"])
-        self.assertIn("egg egg icon", generate.call_args.kwargs["correction"])
-        self.assertIn("singular and plural", generate.call_args.kwargs["correction"])
-        self.assertIn("word alone", generate.call_args.kwargs["correction"])
-        self.assertNotIn("Vietnamese", generate.call_args.kwargs["correction"])
+        correction = generate.call_args.kwargs["correction"]
+        self.assertNotIn("egg egg icon", correction)
+        self.assertIn("failed validation", correction)
+        self.assertIn("Start over", correction)
+        self.assertIn("singular and plural", correction)
+        self.assertIn("Preserve the input as the target", correction)
+        self.assertIn("one broad semantic class", correction)
+        self.assertIn("Do not enumerate", correction)
+        self.assertIn("no icon for a physical", correction)
+        self.assertNotIn("Vietnamese", correction)
 
     def test_invalid_retry_still_fails_instead_of_deduplicating(self):
         generator = query.QwenQueryGenerator()

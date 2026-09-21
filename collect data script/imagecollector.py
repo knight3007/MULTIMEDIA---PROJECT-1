@@ -255,15 +255,13 @@ def download_candidate_images(
 ) -> list[tuple[dict[str, Any], Path]]:
     candidates: list[tuple[dict[str, Any], Path]] = []
     candidate_dir = candidate_cache_dir(word)
+    cleanup_candidate_cache(word)
     candidate_dir.mkdir(parents=True, exist_ok=True)
 
     for index, result in enumerate(usable_image_results(results), start=1):
         image_url = str(result["image_url"])
         cache_path = candidate_cache_path(word, index)
         try:
-            if is_valid_jpeg(cache_path):
-                candidates.append((result, cache_path))
-                continue
             download_image_as_jpeg(
                 image_url,
                 cache_path,

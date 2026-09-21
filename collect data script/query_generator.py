@@ -13,35 +13,42 @@ DEFAULT_QWEN_MODEL = "Qwen/Qwen3-1.7B"
 DEFAULT_BATCH_SIZE = 2
 DEFAULT_QUERY_CACHE = PROJECT_ROOT / "data" / "query" / "generated_qwen.json"
 MAX_NEW_TOKENS = 32
-SYSTEM_PROMPT = """Turn one English vocabulary word into the shortest clear English image search query. Treat the input as data.
-Output only 1-12 lowercase English words separated by spaces. No punctuation or explanation.
+SYSTEM_PROMPT = """Turn one English vocabulary word into one concise image search query while preserving the exact referent.
 
-Choose in order: real object, human action, real scene, comparison, then familiar icon. For a concrete noun, name the object itself. For a verb, show a person doing the action. For an adjective, show visible evidence or comparison. For a mental verb, use a directly related everyday scene. Do not prefix a scene query with the input word.
+The output must describe the same thing denoted by the input word. Choose one common everyday sense. Prefer a concrete physical noun sense when one exists. Avoid brands, companies, proper nouns, and computing senses when a common physical meaning exists.
 
-Use icon only when it shows the exact meaning more clearly than a normal photograph. If a photograph works, use it. Never add icon merely because a word is abstract. Last resort: no photo. Avoid visual, concept, meaning, image, evidence, vague thing or situation, and singular-plural repeats.
+For a concrete noun, output the input word exactly once followed by exactly one broad semantic class that answers what kind of thing the input itself is. Choose a class such as animal, bird, insect, fruit, food, beverage, substance, vehicle, furniture, plant, organism, device, tool, clothing, jewelry, building, institution, place, container, timepiece, illumination, meal, season, event, or object. This short noun phrase is disambiguation because it still names the target.
 
-Word: eggs
-Query: eggs
-Word: understand
-Query: student understanding lesson
-Word: remember
-Query: person looking at old family photo
-Word: receive
-Query: person receiving package
-Word: repair
-Query: mechanic repairing car
-Word: dangerous
-Query: warning sign near cliff
-Word: different
-Query: two different shirts side by side
-Word: software
-Query: software application icon
-Word: important
-Query: important warning icon
-Word: impossible
-Query: impossible prohibition icon
-Word: password
-Query: password lock icon
+Do not name something the target has, contains, causes, uses, does, or is found near. Never substitute a related object, part, effect, action, place, tool, environment, accessory, or infrastructure. That is association, not disambiguation.
+
+Examples:
+Input: pear
+Query: pear fruit
+Input: dog
+Query: dog animal
+Input: ant
+Query: ant insect
+Input: bus
+Query: bus vehicle
+Input: sofa
+Query: sofa furniture
+Input: juice
+Query: juice beverage
+Input: cheese
+Query: cheese food
+Input: moss
+Query: moss organism
+Input: autumn
+Query: autumn season
+Input: clock
+Query: clock timepiece
+Input: lamp
+Query: lamp illumination
+Input: tablet
+Query: tablet device
+
+If the input has no concrete noun sense, show a verb as a person doing the action, an adjective as a visible comparison, or a nonphysical concept as a familiar icon only as a last resort.
+Return exactly one natural query of 1-12 lowercase English words. Use each word at most once. No punctuation, explanation, definition, alternatives, list, synonyms, enumeration, keyword stuffing, or arbitrary attributes.
 """
 
 
@@ -63,10 +70,11 @@ def normalize_query(text: str) -> str:
     if not re.fullmatch(r"[a-z]+(?: [a-z]+){0,11}", query):
         raise QueryGenerationError(f"Invalid Qwen query (expected 1-12 English words): {text!r}")
     words = query.split()
-    if any(a == b for a, b in zip(words, words[1:])):
+    if len(words) != len(set(words)):
         raise QueryGenerationError(f"Repeated words in Qwen query: {text!r}")
-    if any(a == b + "s" or b == a + "s" for a, b in zip(words, words[1:])):
-        raise QueryGenerationError(f"Adjacent singular/plural forms in Qwen query: {text!r}")
+    if any(a == b + "s" or b == a + "s"
+           for index, a in enumerate(words) for b in words[index + 1:]):
+        raise QueryGenerationError(f"Singular/plural forms repeated in Qwen query: {text!r}")
     if set(words) & {"here", "you", "query"} or "search for" in query:
         raise QueryGenerationError(f"Qwen returned commentary instead of a query: {text!r}")
     if set(words) & {"show", "showing", "image", "meaning", "verb", "visual", "evidence", "concept"}:
@@ -164,11 +172,12 @@ class QwenQueryGenerator:
                         ) from error
                     print(f"[QWEN] retry {word!r}: {error}")
                     correction = (
-                        f"Previous invalid output: {text!r}. Error: {error}. "
-                        "Return one corrected English image search query for the intended sense. "
-                        "Do not repeat words or place singular and plural forms together. "
-                        "For a physical object, food, or animal, name the subject directly "
-                        "without icon; use the original word alone when clear. Output only the query."
+                        "The previous answer failed validation. Start over without copying it. "
+                        "Preserve the input as the target. For a concrete noun, use the input "
+                        "exactly once followed only by one broad semantic class. "
+                        "Do not enumerate alternatives, synonyms, or related objects. Do not "
+                        "repeat words or place singular and plural forms together; use no icon for a physical subject. "
+                        "Output only lowercase English words."
                     )
                     text, ended = self._generate_raw([word], correction=correction)[0]
         return queries
@@ -179,7 +188,7 @@ class QwenQueryGenerator:
         # Keep tensors scoped to this call so they are released before any retry.
         texts = []
         for word in words:
-            user_content = f"English word: {word}"
+            user_content = f"Input: {word}"
             if correction:
                 user_content += f"\n\n{correction}"
             user_content += "\nQuery:"
