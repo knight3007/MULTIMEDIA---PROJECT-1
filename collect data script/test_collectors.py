@@ -147,6 +147,48 @@ class DuckDuckGoProviderTests(unittest.TestCase):
             "source": "DuckDuckGo",
         }])
 
+    def test_unicode_image_url_is_normalized_before_request(self):
+        class Response:
+            headers = {}
+
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def getcode(self):
+                return 200
+
+            def read(self, _limit):
+                return b"image bytes"
+
+        unicode_url = "https://münich.example/ảnh trái cây.png?q=sữa tươi&x=1"
+        expected_url = (
+            "https://xn--mnich-kva.example/"
+            "%E1%BA%A3nh%20tr%C3%A1i%20c%C3%A2y.png"
+            "?q=s%E1%BB%AFa%20t%C6%B0%C6%A1i&x=1"
+        )
+        with patch.object(image, "urlopen", return_value=Response()) as open_url:
+            body, _headers, status = image.request_with_retry(
+                unicode_url, timeout=5, retries=0, retry_delay=0,
+            )
+
+        self.assertEqual(body, b"image bytes")
+        self.assertEqual(status, 200)
+        self.assertEqual(open_url.call_args.args[0].full_url, expected_url)
+
+    def test_http_unicode_error_becomes_a_skippable_collection_error(self):
+        encoding_error = UnicodeEncodeError(
+            "ascii", "ảnh", 0, 3, "ordinal not in range",
+        )
+        with patch.object(image, "urlopen", side_effect=encoding_error), \
+             self.assertRaisesRegex(CollectionError, "ascii.*ordinal not in range"):
+            image.request_with_retry(
+                "https://example.com/image.png",
+                timeout=5, retries=0, retry_delay=0,
+            )
+
     def test_ddg_search_uses_explicit_safe_settings_and_retries(self):
         from ddgs.exceptions import DDGSException
 
@@ -164,7 +206,7 @@ class DuckDuckGoProviderTests(unittest.TestCase):
         ddgs.assert_called_with(timeout=5)
         client.images.assert_called_with(
             query="cat", region="wt-wt", safesearch="moderate",
-            max_results=7, backend="duckduckgo",
+            max_results=7,
         )
         sleep.assert_called_once_with(0.25)
 
@@ -175,6 +217,15 @@ class DuckDuckGoProviderTests(unittest.TestCase):
              self.assertRaisesRegex(CollectionError, "DuckDuckGo.*no image results"):
             image.search_images("missing", page_size=7, timeout=5, retries=0, retry_delay=0)
 
+    def test_ddg_exception_is_reported_after_retries_are_exhausted(self):
+        from ddgs.exceptions import DDGSException
+
+        client = Mock()
+        client.images.side_effect = DDGSException("rate limited")
+        with patch("ddgs.DDGS", return_value=client), \
+             self.assertRaisesRegex(CollectionError, "DuckDuckGo.*rate limited"):
+            image.search_images("cat animal", page_size=7, timeout=5, retries=0, retry_delay=0)
+
     def test_one_failed_download_does_not_discard_other_candidates(self):
         candidates = [self.candidate("bad"), self.candidate("good")]
         directory = self.enterContext(tempfile.TemporaryDirectory())
@@ -182,7 +233,7 @@ class DuckDuckGoProviderTests(unittest.TestCase):
         stale_dir.mkdir()
         (stale_dir / "01.jpg").write_bytes(b"\xff\xd8\xffstale-openverse-candidate")
         with patch.object(image, "CANDIDATE_CACHE_DIR", Path(directory)), \
-             patch.object(image, "download_image_as_jpeg",
+             patch.object(image, "download_candidate_image",
                           side_effect=[CollectionError("HTTP 403"), None]) as download, \
              contextlib.redirect_stdout(io.StringIO()):
             downloaded = image.download_candidate_images(
@@ -207,6 +258,48 @@ class DuckDuckGoProviderTests(unittest.TestCase):
             self.assertEqual(saved.mode, "RGB")
             self.assertEqual(saved.size, (8, 6))
 
+    def test_candidate_download_preserves_source_bytes_for_siglip(self):
+        source = io.BytesIO()
+        Image.new("RGBA", (8, 6), (255, 0, 0, 128)).save(source, format="PNG")
+        source_bytes = source.getvalue()
+        directory = self.enterContext(tempfile.TemporaryDirectory())
+        destination = Path(directory) / "candidate.img"
+
+        with patch.object(image, "request_with_retry",
+                          return_value=(source_bytes, {"content-type": "image/png"}, 200)):
+            image.download_candidate_image(
+                "https://cdn.example/image.png", destination,
+                timeout=5, retries=0, retry_delay=0,
+            )
+
+        self.assertEqual(destination.read_bytes(), source_bytes)
+        with Image.open(destination) as saved:
+            self.assertEqual(saved.format, "PNG")
+            self.assertEqual(saved.mode, "RGBA")
+
+    def test_final_image_is_normalized_without_crop_or_upscale(self):
+        directory = self.enterContext(tempfile.TemporaryDirectory())
+        root = Path(directory)
+        cases = [
+            ((1920, 1080), (1024, 576)),
+            ((800, 1200), (683, 1024)),
+            ((640, 480), (640, 480)),
+            ((800, 800), (800, 800)),
+        ]
+
+        for index, (source_size, expected_size) in enumerate(cases):
+            with self.subTest(source_size=source_size):
+                source_path = root / f"source-{index}.png"
+                destination = root / f"final-{index}.jpg"
+                Image.new("RGBA", source_size, (255, 0, 0, 128)).save(source_path, format="PNG")
+
+                image.normalize_image_to_jpeg(source_path, destination)
+
+                with Image.open(destination) as saved:
+                    self.assertEqual(saved.format, "JPEG")
+                    self.assertEqual(saved.mode, "RGB")
+                    self.assertEqual(saved.size, expected_size)
+
     def test_provider_mismatch_invalidates_old_image_cache(self):
         directory = self.enterContext(tempfile.TemporaryDirectory())
         root = Path(directory)
@@ -228,6 +321,8 @@ class DuckDuckGoProviderTests(unittest.TestCase):
             {"method": "siglip2", "model": "test-model", "score": 0.75},
         )
         self.assertEqual(metadata["provider"], "duckduckgo")
+        self.assertEqual(metadata["source"], "duckduckgo")
+        self.assertEqual(metadata["result_source"], "DuckDuckGo")
         self.assertEqual(metadata["image_url"], "https://cdn.example/cat.png")
         self.assertEqual(metadata["source_page_url"], "https://example.com/cat")
         self.assertEqual(metadata["image_selection"]["score"], 0.75)
@@ -256,6 +351,38 @@ class DuckDuckGoProviderTests(unittest.TestCase):
         self.assertEqual(count, 2)
         self.assertGreaterEqual(download_seconds, 0)
         self.assertGreaterEqual(scoring_seconds, 0)
+
+    def test_process_normalizes_only_the_siglip_winner(self):
+        directory = self.enterContext(tempfile.TemporaryDirectory())
+        root = Path(directory)
+        first, second = self.candidate("first"), self.candidate("second")
+        winner_path = root / "second.img"
+        chosen = dict(second, _siglip_candidate_path=str(winner_path))
+
+        with patch.object(image, "IMAGE_DIR", root), \
+             patch.object(image, "METADATA_DIR", root), \
+             patch.object(
+                 image, "search_images",
+                 return_value=image.ImageSearchBatch([first, second], 2, 0.01),
+             ), \
+             patch.object(
+                 image, "choose_image_result_with_siglip",
+                 return_value=(chosen, 0.9, 2, 0.02, 0.03),
+             ), \
+             patch.object(image, "normalize_image_to_jpeg") as normalize, \
+             patch.object(image, "download_image_as_jpeg") as download, \
+             patch.object(image, "save_metadata"), \
+             patch.object(image, "cleanup_candidate_cache"), \
+             contextlib.redirect_stdout(io.StringIO()):
+            result = image.process_word(
+                "bank", "bank financial institution",
+                timeout=5, retries=0, retry_delay=0, page_size=2,
+                scorer=Mock(), siglip_model="test-model",
+            )
+
+        self.assertTrue(result.ok)
+        normalize.assert_called_once_with(str(winner_path), root / "bank.jpg")
+        download.assert_not_called()
 
 
 class QwenOutputTests(unittest.TestCase):
@@ -342,6 +469,13 @@ class QwenOutputTests(unittest.TestCase):
         repair_messages = generator.tokenizer.apply_chat_template.call_args.args[0]
         self.assertIn("Fix the format.", repair_messages[-1]["content"])
         self.assertTrue(repair_messages[-1]["content"].endswith("Query:"))
+
+    def test_system_prompt_treats_plain_water_as_a_beverage(self):
+        self.assertIn(
+            "Treat plain drinking water as a beverage, not a substance.",
+            query.SYSTEM_PROMPT,
+        )
+        self.assertIn("Input: water\nQuery: water beverage", query.SYSTEM_PROMPT)
 
     def test_repeated_output_is_retried_without_changing_batch_order(self):
         generator = query.QwenQueryGenerator()
@@ -496,6 +630,39 @@ class QwenIntegrationTests(unittest.TestCase):
             cwd=Path(__file__).parent, capture_output=True, text=True,
         )
         self.assertEqual(result.returncode, 0, result.stderr)
+
+
+class QwenToDuckDuckGoBoundaryTests(unittest.TestCase):
+    def test_qwen_output_is_the_exact_ddg_query_and_metadata_query(self):
+        directory = self.enterContext(tempfile.TemporaryDirectory())
+        root = Path(directory)
+        vocabulary = root / "en.txt"
+        vocabulary.write_text("bank\n", encoding="utf-8")
+        candidate = DuckDuckGoProviderTests.candidate("bank")
+
+        def save_test_jpeg(_url, destination, **_kwargs):
+            Image.new("RGB", (8, 6), "red").save(destination, format="JPEG")
+
+        with patch.object(image, "IMAGE_DIR", root / "images"), \
+             patch.object(image, "METADATA_DIR", root / "metadata"), \
+             patch.object(image, "CANDIDATE_CACHE_DIR", root / "candidates"), \
+             patch.object(query, "prepare_queries", return_value=["bank financial institution"]), \
+             patch.object(
+                 image, "search_images",
+                 return_value=image.ImageSearchBatch([candidate], raw_count=1, duration_seconds=0.01),
+             ) as search, \
+             patch.object(image, "download_image_as_jpeg", side_effect=save_test_jpeg), \
+             contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(image.main([
+                "--vocabulary", str(vocabulary), "--qwen-cache", str(root / "queries.json"),
+                "--limit", "1", "--no-siglip",
+            ]), 0)
+
+        self.assertEqual(search.call_args.args[0], "bank financial institution")
+        self.assertNotEqual(search.call_args.args[0], "bank")
+        metadata = json.loads((root / "metadata" / "bank.json").read_text(encoding="utf-8"))
+        self.assertEqual(metadata["word"], "bank")
+        self.assertEqual(metadata["search_query"], "bank financial institution")
 
 
 if __name__ == "__main__":

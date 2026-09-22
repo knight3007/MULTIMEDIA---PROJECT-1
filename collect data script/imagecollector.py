@@ -11,10 +11,10 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
-from PIL import Image, UnidentifiedImageError
+from PIL import Image, ImageOps, UnidentifiedImageError
 
 from collector_common import (
     PROJECT_ROOT, CollectionError, add_common_arguments, load_vocabulary,
@@ -33,6 +33,8 @@ DEFAULT_PAGE_SIZE = 7
 DEFAULT_SIGLIP_MODEL = "google/siglip2-so400m-patch16-384"
 MAX_IMAGE_BYTES = 20 * 1024 * 1024
 MAX_IMAGE_PIXELS = 40_000_000
+MAX_IMAGE_SIZE = (1024, 1024)
+JPEG_QUALITY = 90
 JPEG_SIGNATURES = (b"\xff\xd8\xff",)
 SAFE_FILENAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _.'()-]*$")
 
@@ -100,6 +102,27 @@ def is_valid_jpeg(path: Path) -> bool:
     return any(header.startswith(signature) for signature in JPEG_SIGNATURES)
 
 
+def normalize_remote_url(url: str) -> str:
+    if not is_supported_remote_url(url):
+        raise CollectionError("unsupported or unsafe image URL")
+    try:
+        parsed = urlsplit(url)
+        hostname = parsed.hostname.encode("idna").decode("ascii")
+        port = parsed.port
+        if ":" in hostname:
+            hostname = f"[{hostname}]"
+        netloc = hostname if port is None else f"{hostname}:{port}"
+        return urlunsplit((
+            parsed.scheme.lower(),
+            netloc,
+            quote(parsed.path, safe="/%:@!$&'()*+,;=-._~"),
+            quote(parsed.query, safe="=&?/:;+,%@-._~"),
+            "",
+        ))
+    except (UnicodeError, ValueError) as error:
+        raise CollectionError(f"invalid image URL: {error}") from error
+
+
 def request_with_retry(
     url: str,
     *,
@@ -107,13 +130,12 @@ def request_with_retry(
     retries: int,
     retry_delay: float,
 ) -> tuple[bytes, dict[str, str], int]:
-    if not is_supported_remote_url(url):
-        raise CollectionError("unsupported or unsafe image URL")
+    url = normalize_remote_url(url)
     last_error: Exception | None = None
 
     for attempt in range(retries + 1):
-        request = Request(url, headers={"User-Agent": USER_AGENT})
         try:
+            request = Request(url, headers={"User-Agent": USER_AGENT})
             with urlopen(request, timeout=timeout) as response:
                 status = response.getcode()
                 headers = {key.lower(): value for key, value in response.headers.items()}
@@ -135,6 +157,9 @@ def request_with_retry(
                 break
         except (TimeoutError, URLError) as error:
             last_error = error
+        except (UnicodeError, ValueError) as error:
+            last_error = error
+            break
 
         if attempt < retries:
             time.sleep(retry_delay * (attempt + 1))
@@ -209,7 +234,6 @@ def search_images(
                 region=DDG_REGION,
                 safesearch=DDG_SAFESEARCH,
                 max_results=page_size,
-                backend="duckduckgo",
             )
             if not raw_results:
                 raise CollectionError("no image results")
@@ -234,7 +258,7 @@ def usable_image_results(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def candidate_cache_path(word: str, index: int) -> Path:
-    return CANDIDATE_CACHE_DIR / sanitize_filename(word) / f"{index:02d}.jpg"
+    return CANDIDATE_CACHE_DIR / sanitize_filename(word) / f"{index:02d}.img"
 
 
 def candidate_cache_dir(word: str) -> Path:
@@ -262,7 +286,7 @@ def download_candidate_images(
         image_url = str(result["image_url"])
         cache_path = candidate_cache_path(word, index)
         try:
-            download_image_as_jpeg(
+            download_candidate_image(
                 image_url,
                 cache_path,
                 timeout=timeout,
@@ -332,6 +356,65 @@ def choose_image_result_with_siglip(
     return best_result, best_score.score, len(candidates), download_seconds, scoring_seconds
 
 
+def validate_image_bytes(body: bytes) -> None:
+    try:
+        with Image.open(io.BytesIO(body)) as downloaded:
+            width, height = downloaded.size
+            if width < 1 or height < 1 or width * height > MAX_IMAGE_PIXELS:
+                raise CollectionError(f"unsupported image dimensions: {width}x{height}")
+            downloaded.verify()
+    except (OSError, UnidentifiedImageError, Image.DecompressionBombError) as error:
+        raise CollectionError(f"downloaded payload is not a usable image: {error}") from error
+
+
+def download_candidate_image(
+    image_url: str,
+    destination: Path,
+    *,
+    timeout: int,
+    retries: int,
+    retry_delay: float,
+) -> None:
+    body, _headers, _status = request_with_retry(
+        image_url,
+        timeout=timeout,
+        retries=retries,
+        retry_delay=retry_delay,
+    )
+    validate_image_bytes(body)
+    temporary_path = destination.with_suffix(destination.suffix + ".tmp")
+    try:
+        temporary_path.write_bytes(body)
+        temporary_path.replace(destination)
+    except OSError:
+        temporary_path.unlink(missing_ok=True)
+        raise
+
+
+def normalize_image_to_jpeg(source: Any, destination: Path) -> None:
+    temporary_path = destination.with_suffix(".jpg.tmp")
+    try:
+        with Image.open(source) as downloaded:
+            width, height = downloaded.size
+            if width < 1 or height < 1 or width * height > MAX_IMAGE_PIXELS:
+                raise CollectionError(f"unsupported image dimensions: {width}x{height}")
+            normalized = ImageOps.exif_transpose(downloaded).convert("RGB")
+            normalized.thumbnail(MAX_IMAGE_SIZE, Image.Resampling.LANCZOS)
+            normalized.save(
+                temporary_path,
+                format="JPEG",
+                quality=JPEG_QUALITY,
+                optimize=True,
+            )
+    except (OSError, UnidentifiedImageError, Image.DecompressionBombError) as error:
+        temporary_path.unlink(missing_ok=True)
+        raise CollectionError(f"downloaded payload is not a usable image: {error}") from error
+    if not is_valid_jpeg(temporary_path):
+        temporary_path.unlink(missing_ok=True)
+        raise CollectionError("saved file failed JPEG validation")
+    temporary_path.replace(destination)
+
+
 def download_image_as_jpeg(
     image_url: str,
     destination: Path,
@@ -346,22 +429,7 @@ def download_image_as_jpeg(
         retries=retries,
         retry_delay=retry_delay,
     )
-    temporary_path = destination.with_suffix(".jpg.tmp")
-    try:
-        with Image.open(io.BytesIO(body)) as downloaded:
-            width, height = downloaded.size
-            if width < 1 or height < 1 or width * height > MAX_IMAGE_PIXELS:
-                raise CollectionError(f"unsupported image dimensions: {width}x{height}")
-            downloaded.verify()
-        with Image.open(io.BytesIO(body)) as downloaded:
-            downloaded.convert("RGB").save(temporary_path, format="JPEG", quality=90)
-    except (OSError, UnidentifiedImageError, Image.DecompressionBombError) as error:
-        temporary_path.unlink(missing_ok=True)
-        raise CollectionError(f"downloaded payload is not a usable image: {error}") from error
-    if not is_valid_jpeg(temporary_path):
-        temporary_path.unlink(missing_ok=True)
-        raise CollectionError("saved file failed JPEG validation")
-    temporary_path.replace(destination)
+    normalize_image_to_jpeg(io.BytesIO(body), destination)
 
 
 def metadata_from_result(
@@ -380,7 +448,8 @@ def metadata_from_result(
         "title": result.get("title"),
         "width": result.get("width"),
         "height": result.get("height"),
-        "source": result.get("source"),
+        "source": IMAGE_PROVIDER,
+        "result_source": result.get("source"),
     }
     if image_selection:
         metadata["image_selection"] = image_selection
@@ -474,7 +543,7 @@ def process_word(
 
         candidate_path = chosen.get("_siglip_candidate_path")
         if candidate_path:
-            shutil.copyfile(candidate_path, image_path)
+            normalize_image_to_jpeg(candidate_path, image_path)
         else:
             download_started = time.perf_counter()
             download_image_as_jpeg(

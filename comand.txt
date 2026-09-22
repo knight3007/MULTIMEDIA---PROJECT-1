@@ -1,5 +1,5 @@
 # Collect images
-.\.venv\Scripts\python.exe "collect data script\imagecollector.py" --limit 1 --page-size 10 --siglip-device cpu --siglip-dtype float32
+.\.venv\Scripts\python.exe "collect data script\imagecollector.py" --limit 10 --page-size 10 --qwen-cache "data\query\generated_qwen_water_beverage.json" --siglip-device cpu --siglip-dtype float32
 
 # Collect Japanese audio
 .\.venv\Scripts\python.exe "collect data script\audiocollector.py" --limit 10

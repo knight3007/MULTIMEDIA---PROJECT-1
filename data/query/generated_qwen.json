@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "model": "Qwen/Qwen3-1.7B",
+  "signature": "91ca2756d4b08c78b8fd96d71bcc93f4312640966b9765786df50204c73bc28a",
+  "vocabulary_count": 100,
+  "records": [
+    {
+      "word": "apple",
+      "query": "apple fruit"
+    },
+    {
+      "word": "banana",
+      "query": "banana fruit"
+    },
+    {
+      "word": "strawberry",
+      "query": "strawberry fruit"
+    },
+    {
+      "word": "rice",
+      "query": "rice grain"
+    },
+    {
+      "word": "bread",
+      "query": "bread food"
+    },
+    {
+      "word": "egg",
+      "query": "egg food"
+    },
+    {
+      "word": "milk",
+      "query": "milk beverage"
+    },
+    {
+      "word": "water",
+      "query": "water substance"
+    },
+    {
+      "word": "chicken",
+      "query": "chicken animal"
+    },
+    {
+      "word": "breakfast",
+      "query": "breakfast meal"
+    }
+  ]
+}

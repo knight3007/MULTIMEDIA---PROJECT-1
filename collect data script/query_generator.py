@@ -19,6 +19,8 @@ The output must describe the same thing denoted by the input word. Choose one co
 
 For a concrete noun, output the input word exactly once followed by exactly one broad semantic class that answers what kind of thing the input itself is. Choose a class such as animal, bird, insect, fruit, food, beverage, substance, vehicle, furniture, plant, organism, device, tool, clothing, jewelry, building, institution, place, container, timepiece, illumination, meal, season, event, or object. This short noun phrase is disambiguation because it still names the target.
 
+Treat plain drinking water as a beverage, not a substance.
+
 Do not name something the target has, contains, causes, uses, does, or is found near. Never substitute a related object, part, effect, action, place, tool, environment, accessory, or infrastructure. That is association, not disambiguation.
 
 Examples:
@@ -34,6 +36,8 @@ Input: sofa
 Query: sofa furniture
 Input: juice
 Query: juice beverage
+Input: water
+Query: water beverage
 Input: cheese
 Query: cheese food
 Input: moss
