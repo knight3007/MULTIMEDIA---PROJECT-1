@@ -63,7 +63,7 @@
 7. **Tải 5–8 thumbnail tốt nhất**
 
 8. **SigLIP reranking**
-   Dùng chính `canonical_visual` của Qwen làm text prompt.
+   Dùng chính output của Qwen làm text prompt.
 
    Ví dụ:
 
@@ -103,7 +103,7 @@
 Kiến trúc cuối sẽ là:
 
 ```text
-EN + JP + VN
+EN 
       ↓
 Qwen3 1.7B
       ↓
@@ -149,6 +149,3 @@ SigLIP prompt
 → a clear photo of a person running outdoors
 ```
 
-Như vậy retrieval và ranking cùng tối ưu về **một concept**, thay vì search một kiểu rồi rank bằng một text khác.
-
-Nên đúng: nếu thiết kế lại từ đầu cho pipeline auto, **Qwen3 1.7B nên đứng ngay sau vocabulary input, trước ImageSearch**.

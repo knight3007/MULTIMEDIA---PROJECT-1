@@ -88,7 +88,7 @@ hello
 please
 thanks
 sorry
-apartment
+apartment   
 dictionary
 supermarket
 pharmacy
