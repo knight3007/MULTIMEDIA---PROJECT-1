@@ -47,3 +47,12 @@ data/image/en/*.jpg
 data/image/en/_metadata/*.json
 data/audio/en/*.mp3
 data/description/en/*.txt
+
+# Local Codex context and isolated audio environment
+CODEX_CONTEXT_BUNDLE/
+.venv-audio/
+
+# Generated Japanese audio; keep legacy WAV files local too
+data/audio/jp/*.mp3
+data/audio/jp/*.wav
+data/audio/jp/_metadata/*.json

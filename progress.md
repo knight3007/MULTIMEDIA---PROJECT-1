@@ -75,3 +75,59 @@ crop 1:1
 768×768
       ↓
 flashcard image
+
+
+24/9 nghiêm cứu lại Image pipeline hiện tại 
+
+data/vocabulary/en.txt
+        │
+        │ canonical English word
+        ▼
+query_generator.py
+        │
+        ▼
+Qwen3-1.7B
+        │
+        │ optimized semantic query
+        ▼
+DuckDuckGo Images
+        │
+        │ N results, ví dụ 10
+        ▼
+candidate metadata + image URLs
+        │
+        ▼
+download candidates
+        │
+        ▼
+validate images
+        │
+        ├─ dead URL              → skip
+        ├─ timeout               → retry/skip
+        ├─ invalid image         → skip
+        └─ valid image           → keep
+        │
+        ▼
+SigLIP
+        │
+        │ compare candidate images
+        │ against Qwen semantic query
+        ▼
+best candidate
+        │
+        ▼
+final normalization
+        │
+        ├─ JPEG
+        ├─ RGB
+        ├─ max 1024×1024
+        ├─ preserve aspect ratio
+        ├─ NO crop
+        └─ NO upscale
+        │
+        ▼
+data/image/en/<word>.jpg
+        +
+data/image/en/_metadata/<word>.json
+
+24/9 đã update lại hướng đi trong /schedule

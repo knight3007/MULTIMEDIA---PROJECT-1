@@ -1,7 +1,7 @@
 {
   "version": 2,
   "model": "Qwen/Qwen3-1.7B",
-  "signature": "91ca2756d4b08c78b8fd96d71bcc93f4312640966b9765786df50204c73bc28a",
+  "signature": "9db04b31515b9f492a95bc0f4873c28226a5f318bb48f27dbf3d44a8d201a692",
   "vocabulary_count": 100,
   "records": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "word": "water",
-      "query": "water substance"
+      "query": "water beverage"
     },
     {
       "word": "chicken",

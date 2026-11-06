@@ -1,24 +1,25 @@
 from __future__ import annotations
 
 import argparse
-import base64
 import json
 import statistics
-import subprocess
 import time
-import wave
 from dataclasses import dataclass, field
 from pathlib import Path
+from uuid import uuid4
 
 from collector_common import (
-    PROJECT_ROOT, CollectionError, add_common_arguments,
+    PROJECT_ROOT, CollectionError, add_common_arguments, configure_console,
     resolve_project_path, run_cli, validate_common_arguments,
 )
 
 JAPANESE_VOCABULARY_PATH = PROJECT_ROOT / "data" / "vocabulary" / "jp.txt"
 AUDIO_DIR = PROJECT_ROOT / "data" / "audio" / "jp"
 AUDIO_METADATA_DIR = AUDIO_DIR / "_metadata"
-WAV_SIGNATURE = b"RIFF"
+AUDIO_SOURCE = "google_translate_gtts"
+AUDIO_LOCALE = "ja"
+AUDIO_VOICE = {"tld": "com", "slow": False}
+AUDIO_SCHEMA_VERSION = 1
 
 
 @dataclass
@@ -41,7 +42,7 @@ class AudioResult:
     size: int = 0
     audio_format: str | None = None
     duration_seconds: float | None = None
-    source: str = "Windows SAPI"
+    source: str = AUDIO_SOURCE
     error: str | None = None
 
 
@@ -77,34 +78,65 @@ def ensure_audio_directories() -> None:
     AUDIO_METADATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def has_complete_mp3_frames(path: Path) -> bool:
+    """Reject a partial final MPEG Layer III frame, which Mutagen may accept."""
+    body = path.read_bytes()
+    offset = 0
+    if body.startswith(b"ID3"):
+        if len(body) < 10 or any(byte & 0x80 for byte in body[6:10]):
+            return False
+        tag_size = (body[6] << 21) | (body[7] << 14) | (body[8] << 7) | body[9]
+        offset = 10 + tag_size + (10 if body[5] & 0x10 else 0)
+    frames = 0
+    mpeg1_bitrates = (0, 32, 40, 48, 56, 64, 80, 96, 112, 128, 160, 192, 224, 256, 320)
+    mpeg2_bitrates = (0, 8, 16, 24, 32, 40, 48, 56, 64, 80, 96, 112, 128, 144, 160)
+    sample_rates = (44100, 48000, 32000)
+    while offset + 4 <= len(body):
+        if len(body) - offset == 128 and body[offset:offset + 3] == b"TAG":
+            break
+        header = int.from_bytes(body[offset:offset + 4], "big")
+        version = (header >> 19) & 3
+        layer = (header >> 17) & 3
+        bitrate_index = (header >> 12) & 15
+        sample_index = (header >> 10) & 3
+        if (header & 0xFFE00000) != 0xFFE00000 or version == 1 or layer != 1:
+            return False
+        if bitrate_index in (0, 15) or sample_index == 3:
+            return False
+        bitrate = (mpeg1_bitrates if version == 3 else mpeg2_bitrates)[bitrate_index]
+        sample_rate = sample_rates[sample_index] >> (0 if version == 3 else 1 if version == 2 else 2)
+        frame_size = (144000 if version == 3 else 72000) * bitrate // sample_rate
+        frame_size += (header >> 9) & 1
+        if frame_size < 4 or offset + frame_size > len(body):
+            return False
+        offset += frame_size
+        frames += 1
+    return frames >= 2 and (offset == len(body)
+                            or len(body) - offset == 128 and body[offset:offset + 3] == b"TAG")
+
+
 def validate_audio(path: Path) -> AudioValidation:
-    if not path.exists() or not path.is_file():
+    """Parse actual MPEG frames; an extension or ID3 tag alone is insufficient."""
+    if not path.is_file():
         return AudioValidation(ok=False, reason="file does not exist")
     size = path.stat().st_size
-    if size == 0:
-        return AudioValidation(ok=False, size=size, reason="file is empty")
-    if path.suffix.lower() != ".wav":
+    if path.suffix.lower() != ".mp3":
         return AudioValidation(ok=False, size=size, reason=f"unsupported audio extension: {path.suffix}")
-    with path.open("rb") as file:
-        header = file.read(12)
-    if not header.startswith(WAV_SIGNATURE) or header[8:12] != b"WAVE":
-        return AudioValidation(ok=False, size=size, reason="file is not a WAV container")
+    if size < 128:
+        return AudioValidation(ok=False, size=size, reason="MP3 is empty or truncated")
     try:
-        with wave.open(str(path), "rb") as audio:
-            frames = audio.getnframes()
-            frame_rate = audio.getframerate()
-            sample_width = audio.getsampwidth()
-            channels = audio.getnchannels()
-            if frames <= 0:
-                return AudioValidation(ok=False, size=size, reason="WAV has no audio frames")
-            if frame_rate <= 0 or sample_width <= 0 or channels <= 0:
-                return AudioValidation(ok=False, size=size, reason="WAV has invalid stream parameters")
-            duration = frames / float(frame_rate)
-    except (wave.Error, EOFError, OSError) as error:
-        return AudioValidation(ok=False, size=size, reason=f"WAV decode failed: {error}")
-    if duration <= 0:
-        return AudioValidation(ok=False, size=size, reason="WAV duration is zero")
-    return AudioValidation(ok=True, format="wav", size=size, duration_seconds=duration)
+        from mutagen import MutagenError
+        from mutagen.mp3 import MP3
+
+        info = MP3(path).info
+        duration = float(info.length)
+        if duration < 0.1 or info.bitrate <= 0 or info.sample_rate <= 0:
+            return AudioValidation(ok=False, size=size, reason="MP3 has invalid stream parameters")
+        if not has_complete_mp3_frames(path):
+            return AudioValidation(ok=False, size=size, reason="MP3 has incomplete or invalid frames")
+    except (ImportError, MutagenError, OSError, ValueError) as error:
+        return AudioValidation(ok=False, size=size, reason=f"MP3 parse failed: {error}")
+    return AudioValidation(ok=True, format="mp3", size=size, duration_seconds=duration)
 
 
 def stable_audio_stem(index: int, word: str, reading: str) -> str:
@@ -120,79 +152,41 @@ def stable_audio_stem(index: int, word: str, reading: str) -> str:
 
 
 def audio_output_path(index: int, word: str, reading: str) -> Path:
-    return AUDIO_DIR / f"{stable_audio_stem(index, word, reading)}.wav"
+    return AUDIO_DIR / f"{stable_audio_stem(index, word, reading)}.mp3"
 
 
 def audio_metadata_path(index: int, word: str, reading: str) -> Path:
     return AUDIO_METADATA_DIR / f"{stable_audio_stem(index, word, reading)}.json"
 
 
-def synthesize_sapi_wav(reading: str, destination: Path, *, timeout: int) -> str:
-    payload = json.dumps(
-        {"text": reading, "output": str(destination)},
-        ensure_ascii=False,
-    )
-    script = f"""
-$ErrorActionPreference = 'Stop'
-$ProgressPreference = 'SilentlyContinue'
-$payload = @'
-{payload}
-'@ | ConvertFrom-Json
-$voice = New-Object -ComObject SAPI.SpVoice
-$selected = $null
-foreach ($candidate in @($voice.GetVoices())) {{
-    $description = $candidate.GetDescription()
-    $language = $candidate.GetAttribute('Language')
-    if ($description -match 'Japanese' -or $language -match '411') {{
-        $selected = $candidate
-        break
-    }}
-}}
-if ($null -eq $selected) {{
-    throw 'No Japanese SAPI voice installed'
-}}
-$voice.Voice = $selected
-$stream = New-Object -ComObject SAPI.SpFileStream
-$stream.Open($payload.output, 3, $false)
-try {{
-    $voice.AudioOutputStream = $stream
-    [void]$voice.Speak($payload.text, 0)
-}} finally {{
-    $stream.Close()
-}}
-Write-Output ('VOICE=' + $selected.GetDescription())
-"""
-    encoded = base64.b64encode(script.encode("utf-16le")).decode("ascii")
-    completed = subprocess.run(
-        [
-            "powershell",
-            "-NoProfile",
-            "-ExecutionPolicy",
-            "Bypass",
-            "-EncodedCommand",
-            encoded,
-        ],
-        capture_output=True,
-        text=True,
-        timeout=timeout,
-        check=False,
-    )
-    if completed.returncode != 0:
-        detail = completed.stderr.strip() or completed.stdout.strip() or "SAPI TTS failed"
-        raise CollectionError(detail)
-    for line in completed.stdout.splitlines():
-        if line.startswith("VOICE="):
-            return line.removeprefix("VOICE=").strip()
-    return "Windows SAPI Japanese voice"
+class AudioPermanentError(CollectionError):
+    """A configuration or provider refusal that should not be retried."""
 
 
-def write_audio_metadata(result: AudioResult) -> None:
-    if result.output is None:
-        return
-    metadata = {
+def synthesize_gtts_mp3(reading: str, destination: Path, *, timeout: int) -> None:
+    """Download Google Translate speech once; the caller controls retry and cache."""
+    try:
+        from gtts import gTTS, gTTSError
+    except ImportError as error:
+        raise AudioPermanentError("gTTS is missing; install requirements-audio.txt") from error
+    try:
+        gTTS(text=reading, lang=AUDIO_LOCALE, tld=AUDIO_VOICE["tld"],
+             slow=AUDIO_VOICE["slow"], timeout=timeout).save(str(destination))
+    except gTTSError as error:
+        status = getattr(getattr(error, "rsp", None), "status_code", None)
+        if status in (403, 429):
+            raise AudioPermanentError(f"Google Translate refused the request (HTTP {status})") from error
+        raise CollectionError(f"gTTS request failed: {error}") from error
+
+
+def audio_metadata_record(result: AudioResult) -> dict:
+    return {
+        "schema_version": AUDIO_SCHEMA_VERSION,
         "key": result.key,
         "word": result.word,
         "reading": result.reading,
+        "locale": AUDIO_LOCALE,
+        "voice": AUDIO_VOICE.copy(),
         "audio": str(result.output.relative_to(PROJECT_ROOT)).replace("\\", "/"),
         "source": result.source,
         "format": result.audio_format,
@@ -200,10 +194,40 @@ def write_audio_metadata(result: AudioResult) -> None:
         "duration_seconds": result.duration_seconds,
         "status": result.status,
     }
-    audio_metadata_path(int(result.key), result.word, result.reading).write_text(
-        json.dumps(metadata, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+
+
+def is_valid_audio_cache(output: Path, metadata_path: Path, word: str,
+                         reading: str, validation: AudioValidation) -> bool:
+    if not validation.ok or not metadata_path.is_file():
+        return False
+    try:
+        saved = json.loads(metadata_path.read_text(encoding="utf-8"))
+        expected_path = str(output.relative_to(PROJECT_ROOT)).replace("\\", "/")
+        return (isinstance(saved, dict)
+                and saved.get("schema_version") == AUDIO_SCHEMA_VERSION
+                and saved.get("word") == word and saved.get("reading") == reading
+                and saved.get("locale") == AUDIO_LOCALE and saved.get("voice") == AUDIO_VOICE
+                and saved.get("source") == AUDIO_SOURCE and saved.get("format") == "mp3"
+                and saved.get("audio") == expected_path
+                and saved.get("size") == validation.size
+                and isinstance(saved.get("duration_seconds"), (int, float))
+                and abs(saved["duration_seconds"] - validation.duration_seconds) < 0.02
+                and saved.get("status") in ("success", "cache_hit"))
+    except (OSError, ValueError, UnicodeError):
+        return False
+
+
+def write_audio_metadata(result: AudioResult) -> None:
+    if result.output is None:
+        return
+    target = audio_metadata_path(int(result.key), result.word, result.reading)
+    temporary = target.with_name(f".{target.stem}.{uuid4().hex}.tmp.json")
+    try:
+        temporary.write_text(json.dumps(audio_metadata_record(result), ensure_ascii=False, indent=2),
+                             encoding="utf-8")
+        temporary.replace(target)
+    finally:
+        temporary.unlink(missing_ok=True)
 
 
 def process_audio_entry(
@@ -216,93 +240,53 @@ def process_audio_entry(
     retry_delay: float,
 ) -> AudioResult:
     key = str(index)
-    output = audio_output_path(index, word, reading)
-    metadata_path = audio_metadata_path(index, word, reading)
-    validation = validate_audio(output)
-    if validation.ok:
-        result = AudioResult(
-            ok=True,
-            key=key,
-            word=word,
-            reading=reading,
-            status="cache_hit",
-            output=output,
-            size=validation.size,
-            audio_format=validation.format,
-            duration_seconds=validation.duration_seconds,
-        )
-        if not metadata_path.exists():
-            write_audio_metadata(result)
-        print("[AUDIO] CACHE HIT")
-        print(f"KEY: {key}")
-        print(f"WORD: {word}")
-        print(f"READING: {reading}")
-        print(f"FILE: {output.relative_to(PROJECT_ROOT)}")
-        return result
+    try:
+        output = audio_output_path(index, word, reading)
+        metadata_path = audio_metadata_path(index, word, reading)
+    except CollectionError as error:
+        return AudioResult(ok=False, key=key, word=word, reading=reading,
+                           status="failed", error=str(error))
 
-    if output.exists() and not validation.ok:
-        output.unlink(missing_ok=True)
+    validation = validate_audio(output)
+    if is_valid_audio_cache(output, metadata_path, word, reading, validation):
+        print(f"[AUDIO] CACHE HIT: {word} -> {output.relative_to(PROJECT_ROOT)}")
+        return AudioResult(ok=True, key=key, word=word, reading=reading,
+                           status="cache_hit", output=output, size=validation.size,
+                           audio_format="mp3", duration_seconds=validation.duration_seconds)
+
+    if output.exists() or metadata_path.exists():
+        return AudioResult(ok=False, key=key, word=word, reading=reading,
+                           status="failed", output=output,
+                           error="existing MP3/metadata conflict; preserve asset for review")
 
     last_error: Exception | None = None
     for attempt in range(retries + 1):
-        temporary_path = output.with_name(f"{output.stem}.tmp.wav")
+        temporary = output.with_name(f".{output.stem}.{uuid4().hex}.tmp.mp3")
         try:
-            temporary_path.unlink(missing_ok=True)
-            source = synthesize_sapi_wav(reading, temporary_path, timeout=timeout)
-            validation = validate_audio(temporary_path)
+            synthesize_gtts_mp3(reading, temporary, timeout=timeout)
+            validation = validate_audio(temporary)
             if not validation.ok:
-                raise CollectionError(validation.reason or "audio validation failed")
-            temporary_path.replace(output)
-            result = AudioResult(
-                ok=True,
-                key=key,
-                word=word,
-                reading=reading,
-                status="success",
-                output=output,
-                size=validation.size,
-                audio_format=validation.format,
-                duration_seconds=validation.duration_seconds,
-                source=source,
-            )
+                raise CollectionError(validation.reason or "MP3 validation failed")
+            temporary.replace(output)
+            result = AudioResult(ok=True, key=key, word=word, reading=reading,
+                                 status="success", output=output, size=validation.size,
+                                 audio_format="mp3", duration_seconds=validation.duration_seconds)
             write_audio_metadata(result)
-            print("=" * 40)
-            print("[AUDIO]")
-            print(f"KEY: {key}")
-            print(f"WORD: {word}")
-            print(f"READING: {reading}")
-            print(f"SOURCE: {source}")
-            print(f"OUTPUT: {output.relative_to(PROJECT_ROOT)}")
-            print("STATUS: SUCCESS")
-            print("=" * 40)
+            print(f"[AUDIO] SUCCESS: {word} -> {output.relative_to(PROJECT_ROOT)}")
             return result
-        except (CollectionError, OSError, subprocess.SubprocessError) as error:
+        except (AudioPermanentError, CollectionError, OSError) as error:
             last_error = error
-            temporary_path.unlink(missing_ok=True)
-            print("[AUDIO][ERROR]")
-            print(f"key: {key}")
-            print(f"word: {word}")
-            print(f"reading: {reading}")
-            print(f"error: {error}")
-            print(f"attempt: {attempt + 1}")
+            print(f"[AUDIO][ERROR] {word}: {error} (attempt {attempt + 1}/{retries + 1})")
+            if isinstance(error, AudioPermanentError) or output.exists():
+                break
             if attempt < retries:
                 time.sleep(retry_delay * (attempt + 1))
+        finally:
+            temporary.unlink(missing_ok=True)
 
-    error_message = str(last_error) if last_error else "audio generation failed"
-    print("[AUDIO] FAILED")
-    print(f"KEY: {key}")
-    print(f"WORD: {word}")
-    print(f"READING: {reading}")
-    print(f"ERROR: {error_message}")
-    return AudioResult(
-        ok=False,
-        key=key,
-        word=word,
-        reading=reading,
-        status="failed",
-        output=output,
-        error=error_message,
-    )
+    return AudioResult(ok=False, key=key, word=word, reading=reading,
+                       status="failed", output=output,
+                       error=str(last_error) if last_error else "audio download failed")
 
 
 def print_audio_summary(summary: AudioSummary) -> None:
@@ -340,6 +324,7 @@ def collect_audio(
     retry_delay: float,
     rate_limit_delay: float,
 ) -> AudioSummary:
+    configure_console()
     ensure_audio_directories()
     words = load_audio_vocabulary(vocabulary_path)
     words_to_process = words[:limit]
@@ -364,7 +349,7 @@ def collect_audio(
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Collect Japanese vocabulary audio using Windows SAPI.")
+    parser = argparse.ArgumentParser(description="Download Japanese vocabulary MP3 using Google Translate gTTS.")
     add_common_arguments(parser)
     parser.add_argument("--vocabulary", "--audio-vocabulary", dest="vocabulary", type=Path,
                         default=JAPANESE_VOCABULARY_PATH, help="Japanese vocabulary/reading file.")

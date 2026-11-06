@@ -55,6 +55,9 @@ class ImageResult:
     download_seconds: float = 0.0
     scoring_seconds: float = 0.0
     total_seconds: float = 0.0
+    search_backend: str | None = None
+    failure_stage: str | None = None
+    failure_type: str | None = None
 
 
 @dataclass(frozen=True)
@@ -62,6 +65,26 @@ class ImageSearchBatch:
     candidates: list[dict[str, Any]]
     raw_count: int
     duration_seconds: float
+    backend: str = "auto"
+
+
+class ImageSearchFailure(CollectionError):
+    def __init__(self, backend: str, attempts: int, duration_seconds: float,
+                 cause: Exception) -> None:
+        self.backend = backend
+        self.attempts = attempts
+        self.duration_seconds = duration_seconds
+        self.cause_type = type(cause).__name__
+        message = re.sub(r"(https?://)[^/@\s]+@", r"\1[redacted]@", str(cause))
+        super().__init__(f"DDGS image search failed (backend={backend}, attempts={attempts}, "
+                         f"type={self.cause_type}): {message}")
+
+
+class ImageStageFailure(CollectionError):
+    def __init__(self, stage: str, cause: Exception) -> None:
+        self.stage = stage
+        self.cause_type = type(cause).__name__
+        super().__init__(str(cause))
 
 
 @dataclass
@@ -221,31 +244,36 @@ def search_images(
     timeout: int,
     retries: int,
     retry_delay: float,
+    backend: str = "auto",
 ) -> ImageSearchBatch:
     from ddgs import DDGS
     from ddgs.exceptions import DDGSException
 
     started = time.perf_counter()
-    last_error = "request failed"
+    last_error: Exception = CollectionError("request failed")
     for attempt in range(retries + 1):
         try:
-            raw_results = DDGS(timeout=timeout).images(
-                query=query_text,
-                region=DDG_REGION,
-                safesearch=DDG_SAFESEARCH,
-                max_results=page_size,
-            )
+            options = {"query": query_text, "region": DDG_REGION,
+                       "safesearch": DDG_SAFESEARCH, "max_results": page_size}
+            if backend != "auto":
+                options["backend"] = backend
+            raw_results = DDGS(timeout=timeout).images(**options)
             if not raw_results:
                 raise CollectionError("no image results")
             candidates = normalize_ddg_results(raw_results)
             if not candidates:
                 raise CollectionError("no valid image candidates")
-            return ImageSearchBatch(candidates, len(raw_results), time.perf_counter() - started)
+            if backend != "auto":
+                for candidate in candidates:
+                    candidate["search_backend"] = backend
+            return ImageSearchBatch(candidates, len(raw_results),
+                                    time.perf_counter() - started, backend)
         except (CollectionError, DDGSException) as error:
-            last_error = str(error)
+            last_error = error
         if attempt < retries:
             time.sleep(retry_delay * (attempt + 1))
-    raise CollectionError(f"DuckDuckGo image search failed: {last_error}")
+    raise ImageSearchFailure(backend, retries + 1,
+                             time.perf_counter() - started, last_error)
 
 
 def choose_image_result(word: str, results: list[dict[str, Any]]) -> dict[str, Any] | None:
@@ -334,7 +362,7 @@ def choose_image_result_with_siglip(
     try:
         score_results = scorer.score_batch(query_text, [path for _result, path in candidates])
     except ImageScoringError as error:
-        raise CollectionError(str(error)) from error
+        raise ImageStageFailure("scoring", error) from error
     scoring_seconds = time.perf_counter() - scoring_started
 
     scored_candidates = sorted(
@@ -437,10 +465,12 @@ def metadata_from_result(
     query_text: str,
     result: dict[str, Any],
     image_selection: dict[str, Any] | None = None,
+    query_provenance: str = "model_generated_unreviewed",
 ) -> dict[str, Any]:
     metadata = {
         "word": word,
         "search_query": query_text,
+        "query_provenance": query_provenance,
         "provider": result.get("provider"),
         "image_url": result.get("image_url"),
         "thumbnail_url": result.get("thumbnail_url"),
@@ -448,9 +478,12 @@ def metadata_from_result(
         "title": result.get("title"),
         "width": result.get("width"),
         "height": result.get("height"),
-        "source": IMAGE_PROVIDER,
+        "source": result.get("search_client", IMAGE_PROVIDER),
         "result_source": result.get("source"),
     }
+    if result.get("search_backend"):
+        metadata["search_client"] = result.get("search_client", "ddgs")
+        metadata["search_backend"] = result["search_backend"]
     if image_selection:
         metadata["image_selection"] = image_selection
     return metadata
@@ -461,11 +494,12 @@ def save_metadata(
     query_text: str,
     result: dict[str, Any],
     image_selection: dict[str, Any] | None = None,
+    query_provenance: str = "model_generated_unreviewed",
 ) -> None:
     metadata_path = METADATA_DIR / f"{sanitize_filename(word)}.json"
     metadata_path.write_text(
         json.dumps(
-            metadata_from_result(word, query_text, result, image_selection),
+            metadata_from_result(word, query_text, result, image_selection, query_provenance),
             ensure_ascii=False,
             indent=2,
         ),
@@ -473,7 +507,9 @@ def save_metadata(
     )
 
 
-def is_valid_image_cache(image_path: Path, metadata_path: Path, query_text: str) -> bool:
+def is_valid_image_cache(image_path: Path, metadata_path: Path, query_text: str,
+                         word: str | None = None,
+                         query_provenance: str = "model_generated_unreviewed") -> bool:
     if not is_valid_jpeg(image_path) or not metadata_path.exists():
         return False
     try:
@@ -484,6 +520,9 @@ def is_valid_image_cache(image_path: Path, metadata_path: Path, query_text: str)
         isinstance(metadata, dict)
         and metadata.get("provider") == IMAGE_PROVIDER
         and metadata.get("search_query") == query_text
+        and (word is None or metadata.get("word", word) == word)
+        and (query_provenance != "human_approved"
+             or metadata.get("query_provenance") == "human_approved")
     )
 
 
@@ -497,14 +536,20 @@ def process_word(
     page_size: int,
     scorer: Any | None = None,
     siglip_model: str = DEFAULT_SIGLIP_MODEL,
+    query_provenance: str = "model_generated_unreviewed",
+    search_backend: str = "auto",
+    search_batch_override: ImageSearchBatch | None = None,
 ) -> ImageResult:
     started = time.perf_counter()
+    search_seconds = 0.0
+    search_started = None
+    stage = "preflight"
     try:
         filename = sanitize_filename(word)
         image_path = IMAGE_DIR / f"{filename}.jpg"
         metadata_path = METADATA_DIR / f"{filename}.json"
 
-        if is_valid_image_cache(image_path, metadata_path, query_text):
+        if is_valid_image_cache(image_path, metadata_path, query_text, word, query_provenance):
             print(f"[IMAGE] {word} -> SUCCESS: cached")
             return ImageResult(
                 ok=True, word=word, query_text=query_text, status="cached",
@@ -513,14 +558,19 @@ def process_word(
 
         if image_path.exists() and not is_valid_jpeg(image_path):
             raise CollectionError("existing image file is not a valid JPEG")
+        if image_path.exists() or metadata_path.exists():
+            raise CollectionError("existing image/metadata conflict with effective query; preserve asset for review")
 
-        search_batch = search_images(
-            query_text,
-            page_size=page_size,
-            timeout=timeout,
-            retries=retries,
-            retry_delay=retry_delay,
-        )
+        stage = "search"
+        search_started = time.perf_counter()
+        search_options = {"page_size": page_size, "timeout": timeout,
+                          "retries": retries, "retry_delay": retry_delay}
+        if search_backend != "auto":
+            search_options["backend"] = search_backend
+        search_batch = (search_batch_override if search_batch_override is not None
+                        else search_images(query_text, **search_options))
+        search_seconds = search_batch.duration_seconds
+        stage = "download"
         siglip_score = None
         candidate_count = 0
         download_seconds = 0.0
@@ -539,7 +589,7 @@ def process_word(
         else:
             chosen = choose_image_result(query_text, search_batch.candidates)
         if not chosen:
-            raise CollectionError("all DuckDuckGo candidate downloads failed")
+            raise CollectionError("all image candidate downloads failed")
 
         candidate_path = chosen.get("_siglip_candidate_path")
         if candidate_path:
@@ -561,7 +611,8 @@ def process_word(
                 "model": siglip_model,
                 "score": siglip_score,
             }
-        save_metadata(word, query_text, chosen, image_selection)
+        stage = "metadata"
+        save_metadata(word, query_text, chosen, image_selection, query_provenance)
         if candidate_path:
             cleanup_candidate_cache(word)
 
@@ -586,12 +637,20 @@ def process_word(
             download_seconds=download_seconds,
             scoring_seconds=scoring_seconds,
             total_seconds=total_seconds,
+            search_backend=search_batch.backend,
         )
     except (CollectionError, OSError) as error:
+        if stage == "search" and search_started is not None:
+            search_seconds = getattr(error, "duration_seconds",
+                                     time.perf_counter() - search_started)
+        failure_stage = getattr(error, "stage", stage)
+        failure_type = getattr(error, "cause_type", type(error).__name__)
         print(f"[IMAGE] {word} -> FAILED: {error}")
         return ImageResult(
             ok=False, word=word, query_text=query_text, status="failed", reason=str(error),
-            total_seconds=time.perf_counter() - started,
+            search_seconds=search_seconds, total_seconds=time.perf_counter() - started,
+            search_backend=search_backend if search_started is not None else None,
+            failure_stage=failure_stage, failure_type=failure_type,
         )
 
 
@@ -724,6 +783,21 @@ def main(argv: list[str] | None = None) -> int:
         raise CollectionError(
             f"Qwen query count mismatch: expected {len(words_to_process)}, found {len(queries_to_process)}"
         )
+    decisions = None
+    ids = None
+    if vocabulary_path.resolve() == VOCABULARY_PATH.resolve():
+        from semantic_decisions import load_decisions
+        from validate_vocabulary import validate_sources
+        from vocabulary_registry import load_registry, validate_registry
+
+        paths = {lang: PROJECT_ROOT / "data/vocabulary" / f"{lang}.txt"
+                 for lang in ("en", "jp", "vn")}
+        rows, issues = validate_sources(paths)
+        if issues:
+            raise CollectionError("Cannot resolve approved image queries: " + "; ".join(issues))
+        registry = load_registry(PROJECT_ROOT)
+        ids = validate_registry(rows, registry)
+        decisions = load_decisions(PROJECT_ROOT, registry)
     ensure_directories()
 
     # Phase B: existing search, candidate download, and SigLIP selection.
@@ -733,6 +807,15 @@ def main(argv: list[str] | None = None) -> int:
 
     summary = Summary()
     for index, (word, query_text) in enumerate(zip(words_to_process, queries_to_process)):
+        query_provenance = "model_generated_unreviewed"
+        if decisions is not None:
+            from semantic_decisions import select_effective_query
+            try:
+                query_text, query_provenance = select_effective_query(ids[index], query_text, decisions)
+            except ValueError as error:
+                summary.add(ImageResult(False, word, query_text, "failed", reason=str(error)))
+                print(f"[IMAGE] {word} -> FAILED: {error}")
+                continue
         result = process_word(
             word,
             query_text,
@@ -742,6 +825,7 @@ def main(argv: list[str] | None = None) -> int:
             page_size=args.page_size,
             scorer=scorer,
             siglip_model=args.siglip_model,
+            query_provenance=query_provenance,
         )
         summary.add(result)
         if result.status != "cached" and index < len(words_to_process) - 1:

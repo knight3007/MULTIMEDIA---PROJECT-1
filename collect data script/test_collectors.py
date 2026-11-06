@@ -6,7 +6,6 @@ import subprocess
 import sys
 import tempfile
 import unittest
-import wave
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -77,29 +76,30 @@ class CollectorTests(unittest.TestCase):
             image.choose_image_result_with_siglip("cat", "cat", [], scorer,
                                                   timeout=1, retries=0, retry_delay=0)
 
-    def test_audio_generation_then_cache_hit(self):
-        def synthesize(reading, destination, **kwargs):
-            with wave.open(str(destination), "wb") as stream:
-                stream.setparams((1, 2, 16000, 0, "NONE", "not compressed"))
-                stream.writeframes(b"\x00\x00" * 1600)
-            return "Test voice"
+    def test_audio_cli_writes_mp3_and_metadata(self):
+        word = "\u306d\u3053"
+
+        def synthesize(_reading, destination, **_kwargs):
+            destination.write_bytes((Path(__file__).parent / "fixtures" / "short-tone.mp3").read_bytes())
 
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
+            vocabulary = root / "words.txt"
+            vocabulary.write_text(word + "\n", encoding="utf-8")
             with patch.object(audio, "PROJECT_ROOT", root), patch.object(audio, "AUDIO_DIR", root / "audio"), \
-                 patch.object(audio, "AUDIO_METADATA_DIR", root / "metadata"), \
-                 patch.object(audio, "synthesize_sapi_wav", side_effect=synthesize) as synth, \
+                 patch.object(audio, "AUDIO_METADATA_DIR", root / "audio" / "_metadata"), \
+                 patch.object(audio, "synthesize_gtts_mp3", side_effect=synthesize) as synth, \
                  contextlib.redirect_stdout(io.StringIO()):
-                audio.ensure_audio_directories()
-                kwargs = dict(timeout=1, retries=0, retry_delay=0)
-                first = audio.process_audio_entry(1, "ねこ", "ねこ", **kwargs)
-                second = audio.process_audio_entry(1, "ねこ", "ねこ", **kwargs)
-                self.assertEqual(first.status, "success")
-                self.assertEqual(first.output.name, "ねこ.wav")
-                self.assertEqual(audio.audio_metadata_path(1, "ねこ", "ねこ").name, "ねこ.json")
-                self.assertEqual(second.status, "cache_hit")
-                self.assertAlmostEqual(first.duration_seconds, 0.1)
-                self.assertTrue(audio.audio_metadata_path(1, "ねこ", "ねこ").exists())
+                self.assertEqual(audio.main([
+                    "--vocabulary", str(vocabulary), "--limit", "1", "--retries", "0",
+                    "--rate-limit-delay", "0",
+                ]), 0)
+                output = audio.audio_output_path(1, word, word)
+                self.assertTrue(output.is_file())
+                self.assertEqual(output.suffix, ".mp3")
+                metadata = json.loads(audio.audio_metadata_path(1, word, word).read_text(encoding="utf-8"))
+                self.assertEqual(metadata["source"], "google_translate_gtts")
+                self.assertEqual(metadata["format"], "mp3")
                 synth.assert_called_once()
 
 
@@ -214,7 +214,7 @@ class DuckDuckGoProviderTests(unittest.TestCase):
         client = Mock()
         client.images.return_value = []
         with patch("ddgs.DDGS", return_value=client), \
-             self.assertRaisesRegex(CollectionError, "DuckDuckGo.*no image results"):
+             self.assertRaisesRegex(CollectionError, "DDGS.*no image results"):
             image.search_images("missing", page_size=7, timeout=5, retries=0, retry_delay=0)
 
     def test_ddg_exception_is_reported_after_retries_are_exhausted(self):
@@ -223,7 +223,7 @@ class DuckDuckGoProviderTests(unittest.TestCase):
         client = Mock()
         client.images.side_effect = DDGSException("rate limited")
         with patch("ddgs.DDGS", return_value=client), \
-             self.assertRaisesRegex(CollectionError, "DuckDuckGo.*rate limited"):
+             self.assertRaisesRegex(CollectionError, "DDGS.*rate limited"):
             image.search_images("cat animal", page_size=7, timeout=5, retries=0, retry_delay=0)
 
     def test_one_failed_download_does_not_discard_other_candidates(self):
@@ -542,6 +542,15 @@ class QwenOutputTests(unittest.TestCase):
         cache_text = cache_path.read_text(encoding="utf-8")
         self.assertNotIn("meaning", cache_text)
         self.assertNotIn("Vietnamese", cache_text)
+
+
+    def test_bundled_default_query_cache_matches_current_prompt_and_vocabulary(self):
+        words = load_vocabulary(image.VOCABULARY_PATH)
+        with patch.object(query, "QwenQueryGenerator", side_effect=AssertionError("cache miss")), \
+             contextlib.redirect_stdout(io.StringIO()):
+            queries = query.prepare_queries(words, limit=10)
+        self.assertEqual(len(queries), 10)
+        self.assertEqual(queries[7], "water beverage")
 
 
 class QwenIntegrationTests(unittest.TestCase):

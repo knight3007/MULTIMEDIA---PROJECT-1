@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "vocab_id": "vocab-000004",
+      "asset_type": "image",
+      "staging_run_id": "20261029T035126Z-e1fcdb0e",
+      "candidate_path": "baseline/media-staging/images/20261029T035126Z-e1fcdb0e/rice.jpg",
+      "sha256": "f447aa26dc6ab0d4c22b46086a1f674b0c799273a3c73902c7c6aea1aeca3cd4",
+      "target_sense": "cooked rice",
+      "target_sense_approval": "owner_approved",
+      "visual_review": {"semantic_match": true, "production_suitability": "suitable"},
+      "license_status": "verified_restricted",
+      "source_evidence": {
+        "image_url": "https://www.lemonblossoms.com/wp-content/uploads/2019/11/How-To-Cook-White-Rice-S1-1.jpg",
+        "source_page_url": "https://www.lemonblossoms.com/web-stories/https-www-lemonblossoms-com-blog-how-to-cook-rice-2/",
+        "source_title": "How to Cook White Rice Perfectly - Lemon Blossoms",
+        "license_url": "https://www.lemonblossoms.com/disclaimers-privacy-policy/",
+        "author": "Kathy McDaniel / Lemon Blossoms (site's default claim; exact file credit unconfirmed)",
+        "attribution": "Site default CC BY-NC-ND 3.0 requires attribution; other use of photos requires permission."
+      },
+      "owner_promotion_approval": "pending",
+      "notes": "Bing/DDGS selected a bowl of cooked white rice without visible watermark. Source policy restricts planned normalized vocabulary-app reuse; no separate permission found."
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "asset_type": "image",
+      "staging_run_id": "20261029T035126Z-e1fcdb0e",
+      "candidate_path": "baseline/media-staging/images/20261029T035126Z-e1fcdb0e/chicken.jpg",
+      "sha256": "433095d063e4c5e6802a5f54c937e2783989225af31514b1a8e00163e71c726d",
+      "target_sense": "chicken meat",
+      "target_sense_approval": "owner_approved",
+      "visual_review": {"semantic_match": true, "production_suitability": "blocked_watermark"},
+      "license_status": "verified_restricted",
+      "source_evidence": {
+        "image_url": "https://thumbs.dreamstime.com/z/fresh-chicken-meat-wooden-board-top-view-83865597.jpg",
+        "source_page_url": "https://cartoondealer.com/image/167897397/raw-chicken-meat-isolated-white-background-healthy-eating-fresh-chicken-meat-white-background.html",
+        "source_title": "Raw Chicken Meat Isolated On A White Background. Healthy Eating Fresh ... (search result; mismatches JPEG)",
+        "license_url": "https://www.dreamstime.com/terms",
+        "author": "Unknown; visible copyright marking does not establish a reusable license",
+        "attribution": "Attribution alone cannot authorize final use of Dreamstime watermarked media."
+      },
+      "owner_promotion_approval": "not_granted",
+      "notes": "Raw chicken meat matches target sense but the exact JPEG has multiple Dreamstime watermarks. Dreamstime terms allow watermarked media only for internal purchase evaluation; keep solely as staging evidence."
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "asset_type": "image",
+      "staging_run_id": "20261029T041516Z-eea4173d",
+      "candidate_path": "baseline/media-staging/images/20261029T041516Z-eea4173d/chicken.jpg",
+      "sha256": "f897f975b60a61a1f98050fb71f84481dcf789475a86508bc046318f02078ccc",
+      "target_sense": "chicken meat",
+      "target_sense_approval": "owner_approved",
+      "visual_review": {"semantic_match": true, "production_suitability": "suitable"},
+      "license_status": "verified_permitted",
+      "source_evidence": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Kycklingfil%C3%A9.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Kycklingfil%C3%A9.jpg",
+        "source_title": "Kycklingfilé.jpg — raw chicken breast",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Kycklingfil%C3%A9.jpg#Licensing",
+        "author": "Dnor (own work, as stated on Commons file page)",
+        "attribution": "Public-domain self-release states use for any purpose without conditions; credit Dnor and file URL is recommended for provenance, not required by that release."
+      },
+      "owner_promotion_approval": "pending",
+      "notes": "Single curated source; downloaded, normalized and scored through the existing image pipeline without DDGS search. JPEG visibly shows raw chicken breast and slices; no visible watermark. Owner has not approved production use."
+    }
+  ]
+}

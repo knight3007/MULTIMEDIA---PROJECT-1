@@ -1,0 +1,4945 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000001",
+      "source_row_index": 1,
+      "english": "apple",
+      "japanese": {
+        "display": "りんご",
+        "reading": "りんご",
+        "written_form": null
+      },
+      "vietnamese": "quả táo",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/apple.jpg",
+        "url": null,
+        "source_english": "apple",
+        "target_search_sense": null,
+        "effective_search_query": "apple fruit",
+        "final_search_query": "apple fruit",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": 0.34046173095703125
+        },
+        "metadata_ref": "data/image/en/_metadata/apple.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "りんご",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000002",
+      "source_row_index": 2,
+      "english": "banana",
+      "japanese": {
+        "display": "バナナ",
+        "reading": "バナナ",
+        "written_form": null
+      },
+      "vietnamese": "quả chuối",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/banana.jpg",
+        "url": null,
+        "source_english": "banana",
+        "target_search_sense": null,
+        "effective_search_query": "banana fruit",
+        "final_search_query": "banana fruit",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": -0.08457088470458984
+        },
+        "metadata_ref": "data/image/en/_metadata/banana.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "バナナ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000003",
+      "source_row_index": 3,
+      "english": "strawberry",
+      "japanese": {
+        "display": "いちご",
+        "reading": "いちご",
+        "written_form": null
+      },
+      "vietnamese": "dâu tây",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/strawberry.jpg",
+        "url": null,
+        "source_english": "strawberry",
+        "target_search_sense": null,
+        "effective_search_query": "strawberry fruit",
+        "final_search_query": "strawberry fruit",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": 0.17981338500976562
+        },
+        "metadata_ref": "data/image/en/_metadata/strawberry.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "いちご",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "english": "rice",
+      "japanese": {
+        "display": "ごはん",
+        "reading": "ごはん",
+        "written_form": null
+      },
+      "vietnamese": "cơm",
+      "target_sense": "cooked rice",
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "approved",
+      "decision_provenance": "owner_approved",
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/rice.jpg",
+        "url": null,
+        "source_english": "rice",
+        "target_search_sense": "cooked rice",
+        "effective_search_query": "cooked rice",
+        "final_search_query": "rice grain",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": -0.0021162033081054688
+        },
+        "metadata_ref": "data/image/en/_metadata/rice.json",
+        "semantic_suitability": "mismatch"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ごはん",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000005",
+      "source_row_index": 5,
+      "english": "bread",
+      "japanese": {
+        "display": "パン",
+        "reading": "パン",
+        "written_form": null
+      },
+      "vietnamese": "bánh mì",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/bread.jpg",
+        "url": null,
+        "source_english": "bread",
+        "target_search_sense": null,
+        "effective_search_query": "bread food",
+        "final_search_query": "bread food",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": 0.020154953002929688
+        },
+        "metadata_ref": "data/image/en/_metadata/bread.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "パン",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000006",
+      "source_row_index": 6,
+      "english": "egg",
+      "japanese": {
+        "display": "たまご",
+        "reading": "たまご",
+        "written_form": null
+      },
+      "vietnamese": "trứng",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/egg.jpg",
+        "url": null,
+        "source_english": "egg",
+        "target_search_sense": null,
+        "effective_search_query": "egg food",
+        "final_search_query": "egg food",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": -0.6711301803588867
+        },
+        "metadata_ref": "data/image/en/_metadata/egg.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "たまご",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000007",
+      "source_row_index": 7,
+      "english": "milk",
+      "japanese": {
+        "display": "ぎゅうにゅう",
+        "reading": "ぎゅうにゅう",
+        "written_form": null
+      },
+      "vietnamese": "sữa",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "Japanese ぎゅうにゅう refers specifically to cow's milk; scope of the EN/VN pair needs review.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/milk.jpg",
+        "url": null,
+        "source_english": "milk",
+        "target_search_sense": null,
+        "effective_search_query": "milk beverage",
+        "final_search_query": "milk beverage",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": 1.234395980834961
+        },
+        "metadata_ref": "data/image/en/_metadata/milk.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ぎゅうにゅう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000008",
+      "source_row_index": 8,
+      "english": "water",
+      "japanese": {
+        "display": "みず",
+        "reading": "みず",
+        "written_form": null
+      },
+      "vietnamese": "nước",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/water.jpg",
+        "url": null,
+        "source_english": "water",
+        "target_search_sense": null,
+        "effective_search_query": "water beverage",
+        "final_search_query": "water beverage",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": -1.663376808166504
+        },
+        "metadata_ref": "data/image/en/_metadata/water.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "みず",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "english": "chicken",
+      "japanese": {
+        "display": "とりにく",
+        "reading": "とりにく",
+        "written_form": null
+      },
+      "vietnamese": "thịt gà",
+      "target_sense": "chicken meat",
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "approved",
+      "decision_provenance": "owner_approved",
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/chicken.jpg",
+        "url": null,
+        "source_english": "chicken",
+        "target_search_sense": "chicken meat",
+        "effective_search_query": "chicken meat",
+        "final_search_query": "chicken animal",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": -1.0215282440185547
+        },
+        "metadata_ref": "data/image/en/_metadata/chicken.json",
+        "semantic_suitability": "mismatch"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "とりにく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000010",
+      "source_row_index": 10,
+      "english": "breakfast",
+      "japanese": {
+        "display": "あさごはん",
+        "reading": "あさごはん",
+        "written_form": null
+      },
+      "vietnamese": "bữa sáng",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "needs_review",
+        "path": "data/image/en/breakfast.jpg",
+        "url": null,
+        "source_english": "breakfast",
+        "target_search_sense": null,
+        "effective_search_query": "breakfast meal",
+        "final_search_query": "breakfast meal",
+        "query_provenance": "model_generated_unreviewed",
+        "provider": "duckduckgo",
+        "ranking": {
+          "method": "siglip2",
+          "model": "google/siglip2-so400m-patch16-384",
+          "score": 0.33359527587890625
+        },
+        "metadata_ref": "data/image/en/_metadata/breakfast.json",
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "あさごはん",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000011",
+      "source_row_index": 11,
+      "english": "cat",
+      "japanese": {
+        "display": "ねこ",
+        "reading": "ねこ",
+        "written_form": null
+      },
+      "vietnamese": "mèo",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "cat",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ねこ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000012",
+      "source_row_index": 12,
+      "english": "dog",
+      "japanese": {
+        "display": "いぬ",
+        "reading": "いぬ",
+        "written_form": null
+      },
+      "vietnamese": "chó",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "dog",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "いぬ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000013",
+      "source_row_index": 13,
+      "english": "elephant",
+      "japanese": {
+        "display": "ぞう",
+        "reading": "ぞう",
+        "written_form": null
+      },
+      "vietnamese": "voi",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "elephant",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ぞう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000014",
+      "source_row_index": 14,
+      "english": "tree",
+      "japanese": {
+        "display": "き",
+        "reading": "き",
+        "written_form": null
+      },
+      "vietnamese": "cây",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "tree",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "き",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000015",
+      "source_row_index": 15,
+      "english": "flower",
+      "japanese": {
+        "display": "はな",
+        "reading": "はな",
+        "written_form": "花"
+      },
+      "vietnamese": "hoa",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "はな can also mean nose; 花 denotes a flower.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "flower",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "はな",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000016",
+      "source_row_index": 16,
+      "english": "mountain",
+      "japanese": {
+        "display": "やま",
+        "reading": "やま",
+        "written_form": null
+      },
+      "vietnamese": "núi",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "mountain",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "やま",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000017",
+      "source_row_index": 17,
+      "english": "river",
+      "japanese": {
+        "display": "かわ",
+        "reading": "かわ",
+        "written_form": null
+      },
+      "vietnamese": "sông",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "river",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "かわ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000018",
+      "source_row_index": 18,
+      "english": "sun",
+      "japanese": {
+        "display": "たいよう",
+        "reading": "たいよう",
+        "written_form": null
+      },
+      "vietnamese": "mặt trời",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "sun",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "たいよう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000019",
+      "source_row_index": 19,
+      "english": "rain",
+      "japanese": {
+        "display": "あめ",
+        "reading": "あめ",
+        "written_form": "雨"
+      },
+      "vietnamese": "mưa",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "あめ can also mean candy; 雨 denotes rain.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "rain",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "あめ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000020",
+      "source_row_index": 20,
+      "english": "weather",
+      "japanese": {
+        "display": "てんき",
+        "reading": "てんき",
+        "written_form": null
+      },
+      "vietnamese": "thời tiết",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "weather",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "てんき",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000021",
+      "source_row_index": 21,
+      "english": "house",
+      "japanese": {
+        "display": "いえ",
+        "reading": "いえ",
+        "written_form": null
+      },
+      "vietnamese": "ngôi nhà",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "house",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "いえ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000022",
+      "source_row_index": 22,
+      "english": "kitchen",
+      "japanese": {
+        "display": "だいどころ",
+        "reading": "だいどころ",
+        "written_form": null
+      },
+      "vietnamese": "nhà bếp",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "kitchen",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "だいどころ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000023",
+      "source_row_index": 23,
+      "english": "school",
+      "japanese": {
+        "display": "がっこう",
+        "reading": "がっこう",
+        "written_form": null
+      },
+      "vietnamese": "trường học",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "school",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "がっこう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000024",
+      "source_row_index": 24,
+      "english": "library",
+      "japanese": {
+        "display": "としょかん",
+        "reading": "としょかん",
+        "written_form": null
+      },
+      "vietnamese": "thư viện",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "library",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "としょかん",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000025",
+      "source_row_index": 25,
+      "english": "hospital",
+      "japanese": {
+        "display": "びょういん",
+        "reading": "びょういん",
+        "written_form": null
+      },
+      "vietnamese": "bệnh viện",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "hospital",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "びょういん",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000026",
+      "source_row_index": 26,
+      "english": "airport",
+      "japanese": {
+        "display": "くうこう",
+        "reading": "くうこう",
+        "written_form": null
+      },
+      "vietnamese": "sân bay",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "airport",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "くうこう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000027",
+      "source_row_index": 27,
+      "english": "restaurant",
+      "japanese": {
+        "display": "レストラン",
+        "reading": "レストラン",
+        "written_form": null
+      },
+      "vietnamese": "nhà hàng",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "restaurant",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "レストラン",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000028",
+      "source_row_index": 28,
+      "english": "car",
+      "japanese": {
+        "display": "くるま",
+        "reading": "くるま",
+        "written_form": null
+      },
+      "vietnamese": "ô tô",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "car",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "くるま",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000029",
+      "source_row_index": 29,
+      "english": "bicycle",
+      "japanese": {
+        "display": "じてんしゃ",
+        "reading": "じてんしゃ",
+        "written_form": null
+      },
+      "vietnamese": "xe đạp",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "bicycle",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "じてんしゃ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000030",
+      "source_row_index": 30,
+      "english": "bridge",
+      "japanese": {
+        "display": "はし",
+        "reading": "はし",
+        "written_form": "橋"
+      },
+      "vietnamese": "cây cầu",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "はし can also denote chopsticks; 橋 denotes a bridge.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "bridge",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "はし",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000031",
+      "source_row_index": 31,
+      "english": "book",
+      "japanese": {
+        "display": "ほん",
+        "reading": "ほん",
+        "written_form": null
+      },
+      "vietnamese": "sách",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "book",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ほん",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000032",
+      "source_row_index": 32,
+      "english": "phone",
+      "japanese": {
+        "display": "でんわ",
+        "reading": "でんわ",
+        "written_form": null
+      },
+      "vietnamese": "điện thoại",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "phone",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "でんわ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000033",
+      "source_row_index": 33,
+      "english": "computer",
+      "japanese": {
+        "display": "コンピューター",
+        "reading": "コンピューター",
+        "written_form": null
+      },
+      "vietnamese": "máy tính",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "computer",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "コンピューター",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000034",
+      "source_row_index": 34,
+      "english": "umbrella",
+      "japanese": {
+        "display": "かさ",
+        "reading": "かさ",
+        "written_form": null
+      },
+      "vietnamese": "ô/dù",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "umbrella",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "かさ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000035",
+      "source_row_index": 35,
+      "english": "shirt",
+      "japanese": {
+        "display": "シャツ",
+        "reading": "シャツ",
+        "written_form": null
+      },
+      "vietnamese": "áo sơ mi",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "Vietnamese áo sơ mi is narrower than general English shirt; intended garment type needs review.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "shirt",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "シャツ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000036",
+      "source_row_index": 36,
+      "english": "family",
+      "japanese": {
+        "display": "かぞく",
+        "reading": "かぞく",
+        "written_form": null
+      },
+      "vietnamese": "gia đình",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "family",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "かぞく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000037",
+      "source_row_index": 37,
+      "english": "mother",
+      "japanese": {
+        "display": "はは",
+        "reading": "はは",
+        "written_form": null
+      },
+      "vietnamese": "mẹ",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "はは commonly refers to one's own mother when speaking to others; not a direct respectful address.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "mother",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "はは",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000038",
+      "source_row_index": 38,
+      "english": "friend",
+      "japanese": {
+        "display": "ともだち",
+        "reading": "ともだち",
+        "written_form": null
+      },
+      "vietnamese": "bạn",
+      "target_sense": "one friend (singular)",
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "approved",
+      "decision_provenance": "owner_approved",
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "friend",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ともだち",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000039",
+      "source_row_index": 39,
+      "english": "teacher",
+      "japanese": {
+        "display": "せんせい",
+        "reading": "せんせい",
+        "written_form": null
+      },
+      "vietnamese": "giáo viên",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "teacher",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "せんせい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000040",
+      "source_row_index": 40,
+      "english": "engineer",
+      "japanese": {
+        "display": "エンジニア",
+        "reading": "エンジニア",
+        "written_form": null
+      },
+      "vietnamese": "kỹ sư",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "engineer",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "エンジニア",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000041",
+      "source_row_index": 41,
+      "english": "today",
+      "japanese": {
+        "display": "きょう",
+        "reading": "きょう",
+        "written_form": null
+      },
+      "vietnamese": "hôm nay",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "today",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "きょう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000042",
+      "source_row_index": 42,
+      "english": "tomorrow",
+      "japanese": {
+        "display": "あした",
+        "reading": "あした",
+        "written_form": null
+      },
+      "vietnamese": "ngày mai",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "tomorrow",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "あした",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000043",
+      "source_row_index": 43,
+      "english": "yesterday",
+      "japanese": {
+        "display": "きのう",
+        "reading": "きのう",
+        "written_form": null
+      },
+      "vietnamese": "hôm qua",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "yesterday",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "きのう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000044",
+      "source_row_index": 44,
+      "english": "winter",
+      "japanese": {
+        "display": "ふゆ",
+        "reading": "ふゆ",
+        "written_form": null
+      },
+      "vietnamese": "mùa đông",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "winter",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ふゆ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000045",
+      "source_row_index": 45,
+      "english": "happy",
+      "japanese": {
+        "display": "うれしい",
+        "reading": "うれしい",
+        "written_form": null
+      },
+      "vietnamese": "vui",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "うれしい often means glad or pleased about an event; broader happy senses need review.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "happy",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "うれしい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000046",
+      "source_row_index": 46,
+      "english": "hungry",
+      "japanese": {
+        "display": "おなかがすいた",
+        "reading": "おなかがすいた",
+        "written_form": null
+      },
+      "vietnamese": "đói",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "hungry",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "おなかがすいた",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000047",
+      "source_row_index": 47,
+      "english": "easy",
+      "japanese": {
+        "display": "やさしい",
+        "reading": "やさしい",
+        "written_form": "易しい"
+      },
+      "vietnamese": "dễ",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "やさしい may mean easy or kind; 易しい denotes not difficult.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "easy",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "やさしい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000048",
+      "source_row_index": 48,
+      "english": "difficult",
+      "japanese": {
+        "display": "むずかしい",
+        "reading": "むずかしい",
+        "written_form": null
+      },
+      "vietnamese": "khó",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "difficult",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "むずかしい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000049",
+      "source_row_index": 49,
+      "english": "beautiful",
+      "japanese": {
+        "display": "きれい",
+        "reading": "きれい",
+        "written_form": null
+      },
+      "vietnamese": "đẹp",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "きれい can describe beauty or cleanliness; context determines the meaning.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "beautiful",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "きれい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000050",
+      "source_row_index": 50,
+      "english": "strong",
+      "japanese": {
+        "display": "つよい",
+        "reading": "つよい",
+        "written_form": null
+      },
+      "vietnamese": "mạnh",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "strong",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "つよい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000051",
+      "source_row_index": 51,
+      "english": "go",
+      "japanese": {
+        "display": "いく",
+        "reading": "いく",
+        "written_form": null
+      },
+      "vietnamese": "đi",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "go",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "いく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000052",
+      "source_row_index": 52,
+      "english": "read",
+      "japanese": {
+        "display": "よむ",
+        "reading": "よむ",
+        "written_form": null
+      },
+      "vietnamese": "đọc",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "read",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "よむ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000053",
+      "source_row_index": 53,
+      "english": "write",
+      "japanese": {
+        "display": "かく",
+        "reading": "かく",
+        "written_form": "書く"
+      },
+      "vietnamese": "viết",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "かく can refer to writing or drawing; 書く denotes writing text.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "write",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "かく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000054",
+      "source_row_index": 54,
+      "english": "study",
+      "japanese": {
+        "display": "べんきょうする",
+        "reading": "べんきょうする",
+        "written_form": null
+      },
+      "vietnamese": "học tập",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "study",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "べんきょうする",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000055",
+      "source_row_index": 55,
+      "english": "work",
+      "japanese": {
+        "display": "はたらく",
+        "reading": "はたらく",
+        "written_form": null
+      },
+      "vietnamese": "làm việc",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "work",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "はたらく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000056",
+      "source_row_index": 56,
+      "english": "sleep",
+      "japanese": {
+        "display": "ねる",
+        "reading": "ねる",
+        "written_form": null
+      },
+      "vietnamese": "ngủ",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "sleep",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ねる",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000057",
+      "source_row_index": 57,
+      "english": "eat",
+      "japanese": {
+        "display": "たべる",
+        "reading": "たべる",
+        "written_form": null
+      },
+      "vietnamese": "ăn",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "eat",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "たべる",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000058",
+      "source_row_index": 58,
+      "english": "drink",
+      "japanese": {
+        "display": "のむ",
+        "reading": "のむ",
+        "written_form": null
+      },
+      "vietnamese": "uống",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "drink",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "のむ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000059",
+      "source_row_index": 59,
+      "english": "buy",
+      "japanese": {
+        "display": "かう",
+        "reading": "かう",
+        "written_form": null
+      },
+      "vietnamese": "mua",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "buy",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "かう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000060",
+      "source_row_index": 60,
+      "english": "help",
+      "japanese": {
+        "display": "たすける",
+        "reading": "たすける",
+        "written_form": null
+      },
+      "vietnamese": "giúp đỡ",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "たすける often means aid or rescue someone in difficulty; ordinary assistance may use a different expression.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "help",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "たすける",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000061",
+      "source_row_index": 61,
+      "english": "understand",
+      "japanese": {
+        "display": "わかる",
+        "reading": "わかる",
+        "written_form": null
+      },
+      "vietnamese": "hiểu",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "understand",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "わかる",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000062",
+      "source_row_index": 62,
+      "english": "remember",
+      "japanese": {
+        "display": "おぼえる",
+        "reading": "おぼえる",
+        "written_form": null
+      },
+      "vietnamese": "nhớ",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "remember",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "おぼえる",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000063",
+      "source_row_index": 63,
+      "english": "receive",
+      "japanese": {
+        "display": "うけとる",
+        "reading": "うけとる",
+        "written_form": null
+      },
+      "vietnamese": "nhận",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "receive",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "うけとる",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000064",
+      "source_row_index": 64,
+      "english": "choose",
+      "japanese": {
+        "display": "えらぶ",
+        "reading": "えらぶ",
+        "written_form": null
+      },
+      "vietnamese": "chọn",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "choose",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "えらぶ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000065",
+      "source_row_index": 65,
+      "english": "swim",
+      "japanese": {
+        "display": "およぐ",
+        "reading": "およぐ",
+        "written_form": null
+      },
+      "vietnamese": "bơi",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "swim",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "およぐ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000066",
+      "source_row_index": 66,
+      "english": "software",
+      "japanese": {
+        "display": "ソフトウェア",
+        "reading": "ソフトウェア",
+        "written_form": null
+      },
+      "vietnamese": "phần mềm",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "software",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ソフトウェア",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000067",
+      "source_row_index": 67,
+      "english": "database",
+      "japanese": {
+        "display": "データベース",
+        "reading": "データベース",
+        "written_form": null
+      },
+      "vietnamese": "cơ sở dữ liệu",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "database",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "データベース",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000068",
+      "source_row_index": 68,
+      "english": "password",
+      "japanese": {
+        "display": "パスワード",
+        "reading": "パスワード",
+        "written_form": null
+      },
+      "vietnamese": "mật khẩu",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "password",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "パスワード",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000069",
+      "source_row_index": 69,
+      "english": "music",
+      "japanese": {
+        "display": "おんがく",
+        "reading": "おんがく",
+        "written_form": null
+      },
+      "vietnamese": "âm nhạc",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "music",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "おんがく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000070",
+      "source_row_index": 70,
+      "english": "language",
+      "japanese": {
+        "display": "ことば",
+        "reading": "ことば",
+        "written_form": null
+      },
+      "vietnamese": "ngôn ngữ",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "ことば may mean language, words, or speech; intended scope needs review.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "language",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ことば",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000071",
+      "source_row_index": 71,
+      "english": "problem",
+      "japanese": {
+        "display": "もんだい",
+        "reading": "もんだい",
+        "written_form": null
+      },
+      "vietnamese": "vấn đề",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "problem",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "もんだい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000072",
+      "source_row_index": 72,
+      "english": "business",
+      "japanese": {
+        "display": "ビジネス",
+        "reading": "ビジネス",
+        "written_form": null
+      },
+      "vietnamese": "kinh doanh",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "business",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ビジネス",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000073",
+      "source_row_index": 73,
+      "english": "university",
+      "japanese": {
+        "display": "だいがく",
+        "reading": "だいがく",
+        "written_form": null
+      },
+      "vietnamese": "trường đại học",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "university",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "だいがく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000074",
+      "source_row_index": 74,
+      "english": "project",
+      "japanese": {
+        "display": "プロジェクト",
+        "reading": "プロジェクト",
+        "written_form": null
+      },
+      "vietnamese": "dự án",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "project",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "プロジェクト",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000075",
+      "source_row_index": 75,
+      "english": "experience",
+      "japanese": {
+        "display": "けいけん",
+        "reading": "けいけん",
+        "written_form": null
+      },
+      "vietnamese": "kinh nghiệm",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "experience",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "けいけん",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000076",
+      "source_row_index": 76,
+      "english": "vegetable",
+      "japanese": {
+        "display": "やさい",
+        "reading": "やさい",
+        "written_form": null
+      },
+      "vietnamese": "rau",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "vegetable",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "やさい",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000077",
+      "source_row_index": 77,
+      "english": "important",
+      "japanese": {
+        "display": "たいせつ",
+        "reading": "たいせつ",
+        "written_form": null
+      },
+      "vietnamese": "quan trọng",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "important",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "たいせつ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000078",
+      "source_row_index": 78,
+      "english": "different",
+      "japanese": {
+        "display": "ちがう",
+        "reading": "ちがう",
+        "written_form": null
+      },
+      "vietnamese": "khác",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "ちがう is verbal: AとBはちがう means A and B differ.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "different",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ちがう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000079",
+      "source_row_index": 79,
+      "english": "dangerous",
+      "japanese": {
+        "display": "あぶない",
+        "reading": "あぶない",
+        "written_form": null
+      },
+      "vietnamese": "nguy hiểm",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "dangerous",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "あぶない",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000080",
+      "source_row_index": 80,
+      "english": "impossible",
+      "japanese": {
+        "display": "ふかのう",
+        "reading": "ふかのう",
+        "written_form": null
+      },
+      "vietnamese": "không thể",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "impossible",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ふかのう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000081",
+      "source_row_index": 81,
+      "english": "because",
+      "japanese": {
+        "display": "なぜなら",
+        "reading": "なぜなら",
+        "written_form": null
+      },
+      "vietnamese": "bởi vì",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "なぜなら introduces an explanation, often followed by a reason and から; clause placement matters.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "because",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "なぜなら",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000082",
+      "source_row_index": 82,
+      "english": "always",
+      "japanese": {
+        "display": "いつも",
+        "reading": "いつも",
+        "written_form": null
+      },
+      "vietnamese": "luôn luôn",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "always",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "いつも",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000083",
+      "source_row_index": 83,
+      "english": "sometimes",
+      "japanese": {
+        "display": "ときどき",
+        "reading": "ときどき",
+        "written_form": null
+      },
+      "vietnamese": "thỉnh thoảng",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "sometimes",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ときどき",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000084",
+      "source_row_index": 84,
+      "english": "together",
+      "japanese": {
+        "display": "いっしょに",
+        "reading": "いっしょに",
+        "written_form": null
+      },
+      "vietnamese": "cùng nhau",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "together",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "いっしょに",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000085",
+      "source_row_index": 85,
+      "english": "where",
+      "japanese": {
+        "display": "どこ",
+        "reading": "どこ",
+        "written_form": null
+      },
+      "vietnamese": "ở đâu",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "where",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "どこ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000086",
+      "source_row_index": 86,
+      "english": "why",
+      "japanese": {
+        "display": "なぜ",
+        "reading": "なぜ",
+        "written_form": null
+      },
+      "vietnamese": "tại sao",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "why",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "なぜ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000087",
+      "source_row_index": 87,
+      "english": "hello",
+      "japanese": {
+        "display": "こんにちは",
+        "reading": "こんにちは",
+        "written_form": null
+      },
+      "vietnamese": "xin chào",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "こんにちは is commonly a daytime greeting.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "hello",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "こんにちは",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000088",
+      "source_row_index": 88,
+      "english": "please",
+      "japanese": {
+        "display": "おねがいします",
+        "reading": "おねがいします",
+        "written_form": null
+      },
+      "vietnamese": "làm ơn/xin vui lòng",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "おねがいします is a polite request formula, not a standalone equivalent in every use of please.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "please",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "おねがいします",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000089",
+      "source_row_index": 89,
+      "english": "thanks",
+      "japanese": {
+        "display": "ありがとう",
+        "reading": "ありがとう",
+        "written_form": null
+      },
+      "vietnamese": "cảm ơn",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "thanks",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "ありがとう",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000090",
+      "source_row_index": 90,
+      "english": "sorry",
+      "japanese": {
+        "display": "すみません",
+        "reading": "すみません",
+        "written_form": null
+      },
+      "vietnamese": "xin lỗi",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "すみません may be apology, excuse me, or attention-getting; use an apology context for sorry.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "sorry",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "すみません",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000091",
+      "source_row_index": 91,
+      "english": "apartment",
+      "japanese": {
+        "display": "アパート",
+        "reading": "アパート",
+        "written_form": null
+      },
+      "vietnamese": "căn hộ",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "アパート may denote a narrower housing type than generic apartment; intended housing scope needs review.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "apartment",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "アパート",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000092",
+      "source_row_index": 92,
+      "english": "dictionary",
+      "japanese": {
+        "display": "じしょ",
+        "reading": "じしょ",
+        "written_form": null
+      },
+      "vietnamese": "từ điển",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "dictionary",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "じしょ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000093",
+      "source_row_index": 93,
+      "english": "supermarket",
+      "japanese": {
+        "display": "スーパーマーケット",
+        "reading": "スーパーマーケット",
+        "written_form": null
+      },
+      "vietnamese": "siêu thị",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "supermarket",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "スーパーマーケット",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000094",
+      "source_row_index": 94,
+      "english": "pharmacy",
+      "japanese": {
+        "display": "やっきょく",
+        "reading": "やっきょく",
+        "written_form": null
+      },
+      "vietnamese": "nhà thuốc",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "pharmacy",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "やっきょく",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000095",
+      "source_row_index": 95,
+      "english": "museum",
+      "japanese": {
+        "display": "はくぶつかん",
+        "reading": "はくぶつかん",
+        "written_form": null
+      },
+      "vietnamese": "bảo tàng",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "museum",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "はくぶつかん",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000096",
+      "source_row_index": 96,
+      "english": "waterfall",
+      "japanese": {
+        "display": "たき",
+        "reading": "たき",
+        "written_form": null
+      },
+      "vietnamese": "thác nước",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "waterfall",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "たき",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000097",
+      "source_row_index": 97,
+      "english": "firefighter",
+      "japanese": {
+        "display": "しょうぼうし",
+        "reading": "しょうぼうし",
+        "written_form": null
+      },
+      "vietnamese": "lính cứu hỏa",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "firefighter",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "しょうぼうし",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000098",
+      "source_row_index": 98,
+      "english": "neighbor",
+      "japanese": {
+        "display": "となりのひと",
+        "reading": "となりのひと",
+        "written_form": null
+      },
+      "vietnamese": "hàng xóm",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "となりのひと means the person next door; broader neighborhood scope needs review.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "neighbor",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "となりのひと",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000099",
+      "source_row_index": 99,
+      "english": "daughter",
+      "japanese": {
+        "display": "むすめ",
+        "reading": "むすめ",
+        "written_form": null
+      },
+      "vietnamese": "con gái",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": null,
+      "review_status": "unreviewed",
+      "decision_provenance": null,
+      "annotation_status": null,
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "daughter",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "むすめ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    },
+    {
+      "schema_version": 1,
+      "vocab_id": "vocab-000100",
+      "source_row_index": 100,
+      "english": "grandmother",
+      "japanese": {
+        "display": "そぼ",
+        "reading": "そぼ",
+        "written_form": null
+      },
+      "vietnamese": "bà",
+      "target_sense": null,
+      "part_of_speech": null,
+      "usage_note": "そぼ commonly refers to one's own grandmother when speaking to others; not a direct respectful address.",
+      "review_status": "needs_decision",
+      "decision_provenance": null,
+      "annotation_status": "context_added_pending_review",
+      "image": {
+        "status": "missing",
+        "path": null,
+        "url": null,
+        "source_english": "grandmother",
+        "target_search_sense": null,
+        "effective_search_query": null,
+        "final_search_query": null,
+        "query_provenance": null,
+        "provider": null,
+        "ranking": null,
+        "metadata_ref": null,
+        "semantic_suitability": "unverified"
+      },
+      "audio": {
+        "status": "missing",
+        "reading": "そぼ",
+        "path": null,
+        "url": null,
+        "provider": "google_translate_gtts",
+        "locale": "ja",
+        "voice": {
+          "tld": "com",
+          "slow": false
+        },
+        "format": "mp3",
+        "duration_seconds": null,
+        "size_bytes": null,
+        "cache_identity": null,
+        "metadata_ref": null
+      }
+    }
+  ]
+}
