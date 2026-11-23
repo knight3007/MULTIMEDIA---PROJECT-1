@@ -1,4 +1,4 @@
-# Latest handoff — PIPELINE-V2 candidate
+# Latest handoff — Image pipeline v2 frozen
 
 Updated 2026-11-23T22:00+07:00 by the Claude Code session. Repo `D:/MULTIMEDIA - PROJECT 1`, branch `main`.
 
@@ -16,11 +16,18 @@ Updated 2026-11-23T22:00+07:00 by the Claude Code session. Repo `D:/MULTIMEDIA -
   - Known example-copying and wrong-sense queries are listed in `validation_report.md`.
 - **Verification:** [record](history/2026-11-23_PIPELINE_V2_verification.md).
 
+## Freeze (D-021)
+
+The owner chose "Chốt như hiện tại": image pipeline v2 is **FROZEN as is**.
+- `freeze_manifest.json` status is FROZEN with the known limitations listed; the frozen prompt SHA equals the one validated in iteration 3.
+- `test_image_pipeline_v2.FreezeTests` fails if the policy, runner, imagecollector, image_scorer, query_generator or approved registry changes.
+- The freeze commit is pushed to origin/main.
+
 ## Next action
 
-The owner decides:
+No active task. Possible next steps, each needing owner instruction:
+- B-003.2: run Excel imports through `image_pipeline_v2.process_item`, with a review UI or export.
+- Rights review for a public release subset.
+- Game UX/UI (D-014).
 
-- (a) Freeze v2 as is; invalid or weak queries reach the reviewer as `needs_review` or a failure.
-- (b) Authorise further prompt work: for example removing the copied scenes, tolerating `TYPE` noise such as "RAIN ABSTRACT", or a fallback to the v1 query when classification fails.
-
-Wiring v2 into Excel imports (B-003.2), public release and Game UX/UI each need separate instruction.
+To change pipeline v2, record a new decision and a new `POLICY_VERSION`, then update `freeze_manifest.json`.

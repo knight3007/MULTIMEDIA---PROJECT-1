@@ -167,5 +167,23 @@ class RunnerTests(unittest.TestCase):
             pipeline.process_item(other, self.tmp, approved=approved, generator=None)
 
 
+class FreezeTests(unittest.TestCase):
+    """D-021: pipeline v2 is frozen. Changing a frozen file needs a new owner decision and POLICY_VERSION."""
+    MANIFEST = ROOT / "reports/image_pipeline_experiments/PIPELINE_V2_VALIDATION/freeze_manifest.json"
+    RUNTIME = ["collect data script/visual_query_policy.py", "collect data script/image_pipeline_v2.py",
+               "collect data script/imagecollector.py", "collect data script/image_scorer.py",
+               "collect data script/query_generator.py", "data/vocabulary/approved_images_v1.json"]
+
+    def test_frozen_files_match_freeze_manifest(self):
+        import hashlib
+        manifest = json.loads(self.MANIFEST.read_text(encoding="utf-8"))
+        self.assertEqual(manifest["status"], "FROZEN")
+        self.assertEqual(manifest["policy_version"], policy.POLICY_VERSION)
+        self.assertEqual(hashlib.sha256(policy.TYPED_PROMPT.encode("utf-8")).hexdigest(), manifest["final_prompt_sha256"])
+        for path in self.RUNTIME:
+            with self.subTest(path=path):
+                self.assertEqual(hashlib.sha256((ROOT / path).read_bytes()).hexdigest(), manifest["files"][path])
+
+
 if __name__ == "__main__":
     unittest.main()

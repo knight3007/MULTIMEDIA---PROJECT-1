@@ -127,3 +127,7 @@ Manual review of the iteration-3 queries (agent desk review, not owner-verified)
 - **Weak or wrong sense:** sleep `head nodding sleep icon`; understand `person looking confused icon` (the opposite meaning); dangerous `person holding a knife dangerous icon` (safety concern); important `person holding sign with important icon` (likely printed text).
 - **Good matches with the owner-approved style:** today, tomorrow and yesterday as calendar scenes; read, write, buy, receive, swim, together, thanks and please as person icons; every concrete noun kept as `<word> <class>`.
 - These defects would reach the reviewer as `needs_review` proposals. They are not auto-approved.
+
+## Owner decision (2026-11-23)
+
+The owner chose to **freeze v2 as is** ("Chốt như hiện tại"), decision D-021, accepting the limitations above. Freeze hashes are in `freeze_manifest.json`, and `test_image_pipeline_v2.FreezeTests` guards them.

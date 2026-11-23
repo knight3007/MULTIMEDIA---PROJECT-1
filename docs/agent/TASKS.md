@@ -4,7 +4,7 @@ This is the authoritative current task list. Historical DDG tasks in `tasks/plan
 
 ## PIPELINE-V2 — Optimise the image pipeline from the owner-approved selection
 
-- Priority/status: P0 / NEEDS_REVIEW (candidate; validation missed one criterion; freeze decision pending). Owner: Claude Code session, `main`.
+- Priority/status: P0 / DONE — **FROZEN as is** by owner decision D-021 on 2026-11-23, with known limitations accepted. Owner: Claude Code session, `main`.
 - Inputs: the final selection `reports/image_pipeline_experiments/A004R_FINAL_SELECTION/` (finalize.py; 100/100 PASS; strategies: Qwen default 58, descriptive icon 21, `<word> icon` 10, scene 10, curated 1).
 - Code:
   - New: `collect data script/visual_query_policy.py`, `image_pipeline_v2.py`, `test_image_pipeline_v2.py` (13 tests).
@@ -14,7 +14,8 @@ This is the authoritative current task list. Historical DDG tasks in `tasks/plan
 - Validation (`reports/image_pipeline_experiments/PIPELINE_V2_VALIDATION/`): expected routes were frozen before inference. Iteration 3 results: PHOTO 44/44, NON_PHOTO 34/35, CURATE 1/1, valid 99/100 (rain) → NOT PASSED; the 3-iteration budget is used.
 - Known issues: example copying (beautiful, password and impossible got "family on beach vacation"; always and sometimes share a query; where and why share a query) and weak or wrong senses for sleep, understand, dangerous and important.
 - Tests: collector suite and kaggle_batch suite.
-- Next: owner decides whether to freeze as is (defects go to review) or authorise further prompt work. Wiring v2 into Excel imports (B-003.2) needs its own authorization.
+- Freeze: `reports/image_pipeline_experiments/PIPELINE_V2_VALIDATION/freeze_manifest.json` (status FROZEN), guarded by `FreezeTests`. The frozen prompt SHA equals the one validated in iteration 3.
+- Next: wiring v2 into Excel imports (B-003.2), production promotion and public release each need separate instruction.
 
 ## A-004R-FU — Owner follow-up on A-004R review export
 

@@ -1,6 +1,12 @@
-# Image pipeline v2 (candidate)
+# Image pipeline v2 (frozen)
 
-Status: **CANDIDATE, not frozen** (2026-11-23, decision D-020 PROPOSED). Validation iteration 3 met the routing criteria (PHOTO 44/44, NON_PHOTO 34/35, CURATE 1/1) but missed 100% valid queries (99/100), and the review found example-copying in some queries; see `validation_report.md`. Freezing needs an owner decision.
+Status: **FROZEN as is** on 2026-11-23 by owner decision D-021 ("Chốt như hiện tại"). Any change to a frozen file needs a new owner decision and a new `POLICY_VERSION`. The freeze guard test (`test_frozen_files_match_freeze_manifest`) fails if a frozen file changes.
+
+Known limitations accepted at freeze (see `validation_report.md`):
+- Validation iteration 3 gave 99/100 valid queries: `rain` failed classification.
+- Some queries copy prompt examples: beautiful, password and impossible got "family on beach vacation"; always and sometimes share a query; where and why share a query.
+- Some queries have weak or wrong senses: sleep, understand, dangerous, important.
+- These reach the reviewer as `needs_review` proposals, or fail explicitly (classification error, `SEARCH_FAILED`, `NO_SUITABLE_IMAGE`). Nothing is auto-approved.
 
 ## Evidence it is based on
 
@@ -38,7 +44,7 @@ Failures seen across A-002 to A-004R motivated the remaining rules:
 6. **Rank and propose.** SigLIP `google/siglip2-so400m-patch16-384` scores the usable candidates against the query. The top one becomes a **proposal**, the next 4 are kept as alternatives, and the status is always `needs_review`. With no usable candidate the result is `NO_SUITABLE_IMAGE`.
 7. **Review.** A person confirms or changes the proposal. Nothing becomes approved or public automatically, and rights stay unknown until cleared.
 
-## Code (files recorded in freeze_manifest.json)
+## Code (frozen files, hashes in freeze_manifest.json)
 
 - `collect data script/visual_query_policy.py`: `POLICY_VERSION = "image-pipeline-v2"`, `TYPED_PROMPT`, routing and styling, rejection, `propose`, `lookup_key`.
 - `collect data script/image_pipeline_v2.py`: `process_item` for one item (dependencies injectable) and the `run`/CLI batch.
