@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "purpose": "Owner-selected image overrides for INTERNAL use only. Not read by dataset_builder; unified_dataset_v1.json stays frozen (its hash is pinned by historical experiment manifests). Intended input for a later content-pack/dataset step.",
+  "overrides": [
+    {
+      "vocab_id": "vocab-000081",
+      "english": "because",
+      "japanese": "なぜなら",
+      "vietnamese": "bởi vì",
+      "image_path": "reports/image_pipeline_experiments/A002_CAUSAL_CONCEPT_PILOT/images/V2/01.jpg",
+      "image_sha256": "8dd3e8a22f6474a4a5dd3eb8adca453e61dfd7ca5aa65b2abc0e6036cfe2d7ab",
+      "raw_sha256": "743ce2cce7f5abc4e1fba2cd41806342707a2c980d3c4b367dd06aa207153a5a",
+      "image_url": "https://as1.ftcdn.net/v2/jpg/05/42/23/12/1000_F_542231271_U8RLNS8AM5SmfiZdsGz75NwyFONiEPM1.jpg",
+      "source_page_url": "https://stock.adobe.com/de/images/cause-and-effect-as-action-purpose-and-outcome-imminence-outline-diagram-labeled-educational-simple-scheme-with-situation-or-event-reason-and-consequence-vector-illustration-motive-and-result-factor/542231271",
+      "title": "Cause and effect as action purpose and outcome imminence outline ...",
+      "search_query": "cause effect visual sequence illustration",
+      "provider": "duckduckgo",
+      "query_origin": "owner-authorized A002_CAUSAL_CONCEPT_PILOT variant V3 (not Qwen)",
+      "selection": {
+        "experiment_id": "A002_CAUSAL_CONCEPT_PILOT",
+        "candidate_id": "V3-01",
+        "duplicate_of": "V2-01",
+        "method": "owner_selection",
+        "siglip_model": "google/siglip2-so400m-patch16-384",
+        "siglip_query_score": 3.2734375,
+        "siglip_fixed_text_score": 1.6484375
+      },
+      "owner_decision": {
+        "decision_id": "D-015",
+        "statements": [
+          "tôi chọn v3-01",
+          "Tạm dùng nội bộ",
+          "đưa ảnh đã chọn vào dataset luôn nhé",
+          "File override nội bộ"
+        ]
+      },
+      "usage_restriction": "INTERNAL_ONLY_TEMPORARY",
+      "license_status": "unknown",
+      "public_use": "NOT_ALLOWED_UNTIL_RIGHTS_CLEARED_OR_REPLACED",
+      "media_review_status": "not_in_image_media_reviews_v1 (ledger only accepts baseline/media-staging candidates)",
+      "known_issues": [
+        "Adobe Stock watermark",
+        "printed English labels CAUSE AND EFFECT / CAUSE / EFFECT",
+        "cause->effect order (closer to 'therefore')"
+      ],
+      "recorded_at_utc": "2026-11-22T06:47:02.790609+00:00"
+    }
+  ]
+}

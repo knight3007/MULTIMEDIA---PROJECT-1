@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000065",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"a person swimming in a pool\",\n  \"visual_description\": \"A person performing the action of swimming in a pool, showing the motion and the water environment\",\n  \"negative_constraints\": [\"no action visible\", \"no water depicted\"],\n  \"reason\": \"The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "a person swimming in a pool",
+    "visual_description": "A person performing the action of swimming in a pool, showing the motion and the water environment",
+    "negative_constraints": [
+      "no action visible",
+      "no water depicted"
+    ],
+    "reason": "The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 31.449
+}

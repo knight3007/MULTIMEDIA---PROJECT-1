@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "20261029T035126Z-e1fcdb0e",
+  "purpose": "owner_approved_image_replacement_review",
+  "configuration": {
+    "timeout": 8,
+    "retries": 0,
+    "retry_delay": 0.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "english": "rice",
+      "japanese_reading": "ごはん",
+      "vietnamese": "cơm",
+      "target_sense": "cooked rice",
+      "effective_query": "cooked rice",
+      "query_provenance": "human_approved",
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "status": "staged",
+      "approval_status": "pending_human_review",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "selected_image_url": "https://www.lemonblossoms.com/wp-content/uploads/2019/11/How-To-Cook-White-Rice-S1-1.jpg",
+        "search_seconds": 1.0169367000003149
+      },
+      "selected_result": {
+        "image_url": "https://www.lemonblossoms.com/wp-content/uploads/2019/11/How-To-Cook-White-Rice-S1-1.jpg",
+        "source_page_url": "https://www.lemonblossoms.com/web-stories/https-www-lemonblossoms-com-blog-how-to-cook-rice-2/",
+        "title": "How to Cook White Rice Perfectly - Lemon Blossoms",
+        "width": null,
+        "height": null,
+        "result_source": "lemonblossoms.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.2265625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261029T035126Z-e1fcdb0e/rice.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261029T035126Z-e1fcdb0e/_metadata/rice.json",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure": null,
+      "failure_stage": null,
+      "failure_type": null
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "english": "chicken",
+      "japanese_reading": "とりにく",
+      "vietnamese": "thịt gà",
+      "target_sense": "chicken meat",
+      "effective_query": "chicken meat",
+      "query_provenance": "human_approved",
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "status": "staged",
+      "approval_status": "pending_human_review",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "selected_image_url": "https://thumbs.dreamstime.com/z/fresh-chicken-meat-wooden-board-top-view-83865597.jpg",
+        "search_seconds": 0.6503798999997343
+      },
+      "selected_result": {
+        "image_url": "https://thumbs.dreamstime.com/z/fresh-chicken-meat-wooden-board-top-view-83865597.jpg",
+        "source_page_url": "https://cartoondealer.com/image/167897397/raw-chicken-meat-isolated-white-background-healthy-eating-fresh-chicken-meat-white-background.html",
+        "title": "Raw Chicken Meat Isolated On A White Background. Healthy Eating Fresh ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.5078125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261029T035126Z-e1fcdb0e/chicken.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261029T035126Z-e1fcdb0e/_metadata/chicken.json",
+      "dimensions": [
+        1024,
+        740
+      ],
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure": null,
+      "failure_stage": null,
+      "failure_type": null
+    }
+  ]
+}

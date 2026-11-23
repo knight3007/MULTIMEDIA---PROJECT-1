@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "80",
+  "word": "ふかのう",
+  "reading": "ふかのう",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090712Z-c327a11a/ふかのう.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 8640,
+  "duration_seconds": 1.08,
+  "status": "success"
+}

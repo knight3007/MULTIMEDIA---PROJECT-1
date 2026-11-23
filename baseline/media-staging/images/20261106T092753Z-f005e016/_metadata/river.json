@@ -1,0 +1,21 @@
+{
+  "word": "river",
+  "search_query": "river water",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.hdwallpapers.in/download/river_water_stream_between_green_trees_forest_rocks_sunbeam_scenery_hd_nature-HD.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.CChREnlZEnoE1p58K9OwowHaEK&pid=15.1",
+  "source_page_url": "https://www.hdwallpapers.in/river_water_stream_between_green_trees_forest_rocks_sunbeam_scenery_hd_nature-wallpapers.html",
+  "title": "River Water Stream Between Green Trees Forest Rocks Sunbeam Scenery HD ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.765625
+  }
+}

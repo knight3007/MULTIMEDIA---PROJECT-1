@@ -1,0 +1,39 @@
+ M .gitignore
+ M "collect data script/audiocollector.py"
+ M "collect data script/imagecollector.py"
+ M "collect data script/test_collectors.py"
+ M comand.txt
+ M data/query/generated_qwen.json
+ M data/vocabulary/en.txt
+ M data/vocabulary/vn.txt
+ M progress.md
+ M requirements.txt
+ M "schedule/20-9 list"
+?? CODEX_PROGRESS.md
+?? baseline/
+?? "collect data script/dataset_builder.py"
+?? "collect data script/fixtures/"
+?? "collect data script/media_review.py"
+?? "collect data script/semantic_decisions.py"
+?? "collect data script/stage_image_replacements.py"
+?? "collect data script/stage_japanese_audio.py"
+?? "collect data script/stage_vocabulary_images.py"
+?? "collect data script/test_audio_collector.py"
+?? "collect data script/test_dataset_builder.py"
+?? "collect data script/test_ddgs_diagnostics.py"
+?? "collect data script/test_media_review.py"
+?? "collect data script/test_stage_image_replacements.py"
+?? "collect data script/test_stage_japanese_audio.py"
+?? "collect data script/test_stage_vocabulary_images.py"
+?? "collect data script/test_vocabulary_validation.py"
+?? "collect data script/validate_vocabulary.py"
+?? "collect data script/vocabulary_registry.py"
+?? data/vocabulary/id_registry_v1.json
+?? data/vocabulary/image_media_reviews_v1.json
+?? data/vocabulary/semantic_decisions_v1.json
+?? data/vocabulary/unified_dataset_v1.json
+?? docs/
+?? reports/
+?? requirements-audio.txt
+?? tasks/build_full_media_inventory.py
+?? tasks/full_media_staging_plan.md

@@ -1,0 +1,21 @@
+{
+  "word": "please",
+  "search_query": "please action",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://media.istockphoto.com/id/2177434586/vector/ribbon-label-banner-with-word-please-action-in-blue-color-on-white-background.jpg?s=1024x1024&w=is&k=20&c=Yf5RbXlVithk9vZS-A8R-sjN3HuM0oJyVj6K9IRPW6Y=",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.T-xtx9bKM2HKLYuQt5Eh2wHaCH&pid=15.1",
+  "source_page_url": "https://www.istockphoto.com/vector/ribbon-label-banner-with-word-please-action-in-blue-color-on-white-background-gm2177434586-596842414",
+  "title": "Ribbon Label Banner With Word Please Action In Blue Color On White ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "istockphoto.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 6.2265625
+  }
+}

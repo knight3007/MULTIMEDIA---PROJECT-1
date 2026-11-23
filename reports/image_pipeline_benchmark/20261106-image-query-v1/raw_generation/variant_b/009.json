@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000009",
+  "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"chicken meat\",\n  \"visual_description\": \"A visible slice of chicken meat, showing the texture and color of the flesh.\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense.\"\n}",
+  "parsed": {
+    "visual_type": "concrete_object",
+    "search_query": "chicken meat",
+    "visual_description": "A visible slice of chicken meat, showing the texture and color of the flesh.",
+    "negative_constraints": [],
+    "reason": "The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 27.582
+}

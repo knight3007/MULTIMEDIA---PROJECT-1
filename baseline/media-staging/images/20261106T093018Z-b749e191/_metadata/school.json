@@ -1,0 +1,21 @@
+{
+  "word": "school",
+  "search_query": "school institution",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://c8.alamy.com/comp/2J5WT98/educational-institutions-set-kindergarten-school-state-and-science-university-buildings-front-view-isolated-on-white-background-modern-city-establ-2J5WT98.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.6DavIHv9iSJkKtoDgdSJIwHaFz&pid=15.1",
+  "source_page_url": "https://www.alamy.com/educational-institutions-set-kindergarten-school-state-and-science-university-buildings-front-view-isolated-on-white-background-modern-city-establ-image468321092.html",
+  "title": "Educational institutions set, kindergarten, school, state and science ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "alamy.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.4921875
+  }
+}

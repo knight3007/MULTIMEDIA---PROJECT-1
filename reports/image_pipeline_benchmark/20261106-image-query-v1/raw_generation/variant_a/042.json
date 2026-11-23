@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000042",
+  "raw_decoded_text": "tomorrow timepiece",
+  "raw_attempts": [
+    {
+      "word": "tomorrow",
+      "correction_prompt": null,
+      "raw_decoded_text": "tomorrow timepiece",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "tomorrow timepiece",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 6.112
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000087",
+  "raw_decoded_text": "hello object",
+  "raw_attempts": [
+    {
+      "word": "hello",
+      "correction_prompt": null,
+      "raw_decoded_text": "hello object",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "hello object",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.61
+}

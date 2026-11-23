@@ -1,0 +1,21 @@
+{
+  "word": "restaurant",
+  "search_query": "restaurant place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/736x/0a/cb/f2/0acbf24550beba398b358aed05e5e0fd.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.Vz5MkbvQ2oVmv8-fUPtFSwHaJQ&pid=15.1",
+  "source_page_url": "https://www.pinterest.com/pin/87398049015481754/",
+  "title": "Stunning Bar Design at Club Como Restaurant | Hospitality design ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "www.pinterest.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -2.6953125
+  }
+}

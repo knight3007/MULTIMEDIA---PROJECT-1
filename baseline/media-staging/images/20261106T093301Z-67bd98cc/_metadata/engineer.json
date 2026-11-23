@@ -1,0 +1,21 @@
+{
+  "word": "engineer",
+  "search_query": "engineer profession",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://thumbs.dreamstime.com/b/engineer-working-blueprints-construction-plans-building-engineers-calculate-draft-drawings-civil-engineering-business-278296894.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.DAETNIILMi6dpPlHWNCNtwHaDt&pid=15.1",
+  "source_page_url": "https://www.dreamstime.com/two-engineer-working-office-blueprints-inspection-workplace-architectural-plan-construction-project-business-image285429469",
+  "title": "Two Engineer Working in Office with Blueprints, Inspection in Workplace ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.8984375
+  }
+}

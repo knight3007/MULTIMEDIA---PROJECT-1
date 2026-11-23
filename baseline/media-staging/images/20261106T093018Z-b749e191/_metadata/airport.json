@@ -1,0 +1,21 @@
+{
+  "word": "airport",
+  "search_query": "airport place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.greshamsmith.com/wp-content/uploads/2024/03/why-airports-use-design-visioning-to-create-a-sense-of-place-01-1200x900.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.wD9WDkgH0wv8LzT-uO5QTAHaFj&pid=15.1",
+  "source_page_url": "https://www.greshamsmith.com/news-and-insights/the-final-product-using-design-visioning-to-create-a-sense-of-place-in-airports-part-3/",
+  "title": "The Final Product: Using Design Visioning to Create a Sense of Place in ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "greshamsmith.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.65625
+  }
+}

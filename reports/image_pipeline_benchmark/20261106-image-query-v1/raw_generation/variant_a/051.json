@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000051",
+  "raw_decoded_text": "go verb",
+  "raw_attempts": [
+    {
+      "word": "go",
+      "correction_prompt": null,
+      "raw_decoded_text": "go verb",
+      "ended_with_eos": true
+    },
+    {
+      "word": "go",
+      "correction_prompt": "The previous answer failed validation. Start over without copying it. Preserve the input as the target. For a concrete noun, use the input exactly once followed only by one broad semantic class. Do not enumerate alternatives, synonyms, or related objects. Do not repeat words or place singular and plural forms together; use no icon for a physical subject. Output only lowercase English words.",
+      "raw_decoded_text": "go verb",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": null,
+  "validation_status": "invalid",
+  "error": "Qwen output for 'go' after one retry: Qwen returned meta text instead of concrete search terms: 'go verb'",
+  "ended_with_eos": true,
+  "duration_seconds": 11.73
+}

@@ -1,0 +1,21 @@
+{
+  "word": "today",
+  "search_query": "today timepiece",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://images.squarespace-cdn.com/content/v1/681b9f60a194f13396f0289b/1747774425155-ZQWF5TQ4NNG39L8JU53I/MZfbac1.jpeg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.J8ieCedCb4nEO2X6RP125wHaHa&pid=15.1",
+  "source_page_url": "https://www.timepieceundertension.com/about",
+  "title": "About | Explore Luxury Watches – Buy Today — Timepiece Under Tension",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -6.8046875
+  }
+}

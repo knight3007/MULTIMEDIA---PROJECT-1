@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000004",
+  "raw_decoded_text": "rice grain",
+  "raw_attempts": [
+    {
+      "word": "rice",
+      "correction_prompt": null,
+      "raw_decoded_text": "rice grain",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "rice grain",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 42.773
+}

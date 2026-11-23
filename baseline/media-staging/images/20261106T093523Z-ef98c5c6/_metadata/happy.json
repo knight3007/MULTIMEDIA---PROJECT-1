@@ -1,0 +1,21 @@
+{
+  "word": "happy",
+  "search_query": "happy emotion",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://static.vecteezy.com/system/resources/thumbnails/027/377/088/small_2x/yellow-smiley-emoji-with-isolated-background-generative-ai-photo.jpeg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.M6od7bXW_CpCFixPu35fUAHaFl&pid=15.1",
+  "source_page_url": "https://www.vecteezy.com/free-photos/happy-emotion",
+  "title": "Happy Emotion Stock Photos, Images and Backgrounds for Free Download",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "vecteezy.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.2421875
+  }
+}

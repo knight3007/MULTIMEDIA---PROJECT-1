@@ -1,0 +1,21 @@
+{
+  "word": "problem",
+  "search_query": "problem object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.tech-posts.com/wp-content/uploads/2026/03/thinking-in-objects-problem-solving-infographic-1200x800.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.9XBdEiw6NWi86PiF9jcxvwHaE8&pid=15.1",
+  "source_page_url": "https://www.tech-posts.com/category/object-oriented-analysis-and-design/",
+  "title": "Object-Oriented Analysis and Design Archives - Tech Posts - Latest ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "tech-posts.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.9765625
+  }
+}

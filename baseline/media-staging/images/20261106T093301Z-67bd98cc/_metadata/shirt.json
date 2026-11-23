@@ -1,0 +1,21 @@
+{
+  "word": "shirt",
+  "search_query": "shirt clothing",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/736x/52/33/76/52337679fcde94292f239aa087dc913a.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.ZqPs5J-X-8MVA09VCiWdfQHaGJ&pid=15.1",
+  "source_page_url": "https://co.pinterest.com/pin/5981411999512472/",
+  "title": "Anatomy of the Nasal Cavity Diagram | Organos del sistema respiratorio ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "co.pinterest.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -15.8984375
+  }
+}

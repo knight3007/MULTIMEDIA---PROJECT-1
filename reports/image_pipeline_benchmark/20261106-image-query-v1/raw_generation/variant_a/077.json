@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000077",
+  "raw_decoded_text": "important object",
+  "raw_attempts": [
+    {
+      "word": "important",
+      "correction_prompt": null,
+      "raw_decoded_text": "important object",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "important object",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.579
+}

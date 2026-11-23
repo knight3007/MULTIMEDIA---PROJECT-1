@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000061",
+  "raw_decoded_text": "understand action",
+  "raw_attempts": [
+    {
+      "word": "understand",
+      "correction_prompt": null,
+      "raw_decoded_text": "understand action",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "understand action",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.706
+}

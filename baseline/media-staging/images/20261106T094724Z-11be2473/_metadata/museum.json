@@ -1,0 +1,21 @@
+{
+  "word": "museum",
+  "search_query": "museum place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "http://www.knotstudio.com/wp-content/uploads/2019/07/Museum-Place_1.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.iHVGlvcXjHRz4PGIukR7lQHaEK&pid=15.1",
+  "source_page_url": "https://www.knotstudio.com/projects/museum-place-and-safeway/",
+  "title": "Museum Place and Safeway - Knot",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "knotstudio.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 4.2890625
+  }
+}

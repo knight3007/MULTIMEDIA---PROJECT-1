@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "41",
+  "word": "きょう",
+  "reading": "きょう",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090539Z-4a029141/きょう.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 5952,
+  "duration_seconds": 0.744,
+  "status": "success"
+}

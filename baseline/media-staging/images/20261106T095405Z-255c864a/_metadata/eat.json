@@ -1,0 +1,21 @@
+{
+  "word": "eat",
+  "search_query": "person eating",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://img.freepik.com/free-photo/people-eating-delicious-salmon-bowl_52683-116802.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.8NVORygDlmFWtzrS_LqtjAAAAA&pid=15.1",
+  "source_page_url": "https://www.freepik.com/free-photo/people-eating-delicious-salmon-bowl_44595163.htm",
+  "title": "Free Photo | People eating delicious salmon bowl",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.1328125
+  }
+}

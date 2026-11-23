@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "86",
+  "word": "なぜ",
+  "reading": "なぜ",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/なぜ.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 6336,
+  "duration_seconds": 0.792,
+  "status": "success"
+}

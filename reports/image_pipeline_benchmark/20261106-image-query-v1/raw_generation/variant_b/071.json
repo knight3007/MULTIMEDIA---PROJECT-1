@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000071",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person solving a problem\",\n  \"visual_description\": \"A person looking at a puzzle or a complex task, indicating they are trying to solve a problem.\",\n  \"negative_constraints\": [\"no literal photo of a problem\", \"no action of solving a problem\"],\n  \"reason\": \"The depiction shows a person engaged in an action that represents the concept of solving a problem, which is a common way to visualize the idea in educational contexts.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "person solving a problem",
+    "visual_description": "A person looking at a puzzle or a complex task, indicating they are trying to solve a problem.",
+    "negative_constraints": [
+      "no literal photo of a problem",
+      "no action of solving a problem"
+    ],
+    "reason": "The depiction shows a person engaged in an action that represents the concept of solving a problem, which is a common way to visualize the idea in educational contexts."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 24.661
+}

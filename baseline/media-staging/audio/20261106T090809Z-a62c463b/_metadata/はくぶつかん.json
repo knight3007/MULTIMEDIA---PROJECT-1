@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "95",
+  "word": "はくぶつかん",
+  "reading": "はくぶつかん",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090809Z-a62c463b/はくぶつかん.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 11136,
+  "duration_seconds": 1.392,
+  "status": "success"
+}

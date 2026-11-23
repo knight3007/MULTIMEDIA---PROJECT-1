@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000067",
+  "raw_decoded_text": "database object",
+  "raw_attempts": [
+    {
+      "word": "database",
+      "correction_prompt": null,
+      "raw_decoded_text": "database object",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "database object",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 6.057
+}

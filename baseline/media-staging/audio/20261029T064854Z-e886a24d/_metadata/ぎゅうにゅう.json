@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "7",
+  "word": "ぎゅうにゅう",
+  "reading": "ぎゅうにゅう",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261029T064854Z-e886a24d/ぎゅうにゅう.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 8448,
+  "duration_seconds": 1.056,
+  "status": "success"
+}

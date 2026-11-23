@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000074",
+  "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"project in a workspace\",\n  \"visual_description\": \"A person working on a computer with a document open, showing a project management interface\",\n  \"negative_constraints\": [\"not a literal photo\", \"no specific context\"],\n  \"reason\": \"A provisional depiction of a project in a workspace, with uncertainty about the exact meaning due to unreviewed semantic status.\"\n}",
+  "parsed": {
+    "visual_type": "educational_visual",
+    "search_query": "project in a workspace",
+    "visual_description": "A person working on a computer with a document open, showing a project management interface",
+    "negative_constraints": [
+      "not a literal photo",
+      "no specific context"
+    ],
+    "reason": "A provisional depiction of a project in a workspace, with uncertainty about the exact meaning due to unreviewed semantic status."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 21.723
+}

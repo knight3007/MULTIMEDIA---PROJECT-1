@@ -1,0 +1,21 @@
+{
+  "word": "mountain",
+  "search_query": "mountain place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/originals/22/3c/88/223c8863d91c4b120dfe2bdeafa4bc4c.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.wS2eJwZaFDeO0O_LioGLLwHaLR&pid=15.1",
+  "source_page_url": "https://www.pinterest.com/pin/549017010843303242/",
+  "title": "Pin on Travel | Beautiful landscape photography, Beautiful places ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "www.pinterest.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.8984375
+  }
+}

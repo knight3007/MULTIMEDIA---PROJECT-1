@@ -1,0 +1,18 @@
+{
+  "expected_routes_sha256": "62d436771cc203f60836bdb470d055684461dfcb9153a368aaae4ea39e95689c",
+  "manifest_sha256": "8a176cfe92aeffebc61e0d6499f1ffdad4d7ac653ca354b2d231a6272b4af785",
+  "counts": {
+    "PHOTO": 44,
+    "NON_PHOTO": 35,
+    "CURATE": 1,
+    "ANY": 20
+  },
+  "criteria": {
+    "PHOTO_kept_concrete_min": 0.9,
+    "NON_PHOTO_routed_away_min": 0.85,
+    "CURATE_exact": true,
+    "valid_query_after_one_retry": 1.0
+  },
+  "max_prompt_iterations": 3,
+  "note": "Frozen before any prompt v2 inference. Prompt examples must not use benchmark words."
+}

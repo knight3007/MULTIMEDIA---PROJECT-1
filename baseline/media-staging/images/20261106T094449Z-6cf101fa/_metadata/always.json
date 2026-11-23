@@ -1,0 +1,21 @@
+{
+  "word": "always",
+  "search_query": "always object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://storage.googleapis.com/filo-question-diagrams/6006175_TnksEw_1740727179830546798_image",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.jWvnUoUU7er34eRh-82y5AHaDP&pid=15.1",
+  "source_page_url": "https://askfilo.com/user-question-answers-smart-solutions/assertion-a-a-moving-object-always-does-work-reason-r-the-3236393532363039",
+  "title": "Assertion (A) : A moving object always does work.Reason (R): The object",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "askfilo.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.46875
+  }
+}

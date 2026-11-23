@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000035",
+  "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"shirt\",\n  \"visual_description\": \"A white shirt worn by a person standing in a typical clothing store\",\n  \"negative_constraints\": [\"not a clothing item\", \"not a specific type of shirt\"],\n  \"reason\": \"The image should show a specific type of shirt (e.g., formal or casual) to distinguish it from a general shirt. The semantic review status indicates uncertainty in the target sense.\"\n}",
+  "parsed": {
+    "visual_type": "concrete_object",
+    "search_query": "shirt",
+    "visual_description": "A white shirt worn by a person standing in a typical clothing store",
+    "negative_constraints": [
+      "not a clothing item",
+      "not a specific type of shirt"
+    ],
+    "reason": "The image should show a specific type of shirt (e.g., formal or casual) to distinguish it from a general shirt. The semantic review status indicates uncertainty in the target sense."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 28.8
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "81",
+  "word": "なぜなら",
+  "reading": "なぜなら",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/なぜなら.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 8448,
+  "duration_seconds": 1.056,
+  "status": "success"
+}

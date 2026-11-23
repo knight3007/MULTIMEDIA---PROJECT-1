@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000061",
+  "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"person understanding a concept\",\n  \"visual_description\": \"A teacher demonstrating a concept to a group of students, showing a clear visual of the learning process\",\n  \"negative_constraints\": [\"no literal images of abstract concepts\", \"no images of actions in a literal sense\"],\n  \"reason\": \"The visual depicts a person demonstrating understanding, which aligns with the target sense of 'understand' in an educational context, but the semantic review status indicates uncertainty about the exact meaning.\"\n}",
+  "parsed": {
+    "visual_type": "educational_visual",
+    "search_query": "person understanding a concept",
+    "visual_description": "A teacher demonstrating a concept to a group of students, showing a clear visual of the learning process",
+    "negative_constraints": [
+      "no literal images of abstract concepts",
+      "no images of actions in a literal sense"
+    ],
+    "reason": "The visual depicts a person demonstrating understanding, which aligns with the target sense of 'understand' in an educational context, but the semantic review status indicates uncertainty about the exact meaning."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 28.521
+}

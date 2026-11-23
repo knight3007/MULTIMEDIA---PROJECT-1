@@ -1,0 +1,21 @@
+{
+  "word": "choose",
+  "search_query": "person choosing",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://cdn4.vectorstock.com/i/1000x1000/90/68/people-character-making-their-own-choice-choosing-vector-44649068.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.i2MbDLWKfAxAq1GrFKTVywHaH_&pid=15.1",
+  "source_page_url": "https://www.vectorstock.com/royalty-free-vector/people-character-making-their-own-choice-choosing-vector-44649068",
+  "title": "People character making their own choice choosing Vector Image",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.0390625
+  }
+}

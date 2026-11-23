@@ -1,0 +1,101 @@
+id|query_codes|query_reason|image_relevance|image_visual|image_learning|contamination|image_reason
+1|PPPPPP|Fruit sense is explicit and matches the trilingual term.|P|P|P|none|One red apple clearly fills the frame.
+2|PPPPPP|Fruit category preserves banana meaning.|P|P|P|none|Bunches of bananas on the plant; referent is clear.
+3|PPPPPP|Fruit category disambiguates strawberry appropriately.|P|P|P|none|Single strawberry against a plain background.
+4|FPFFFP|Grain conflicts with owner-approved cooked rice; human override is separate.|P|P|P|none|Selected replacement shows cooked white rice; old production grain image is a different hash.
+5|PPPPPP|Bread as food matches pan/bánh mì broadly.|P|R|R|none|Bread is present among many pastries; competing foods reduce specificity.
+6|PPPPPP|Egg as food matches tamago/trứng.|P|P|P|none|Eggs in shells and cooked forms are clearly depicted.
+7|PPRRRP|Milk beverage is plausible but cow-milk scope needs human decision.|R|F|F|dominant_text|Milk and plant ingredients appear under a milk-based beverages headline; cow-milk specificity is uncertain.
+8|PPPPPP|Beverage avoids substance/chemical sense; drinking water is intended.|P|R|R|minor_brand|Water bottles dominate but labels and brand presentation are distracting.
+9|FPFFFP|Animal contradicts toriniku/thịt gà and approved meat sense.|P|P|P|none|Selected curated replacement depicts chicken meat; original live-chicken production image is separate.
+10|PPPPPP|Breakfast meal preserves morning-meal meaning.|P|R|R|none|A table of many breakfast dishes; target is plausible but composition is busy.
+11|PPPPPP|Animal category names cat unambiguously.|P|P|P|none|Single cat clearly visible.
+12|PPPPPP|Animal category names dog unambiguously.|P|P|P|none|Dog portrait has a clear animal referent.
+13|PPPPPP|Animal category matches elephant.|P|P|P|none|Elephant visible almost full body.
+14|PPPPPP|Plant category preserves tree meaning.|P|P|P|none|A sapling being planted; recognizable tree though not a mature one.
+15|PPRRRP|Flower is a valid sense of hana but kana ambiguity remains for human review.|R|P|R|none|Colorful bromeliad plants; distinguishing flower from ornamental bracts needs review.
+16|PPPPPP|Mountain as place keeps the geographic referent.|P|P|P|none|Mountain peaks dominate above a village.
+17|PPPPPP|River water keeps river referent, though wording is slightly broad.|P|P|P|none|Flowing river in a forest is clear.
+18|PRRRPR|Illumination is associated with the sun but can retrieve light/spectrum instead of the sun.|F|F|F|dominant_text|A sunlight spectrum chart rather than the visible sun.
+19|FRFRFF|Illumination misclassifies rain; rain/weather context is lost, with kana sense pending.|F|R|F|minor_signature|Nighttime resort buildings; no clear rain event.
+20|PPRRPR|Weather phenomenon is valid but needs a particular teaching scene.|P|P|P|none|Storm clouds and a rainbow provide an understandable weather example.
+21|PPPPPP|House building preserves the intended dwelling.|R|P|R|none|An unfinished building frame; may teach construction more than an inhabited house.
+22|PPPPPP|Kitchen place preserves room meaning.|P|P|P|none|Kitchen counters, stove and cabinets clearly shown.
+23|PPPPPP|School institution is semantically appropriate.|R|F|F|watermark_and_text|A labeled collage of educational institutions with an Alamy preview footer; no single school focus.
+24|PPPPPP|Library place is an appropriate intended location.|R|P|R|none|Bookshelves and seating; library vs bookstore/lounge context is not decisive.
+25|PPPPPP|Hospital institution preserves hospital meaning.|P|F|F|watermark|Hospital-like building with medical cross; repeated preview marks seen at full resolution.
+26|PPPPPP|Airport place retains travel facility meaning.|P|P|P|none|Airport terminal exterior with drop-off road; recognizable location.
+27|PPPPPP|Restaurant place retains dining venue meaning.|P|P|P|none|Restaurant tables and place settings clearly shown.
+28|PPPPPP|Vehicle disambiguates car correctly.|P|P|P|none|One car is the dominant object.
+29|PPPPPP|Vehicle disambiguates bicycle correctly.|P|P|P|none|Bicycle beside a bench, clearly identifiable.
+30|PPRRRP|Bridge structure matches EN/VN but kana hashi needs sense confirmation.|P|F|F|dominant_text|Two structural bridge diagrams; labels dominate a small vocabulary image.
+31|PRRRPR|Book is retained but object does not exclude programming/object titles.|P|R|R|minor_title|Physical book visible, but large OBJECT cover text encourages the wrong association.
+32|PPPPPP|Phone device retains telephone meaning.|R|R|R|none|A mixed collage of phone, laptop, console, tablet and watch; phone is not isolated.
+33|PPPPPP|Computer device is a clear query for the intended term.|P|F|F|dominant_text|Computer input/output classification chart with many labels and components.
+34|PPPPPP|Umbrella remains a specific physical noun despite generic object suffix.|P|F|F|watermark|Umbrella is clear, but repeated stock preview marks cover the image.
+35|PPRRRP|Shirt clothing is plausible but Vietnamese specifies button-up shirt; scope awaits review.|F|F|F|dominant_text|Anatomical nasal-cavity diagram, no shirt; selected metadata title also says nasal anatomy.
+36|RRRRPR|Family as institution is abstract/social rather than a concrete family scene.|P|F|F|dominant_text|Family cartoon embedded in a dense classroom slide.
+37|PPRRRP|Mother person is plausible but own-mother register in haha needs context.|R|P|R|none|Woman embracing a child suggests motherhood; relationship cannot be established visually alone.
+38|PPRRPR|Friend person matches approved singular friend but lacks a usable specific scene.|U|U|U|MISSING_EVIDENCE|No selected image: approved target lacks approved image_search_intent.
+39|PPPPPP|Teacher person matches the profession.|P|P|P|none|Adult standing in a classroom with children; teaching context is visible.
+40|PPRRPR|Engineer profession is valid but engineering discipline is unspecified.|R|F|F|watermark|Worker with plans and hardhat is plausible; repeated Dreamstime marks and occupation ambiguity remain.
+41|FRFFPF|Today is a time relation, not a timepiece object.|F|P|F|none|Luxury wristwatch, with no indication of today.
+42|FRFFPF|Tomorrow is a future day, not a timepiece category.|F|F|F|dominant_text|Watch-show/video graphic about timepieces; does not depict tomorrow.
+43|FRFFPF|Yesterday is past time, not a place.|F|F|F|dominant_text|Television-drama poster titled Yesterday; wrong referent.
+44|PPPPPP|Winter season preserves seasonal meaning.|P|P|P|none|Snow-covered landscape is a recognizable winter example.
+45|PPRRRP|Happy emotion is broadly compatible; ureshii/glad nuance needs context.|P|P|P|none|Smiling happy face communicates positive emotion.
+46|RRRRPR|Hungry is a bodily state; appetite is related but not identical to hunger.|R|F|F|dominant_text|Hunger-versus-appetite infographic; meaning relies on reading English paragraphs.
+47|PRRRRF|Easy object does not specify what task is easy or contrast difficulty; yasashii sense pending.|F|F|F|dominant_text|Easy drawing tutorial about objects rather than an unambiguous easy-task scene.
+48|PRRRPF|Difficult object is underspecified; need a difficult task or comparison.|F|F|F|dominant_text|Drawing tutorial thumbnail for difficult objects, mostly title text.
+49|PRRRRF|Beautiful object is arbitrary and kirei may mean clean; no chosen visual context.|R|P|R|none|Decorative reflective object may be beautiful subjectively; no contrast or clear teaching cue.
+50|PRRRPF|Strong object lacks person/material context or a visible strength comparison.|R|F|F|dominant_text|Materials-strength infographic; could teach strength with instruction, but too text-dependent for this flashcard.
+51|PPRRPR|Person going preserves action but lacks destination or visible movement cue.|F|P|F|none|Static portrait; no visible going/walking action.
+52|PPPPPP|Person reading specifies an observable action matching yomu.|P|P|P|none|Person holds an open book in a reading pose.
+53|PRRRRR|Write action preserves verb but needs actual writing scene and kana/kaku sense review.|F|F|F|dominant_text|How-to-write-an-action-plan infographic rather than a person writing.
+54|FRFRPF|Study object converts benkyou-suru action into an unspecified object.|F|F|F|watermark_and_text|Diwali greeting/rangoli with text, not studying.
+55|FRFRPF|Work object loses hataraku action and invites product-name matches.|F|F|F|dominant_text|Advertisement for Work Objects with gift boxes, not a person working.
+56|FRFRPF|Sleep object loses neru action and invites related accessories.|F|F|F|watermark|Stock collage of bedtime accessories; no one sleeping.
+57|PPPPPP|Person eating specifies observable eating action.|P|P|P|none|Person eating a meal, food and utensil visible.
+58|FRFFPF|Drink beverage selects a noun while nomu/uống are the drinking action.|F|P|F|none|Glasses of beverages; no drinking action.
+59|PRRRPR|Buy action retains verb but does not specify visible transaction and invites Action brand.|F|R|F|minor_brand|Action retail storefront; brand match is not a depiction of buying.
+60|PPRRRP|Person helping is plausible; tasukeru aid/rescue scope needs human context.|P|P|P|none|One person pulls another up a rock, visible assistance.
+61|PRRRPR|Understand action retains concept but needs a scenario showing comprehension.|F|F|F|dominant_text|English grammar lecture thumbnail mentioning understand/action verbs.
+62|FRFRPF|Remember object turns memory action into an object phrase; need a recall scenario.|R|F|F|dominant_text|Remember the Objects memory-game title; related task but meaning relies on text.
+63|PRRRPR|Receive action retains verb but needs a recipient/transfer scene.|R|F|F|dominant_text|Give-versus-receive action flowchart, no simple transfer scene.
+64|PPPPPP|Person choosing depicts the intended choice action.|P|F|F|watermark|Choice illustrations are relevant but multiple panels and VectorStock footer dominate.
+65|PPPPPP|Person swimming is a direct observable action query.|F|P|F|none|Static headshot; no swimming, pool or water action.
+66|FRFFPF|Software is not a physical device; classifier misleads toward electronics.|R|F|F|watermark|Electronics/technology collage with repeated preview marks, software not isolated.
+67|PRRRPR|Database object can drift to programming subtypes; intended example unspecified.|P|F|F|dominant_text|Object-oriented database diagram is related but densely labeled and too specialized.
+68|PRRRPR|Password object invites DOM/API object meaning rather than a familiar password example.|R|F|F|dominant_text|HTML DOM password-object article graphic; computing subtopic rather than simple password concept.
+69|RRRRPR|Music is not a single physical object; instruments are associated examples, not music itself.|P|F|F|watermark|Musical instruments/equipment collage is related but heavily marked and crowded.
+70|RRRRRR|Language object is abstract and kotoba scope includes words/speech; context needed.|R|F|F|dominant_text|Language-as-object/organism teaching slide; not a simple language depiction.
+71|RRRRPR|Problem object can drift into object-oriented programming; no everyday problem context.|F|F|F|dominant_text|Object-oriented problem-solving programming chart; wrong lesson context.
+72|RRRRPR|Business institution may select a school/institution rather than kinh-doanh activity.|F|F|F|watermark_and_text|College of Business building with stock footer; not a business transaction/activity.
+73|PPPPPP|University institution is appropriate to daigaku.|P|P|P|none|Large campus/buildings provide a plausible university scene.
+74|RRRRPR|Project object is vague and can select software-specific objects; context unspecified.|R|F|F|dominant_text|Object-management workbench software screenshot; only a narrow project-tool association.
+75|FRFRPF|Experience object converts experiential knowledge to an object phrase; user-experience drift.|F|F|F|dominant_text|Object-oriented user-experience technology poster, not life/work experience.
+76|PPPPPP|Vegetable plant preserves edible-plant meaning.|P|P|P|none|Vegetable garden with leafy produce visible.
+77|PRRRPF|Important object supplies no cue why something is important; adjective remains underspecified.|F|R|F|minor_labels|Grid of stone fragments; importance cannot be inferred.
+78|PRRRRF|Different object has no explicit comparison relation; chigau is relational.|R|F|F|watermark|Collage of unrelated objects; potential difference lesson but no clear comparison and stock footer.
+79|PRRRPR|Dangerous object is plausible but needs chosen hazard/context.|P|F|F|dominant_text|Labeled sharp tools/poison/weapons communicate danger, but small dense teaching chart.
+80|PRRRPR|Impossible object may be an optical-illusion example; metaphor needs lesson context.|R|P|R|none|Impossible-triangle illusion is a possible metaphor, not literal general impossibility.
+81|PRRRRR|Because cause is conceptually related but needs causal example and Japanese clause context.|R|F|F|dominant_text|Because-sentence grammar slide; related teaching material but text-heavy.
+82|FRFFPF|Always is frequency, not an object; missing repeated-time representation.|F|F|F|dominant_text|Mechanics exam question; no always/frequency depiction.
+83|PRRRPR|Sometimes event retains intermittent sense but lacks time/frequency contrast.|R|F|F|dominant_text|Person with sometime/sometimes word bubbles, no visible intermittent-event cue.
+84|FRFRPF|Together is a relation/adverb, not an object category; needs people/things acting together.|R|F|F|dominant_text|Matching-pairs worksheet; association rather than clear togetherness.
+85|PRRRPR|Where place preserves location relation but needs a locating/question scenario.|F|F|F|dominant_text|A Place Where I Belong film poster; title lure, not where concept.
+86|PRRRPR|Why icon is a possible symbol but does not explain cause/question context.|R|R|R|dominant_text|WHY word badge; readable but relies entirely on English text.
+87|FRFRRF|Hello is a greeting, not an object; daytime Japanese greeting context also pending.|F|F|F|dominant_text|Hello Objects game/media screen; title match, not greeting.
+88|RRRRRR|Please action is underspecified; onegaishimasu requires a polite-request situation.|F|F|F|watermark_and_text|PLEASE ACTION banner with iStock overlay; no request scene.
+89|PRRRPR|Thanks expression preserves gratitude but needs a recognizable thanking scene.|R|F|F|dominant_text|List of English gratitude phrases; no clear interaction without reading text.
+90|RRRRRR|Sorry emotion can mean sadness rather than apology; sumimasen scope needs context.|R|R|R|dominant_text|Crying face holding SORRY sign; apology vs sadness remains ambiguous.
+91|PPRRRP|Apartment place is plausible; Japanese housing-type scope is pending.|P|F|F|watermark|Apartment building is relevant but repeated Vecteezy marks cover it.
+92|PRRRPR|Dictionary object preserves generic term but fails to exclude programming dictionary.|F|F|F|dominant_text|Programming key/value dictionary diagram, not a vocabulary dictionary.
+93|PPPPPP|Supermarket place preserves retail-store meaning.|P|P|P|minor_packaging|Store aisles and stocked shelves clearly depict supermarket; normal packaging is incidental.
+94|PPPPPP|Pharmacy institution correctly identifies the intended venue.|P|R|R|minor_signage|Pharmacist/customer scene is plausible, but prominent PHARMACY signage carries part of the meaning.
+95|PPPPPP|Museum place is semantically appropriate.|F|R|F|minor_brand|Museum Place facade/sign; the label alone does not establish a museum or exhibition scene.
+96|PRRRPR|Waterfall is retained but object invites a decorative model rather than natural place.|R|R|R|minor_signature|Decorative miniature waterfall/fountain; correct water cascade association but natural-scene suitability uncertain.
+97|PPPPPP|Firefighter person identifies the profession clearly.|P|F|F|watermark|Firefighter in fire scene is relevant, with visible Adobe Stock preview mark.
+98|PPRRRP|Neighbor person is plausible; next-door vs broader neighbor scope pending.|P|F|F|watermark|People talking across a fence suggest neighbors; preview marks visible at full resolution.
+99|PPRRPR|Daughter person cannot specify relational identity without parent context.|R|P|R|none|Woman and girl suggest mother/daughter, but relationship is not established by appearance alone.
+100|PPRRRP|Grandmother person is plausible; sobo own-family register needs context.|R|P|R|none|Older woman with child suggests grandmother; relation still needs human/context confirmation.

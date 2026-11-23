@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000074",
+  "raw_decoded_text": "project object",
+  "raw_attempts": [
+    {
+      "word": "project",
+      "correction_prompt": null,
+      "raw_decoded_text": "project object",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "project object",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.608
+}

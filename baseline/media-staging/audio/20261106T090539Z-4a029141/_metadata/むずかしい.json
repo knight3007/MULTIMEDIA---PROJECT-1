@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "48",
+  "word": "むずかしい",
+  "reading": "むずかしい",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090539Z-4a029141/むずかしい.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 10176,
+  "duration_seconds": 1.272,
+  "status": "success"
+}

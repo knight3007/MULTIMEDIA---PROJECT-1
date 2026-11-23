@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "51",
+  "word": "いく",
+  "reading": "いく",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/いく.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 6144,
+  "duration_seconds": 0.768,
+  "status": "success"
+}

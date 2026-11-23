@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000082",
+  "raw_decoded_text": "always object",
+  "raw_attempts": [
+    {
+      "word": "always",
+      "correction_prompt": null,
+      "raw_decoded_text": "always object",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "always object",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.625
+}

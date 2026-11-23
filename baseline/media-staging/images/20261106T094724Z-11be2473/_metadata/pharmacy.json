@@ -1,0 +1,21 @@
+{
+  "word": "pharmacy",
+  "search_query": "pharmacy institution",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://nu.edu.om/pharmacy/assets/uploads/sites/4/2022/02/img-15-1920x1080.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.X_gVU1hGJuGyANcGLIpIMQHaEK&pid=15.1",
+  "source_page_url": "https://kaufentv.de/pharmacy-institute-of-pharmacy/",
+  "title": "Pharmacy _ Institute of Pharmacy – PCHVMF",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "kaufentv.de",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.6171875
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "word": "supermarket",
+  "search_query": "supermarket place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.macopkg.com/wp-content/uploads/2023/02/supermarket-aisle.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.dsK9UHglMpndnJU6rNU3XQHaFj&pid=15.1",
+  "source_page_url": "https://cscloset.de/food-prices-in-belgian-supermarkets-up-20-in-a-year/",
+  "title": "Food Prices In Belgian Supermarkets Up 20% In A Year – ZWEX",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -2.921875
+  }
+}

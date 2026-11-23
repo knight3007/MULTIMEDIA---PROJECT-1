@@ -1,0 +1,153 @@
+{
+  "task_id": "A-003.3",
+  "status": "SEVEN_ITEM_OWNER_REVIEW_CONSOLIDATED",
+  "source_export": {
+    "original_path": "D:/Download/A003-selective-repair-review.json",
+    "copied_path": "reports/image_pipeline_experiments/A003_OWNER_DECISIONS/owner_review_export.json",
+    "sha256": "5fc03b5cc2ecc3cc5437d8915d61c0b763a85593301bfa5dc2c8fcca97265b87",
+    "reviewer": "HD",
+    "exported_at": "2026-11-23T03:48:35.091Z",
+    "kind": "HUMAN_REVIEW_DRAFT_NOT_AUTO_APPROVAL"
+  },
+  "consolidated_at_utc": "2026-11-23T03:55:16.543243+00:00",
+  "reviewed_item_count": 7,
+  "approved_image_count": 6,
+  "no_suitable_image_count": 1,
+  "unresolved_item_count": 0,
+  "approved_image_selections": [
+    {
+      "vocab_id": "vocab-000046",
+      "english": "hungry",
+      "japanese": "おなかがすいた",
+      "vietnamese": "đói",
+      "review_decision": "ACCEPT_PROPOSED",
+      "review_notes": "",
+      "candidate_id": "vocab-000046-ICON-01",
+      "image_path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000046/ICON/01.jpg",
+      "image_sha256": "14c6d40afc7ee656113ff3908bed29887ed4c4f3f3b5ae20c5ad92a0b56bfb0f",
+      "raw_sha256": "6d3e1c3caf6d60f24e2a38d733419baba7034826aa09c7c35e8603dc2871fa6a",
+      "source_url": "https://www.vecteezy.com/vector-art/27268442-color-icon-for-hungry",
+      "source_experiment": "A003_CONDITIONAL_SEARCH",
+      "quality_decision": "OWNER_ACCEPTED",
+      "public_eligibility": "UNKNOWN_RIGHTS_NOT_CLEARED",
+      "production_status": "NOT_PROMOTED"
+    },
+    {
+      "vocab_id": "vocab-000063",
+      "english": "receive",
+      "japanese": "うけとる",
+      "vietnamese": "nhận",
+      "review_decision": "ACCEPT_PROPOSED",
+      "review_notes": "",
+      "candidate_id": "vocab-000063-ICON-07",
+      "image_path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000063/ICON/07.jpg",
+      "image_sha256": "930991ac144b3387ae8143a2ef7eee62166b95f1f594435d0d208956973d04d7",
+      "raw_sha256": "08c58b02e8fc74a3f3fc65409d0b9a7cef4f419c1dfd109c356288b366efe63e",
+      "source_url": "https://www.creativefabrica.com/product/receive-package-line-filled-icon/",
+      "source_experiment": "A003_CONDITIONAL_SEARCH",
+      "quality_decision": "OWNER_ACCEPTED",
+      "public_eligibility": "UNKNOWN_RIGHTS_NOT_CLEARED",
+      "production_status": "NOT_PROMOTED"
+    },
+    {
+      "vocab_id": "vocab-000059",
+      "english": "buy",
+      "japanese": "かう",
+      "vietnamese": "mua",
+      "review_decision": "ACCEPT_PROPOSED",
+      "review_notes": "",
+      "candidate_id": "vocab-000059-ICON-01",
+      "image_path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000059/ICON/01.jpg",
+      "image_sha256": "56ac488b6083920c4ed872e42bb584d6a033aadf04124c22ae008c06c22a061e",
+      "raw_sha256": "21156456e193b75e26d671613555914d27ef381dd741ec2b47d301afb883fbbb",
+      "source_url": "https://www.freepik.com/icon/purchase_6012718",
+      "source_experiment": "A003_CONDITIONAL_SEARCH",
+      "quality_decision": "OWNER_ACCEPTED",
+      "public_eligibility": "UNKNOWN_RIGHTS_NOT_CLEARED",
+      "production_status": "NOT_PROMOTED"
+    },
+    {
+      "vocab_id": "vocab-000057",
+      "english": "eat",
+      "japanese": "たべる",
+      "vietnamese": "ăn",
+      "review_decision": "ACCEPT_PROPOSED",
+      "review_notes": "",
+      "candidate_id": "vocab-000057-NORMAL-06",
+      "image_path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000057/NORMAL/06.jpg",
+      "image_sha256": "d4c2831ab8143b81dabd79d66aeb0c4bb070957fd526c2ddc139ac91d0dc9918",
+      "raw_sha256": "b202e1353bb40f03064cf1b1b902f89538865b6aa0ae332f50142acf6c3c0f24",
+      "source_url": "https://wellri.com/boost-digestion-well-being-your-guide-to-mindful-eating",
+      "source_experiment": "A003_CONDITIONAL_SEARCH",
+      "quality_decision": "OWNER_ACCEPTED",
+      "public_eligibility": "UNKNOWN_RIGHTS_NOT_CLEARED",
+      "production_status": "NOT_PROMOTED"
+    },
+    {
+      "vocab_id": "vocab-000031",
+      "english": "book",
+      "japanese": "ほん",
+      "vietnamese": "sách",
+      "review_decision": "ACCEPT_PROPOSED",
+      "review_notes": "",
+      "candidate_id": "vocab-000031-ICON-03",
+      "image_path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000031/ICON/03.jpg",
+      "image_sha256": "f467af64ecf5465c649e330fe363c3f122957da9a75318667c83f55204c4c71d",
+      "raw_sha256": "0fbce94cf9180f02f03f0228c6afb3b7f31f00ea999f32f58281908ee38d69d0",
+      "source_url": "https://www.vecteezy.com/vector-art/263066-book-icon",
+      "source_experiment": "A003_CONDITIONAL_SEARCH",
+      "quality_decision": "OWNER_ACCEPTED",
+      "public_eligibility": "UNKNOWN_RIGHTS_NOT_CLEARED",
+      "production_status": "NOT_PROMOTED"
+    },
+    {
+      "vocab_id": "vocab-000021",
+      "english": "house",
+      "japanese": "いえ",
+      "vietnamese": "ngôi nhà",
+      "review_decision": "ACCEPT_PROPOSED",
+      "review_notes": "",
+      "candidate_id": "vocab-000021-NORMAL-05",
+      "image_path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000021/NORMAL/05.jpg",
+      "image_sha256": "e660532e0327ea30436177ac97bfd0cdf2e58825df3cc2a8a43915db4a33bc4e",
+      "raw_sha256": "90df74618c185db4e51b9721ebe0cbe0919c14e2d3b1c80ffa7455cb78580fc7",
+      "source_url": "https://www.realestate.com.au/advice/building/",
+      "source_experiment": "A003_CONDITIONAL_SEARCH",
+      "quality_decision": "OWNER_ACCEPTED",
+      "public_eligibility": "UNKNOWN_RIGHTS_NOT_CLEARED",
+      "production_status": "NOT_PROMOTED"
+    }
+  ],
+  "no_suitable_image_outcomes": [
+    {
+      "vocab_id": "vocab-000083",
+      "english": "sometimes",
+      "japanese": "ときどき",
+      "vietnamese": "thỉnh thoảng",
+      "review_decision": "NONE_SUITABLE",
+      "review_notes": "",
+      "outcome": "NO_SUITABLE_IMAGE",
+      "production_status": "NOT_APPLIED"
+    }
+  ],
+  "unresolved_items": [],
+  "candidate_disposition_file": "reports/image_pipeline_experiments/A003_OWNER_DECISIONS/candidate_disposition.csv",
+  "candidate_disposition_counts": {
+    "NOT_INDIVIDUALLY_REVIEWED": 85,
+    "OWNER_REJECTED_EXPLICIT": 4,
+    "UNAVAILABLE_DOWNLOAD_FAILED": 8,
+    "OWNER_ACCEPTED": 6
+  },
+  "prior_evidence": {
+    "ai_preliminary": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/evaluation_report.md",
+    "owner_chat_feedback": "reports/image_pipeline_experiments/A003_RANKING_DIAGNOSIS/owner_feedback.json",
+    "repair_proposals": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/proposed_image_selections.csv"
+  },
+  "because_restriction_unchanged": {
+    "vocab_id": "vocab-000081",
+    "candidate_id": "V3-01",
+    "usage_restriction": "INTERNAL_ONLY_TEMPORARY",
+    "public_use": "NOT_ALLOWED_UNTIL_RIGHTS_CLEARED_OR_REPLACED"
+  },
+  "scope_limit": "Quality decisions for seven A-003.2 items only; no production promotion or public rights clearance"
+}

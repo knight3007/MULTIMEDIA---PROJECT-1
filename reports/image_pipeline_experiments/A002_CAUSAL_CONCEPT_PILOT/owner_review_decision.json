@@ -1,0 +1,35 @@
+{
+  "experiment_id": "A002_CAUSAL_CONCEPT_PILOT",
+  "vocab_id": "vocab-000081",
+  "kind": "OWNER_DECISION_FROM_CHAT",
+  "recorded_at_utc": "2026-11-22T06:21:50.586946+00:00",
+  "reviewer": "project owner (chat message)",
+  "owner_statement": "tôi chọn v3-01",
+  "choice": "V3_BEST",
+  "candidate_id": "V3-01",
+  "duplicate_of": "V2-01",
+  "query": "cause effect visual sequence illustration",
+  "image_path": "reports/image_pipeline_experiments/A002_CAUSAL_CONCEPT_PILOT/images/V2/01.jpg",
+  "image_sha256": "8dd3e8a22f6474a4a5dd3eb8adca453e61dfd7ca5aa65b2abc0e6036cfe2d7ab",
+  "raw_sha256": "743ce2cce7f5abc4e1fba2cd41806342707a2c980d3c4b367dd06aa207153a5a",
+  "image_url": "https://as1.ftcdn.net/v2/jpg/05/42/23/12/1000_F_542231271_U8RLNS8AM5SmfiZdsGz75NwyFONiEPM1.jpg",
+  "source_url": "https://stock.adobe.com/de/images/cause-and-effect-as-action-purpose-and-outcome-imminence-outline-diagram-labeled-educational-simple-scheme-with-situation-or-event-reason-and-consequence-vector-illustration-motive-and-result-factor/542231271",
+  "title": "Cause and effect as action purpose and outcome imminence outline ...",
+  "siglip_query_score": 3.2734375,
+  "siglip_fixed_score": 1.6484375,
+  "provenance_note": "Gallery JSON export was not produced: the agent's earlier export test had disabled downloads in the in-app browser tab the owner used. Decision recorded from the owner's chat message instead.",
+  "open_issues": [
+    "Printed English labels (CAUSE AND EFFECT, CAUSE, EFFECT) remain in the image.",
+    "Vertical Adobe Stock watermark; rights not cleared (D-003/META-001) and not eligible for public use as is.",
+    "Image encodes cause->effect order (closer to 'therefore'); owner's reasons not stated."
+  ],
+  "scope": "Owner preference for this experiment only. Not a production promotion; no change to data/, registry, production image or query strategy.",
+  "usage_decision": {
+    "owner_statement": "Tạm dùng nội bộ",
+    "decision_id": "D-015",
+    "status": "TEMPORARY_INTERNAL_ONLY",
+    "public_use": "NOT_ALLOWED_UNTIL_RIGHTS_CLEARED_OR_REPLACED",
+    "production_promotion": "NOT_PERFORMED",
+    "recorded_at_utc": "2026-11-22T06:23:56.608809+00:00"
+  }
+}

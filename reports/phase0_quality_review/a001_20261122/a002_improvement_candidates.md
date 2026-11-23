@@ -1,0 +1,15 @@
+# A-002 improvement candidates — proposals only
+
+These are diagnostic targets from the saved [A-001 matrix](evaluation_matrix.json) and [attribution report](05_error_attribution.md). Categories overlap; counts are not an error-rate partition. No new search, inference or pipeline edit was performed.
+
+| Stage | Affected IDs / verified symptom | Cause status and missing evidence | Candidate direction and later validation |
+| --- | --- | --- | --- |
+| Qwen semantic query | 004 cooked rice→`rice grain`; 009 chicken meat→animal | Target mismatch **confirmed** against owner decisions; raw accepted output/exact revision absent | Freeze target senses and compare original/revised queries on identical inputs after authorization; do not credit later image overrides to Qwen |
+| Visual intent generation | 041/042 time words→timepieces; 058 drink action→beverage; 019,043,047–050,054–056,062,066,075,077–078,082,084,087 also flagged | 20 `QWEN_QUERY_DESIGN` **suspected** cases; linguistic review pending | Specify observable action/time/relation/abstract context; human-label a fixed failure/control panel before testing |
+| Search provider retrieval | 035 shirt→nasal diagram; 018 sun→spectrum chart | One downloaded candidate in each case and mismatched selected image **observed**; complete search result lists unavailable | Retain result URL/title/download outcome; compare providers on fixed approved queries |
+| Candidate quality filtering | 035 anatomical title; 043/085 posters; 087 product screen; 49 selected images flagged with visual acceptance gaps | Chosen-image defect **observed**; rejected candidates unavailable | Reject irrelevant titles and dominant text/watermark, allow zero acceptable candidates; independently label false rejection/acceptance |
+| SigLIP ranking | 051 go and 065 swim select portraits; 047,048,053,059,061,077,085,092,095 also final-query mismatches | Retrieval **or** ranking **unresolved** for 11 IDs; no full candidate bytes/score order | Save all candidate hashes/scores/order, then compare ranker choices on the same labeled candidate pool; do not assume SigLIP is root cause |
+| Image rejection/fallback | 035 single bad candidate selected; 038 no selected image | 035 acceptance gap observed; 038 input `image_search_intent` approval gate **confirmed**, no retrieval | Specify reject-all/needs-review behavior; resolve 038 intent with owner before any authorized generation |
+| Abstract vocabulary | 041/042 time, 047–050 adjectives, 077/078 relation, 082/084 adverbs | Current object-style queries/images often fail educational suitability; exact stage contribution varies | Human-approve intended visual pedagogy first; compare contextual scenes with text-heavy/abstract failures on a fixed panel |
+
+First decision for A-002 is the owner-reviewed meaning/image set. Then inspect retained evidence or authorize a controlled experiment with fixed queries/candidates and explicit quality metrics. The current record does not justify a model replacement, a universal SigLIP score threshold, or attribution of all errors to one component. Rights review remains separate and applies to assets selected for public release.

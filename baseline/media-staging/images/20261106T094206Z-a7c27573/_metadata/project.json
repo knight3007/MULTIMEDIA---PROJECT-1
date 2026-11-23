@@ -1,0 +1,21 @@
+{
+  "word": "project",
+  "search_query": "project object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://docs.oracle.com/en/applications/jd-edwards/obe-promoting-objects-to-package-through-web-object-management-workbench/img/project_objects.png",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.63V857ejN_R2GzE_-O8F5AHaDf&pid=15.1",
+  "source_page_url": "https://docs.oracle.com/en/applications/jd-edwards/obe-promoting-objects-to-package-through-web-object-management-workbench/",
+  "title": "Promoting Objects to Package Through Web Object Management Workbench",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "docs.oracle.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.8359375
+  }
+}

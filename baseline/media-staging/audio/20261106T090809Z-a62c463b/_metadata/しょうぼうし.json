@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "97",
+  "word": "しょうぼうし",
+  "reading": "しょうぼうし",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090809Z-a62c463b/しょうぼうし.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 10752,
+  "duration_seconds": 1.344,
+  "status": "success"
+}

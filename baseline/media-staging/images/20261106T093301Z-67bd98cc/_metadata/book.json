@@ -1,0 +1,21 @@
+{
+  "word": "book",
+  "search_query": "book object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/originals/26/ed/8c/26ed8c337110c7457577d203146d9209.png",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.R1J6mqwgu_5Ai8VmHrVNpAHaLH&pid=15.1",
+  "source_page_url": "https://uk.pinterest.com/pin/object-form-a-visual-journey-through-samuel-ross-sr_a-book--684547212136965342/",
+  "title": "Object - Form: A Visual Journey Through Samuel Ross' SR_A Book | Padded ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 3.7578125
+  }
+}

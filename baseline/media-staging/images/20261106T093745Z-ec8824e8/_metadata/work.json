@@ -1,0 +1,21 @@
+{
+  "word": "work",
+  "search_query": "work object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://d34u8crftukxnk.cloudfront.net/slack.dev/local/day_18_work-_objects.png",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.1NXwfTZYVXC2JUwQhzfHGwHaEL&pid=15.1",
+  "source_page_url": "https://slack.dev/unfurl-the-future-with-work-objects/",
+  "title": "Unfurl the future with Work Objects | Slack Developers",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.9453125
+  }
+}

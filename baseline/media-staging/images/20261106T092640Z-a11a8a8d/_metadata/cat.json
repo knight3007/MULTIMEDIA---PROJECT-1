@@ -1,0 +1,21 @@
+{
+  "word": "cat",
+  "search_query": "cat animal",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://pixnio.com/free-images/2017/09/26/2017-09-26-07-47-37.jpg",
+  "thumbnail_url": "https://ts3.explicit.bing.net/th?id=OIP.ZEH8eq4a1Pd_AGD0EUTklwHaE8&pid=15.1",
+  "source_page_url": "https://pkcke.vacuumcupsuppliers.co.uk/what-is-a-cat-animal-list-of-cat-breeds/",
+  "title": "What Is A Cat Animal? , List of cat breeds – FKCU",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "pkcke.vacuumcupsuppliers.co.uk",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.9140625
+  }
+}

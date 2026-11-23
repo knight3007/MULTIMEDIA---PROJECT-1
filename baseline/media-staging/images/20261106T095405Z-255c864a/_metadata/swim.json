@@ -1,0 +1,21 @@
+{
+  "word": "swim",
+  "search_query": "person swimming",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.kevinashleyphotography.com/wp-content/uploads/2015/11/person.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.leRaZskYpTKA55a0St0tZgHaJa&pid=15.1",
+  "source_page_url": "https://www.kevinashleyphotography.com/person/",
+  "title": "person | Kevin Ashley Photography - Kansas City and Overland Park ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "kevinashleyphotography.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -11.84375
+  }
+}

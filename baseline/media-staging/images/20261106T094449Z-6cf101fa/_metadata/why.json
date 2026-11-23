@@ -1,0 +1,21 @@
+{
+  "word": "why",
+  "search_query": "why icon",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://cdn-icons-png.flaticon.com/512/8776/8776768.png",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.rX1BMEblDTFh0nWJWQ618QHaHa&pid=15.1",
+  "source_page_url": "https://www.flaticon.com/free-icon/why_8776768",
+  "title": "Why - Free signs icons",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "flaticon.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 4.1015625
+  }
+}

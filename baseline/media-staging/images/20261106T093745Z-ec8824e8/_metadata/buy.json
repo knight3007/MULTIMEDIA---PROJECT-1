@@ -1,0 +1,21 @@
+{
+  "word": "buy",
+  "search_query": "buy action",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://ecommercenews.eu/wp-content/uploads/2023/05/action-launches-belgium-store-online-europe.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.GGQ-6qv9jlsyWNK_wrCYRgHaE7&pid=15.1",
+  "source_page_url": "https://ecommercenews.eu/action-launches-online-store-in-belgium/",
+  "title": "Action launches online store in Belgium",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "ecommercenews.eu",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.1640625
+  }
+}

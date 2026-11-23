@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "seed": 20261106,
+  "mapping": [
+    {
+      "review_id": "Q001",
+      "vocab_id": "vocab-000049",
+      "source_row_index": 49,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q002",
+      "vocab_id": "vocab-000048",
+      "source_row_index": 48,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q003",
+      "vocab_id": "vocab-000087",
+      "source_row_index": 87,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q004",
+      "vocab_id": "vocab-000061",
+      "source_row_index": 61,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q005",
+      "vocab_id": "vocab-000077",
+      "source_row_index": 77,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q006",
+      "vocab_id": "vocab-000066",
+      "source_row_index": 66,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q007",
+      "vocab_id": "vocab-000049",
+      "source_row_index": 49,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q008",
+      "vocab_id": "vocab-000066",
+      "source_row_index": 66,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q009",
+      "vocab_id": "vocab-000065",
+      "source_row_index": 65,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q010",
+      "vocab_id": "vocab-000066",
+      "source_row_index": 66,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q011",
+      "vocab_id": "vocab-000042",
+      "source_row_index": 42,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q012",
+      "vocab_id": "vocab-000077",
+      "source_row_index": 77,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q013",
+      "vocab_id": "vocab-000074",
+      "source_row_index": 74,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q014",
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q015",
+      "vocab_id": "vocab-000043",
+      "source_row_index": 43,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q016",
+      "vocab_id": "vocab-000071",
+      "source_row_index": 71,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q017",
+      "vocab_id": "vocab-000062",
+      "source_row_index": 62,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q018",
+      "vocab_id": "vocab-000067",
+      "source_row_index": 67,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q019",
+      "vocab_id": "vocab-000053",
+      "source_row_index": 53,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q020",
+      "vocab_id": "vocab-000077",
+      "source_row_index": 77,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q021",
+      "vocab_id": "vocab-000055",
+      "source_row_index": 55,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q022",
+      "vocab_id": "vocab-000019",
+      "source_row_index": 19,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q023",
+      "vocab_id": "vocab-000082",
+      "source_row_index": 82,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q024",
+      "vocab_id": "vocab-000087",
+      "source_row_index": 87,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q025",
+      "vocab_id": "vocab-000041",
+      "source_row_index": 41,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q026",
+      "vocab_id": "vocab-000054",
+      "source_row_index": 54,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q027",
+      "vocab_id": "vocab-000047",
+      "source_row_index": 47,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q028",
+      "vocab_id": "vocab-000050",
+      "source_row_index": 50,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q029",
+      "vocab_id": "vocab-000048",
+      "source_row_index": 48,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q030",
+      "vocab_id": "vocab-000035",
+      "source_row_index": 35,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q031",
+      "vocab_id": "vocab-000043",
+      "source_row_index": 43,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q032",
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q033",
+      "vocab_id": "vocab-000067",
+      "source_row_index": 67,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q034",
+      "vocab_id": "vocab-000067",
+      "source_row_index": 67,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q035",
+      "vocab_id": "vocab-000054",
+      "source_row_index": 54,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q036",
+      "vocab_id": "vocab-000074",
+      "source_row_index": 74,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q037",
+      "vocab_id": "vocab-000051",
+      "source_row_index": 51,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q038",
+      "vocab_id": "vocab-000048",
+      "source_row_index": 48,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q039",
+      "vocab_id": "vocab-000047",
+      "source_row_index": 47,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q040",
+      "vocab_id": "vocab-000061",
+      "source_row_index": 61,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q041",
+      "vocab_id": "vocab-000041",
+      "source_row_index": 41,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q042",
+      "vocab_id": "vocab-000074",
+      "source_row_index": 74,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q043",
+      "vocab_id": "vocab-000051",
+      "source_row_index": 51,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q044",
+      "vocab_id": "vocab-000082",
+      "source_row_index": 82,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q045",
+      "vocab_id": "vocab-000062",
+      "source_row_index": 62,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q046",
+      "vocab_id": "vocab-000053",
+      "source_row_index": 53,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q047",
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q048",
+      "vocab_id": "vocab-000065",
+      "source_row_index": 65,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q049",
+      "vocab_id": "vocab-000050",
+      "source_row_index": 50,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q050",
+      "vocab_id": "vocab-000055",
+      "source_row_index": 55,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q051",
+      "vocab_id": "vocab-000062",
+      "source_row_index": 62,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q052",
+      "vocab_id": "vocab-000061",
+      "source_row_index": 61,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q053",
+      "vocab_id": "vocab-000042",
+      "source_row_index": 42,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q054",
+      "vocab_id": "vocab-000082",
+      "source_row_index": 82,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q055",
+      "vocab_id": "vocab-000055",
+      "source_row_index": 55,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q056",
+      "vocab_id": "vocab-000047",
+      "source_row_index": 47,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q057",
+      "vocab_id": "vocab-000071",
+      "source_row_index": 71,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q058",
+      "vocab_id": "vocab-000053",
+      "source_row_index": 53,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q059",
+      "vocab_id": "vocab-000043",
+      "source_row_index": 43,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q060",
+      "vocab_id": "vocab-000035",
+      "source_row_index": 35,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q061",
+      "vocab_id": "vocab-000019",
+      "source_row_index": 19,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q062",
+      "vocab_id": "vocab-000071",
+      "source_row_index": 71,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q063",
+      "vocab_id": "vocab-000087",
+      "source_row_index": 87,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q064",
+      "vocab_id": "vocab-000049",
+      "source_row_index": 49,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q065",
+      "vocab_id": "vocab-000041",
+      "source_row_index": 41,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q066",
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q067",
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "variant": "fresh_a"
+    },
+    {
+      "review_id": "Q068",
+      "vocab_id": "vocab-000051",
+      "source_row_index": 51,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q069",
+      "vocab_id": "vocab-000065",
+      "source_row_index": 65,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q070",
+      "vocab_id": "vocab-000054",
+      "source_row_index": 54,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q071",
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q072",
+      "vocab_id": "vocab-000050",
+      "source_row_index": 50,
+      "variant": "historical_current"
+    },
+    {
+      "review_id": "Q073",
+      "vocab_id": "vocab-000042",
+      "source_row_index": 42,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q074",
+      "vocab_id": "vocab-000035",
+      "source_row_index": 35,
+      "variant": "fresh_b"
+    },
+    {
+      "review_id": "Q075",
+      "vocab_id": "vocab-000019",
+      "source_row_index": 19,
+      "variant": "historical_current"
+    }
+  ]
+}

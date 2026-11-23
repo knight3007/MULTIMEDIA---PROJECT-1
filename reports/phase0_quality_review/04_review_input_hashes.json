@@ -1,0 +1,14 @@
+{
+  "purpose": "read_only_review_inputs_at_2026-11-22",
+  "sha256": {
+    "reports\\image_pipeline_audit\\20261106T102750Z-cd93f8a1\\02_qwen_queries_100.csv": "26e72f27cebe691bc9d02c95f659b97d248645e0bb70a67705306f0359994cee",
+    "reports\\image_pipeline_audit\\20261106T102750Z-cd93f8a1\\04_image_quality_review.csv": "02fa08a5b7505465fcb73da169175c47d02cf0630cfeac6299fbdfecef511b18",
+    "reports\\full_media_staging_inventory_v1.json": "ae51455b2ae31fafee7306c31df2183cf6cf0e96c48610b0c37ee578c590d15f",
+    "reports\\architecture_reassessment\\01_current_project_audit.md": "afd5fe3c438abc05dcba6c353c9f01445ea3aa17ddc3de041b8452f6feb6a62f",
+    "reports\\architecture_reassessment\\02_architecture_comparison.md": "f18b037b4c5d3ad74fe4913a2aedb725ca984986363c715a44cb2326b093e7aa",
+    "reports\\architecture_reassessment\\03_ai_infrastructure_assessment.md": "e309bfbf1af7e99f60a816148a669618438a0067302cf96b7c504dced852890c",
+    "reports\\architecture_reassessment\\04_recommended_architecture.md": "591112b79fad1d214de8d44a22f2885dc6fd8dc557f35c8bb08f4afa2e6cb677",
+    "reports\\architecture_reassessment\\05_migration_roadmap.md": "b3ec810cba7441fdb502fc93f8ca93e210468fc4b6f31283472c280efa271b3a",
+    "reports\\architecture_reassessment\\06_executive_summary.md": "f4ed15953f8cd4ab4670442fe62a2b0cf2b0efd55f639956a8cac0f9947d9af7"
+  }
+}

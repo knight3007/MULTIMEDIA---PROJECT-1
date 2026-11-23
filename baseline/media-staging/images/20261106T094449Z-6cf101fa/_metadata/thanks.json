@@ -1,0 +1,21 @@
+{
+  "word": "thanks",
+  "search_query": "thanks expression",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/736x/93/9e/d3/939ed364cc95b9e4ec8f6c2a55bfed0f.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.941PV07wDZ6nKywEwbHOqQHaJQ&pid=15.1",
+  "source_page_url": "https://www.pinterest.com/pin/ways-to-express-gratitude--317785317469579211/",
+  "title": "Ways To Express Gratitude. | Thank you expressions, Expressing thanks ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "www.pinterest.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -2.390625
+  }
+}

@@ -1,0 +1,685 @@
+{
+  "schema_version": 2,
+  "run_id": "d1-five-20261107-qwen4b-v4",
+  "status": "prepared",
+  "prepared_at_utc": "2026-11-07T05:04:21.872304+00:00",
+  "api_contract_version": "kaggle-qwen3-4b-v4",
+  "remote_provider": "kaggle_gpu_cloudflare_quick_tunnel",
+  "requested_model": "Qwen/Qwen3-4B",
+  "model_revision": null,
+  "model_revision_status": "unverified",
+  "expected_generation_calls": 10,
+  "input_hashes": {
+    "data/vocabulary/en.txt": "329288167d7c62ff34e6c2490a642533d6c9f756e89bac955a86e3515a990b04",
+    "data/vocabulary/jp.txt": "7353198d89812c6ca2f3aa949638580d033a84de80a7db8f3a176cfdbcece542",
+    "data/vocabulary/vn.txt": "00b40d8d6b78d089b400210dac0aa71f60390d8aea72ba33caa9c274996f5a4f",
+    "data/vocabulary/id_registry_v1.json": "ecc5ee5322ea6ba8bb7f1f23a2e815c8587ea3e36c5d68145711359455960699",
+    "data/vocabulary/semantic_decisions_v1.json": "a8c23bb756c6f40c980bb55206d3610813064fee06b72b29f122de16a1aa5009",
+    "data/vocabulary/unified_dataset_v1.json": "644c2dc9899077dad15d2e2916d7dc3d1cef49ecd151ea406115bb3da19481bd",
+    "reports/image_pipeline_benchmark/20261106-image-query-v1/query_experiment.json": "81862daf723701e267edc33bbd663a273287450556e66ad5df3e3d311d1c4f78",
+    "reports/image_pipeline_benchmark/20261106-image-query-v1/prompts.json": "2c89feef06497953e3a44d5474b9d982d0924da4282511bbceccd2dd0f19856a",
+    "reports/remote_qwen/d0-five-20261107/experiment_manifest.json": "c84d52dba5df5d0f2ae5252a16edd2d75799a296c3f62c1c0ff40d6d39b0dc05"
+  },
+  "requests": [
+    {
+      "request_id": "004-a",
+      "source_row_index": 4,
+      "vocab_id": "vocab-000004",
+      "english": "rice",
+      "japanese": {
+        "display": "ごはん",
+        "reading": "ごはん",
+        "written_form": null
+      },
+      "vietnamese": "cơm",
+      "semantic_review_status": "approved",
+      "approved_target_sense": "cooked rice",
+      "approved_image_search_intent": "cooked rice",
+      "usage_note": null,
+      "variant": "a",
+      "prompt_version": "production-system-prompt-sha256:351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "system_prompt": "Turn one English vocabulary word into one concise image search query while preserving the exact referent.\n\nThe output must describe the same thing denoted by the input word. Choose one common everyday sense. Prefer a concrete physical noun sense when one exists. Avoid brands, companies, proper nouns, and computing senses when a common physical meaning exists.\n\nFor a concrete noun, output the input word exactly once followed by exactly one broad semantic class that answers what kind of thing the input itself is. Choose a class such as animal, bird, insect, fruit, food, beverage, substance, vehicle, furniture, plant, organism, device, tool, clothing, jewelry, building, institution, place, container, timepiece, illumination, meal, season, event, or object. This short noun phrase is disambiguation because it still names the target.\n\nTreat plain drinking water as a beverage, not a substance.\n\nDo not name something the target has, contains, causes, uses, does, or is found near. Never substitute a related object, part, effect, action, place, tool, environment, accessory, or infrastructure. That is association, not disambiguation.\n\nExamples:\nInput: pear\nQuery: pear fruit\nInput: dog\nQuery: dog animal\nInput: ant\nQuery: ant insect\nInput: bus\nQuery: bus vehicle\nInput: sofa\nQuery: sofa furniture\nInput: juice\nQuery: juice beverage\nInput: water\nQuery: water beverage\nInput: cheese\nQuery: cheese food\nInput: moss\nQuery: moss organism\nInput: autumn\nQuery: autumn season\nInput: clock\nQuery: clock timepiece\nInput: lamp\nQuery: lamp illumination\nInput: tablet\nQuery: tablet device\n\nIf the input has no concrete noun sense, show a verb as a person doing the action, an adjective as a visible comparison, or a nonphysical concept as a familiar icon only as a last resort.\nReturn exactly one natural query of 1-12 lowercase English words. Use each word at most once. No punctuation, explanation, definition, alternatives, list, synonyms, enumeration, keyword stuffing, or arbitrary attributes.\n",
+      "system_prompt_sha256": "351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "user_prompt": "Input: rice\nQuery:",
+      "user_prompt_sha256": "0614d059b2c5566e1db83c3ca7dc27cd2e3892fba8c433c13221334f98075be9",
+      "max_new_tokens": 32,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 32
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000004",
+        "raw_decoded_text": "rice grain",
+        "raw_attempts": [
+          {
+            "word": "rice",
+            "correction_prompt": null,
+            "raw_decoded_text": "rice grain",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "rice grain",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 42.773,
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "rice grain",
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "004-b",
+      "source_row_index": 4,
+      "vocab_id": "vocab-000004",
+      "english": "rice",
+      "japanese": {
+        "display": "ごはん",
+        "reading": "ごはん",
+        "written_form": null
+      },
+      "vietnamese": "cơm",
+      "semantic_review_status": "approved",
+      "approved_target_sense": "cooked rice",
+      "approved_image_search_intent": "cooked rice",
+      "usage_note": null,
+      "variant": "b",
+      "prompt_version": "sense-aware-visual-intent-v1",
+      "system_prompt": "You design image-search queries for a trilingual vocabulary lesson. Return exactly one JSON object with exactly these keys: visual_type, search_query, visual_description, negative_constraints, reason. No Markdown or extra text.\n\nvisual_type must be one of: concrete_object, food, animal, person_role, place, action, emotion_state, physical_attribute, time_weather, abstract_concept, function_word, educational_visual.\nsearch_query: a concise English phrase for visible content, not a dictionary definition or a bare abstract word.\nvisual_description: one English sentence describing what a viewer can actually see.\nnegative_constraints: a JSON array of short English phrases identifying likely wrong senses or misleading imagery; use [] if none.\nreason: one short English sentence connecting the depiction to the supplied meaning and noting uncertainty when the semantic decision is pending.\n\nUse the English, Japanese, Vietnamese and any approved target sense together. An approved target sense and approved image search intent take precedence. A pending or unreviewed status does not authorize a new meaning; describe a provisional depiction and state the uncertainty in reason. Do not turn every word into an object. Show actions as a person visibly doing the action, time words as calendars or time sequences, and abstract or function words as educational visuals when a literal photo cannot express them. Avoid logos, watermarks, stock-preview text, unrelated objects and words used as brand names. Keep JSON compact and finish it within the token budget.",
+      "system_prompt_sha256": "54b7fe7910fdd177c37336f975c5f288af65d0370673e65900e08734dd4dd2f6",
+      "user_prompt": "Vocabulary record (JSON): {\"english\": \"rice\", \"japanese\": {\"display\": \"ごはん\", \"reading\": \"ごはん\", \"written_form\": null}, \"vietnamese\": \"cơm\", \"semantic_review_status\": \"approved\", \"target_sense\": \"cooked rice\", \"image_search_intent\": \"cooked rice\", \"usage_note\": null}",
+      "user_prompt_sha256": "6a1cdb07230e73e4cf8b7dbe500281d8094580127ad042710d3502c8eef35d14",
+      "max_new_tokens": 256,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 256
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000004",
+        "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"cooked rice\",\n  \"visual_description\": \"A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image captures the target sense of cooked rice as a concrete object, with no misleading elements.\"\n}",
+        "parsed": {
+          "visual_type": "concrete_object",
+          "search_query": "cooked rice",
+          "visual_description": "A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice",
+          "negative_constraints": [],
+          "reason": "The image captures the target sense of cooked rice as a concrete object, with no misleading elements."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 21.092,
+        "parsed_query": "cooked rice",
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "rice grain",
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "009-a",
+      "source_row_index": 9,
+      "vocab_id": "vocab-000009",
+      "english": "chicken",
+      "japanese": {
+        "display": "とりにく",
+        "reading": "とりにく",
+        "written_form": null
+      },
+      "vietnamese": "thịt gà",
+      "semantic_review_status": "approved",
+      "approved_target_sense": "chicken meat",
+      "approved_image_search_intent": "chicken meat",
+      "usage_note": null,
+      "variant": "a",
+      "prompt_version": "production-system-prompt-sha256:351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "system_prompt": "Turn one English vocabulary word into one concise image search query while preserving the exact referent.\n\nThe output must describe the same thing denoted by the input word. Choose one common everyday sense. Prefer a concrete physical noun sense when one exists. Avoid brands, companies, proper nouns, and computing senses when a common physical meaning exists.\n\nFor a concrete noun, output the input word exactly once followed by exactly one broad semantic class that answers what kind of thing the input itself is. Choose a class such as animal, bird, insect, fruit, food, beverage, substance, vehicle, furniture, plant, organism, device, tool, clothing, jewelry, building, institution, place, container, timepiece, illumination, meal, season, event, or object. This short noun phrase is disambiguation because it still names the target.\n\nTreat plain drinking water as a beverage, not a substance.\n\nDo not name something the target has, contains, causes, uses, does, or is found near. Never substitute a related object, part, effect, action, place, tool, environment, accessory, or infrastructure. That is association, not disambiguation.\n\nExamples:\nInput: pear\nQuery: pear fruit\nInput: dog\nQuery: dog animal\nInput: ant\nQuery: ant insect\nInput: bus\nQuery: bus vehicle\nInput: sofa\nQuery: sofa furniture\nInput: juice\nQuery: juice beverage\nInput: water\nQuery: water beverage\nInput: cheese\nQuery: cheese food\nInput: moss\nQuery: moss organism\nInput: autumn\nQuery: autumn season\nInput: clock\nQuery: clock timepiece\nInput: lamp\nQuery: lamp illumination\nInput: tablet\nQuery: tablet device\n\nIf the input has no concrete noun sense, show a verb as a person doing the action, an adjective as a visible comparison, or a nonphysical concept as a familiar icon only as a last resort.\nReturn exactly one natural query of 1-12 lowercase English words. Use each word at most once. No punctuation, explanation, definition, alternatives, list, synonyms, enumeration, keyword stuffing, or arbitrary attributes.\n",
+      "system_prompt_sha256": "351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "user_prompt": "Input: chicken\nQuery:",
+      "user_prompt_sha256": "b3701ab732864a93319788f0832aaeb3e961bd1de7ef89fb9e245d20b807e0bc",
+      "max_new_tokens": 32,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 32
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000009",
+        "raw_decoded_text": "chicken animal",
+        "raw_attempts": [
+          {
+            "word": "chicken",
+            "correction_prompt": null,
+            "raw_decoded_text": "chicken animal",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "chicken animal",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.691,
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "chicken animal",
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "009-b",
+      "source_row_index": 9,
+      "vocab_id": "vocab-000009",
+      "english": "chicken",
+      "japanese": {
+        "display": "とりにく",
+        "reading": "とりにく",
+        "written_form": null
+      },
+      "vietnamese": "thịt gà",
+      "semantic_review_status": "approved",
+      "approved_target_sense": "chicken meat",
+      "approved_image_search_intent": "chicken meat",
+      "usage_note": null,
+      "variant": "b",
+      "prompt_version": "sense-aware-visual-intent-v1",
+      "system_prompt": "You design image-search queries for a trilingual vocabulary lesson. Return exactly one JSON object with exactly these keys: visual_type, search_query, visual_description, negative_constraints, reason. No Markdown or extra text.\n\nvisual_type must be one of: concrete_object, food, animal, person_role, place, action, emotion_state, physical_attribute, time_weather, abstract_concept, function_word, educational_visual.\nsearch_query: a concise English phrase for visible content, not a dictionary definition or a bare abstract word.\nvisual_description: one English sentence describing what a viewer can actually see.\nnegative_constraints: a JSON array of short English phrases identifying likely wrong senses or misleading imagery; use [] if none.\nreason: one short English sentence connecting the depiction to the supplied meaning and noting uncertainty when the semantic decision is pending.\n\nUse the English, Japanese, Vietnamese and any approved target sense together. An approved target sense and approved image search intent take precedence. A pending or unreviewed status does not authorize a new meaning; describe a provisional depiction and state the uncertainty in reason. Do not turn every word into an object. Show actions as a person visibly doing the action, time words as calendars or time sequences, and abstract or function words as educational visuals when a literal photo cannot express them. Avoid logos, watermarks, stock-preview text, unrelated objects and words used as brand names. Keep JSON compact and finish it within the token budget.",
+      "system_prompt_sha256": "54b7fe7910fdd177c37336f975c5f288af65d0370673e65900e08734dd4dd2f6",
+      "user_prompt": "Vocabulary record (JSON): {\"english\": \"chicken\", \"japanese\": {\"display\": \"とりにく\", \"reading\": \"とりにく\", \"written_form\": null}, \"vietnamese\": \"thịt gà\", \"semantic_review_status\": \"approved\", \"target_sense\": \"chicken meat\", \"image_search_intent\": \"chicken meat\", \"usage_note\": null}",
+      "user_prompt_sha256": "c2f9e862d19faadc7a356f878740499c52a7f8308686e85ee7be5f12026834ae",
+      "max_new_tokens": 256,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 256
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000009",
+        "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"chicken meat\",\n  \"visual_description\": \"A visible slice of chicken meat, showing the texture and color of the flesh.\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "concrete_object",
+          "search_query": "chicken meat",
+          "visual_description": "A visible slice of chicken meat, showing the texture and color of the flesh.",
+          "negative_constraints": [],
+          "reason": "The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 27.582,
+        "parsed_query": "chicken meat",
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "chicken animal",
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "041-a",
+      "source_row_index": 41,
+      "vocab_id": "vocab-000041",
+      "english": "today",
+      "japanese": {
+        "display": "きょう",
+        "reading": "きょう",
+        "written_form": null
+      },
+      "vietnamese": "hôm nay",
+      "semantic_review_status": "unreviewed",
+      "approved_target_sense": null,
+      "approved_image_search_intent": null,
+      "usage_note": null,
+      "variant": "a",
+      "prompt_version": "production-system-prompt-sha256:351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "system_prompt": "Turn one English vocabulary word into one concise image search query while preserving the exact referent.\n\nThe output must describe the same thing denoted by the input word. Choose one common everyday sense. Prefer a concrete physical noun sense when one exists. Avoid brands, companies, proper nouns, and computing senses when a common physical meaning exists.\n\nFor a concrete noun, output the input word exactly once followed by exactly one broad semantic class that answers what kind of thing the input itself is. Choose a class such as animal, bird, insect, fruit, food, beverage, substance, vehicle, furniture, plant, organism, device, tool, clothing, jewelry, building, institution, place, container, timepiece, illumination, meal, season, event, or object. This short noun phrase is disambiguation because it still names the target.\n\nTreat plain drinking water as a beverage, not a substance.\n\nDo not name something the target has, contains, causes, uses, does, or is found near. Never substitute a related object, part, effect, action, place, tool, environment, accessory, or infrastructure. That is association, not disambiguation.\n\nExamples:\nInput: pear\nQuery: pear fruit\nInput: dog\nQuery: dog animal\nInput: ant\nQuery: ant insect\nInput: bus\nQuery: bus vehicle\nInput: sofa\nQuery: sofa furniture\nInput: juice\nQuery: juice beverage\nInput: water\nQuery: water beverage\nInput: cheese\nQuery: cheese food\nInput: moss\nQuery: moss organism\nInput: autumn\nQuery: autumn season\nInput: clock\nQuery: clock timepiece\nInput: lamp\nQuery: lamp illumination\nInput: tablet\nQuery: tablet device\n\nIf the input has no concrete noun sense, show a verb as a person doing the action, an adjective as a visible comparison, or a nonphysical concept as a familiar icon only as a last resort.\nReturn exactly one natural query of 1-12 lowercase English words. Use each word at most once. No punctuation, explanation, definition, alternatives, list, synonyms, enumeration, keyword stuffing, or arbitrary attributes.\n",
+      "system_prompt_sha256": "351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "user_prompt": "Input: today\nQuery:",
+      "user_prompt_sha256": "dda29ebd489eb9d3e2486c32dd996407b4d8769a20b5c813c24716e3c0a012d4",
+      "max_new_tokens": 32,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 32
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000041",
+        "raw_decoded_text": "today timepiece",
+        "raw_attempts": [
+          {
+            "word": "today",
+            "correction_prompt": null,
+            "raw_decoded_text": "today timepiece",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "today timepiece",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.896,
+        "effective_search_query": "today timepiece",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "today timepiece",
+        "effective_search_query": "today timepiece",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "041-b",
+      "source_row_index": 41,
+      "vocab_id": "vocab-000041",
+      "english": "today",
+      "japanese": {
+        "display": "きょう",
+        "reading": "きょう",
+        "written_form": null
+      },
+      "vietnamese": "hôm nay",
+      "semantic_review_status": "unreviewed",
+      "approved_target_sense": null,
+      "approved_image_search_intent": null,
+      "usage_note": null,
+      "variant": "b",
+      "prompt_version": "sense-aware-visual-intent-v1",
+      "system_prompt": "You design image-search queries for a trilingual vocabulary lesson. Return exactly one JSON object with exactly these keys: visual_type, search_query, visual_description, negative_constraints, reason. No Markdown or extra text.\n\nvisual_type must be one of: concrete_object, food, animal, person_role, place, action, emotion_state, physical_attribute, time_weather, abstract_concept, function_word, educational_visual.\nsearch_query: a concise English phrase for visible content, not a dictionary definition or a bare abstract word.\nvisual_description: one English sentence describing what a viewer can actually see.\nnegative_constraints: a JSON array of short English phrases identifying likely wrong senses or misleading imagery; use [] if none.\nreason: one short English sentence connecting the depiction to the supplied meaning and noting uncertainty when the semantic decision is pending.\n\nUse the English, Japanese, Vietnamese and any approved target sense together. An approved target sense and approved image search intent take precedence. A pending or unreviewed status does not authorize a new meaning; describe a provisional depiction and state the uncertainty in reason. Do not turn every word into an object. Show actions as a person visibly doing the action, time words as calendars or time sequences, and abstract or function words as educational visuals when a literal photo cannot express them. Avoid logos, watermarks, stock-preview text, unrelated objects and words used as brand names. Keep JSON compact and finish it within the token budget.",
+      "system_prompt_sha256": "54b7fe7910fdd177c37336f975c5f288af65d0370673e65900e08734dd4dd2f6",
+      "user_prompt": "Vocabulary record (JSON): {\"english\": \"today\", \"japanese\": {\"display\": \"きょう\", \"reading\": \"きょう\", \"written_form\": null}, \"vietnamese\": \"hôm nay\", \"semantic_review_status\": \"unreviewed\", \"target_sense\": null, \"image_search_intent\": null, \"usage_note\": null}",
+      "user_prompt_sha256": "b0f88c04e7db4d6a56a58dfcfde1c9378e890d0a92871d5ba91031a91128085a",
+      "max_new_tokens": 256,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 256
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000041",
+        "raw_decoded_text": "{\n  \"visual_type\": \"time_weather\",\n  \"search_query\": \"a calendar showing today's date\",\n  \"visual_description\": \"A calendar displaying the current day with the date marked clearly\",\n  \"negative_constraints\": [\"no time indicators\", \"no weather elements\"],\n  \"reason\": \"The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "time_weather",
+          "search_query": "a calendar showing today's date",
+          "visual_description": "A calendar displaying the current day with the date marked clearly",
+          "negative_constraints": [
+            "no time indicators",
+            "no weather elements"
+          ],
+          "reason": "The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 28.239,
+        "parsed_query": "a calendar showing today's date",
+        "effective_search_query": "a calendar showing today's date",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "today timepiece",
+        "effective_search_query": "today timepiece",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "054-a",
+      "source_row_index": 54,
+      "vocab_id": "vocab-000054",
+      "english": "study",
+      "japanese": {
+        "display": "べんきょうする",
+        "reading": "べんきょうする",
+        "written_form": null
+      },
+      "vietnamese": "học tập",
+      "semantic_review_status": "unreviewed",
+      "approved_target_sense": null,
+      "approved_image_search_intent": null,
+      "usage_note": null,
+      "variant": "a",
+      "prompt_version": "production-system-prompt-sha256:351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "system_prompt": "Turn one English vocabulary word into one concise image search query while preserving the exact referent.\n\nThe output must describe the same thing denoted by the input word. Choose one common everyday sense. Prefer a concrete physical noun sense when one exists. Avoid brands, companies, proper nouns, and computing senses when a common physical meaning exists.\n\nFor a concrete noun, output the input word exactly once followed by exactly one broad semantic class that answers what kind of thing the input itself is. Choose a class such as animal, bird, insect, fruit, food, beverage, substance, vehicle, furniture, plant, organism, device, tool, clothing, jewelry, building, institution, place, container, timepiece, illumination, meal, season, event, or object. This short noun phrase is disambiguation because it still names the target.\n\nTreat plain drinking water as a beverage, not a substance.\n\nDo not name something the target has, contains, causes, uses, does, or is found near. Never substitute a related object, part, effect, action, place, tool, environment, accessory, or infrastructure. That is association, not disambiguation.\n\nExamples:\nInput: pear\nQuery: pear fruit\nInput: dog\nQuery: dog animal\nInput: ant\nQuery: ant insect\nInput: bus\nQuery: bus vehicle\nInput: sofa\nQuery: sofa furniture\nInput: juice\nQuery: juice beverage\nInput: water\nQuery: water beverage\nInput: cheese\nQuery: cheese food\nInput: moss\nQuery: moss organism\nInput: autumn\nQuery: autumn season\nInput: clock\nQuery: clock timepiece\nInput: lamp\nQuery: lamp illumination\nInput: tablet\nQuery: tablet device\n\nIf the input has no concrete noun sense, show a verb as a person doing the action, an adjective as a visible comparison, or a nonphysical concept as a familiar icon only as a last resort.\nReturn exactly one natural query of 1-12 lowercase English words. Use each word at most once. No punctuation, explanation, definition, alternatives, list, synonyms, enumeration, keyword stuffing, or arbitrary attributes.\n",
+      "system_prompt_sha256": "351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "user_prompt": "Input: study\nQuery:",
+      "user_prompt_sha256": "794d99e517992c7c1f5454f6459e81356f0eca1456adcd31f5ae18c36864a544",
+      "max_new_tokens": 32,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 32
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000054",
+        "raw_decoded_text": "study object",
+        "raw_attempts": [
+          {
+            "word": "study",
+            "correction_prompt": null,
+            "raw_decoded_text": "study object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "study object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.533,
+        "effective_search_query": "study object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "study object",
+        "effective_search_query": "study object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "054-b",
+      "source_row_index": 54,
+      "vocab_id": "vocab-000054",
+      "english": "study",
+      "japanese": {
+        "display": "べんきょうする",
+        "reading": "べんきょうする",
+        "written_form": null
+      },
+      "vietnamese": "học tập",
+      "semantic_review_status": "unreviewed",
+      "approved_target_sense": null,
+      "approved_image_search_intent": null,
+      "usage_note": null,
+      "variant": "b",
+      "prompt_version": "sense-aware-visual-intent-v1",
+      "system_prompt": "You design image-search queries for a trilingual vocabulary lesson. Return exactly one JSON object with exactly these keys: visual_type, search_query, visual_description, negative_constraints, reason. No Markdown or extra text.\n\nvisual_type must be one of: concrete_object, food, animal, person_role, place, action, emotion_state, physical_attribute, time_weather, abstract_concept, function_word, educational_visual.\nsearch_query: a concise English phrase for visible content, not a dictionary definition or a bare abstract word.\nvisual_description: one English sentence describing what a viewer can actually see.\nnegative_constraints: a JSON array of short English phrases identifying likely wrong senses or misleading imagery; use [] if none.\nreason: one short English sentence connecting the depiction to the supplied meaning and noting uncertainty when the semantic decision is pending.\n\nUse the English, Japanese, Vietnamese and any approved target sense together. An approved target sense and approved image search intent take precedence. A pending or unreviewed status does not authorize a new meaning; describe a provisional depiction and state the uncertainty in reason. Do not turn every word into an object. Show actions as a person visibly doing the action, time words as calendars or time sequences, and abstract or function words as educational visuals when a literal photo cannot express them. Avoid logos, watermarks, stock-preview text, unrelated objects and words used as brand names. Keep JSON compact and finish it within the token budget.",
+      "system_prompt_sha256": "54b7fe7910fdd177c37336f975c5f288af65d0370673e65900e08734dd4dd2f6",
+      "user_prompt": "Vocabulary record (JSON): {\"english\": \"study\", \"japanese\": {\"display\": \"べんきょうする\", \"reading\": \"べんきょうする\", \"written_form\": null}, \"vietnamese\": \"học tập\", \"semantic_review_status\": \"unreviewed\", \"target_sense\": null, \"image_search_intent\": null, \"usage_note\": null}",
+      "user_prompt_sha256": "942fde400ddc97c38ca129df773f198782dee87ba05175a012a5dacd695f8505",
+      "max_new_tokens": 256,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 256
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000054",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person studying\",\n  \"visual_description\": \"A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand\",\n  \"negative_constraints\": [\"no background noise\", \"no lighting issues\"],\n  \"reason\": \"A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person studying",
+          "visual_description": "A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand",
+          "negative_constraints": [
+            "no background noise",
+            "no lighting issues"
+          ],
+          "reason": "A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 23.411,
+        "parsed_query": "person studying",
+        "effective_search_query": "person studying",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": null,
+        "raw_model_query": "study object",
+        "effective_search_query": "study object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "065-a",
+      "source_row_index": 65,
+      "vocab_id": "vocab-000065",
+      "english": "swim",
+      "japanese": {
+        "display": "およぐ",
+        "reading": "およぐ",
+        "written_form": null
+      },
+      "vietnamese": "bơi",
+      "semantic_review_status": "unreviewed",
+      "approved_target_sense": null,
+      "approved_image_search_intent": null,
+      "usage_note": null,
+      "variant": "a",
+      "prompt_version": "production-system-prompt-sha256:351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "system_prompt": "Turn one English vocabulary word into one concise image search query while preserving the exact referent.\n\nThe output must describe the same thing denoted by the input word. Choose one common everyday sense. Prefer a concrete physical noun sense when one exists. Avoid brands, companies, proper nouns, and computing senses when a common physical meaning exists.\n\nFor a concrete noun, output the input word exactly once followed by exactly one broad semantic class that answers what kind of thing the input itself is. Choose a class such as animal, bird, insect, fruit, food, beverage, substance, vehicle, furniture, plant, organism, device, tool, clothing, jewelry, building, institution, place, container, timepiece, illumination, meal, season, event, or object. This short noun phrase is disambiguation because it still names the target.\n\nTreat plain drinking water as a beverage, not a substance.\n\nDo not name something the target has, contains, causes, uses, does, or is found near. Never substitute a related object, part, effect, action, place, tool, environment, accessory, or infrastructure. That is association, not disambiguation.\n\nExamples:\nInput: pear\nQuery: pear fruit\nInput: dog\nQuery: dog animal\nInput: ant\nQuery: ant insect\nInput: bus\nQuery: bus vehicle\nInput: sofa\nQuery: sofa furniture\nInput: juice\nQuery: juice beverage\nInput: water\nQuery: water beverage\nInput: cheese\nQuery: cheese food\nInput: moss\nQuery: moss organism\nInput: autumn\nQuery: autumn season\nInput: clock\nQuery: clock timepiece\nInput: lamp\nQuery: lamp illumination\nInput: tablet\nQuery: tablet device\n\nIf the input has no concrete noun sense, show a verb as a person doing the action, an adjective as a visible comparison, or a nonphysical concept as a familiar icon only as a last resort.\nReturn exactly one natural query of 1-12 lowercase English words. Use each word at most once. No punctuation, explanation, definition, alternatives, list, synonyms, enumeration, keyword stuffing, or arbitrary attributes.\n",
+      "system_prompt_sha256": "351121920c75b0489cc4982319797b63bb7e3ad3d63fbc90b162e59a207b3f76",
+      "user_prompt": "Input: swim\nQuery:",
+      "user_prompt_sha256": "ab0ba3a59bf5c9aecd18be8e1aad8dd3024cf67cdf13b71d653edd6a3f000b7e",
+      "max_new_tokens": 32,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 32
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000065",
+        "raw_decoded_text": "swim verb",
+        "raw_attempts": [
+          {
+            "word": "swim",
+            "correction_prompt": null,
+            "raw_decoded_text": "swim verb",
+            "ended_with_eos": true
+          },
+          {
+            "word": "swim",
+            "correction_prompt": "The previous answer failed validation. Start over without copying it. Preserve the input as the target. For a concrete noun, use the input exactly once followed only by one broad semantic class. Do not enumerate alternatives, synonyms, or related objects. Do not repeat words or place singular and plural forms together; use no icon for a physical subject. Output only lowercase English words.",
+            "raw_decoded_text": "swim verb",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": null,
+        "validation_status": "invalid",
+        "error": "Qwen output for 'swim' after one retry: Qwen returned meta text instead of concrete search terms: 'swim verb'",
+        "ended_with_eos": true,
+        "duration_seconds": 12.064,
+        "effective_search_query": null,
+        "query_provenance": null
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": "person swimming",
+        "raw_model_query": "person swimming",
+        "effective_search_query": "person swimming",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    },
+    {
+      "request_id": "065-b",
+      "source_row_index": 65,
+      "vocab_id": "vocab-000065",
+      "english": "swim",
+      "japanese": {
+        "display": "およぐ",
+        "reading": "およぐ",
+        "written_form": null
+      },
+      "vietnamese": "bơi",
+      "semantic_review_status": "unreviewed",
+      "approved_target_sense": null,
+      "approved_image_search_intent": null,
+      "usage_note": null,
+      "variant": "b",
+      "prompt_version": "sense-aware-visual-intent-v1",
+      "system_prompt": "You design image-search queries for a trilingual vocabulary lesson. Return exactly one JSON object with exactly these keys: visual_type, search_query, visual_description, negative_constraints, reason. No Markdown or extra text.\n\nvisual_type must be one of: concrete_object, food, animal, person_role, place, action, emotion_state, physical_attribute, time_weather, abstract_concept, function_word, educational_visual.\nsearch_query: a concise English phrase for visible content, not a dictionary definition or a bare abstract word.\nvisual_description: one English sentence describing what a viewer can actually see.\nnegative_constraints: a JSON array of short English phrases identifying likely wrong senses or misleading imagery; use [] if none.\nreason: one short English sentence connecting the depiction to the supplied meaning and noting uncertainty when the semantic decision is pending.\n\nUse the English, Japanese, Vietnamese and any approved target sense together. An approved target sense and approved image search intent take precedence. A pending or unreviewed status does not authorize a new meaning; describe a provisional depiction and state the uncertainty in reason. Do not turn every word into an object. Show actions as a person visibly doing the action, time words as calendars or time sequences, and abstract or function words as educational visuals when a literal photo cannot express them. Avoid logos, watermarks, stock-preview text, unrelated objects and words used as brand names. Keep JSON compact and finish it within the token budget.",
+      "system_prompt_sha256": "54b7fe7910fdd177c37336f975c5f288af65d0370673e65900e08734dd4dd2f6",
+      "user_prompt": "Vocabulary record (JSON): {\"english\": \"swim\", \"japanese\": {\"display\": \"およぐ\", \"reading\": \"およぐ\", \"written_form\": null}, \"vietnamese\": \"bơi\", \"semantic_review_status\": \"unreviewed\", \"target_sense\": null, \"image_search_intent\": null, \"usage_note\": null}",
+      "user_prompt_sha256": "b4d7563735ae999a49ea503d0048bd89eeef393dc5a6ec78bbb488237eee24e7",
+      "max_new_tokens": 256,
+      "generation_parameters": {
+        "do_sample": false,
+        "enable_thinking": false,
+        "max_new_tokens": 256
+      },
+      "requested_model": "Qwen/Qwen3-4B",
+      "local_1_7b_result": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000065",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"a person swimming in a pool\",\n  \"visual_description\": \"A person performing the action of swimming in a pool, showing the motion and the water environment\",\n  \"negative_constraints\": [\"no action visible\", \"no water depicted\"],\n  \"reason\": \"The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "a person swimming in a pool",
+          "visual_description": "A person performing the action of swimming in a pool, showing the motion and the water environment",
+          "negative_constraints": [
+            "no action visible",
+            "no water depicted"
+          ],
+          "reason": "The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 31.449,
+        "parsed_query": "a person swimming in a pool",
+        "effective_search_query": "a person swimming in a pool",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "historical_1_7b_result": {
+        "raw_decoded_text": "person swimming",
+        "raw_model_query": "person swimming",
+        "effective_search_query": "person swimming",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "response_status": "not_run",
+      "response_text": null,
+      "model_revision": null,
+      "model_revision_status": "unverified",
+      "eos_status": "unavailable",
+      "finish_reason": "unavailable"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "word": "remember",
+  "search_query": "remember object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.ytimg.com/vi/wqT8CsDJxX0/maxresdefault.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.Irx1tWQM8AKOcgog-ai6cwHaEK&pid=15.1",
+  "source_page_url": "https://www.youtube.com/watch?v=wqT8CsDJxX0",
+  "title": "Remember the Objects Memory Game - YouTube",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 6.5234375
+  }
+}

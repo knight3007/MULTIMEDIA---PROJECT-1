@@ -1,0 +1,21 @@
+{
+  "word": "vegetable",
+  "search_query": "vegetable plant",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.familyhandyman.com/wp-content/uploads/2023/04/GettyImages-1418173645.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.H8HidN1SBWzwstmfaBMRJAHaE8&pid=15.1",
+  "source_page_url": "https://lovahomy.com/2025/04/19/pictures-of-vegetable-gardens/",
+  "title": "7 Stunning Pictures Of Vegetable Gardens",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "lovahomy.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.921875
+  }
+}

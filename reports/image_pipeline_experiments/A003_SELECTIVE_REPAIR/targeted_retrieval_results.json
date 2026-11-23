@@ -1,0 +1,226 @@
+{
+  "task_id": "A-003.2",
+  "vocab_id": "vocab-000083",
+  "queries": [
+    {
+      "variant": "S1",
+      "query": "some days calendar activity illustration"
+    },
+    {
+      "variant": "S2",
+      "query": "occasional rain sunny days illustration"
+    }
+  ],
+  "started_at_utc": "2026-11-23T03:25:20.874090+00:00",
+  "variants": [
+    {
+      "variant": "S1",
+      "query": "some days calendar activity illustration",
+      "search_status": "SUCCESS",
+      "search_error": null,
+      "raw_result_count": 7,
+      "normalized_result_count": 7,
+      "candidates": [
+        {
+          "candidate_id": "vocab-000083-S1-01",
+          "retrieval_rank": 1,
+          "title": "An illustration of a happy man walking towards a large calendar and ...",
+          "source_url": "https://www.vecteezy.com/vector-art/46885448-an-illustration-of-a-happy-man-walking-towards-a-large-calendar-and-marking-important-dates-with-a-red-pen-the-background-features-a-sunny-sky-with-clouds-and-foliage",
+          "image_url": "https://static.vecteezy.com/system/resources/previews/046/885/448/large_2x/an-illustration-of-a-happy-man-walking-towards-a-large-calendar-and-marking-important-dates-with-a-red-pen-the-background-features-a-sunny-sky-with-clouds-and-foliage-free-vector.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/01.img",
+          "raw_sha256": "1b7eb751193ae4148cd19e9937ff49c77686cec608925897a8b67351eb7ea752",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/01.jpg",
+          "image_sha256": "faec848553a250c3da4543e6269abd1e1569cf374619759926ee29b856f9999f"
+        },
+        {
+          "candidate_id": "vocab-000083-S1-02",
+          "retrieval_rank": 2,
+          "title": "Vector Calendar Days Illustration 38467861 Vector Art at Vecteezy",
+          "source_url": "https://www.vecteezy.com/vector-art/38467861-vector-calendar-days-illustration",
+          "image_url": "https://static.vecteezy.com/system/resources/previews/038/467/861/non_2x/calendar-days-illustration-vector.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/02.img",
+          "raw_sha256": "7d81a4c93633b4dbe61d6375c09a74e918857fd1e262a30e91f7f4301915d00d",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/02.jpg",
+          "image_sha256": "2494b83a8fb70d526972b609b6c1a1d8026c9d3d71556031a109e821a3e2edde"
+        },
+        {
+          "candidate_id": "vocab-000083-S1-03",
+          "retrieval_rank": 3,
+          "title": "Future Days | Planning illustration, Routine illustration, Work calendar",
+          "source_url": "https://www.pinterest.com/pin/34973334600662043/",
+          "image_url": "https://i.pinimg.com/736x/ea/c0/bb/eac0bb771f6428d8000c212e5c888eea.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/03.img",
+          "raw_sha256": "6b28a549b3982db3a5359f36ab97c7f43f80c98cbbd3a7da2888a27fbe7a328c",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/03.jpg",
+          "image_sha256": "f1be851d8f1ce0b6995a4788f7a87ea07bbf9955faefe835c3d0e37cf76427a5"
+        },
+        {
+          "candidate_id": "vocab-000083-S1-04",
+          "retrieval_rank": 4,
+          "title": "Vector Days of the Week Calendar Illustration 38467853 Vector Art at ...",
+          "source_url": "https://www.vecteezy.com/vector-art/38467853-vector-days-of-the-week-calendar-illustration",
+          "image_url": "https://static.vecteezy.com/system/resources/previews/038/467/853/original/days-of-the-week-calendar-illustration-vector.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/04.img",
+          "raw_sha256": "81c341814f72860f05f8d3df6c3e00bc79ccde1118331ff4d9db8966c25ba7df",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/04.jpg",
+          "image_sha256": "cf68ca8d0591aeb80e7540c0c2efe622c2c49ebb4d6795de04b8ae84e4a8d011"
+        },
+        {
+          "candidate_id": "vocab-000083-S1-05",
+          "retrieval_rank": 5,
+          "title": "Calendar Characters Showing Different Activities Throughout the Week ...",
+          "source_url": "https://www.dreamstime.com/calendar-characters-showing-different-activities-throughout-week-set-cartoon-calendar-characters-each-representing-image425380031",
+          "image_url": "https://thumbs.dreamstime.com/b/calendar-characters-showing-different-activities-throughout-week-set-cartoon-calendar-characters-each-representing-425380031.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/05.img",
+          "raw_sha256": "8c75714854745b7a1bca6c2e1b20460bfc65d58ce317483fb97a78df5fa61e3d",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/05.jpg",
+          "image_sha256": "5542002d42edeb7edf0823bad05079292a72b36cc1038c4ad131895823501a73"
+        },
+        {
+          "candidate_id": "vocab-000083-S1-06",
+          "retrieval_rank": 6,
+          "title": "Free Cartoon Activity Calendar Image - Cartoon, Calendar, Playful ...",
+          "source_url": "https://stockcake.com/i/cartoon-activity-calendar_740741_895289",
+          "image_url": "https://images.stockcake.com/public/c/8/6/c86667fc-b1e8-4ec3-b474-e9a8a376c26c_large/cartoon-activity-calendar-stockcake.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/06.img",
+          "raw_sha256": "12d17f29a8fb1b0436dde6b2b3324d49244d698c28d7f60a6e879f0f1d5190ea",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/06.jpg",
+          "image_sha256": "4bcfb374534b6258f6eacbd06837343493e5587e99b3da3fc2954e906bd33616"
+        },
+        {
+          "candidate_id": "vocab-000083-S1-07",
+          "retrieval_rank": 7,
+          "title": "Days of the Week Classroom Chart | Education poster, Classroom calendar ...",
+          "source_url": "https://www.pinterest.com/pin/19351473380010277/",
+          "image_url": "https://i.pinimg.com/236x/de/16/78/de1678defca9ac8d39c9a77f5549e21a.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/07.img",
+          "raw_sha256": "21eb9b887a35dd4b724e431de25da2c71726e7f4f16610f9786f05930be47678",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S1/07.jpg",
+          "image_sha256": "61c90a4998c60ed8438c89d8c77a8f3558c32a22f6097197d0826dbcabb165c4"
+        }
+      ],
+      "previous_search_errors": [
+        "ImageSearchFailure: DDGS image search failed (backend=auto, attempts=3, type=TimeoutException): error sending request for url (https://www.bing.com/images/async?q=some+days+calendar+activity+illustration&async=1&first=1&count=35) > operation timed out"
+      ]
+    },
+    {
+      "variant": "S2",
+      "query": "occasional rain sunny days illustration",
+      "search_status": "SUCCESS",
+      "search_error": null,
+      "raw_result_count": 7,
+      "normalized_result_count": 7,
+      "candidates": [
+        {
+          "candidate_id": "vocab-000083-S2-01",
+          "retrieval_rank": 1,
+          "title": "Sunny Occasional Rain: Over 6 Royalty-Free Licensable Stock ...",
+          "source_url": "https://www.shutterstock.com/search/sunny-occasional-rain?image_type=illustration",
+          "image_url": "https://www.shutterstock.com/image-vector/character-cloud-making-occasional-rain-260nw-2317545895.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/01.img",
+          "raw_sha256": "1729d10a7fc5f78eaca1e047581ce000f1cda8ecd0fae176a16928833bc9a82b",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/01.jpg",
+          "image_sha256": "258d31fe087421d19121fbe129175a9dfbabea8e8ffe807b4b24b590061f8e16"
+        },
+        {
+          "candidate_id": "vocab-000083-S2-02",
+          "retrieval_rank": 2,
+          "title": "Colorful illustration depicts a bright sunny day with rain falling over ...",
+          "source_url": "https://www.vecteezy.com/vector-art/60124206-colorful-illustration-depicts-a-bright-sunny-day-with-rain-falling-over-a-lively-landscape-yellow-trees-and-a-small-pond-reflect-the-sunny-weather-amidst-the-rain",
+          "image_url": "https://static.vecteezy.com/system/resources/previews/060/124/206/large_2x/colorful-illustration-depicts-a-bright-sunny-day-with-rain-falling-over-a-lively-landscape-yellow-trees-and-a-small-pond-reflect-the-sunny-weather-amidst-the-rain-vector.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/02.img",
+          "raw_sha256": "d7932d4ba0ec366f08497e3a17c2cdb1de301f76ea3b3a9e48d47d847c4ac7ff",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/02.jpg",
+          "image_sha256": "02c2ce90b0de4827df65eea726b994ef213148e2723a188ee6264ecdc1900e4a"
+        },
+        {
+          "candidate_id": "vocab-000083-S2-03",
+          "retrieval_rank": 3,
+          "title": "Illustration of a Happy Sun in the Rain on a Sunny Day Stock ...",
+          "source_url": "https://www.dreamstime.com/illustration-happy-sun-rain-sunny-day-illustration-illustration-happy-sun-rain-sunny-day-image355096121",
+          "image_url": "https://thumbs.dreamstime.com/z/illustration-happy-sun-rain-sunny-day-illustration-illustration-happy-sun-rain-sunny-day-355096121.jpg",
+          "status": "DOWNLOAD_FAILED",
+          "error": "CollectionError: HTTP Error 500: Internal Server Error",
+          "raw_path": null,
+          "raw_sha256": null,
+          "image_path": null,
+          "image_sha256": null
+        },
+        {
+          "candidate_id": "vocab-000083-S2-04",
+          "retrieval_rank": 4,
+          "title": "28,000+ Sunny Day Drawing Pictures",
+          "source_url": "https://www.freepik.com/photos/sunny-day-drawing",
+          "image_url": "https://img.freepik.com/premium-photo/cartoon-illustration-sunny-day-with-rain_1280516-6558.jpg",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/04.img",
+          "raw_sha256": "e086b5d0e92a36b82b4d3c5e23a50ebe1f378d8836f31a9a4445b2857934fd13",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/04.jpg",
+          "image_sha256": "19b8f09c536fbf089ee2e5d737a06321a2a65023751fc97515513f3513a64c43"
+        },
+        {
+          "candidate_id": "vocab-000083-S2-05",
+          "retrieval_rank": 5,
+          "title": "Cartoon Illustration of a Sunny Day with Rain | Premium AI-generated image",
+          "source_url": "https://www.freepik.com/premium-ai-image/cartoon-illustration-sunny-day-with-rain_291025585.htm",
+          "image_url": "https://img.freepik.com/premium-photo/cartoon-illustration-sunny-day-with-rain_1280516-10753.jpg?w=2000",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/05.img",
+          "raw_sha256": "6e9c81a59c7bff01dd9494cca6995b4c1dc8547dfb4df1b11d4af9765b4c2aa8",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/05.jpg",
+          "image_sha256": "210b22ccc10a65cbcc6d530cad92a87d2a5e3ff37f49036b569016180fa1b90b"
+        },
+        {
+          "candidate_id": "vocab-000083-S2-06",
+          "retrieval_rank": 6,
+          "title": "Cartoon Kids with Umbrellas in Rain, Sunny Day Illustration Stock ...",
+          "source_url": "https://www.dreamstime.com/cheerful-cartoon-illustration-three-children-colorful-umbrellas-playing-rain-under-smiling-sun-whimsical-image208868352",
+          "image_url": "https://thumbs.dreamstime.com/b/cheerful-cartoon-illustration-three-children-colorful-umbrellas-playing-rain-under-smiling-sun-whimsical-208868352.jpg?w=576",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/06.img",
+          "raw_sha256": "86eea005586a9efd58c922e5e41eb6d4fd4862e531fcd04e0a86876ce75bf4ea",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/06.jpg",
+          "image_sha256": "a7451f6629b00ec4000b5a7619f10bf914b4f2f49d81aaa493aa26af4b4911f7"
+        },
+        {
+          "candidate_id": "vocab-000083-S2-07",
+          "retrieval_rank": 7,
+          "title": "95,300+ Sunny Rainy Day Stock Photos, Pictures & Royalty-Free Images ...",
+          "source_url": "https://www.istockphoto.com/photos/sunny-rainy-day",
+          "image_url": "https://media.istockphoto.com/id/538647224/vector/the-weather.jpg?s=612x612&w=0&k=20&c=LDnZBdeJF4OOrm0QFYIJoWFwe_FWfAMULZZJ7hditAU=",
+          "status": "DOWNLOADED",
+          "error": null,
+          "raw_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/07.img",
+          "raw_sha256": "a41a67ad1b7ccbe5d9c5b1a87fd28605aacc86e63923eeae82a0576cc7d0a2bc",
+          "image_path": "reports/image_pipeline_experiments/A003_SELECTIVE_REPAIR/images/vocab-000083/S2/07.jpg",
+          "image_sha256": "9c1c4db43a3cfaf52d91a1732e1f522bd6ec41194a3ade650c8e52b27c6f9420"
+        }
+      ],
+      "previous_search_errors": [
+        "ImageSearchFailure: DDGS image search failed (backend=auto, attempts=3, type=TimeoutException): error sending request for url (https://duckduckgo.com/?q=occasional+rain+sunny+days+illustration) > operation timed out"
+      ]
+    }
+  ],
+  "completed_at_utc": "2026-11-23T03:30:44.316971+00:00"
+}

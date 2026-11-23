@@ -1,0 +1,21 @@
+{
+  "word": "together",
+  "search_query": "together object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://exploralearn.com/images/watermarked/1/detailed/11/things_go_together_6.jpeg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.mesAZw6jnsh78rqSuXWTsQHaKe&pid=15.1",
+  "source_page_url": "https://picstank.com/explore/objects-that-go-together-association-drag-and-drop-with-audio",
+  "title": "Objects that go together Association drag and drop with audio ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "picstank.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.8125
+  }
+}

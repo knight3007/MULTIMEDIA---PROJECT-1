@@ -1,0 +1,9 @@
+{
+  "status": "offline_valid",
+  "host": "offline-placeholder.trycloudflare.com",
+  "model": "Qwen/Qwen3-4B",
+  "network_calls": 0,
+  "inference_calls": 0,
+  "variant_b_contract": "contract_incompatible",
+  "variant_b_system_prompt_characters": 1560
+}

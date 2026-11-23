@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000062",
+  "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"person remembering information\",\n  \"visual_description\": \"A person looking at a book or screen with a focused expression, showing they are trying to recall information\",\n  \"negative_constraints\": [\"no action\", \"no emotion\", \"no object\"],\n  \"reason\": \"The depiction shows a person engaged in the action of remembering, which aligns with the target sense of 'remember' in an educational context. The uncertainty is in the exact visual representation of the cognitive process, which may vary based on the learner's individual experience.\"\n}",
+  "parsed": {
+    "visual_type": "educational_visual",
+    "search_query": "person remembering information",
+    "visual_description": "A person looking at a book or screen with a focused expression, showing they are trying to recall information",
+    "negative_constraints": [
+      "no action",
+      "no emotion",
+      "no object"
+    ],
+    "reason": "The depiction shows a person engaged in the action of remembering, which aligns with the target sense of 'remember' in an educational context. The uncertainty is in the exact visual representation of the cognitive process, which may vary based on the learner's individual experience."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 29.978
+}

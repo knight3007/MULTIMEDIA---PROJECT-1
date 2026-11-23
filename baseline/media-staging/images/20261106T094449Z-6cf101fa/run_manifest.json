@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T094449Z-6cf101fa",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000081",
+    "vocab-000082",
+    "vocab-000083",
+    "vocab-000084",
+    "vocab-000085",
+    "vocab-000086",
+    "vocab-000087",
+    "vocab-000088",
+    "vocab-000089",
+    "vocab-000090"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000081",
+      "source_row_index": 81,
+      "english": "because",
+      "japanese_reading": "なぜなら",
+      "vietnamese": "bởi vì",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "because cause",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.6338620999995328,
+        "selected_image_url": "https://images.examples.com/wp-content/uploads/2023/10/Because-Sentence-1.png"
+      },
+      "selected_result": {
+        "image_url": "https://images.examples.com/wp-content/uploads/2023/10/Because-Sentence-1.png",
+        "source_page_url": "https://www.examples.com/english/sentence/because-sentence.html",
+        "title": "99+ Because Sentence Examples | Examples.com",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 2.1640625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/because.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/because.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 117583,
+      "sha256": "6e6257f22b797c385cca61eda4f0d0e55f75920c18fd3a56de66a82fbe0a2b4a",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000082",
+      "source_row_index": 82,
+      "english": "always",
+      "japanese_reading": "いつも",
+      "vietnamese": "luôn luôn",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "always object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4758077000005869,
+        "selected_image_url": "https://storage.googleapis.com/filo-question-diagrams/6006175_TnksEw_1740727179830546798_image"
+      },
+      "selected_result": {
+        "image_url": "https://storage.googleapis.com/filo-question-diagrams/6006175_TnksEw_1740727179830546798_image",
+        "source_page_url": "https://askfilo.com/user-question-answers-smart-solutions/assertion-a-a-moving-object-always-does-work-reason-r-the-3236393532363039",
+        "title": "Assertion (A) : A moving object always does work.Reason (R): The object",
+        "width": null,
+        "height": null,
+        "result_source": "askfilo.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.46875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/always.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/always.json",
+      "dimensions": [
+        1024,
+        449
+      ],
+      "size_bytes": 67444,
+      "sha256": "f2dcc6a98d82958fb65cef51b2e576f4f667af1adb3236156402615ee4ef22c6",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000083",
+      "source_row_index": 83,
+      "english": "sometimes",
+      "japanese_reading": "ときどき",
+      "vietnamese": "thỉnh thoảng",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "sometimes event",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.4475376000009419,
+        "selected_image_url": "https://media.zim.vn/6440b6c30337036e159e92ba/sometime-sometimes-some-time.jpeg?w=750&q=75"
+      },
+      "selected_result": {
+        "image_url": "https://media.zim.vn/6440b6c30337036e159e92ba/sometime-sometimes-some-time.jpeg?w=750&q=75",
+        "source_page_url": "https://zim.vn/phan-biet-sometime-sometimes-va-some-time",
+        "title": "Phân biệt Sometime, Sometimes và Some time | ZIM Academy",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.15625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/sometimes.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/sometimes.json",
+      "dimensions": [
+        1024,
+        536
+      ],
+      "size_bytes": 100600,
+      "sha256": "aa48f7b6958d26edfab26d7b2466c950291bb87de97b702cd74d20aebb4c769c",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000084",
+      "source_row_index": 84,
+      "english": "together",
+      "japanese_reading": "いっしょに",
+      "vietnamese": "cùng nhau",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "together object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5966320999978052,
+        "selected_image_url": "https://exploralearn.com/images/watermarked/1/detailed/11/things_go_together_6.jpeg"
+      },
+      "selected_result": {
+        "image_url": "https://exploralearn.com/images/watermarked/1/detailed/11/things_go_together_6.jpeg",
+        "source_page_url": "https://picstank.com/explore/objects-that-go-together-association-drag-and-drop-with-audio",
+        "title": "Objects that go together Association drag and drop with audio ...",
+        "width": null,
+        "height": null,
+        "result_source": "picstank.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.8125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/together.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/together.json",
+      "dimensions": [
+        724,
+        1024
+      ],
+      "size_bytes": 75086,
+      "sha256": "c4b1277985d7b5f94de59fd084140e63c6f2534062d3a799d892ee64d453cbaa",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000085",
+      "source_row_index": 85,
+      "english": "where",
+      "japanese_reading": "どこ",
+      "vietnamese": "ở đâu",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "where place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.5309285000003001,
+        "selected_image_url": "https://images.justwatch.com/poster/335803096/s718/a-place-where-i-belong.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://images.justwatch.com/poster/335803096/s718/a-place-where-i-belong.jpg",
+        "source_page_url": "https://www.justwatch.com/hu/film/a-place-where-i-belong",
+        "title": "A Place Where I Belong stream: hol látható online?",
+        "width": null,
+        "height": null,
+        "result_source": "justwatch.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -6.5078125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/where.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/where.json",
+      "dimensions": [
+        718,
+        1024
+      ],
+      "size_bytes": 161553,
+      "sha256": "1ba61f7085670f6fcc18bbcf943c5a6db54172fc2b279cf142461d7072ec2531",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000086",
+      "source_row_index": 86,
+      "english": "why",
+      "japanese_reading": "なぜ",
+      "vietnamese": "tại sao",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "why icon",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5498227999996743,
+        "selected_image_url": "https://cdn-icons-png.flaticon.com/512/8776/8776768.png"
+      },
+      "selected_result": {
+        "image_url": "https://cdn-icons-png.flaticon.com/512/8776/8776768.png",
+        "source_page_url": "https://www.flaticon.com/free-icon/why_8776768",
+        "title": "Why - Free signs icons",
+        "width": null,
+        "height": null,
+        "result_source": "flaticon.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 4.1015625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/why.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/why.json",
+      "dimensions": [
+        512,
+        512
+      ],
+      "size_bytes": 32946,
+      "sha256": "a13bf30f0fcb8bfd5bc04aa8847a6a6687f050b1411da7914c92996d7e20b3ed",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000087",
+      "source_row_index": 87,
+      "english": "hello",
+      "japanese_reading": "こんにちは",
+      "vietnamese": "xin chào",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "hello object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4748660999975982,
+        "selected_image_url": "https://i.ytimg.com/vi/9ofGaZgTilY/maxresdefault.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.ytimg.com/vi/9ofGaZgTilY/maxresdefault.jpg",
+        "source_page_url": "https://www.youtube.com/watch?v=9ofGaZgTilY",
+        "title": "HELLO NEIGHBOR MOD KIT - HELLO OBJECTS: REMASTERED - YouTube",
+        "width": null,
+        "height": null,
+        "result_source": "www.youtube.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.4140625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/hello.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/hello.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 147744,
+      "sha256": "b0606e37dd2a56cb66f5bc0cafadb15236234af8637cf6511ce6a1225ffd27a0",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000088",
+      "source_row_index": 88,
+      "english": "please",
+      "japanese_reading": "おねがいします",
+      "vietnamese": "làm ơn/xin vui lòng",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "please action",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4676094999995257,
+        "selected_image_url": "https://media.istockphoto.com/id/2177434586/vector/ribbon-label-banner-with-word-please-action-in-blue-color-on-white-background.jpg?s=1024x1024&w=is&k=20&c=Yf5RbXlVithk9vZS-A8R-sjN3HuM0oJyVj6K9IRPW6Y="
+      },
+      "selected_result": {
+        "image_url": "https://media.istockphoto.com/id/2177434586/vector/ribbon-label-banner-with-word-please-action-in-blue-color-on-white-background.jpg?s=1024x1024&w=is&k=20&c=Yf5RbXlVithk9vZS-A8R-sjN3HuM0oJyVj6K9IRPW6Y=",
+        "source_page_url": "https://www.istockphoto.com/vector/ribbon-label-banner-with-word-please-action-in-blue-color-on-white-background-gm2177434586-596842414",
+        "title": "Ribbon Label Banner With Word Please Action In Blue Color On White ...",
+        "width": null,
+        "height": null,
+        "result_source": "istockphoto.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 6.2265625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/please.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/please.json",
+      "dimensions": [
+        1024,
+        293
+      ],
+      "size_bytes": 32736,
+      "sha256": "1388a8f19f1fc1715dedac57c627fe39d8d93214b284ed2533d145b61c10285b",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000089",
+      "source_row_index": 89,
+      "english": "thanks",
+      "japanese_reading": "ありがとう",
+      "vietnamese": "cảm ơn",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "thanks expression",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 1.2376583000004757,
+        "selected_image_url": "https://i.pinimg.com/736x/93/9e/d3/939ed364cc95b9e4ec8f6c2a55bfed0f.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/736x/93/9e/d3/939ed364cc95b9e4ec8f6c2a55bfed0f.jpg",
+        "source_page_url": "https://www.pinterest.com/pin/ways-to-express-gratitude--317785317469579211/",
+        "title": "Ways To Express Gratitude. | Thank you expressions, Expressing thanks ...",
+        "width": null,
+        "height": null,
+        "result_source": "www.pinterest.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -2.390625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/thanks.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/thanks.json",
+      "dimensions": [
+        736,
+        920
+      ],
+      "size_bytes": 87921,
+      "sha256": "0503c60d42c15073e11ed35d7f4543d7dcb82b5b191d0ede9109a6bff2043a50",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000090",
+      "source_row_index": 90,
+      "english": "sorry",
+      "japanese_reading": "すみません",
+      "vietnamese": "xin lỗi",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "sorry emotion",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4950265999978001,
+        "selected_image_url": "https://static.vecteezy.com/system/resources/previews/066/893/824/large_2x/sad-yellow-emoticon-apology-sorry-face-teary-eyes-regret-vector.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://static.vecteezy.com/system/resources/previews/066/893/824/large_2x/sad-yellow-emoticon-apology-sorry-face-teary-eyes-regret-vector.jpg",
+        "source_page_url": "https://www.vecteezy.com/vector-art/66893824-sad-yellow-emoticon-apology-sorry-face-teary-eyes-regret",
+        "title": "Sad Yellow Emoticon Apology Sorry Face, Teary Eyes, Regret 66893824 ...",
+        "width": null,
+        "height": null,
+        "result_source": "vecteezy.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 3.3671875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/sorry.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/_metadata/sorry.json",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "size_bytes": 75900,
+      "sha256": "d5d22b0f1fd2fa30070c91aa33db79e5fd7ebf78cccde3ac326decb65f76ce24",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

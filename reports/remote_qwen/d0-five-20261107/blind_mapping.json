@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "seed": 20261107,
+  "mapping": [
+    {
+      "review_id": "R001",
+      "vocab_id": "vocab-000065",
+      "variant": "historical_1_7b"
+    },
+    {
+      "review_id": "R002",
+      "vocab_id": "vocab-000054",
+      "variant": "remote_4b"
+    },
+    {
+      "review_id": "R003",
+      "vocab_id": "vocab-000041",
+      "variant": "remote_4b"
+    },
+    {
+      "review_id": "R004",
+      "vocab_id": "vocab-000065",
+      "variant": "remote_4b"
+    },
+    {
+      "review_id": "R005",
+      "vocab_id": "vocab-000065",
+      "variant": "variant_b_1_7b"
+    },
+    {
+      "review_id": "R006",
+      "vocab_id": "vocab-000009",
+      "variant": "remote_4b"
+    },
+    {
+      "review_id": "R007",
+      "vocab_id": "vocab-000004",
+      "variant": "variant_b_1_7b"
+    },
+    {
+      "review_id": "R008",
+      "vocab_id": "vocab-000009",
+      "variant": "historical_1_7b"
+    },
+    {
+      "review_id": "R009",
+      "vocab_id": "vocab-000009",
+      "variant": "variant_b_1_7b"
+    },
+    {
+      "review_id": "R010",
+      "vocab_id": "vocab-000004",
+      "variant": "remote_4b"
+    },
+    {
+      "review_id": "R011",
+      "vocab_id": "vocab-000004",
+      "variant": "historical_1_7b"
+    },
+    {
+      "review_id": "R012",
+      "vocab_id": "vocab-000041",
+      "variant": "variant_b_1_7b"
+    },
+    {
+      "review_id": "R013",
+      "vocab_id": "vocab-000041",
+      "variant": "historical_1_7b"
+    },
+    {
+      "review_id": "R014",
+      "vocab_id": "vocab-000054",
+      "variant": "variant_b_1_7b"
+    },
+    {
+      "review_id": "R015",
+      "vocab_id": "vocab-000054",
+      "variant": "historical_1_7b"
+    }
+  ]
+}

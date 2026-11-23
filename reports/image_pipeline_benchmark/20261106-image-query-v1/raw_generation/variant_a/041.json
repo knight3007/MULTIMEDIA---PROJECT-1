@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000041",
+  "raw_decoded_text": "today timepiece",
+  "raw_attempts": [
+    {
+      "word": "today",
+      "correction_prompt": null,
+      "raw_decoded_text": "today timepiece",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "today timepiece",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.896
+}

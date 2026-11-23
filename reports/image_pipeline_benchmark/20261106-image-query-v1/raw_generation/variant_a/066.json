@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000066",
+  "raw_decoded_text": "software device",
+  "raw_attempts": [
+    {
+      "word": "software",
+      "correction_prompt": null,
+      "raw_decoded_text": "software device",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "software device",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.593
+}

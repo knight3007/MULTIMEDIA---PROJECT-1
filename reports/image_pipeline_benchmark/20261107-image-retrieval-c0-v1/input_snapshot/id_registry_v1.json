@@ -1,0 +1,1019 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "vocab_id": "vocab-000001",
+      "row_hint": 1,
+      "triple": [
+        "apple",
+        "りんご",
+        "quả táo"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000002",
+      "row_hint": 2,
+      "triple": [
+        "banana",
+        "バナナ",
+        "quả chuối"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000003",
+      "row_hint": 3,
+      "triple": [
+        "strawberry",
+        "いちご",
+        "dâu tây"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000004",
+      "row_hint": 4,
+      "triple": [
+        "rice",
+        "ごはん",
+        "cơm"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000005",
+      "row_hint": 5,
+      "triple": [
+        "bread",
+        "パン",
+        "bánh mì"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000006",
+      "row_hint": 6,
+      "triple": [
+        "egg",
+        "たまご",
+        "trứng"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000007",
+      "row_hint": 7,
+      "triple": [
+        "milk",
+        "ぎゅうにゅう",
+        "sữa"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000008",
+      "row_hint": 8,
+      "triple": [
+        "water",
+        "みず",
+        "nước"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "row_hint": 9,
+      "triple": [
+        "chicken",
+        "とりにく",
+        "thịt gà"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000010",
+      "row_hint": 10,
+      "triple": [
+        "breakfast",
+        "あさごはん",
+        "bữa sáng"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000011",
+      "row_hint": 11,
+      "triple": [
+        "cat",
+        "ねこ",
+        "mèo"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000012",
+      "row_hint": 12,
+      "triple": [
+        "dog",
+        "いぬ",
+        "chó"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000013",
+      "row_hint": 13,
+      "triple": [
+        "elephant",
+        "ぞう",
+        "voi"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000014",
+      "row_hint": 14,
+      "triple": [
+        "tree",
+        "き",
+        "cây"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000015",
+      "row_hint": 15,
+      "triple": [
+        "flower",
+        "はな",
+        "hoa"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000016",
+      "row_hint": 16,
+      "triple": [
+        "mountain",
+        "やま",
+        "núi"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000017",
+      "row_hint": 17,
+      "triple": [
+        "river",
+        "かわ",
+        "sông"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000018",
+      "row_hint": 18,
+      "triple": [
+        "sun",
+        "たいよう",
+        "mặt trời"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000019",
+      "row_hint": 19,
+      "triple": [
+        "rain",
+        "あめ",
+        "mưa"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000020",
+      "row_hint": 20,
+      "triple": [
+        "weather",
+        "てんき",
+        "thời tiết"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000021",
+      "row_hint": 21,
+      "triple": [
+        "house",
+        "いえ",
+        "ngôi nhà"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000022",
+      "row_hint": 22,
+      "triple": [
+        "kitchen",
+        "だいどころ",
+        "nhà bếp"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000023",
+      "row_hint": 23,
+      "triple": [
+        "school",
+        "がっこう",
+        "trường học"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000024",
+      "row_hint": 24,
+      "triple": [
+        "library",
+        "としょかん",
+        "thư viện"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000025",
+      "row_hint": 25,
+      "triple": [
+        "hospital",
+        "びょういん",
+        "bệnh viện"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000026",
+      "row_hint": 26,
+      "triple": [
+        "airport",
+        "くうこう",
+        "sân bay"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000027",
+      "row_hint": 27,
+      "triple": [
+        "restaurant",
+        "レストラン",
+        "nhà hàng"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000028",
+      "row_hint": 28,
+      "triple": [
+        "car",
+        "くるま",
+        "ô tô"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000029",
+      "row_hint": 29,
+      "triple": [
+        "bicycle",
+        "じてんしゃ",
+        "xe đạp"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000030",
+      "row_hint": 30,
+      "triple": [
+        "bridge",
+        "はし",
+        "cây cầu"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000031",
+      "row_hint": 31,
+      "triple": [
+        "book",
+        "ほん",
+        "sách"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000032",
+      "row_hint": 32,
+      "triple": [
+        "phone",
+        "でんわ",
+        "điện thoại"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000033",
+      "row_hint": 33,
+      "triple": [
+        "computer",
+        "コンピューター",
+        "máy tính"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000034",
+      "row_hint": 34,
+      "triple": [
+        "umbrella",
+        "かさ",
+        "ô/dù"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000035",
+      "row_hint": 35,
+      "triple": [
+        "shirt",
+        "シャツ",
+        "áo sơ mi"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000036",
+      "row_hint": 36,
+      "triple": [
+        "family",
+        "かぞく",
+        "gia đình"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000037",
+      "row_hint": 37,
+      "triple": [
+        "mother",
+        "はは",
+        "mẹ"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000038",
+      "row_hint": 38,
+      "triple": [
+        "friend",
+        "ともだち",
+        "bạn"
+      ],
+      "history": [
+        {
+          "old_triple": [
+            "friend",
+            "ともだち",
+            "bạn bè"
+          ],
+          "new_triple": [
+            "friend",
+            "ともだち",
+            "bạn"
+          ],
+          "reason": "owner approved singular friend; Vietnamese row 38 corrected"
+        }
+      ]
+    },
+    {
+      "vocab_id": "vocab-000039",
+      "row_hint": 39,
+      "triple": [
+        "teacher",
+        "せんせい",
+        "giáo viên"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000040",
+      "row_hint": 40,
+      "triple": [
+        "engineer",
+        "エンジニア",
+        "kỹ sư"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000041",
+      "row_hint": 41,
+      "triple": [
+        "today",
+        "きょう",
+        "hôm nay"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000042",
+      "row_hint": 42,
+      "triple": [
+        "tomorrow",
+        "あした",
+        "ngày mai"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000043",
+      "row_hint": 43,
+      "triple": [
+        "yesterday",
+        "きのう",
+        "hôm qua"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000044",
+      "row_hint": 44,
+      "triple": [
+        "winter",
+        "ふゆ",
+        "mùa đông"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000045",
+      "row_hint": 45,
+      "triple": [
+        "happy",
+        "うれしい",
+        "vui"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000046",
+      "row_hint": 46,
+      "triple": [
+        "hungry",
+        "おなかがすいた",
+        "đói"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000047",
+      "row_hint": 47,
+      "triple": [
+        "easy",
+        "やさしい",
+        "dễ"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000048",
+      "row_hint": 48,
+      "triple": [
+        "difficult",
+        "むずかしい",
+        "khó"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000049",
+      "row_hint": 49,
+      "triple": [
+        "beautiful",
+        "きれい",
+        "đẹp"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000050",
+      "row_hint": 50,
+      "triple": [
+        "strong",
+        "つよい",
+        "mạnh"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000051",
+      "row_hint": 51,
+      "triple": [
+        "go",
+        "いく",
+        "đi"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000052",
+      "row_hint": 52,
+      "triple": [
+        "read",
+        "よむ",
+        "đọc"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000053",
+      "row_hint": 53,
+      "triple": [
+        "write",
+        "かく",
+        "viết"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000054",
+      "row_hint": 54,
+      "triple": [
+        "study",
+        "べんきょうする",
+        "học tập"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000055",
+      "row_hint": 55,
+      "triple": [
+        "work",
+        "はたらく",
+        "làm việc"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000056",
+      "row_hint": 56,
+      "triple": [
+        "sleep",
+        "ねる",
+        "ngủ"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000057",
+      "row_hint": 57,
+      "triple": [
+        "eat",
+        "たべる",
+        "ăn"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000058",
+      "row_hint": 58,
+      "triple": [
+        "drink",
+        "のむ",
+        "uống"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000059",
+      "row_hint": 59,
+      "triple": [
+        "buy",
+        "かう",
+        "mua"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000060",
+      "row_hint": 60,
+      "triple": [
+        "help",
+        "たすける",
+        "giúp đỡ"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000061",
+      "row_hint": 61,
+      "triple": [
+        "understand",
+        "わかる",
+        "hiểu"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000062",
+      "row_hint": 62,
+      "triple": [
+        "remember",
+        "おぼえる",
+        "nhớ"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000063",
+      "row_hint": 63,
+      "triple": [
+        "receive",
+        "うけとる",
+        "nhận"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000064",
+      "row_hint": 64,
+      "triple": [
+        "choose",
+        "えらぶ",
+        "chọn"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000065",
+      "row_hint": 65,
+      "triple": [
+        "swim",
+        "およぐ",
+        "bơi"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000066",
+      "row_hint": 66,
+      "triple": [
+        "software",
+        "ソフトウェア",
+        "phần mềm"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000067",
+      "row_hint": 67,
+      "triple": [
+        "database",
+        "データベース",
+        "cơ sở dữ liệu"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000068",
+      "row_hint": 68,
+      "triple": [
+        "password",
+        "パスワード",
+        "mật khẩu"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000069",
+      "row_hint": 69,
+      "triple": [
+        "music",
+        "おんがく",
+        "âm nhạc"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000070",
+      "row_hint": 70,
+      "triple": [
+        "language",
+        "ことば",
+        "ngôn ngữ"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000071",
+      "row_hint": 71,
+      "triple": [
+        "problem",
+        "もんだい",
+        "vấn đề"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000072",
+      "row_hint": 72,
+      "triple": [
+        "business",
+        "ビジネス",
+        "kinh doanh"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000073",
+      "row_hint": 73,
+      "triple": [
+        "university",
+        "だいがく",
+        "trường đại học"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000074",
+      "row_hint": 74,
+      "triple": [
+        "project",
+        "プロジェクト",
+        "dự án"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000075",
+      "row_hint": 75,
+      "triple": [
+        "experience",
+        "けいけん",
+        "kinh nghiệm"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000076",
+      "row_hint": 76,
+      "triple": [
+        "vegetable",
+        "やさい",
+        "rau"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000077",
+      "row_hint": 77,
+      "triple": [
+        "important",
+        "たいせつ",
+        "quan trọng"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000078",
+      "row_hint": 78,
+      "triple": [
+        "different",
+        "ちがう",
+        "khác"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000079",
+      "row_hint": 79,
+      "triple": [
+        "dangerous",
+        "あぶない",
+        "nguy hiểm"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000080",
+      "row_hint": 80,
+      "triple": [
+        "impossible",
+        "ふかのう",
+        "không thể"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000081",
+      "row_hint": 81,
+      "triple": [
+        "because",
+        "なぜなら",
+        "bởi vì"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000082",
+      "row_hint": 82,
+      "triple": [
+        "always",
+        "いつも",
+        "luôn luôn"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000083",
+      "row_hint": 83,
+      "triple": [
+        "sometimes",
+        "ときどき",
+        "thỉnh thoảng"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000084",
+      "row_hint": 84,
+      "triple": [
+        "together",
+        "いっしょに",
+        "cùng nhau"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000085",
+      "row_hint": 85,
+      "triple": [
+        "where",
+        "どこ",
+        "ở đâu"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000086",
+      "row_hint": 86,
+      "triple": [
+        "why",
+        "なぜ",
+        "tại sao"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000087",
+      "row_hint": 87,
+      "triple": [
+        "hello",
+        "こんにちは",
+        "xin chào"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000088",
+      "row_hint": 88,
+      "triple": [
+        "please",
+        "おねがいします",
+        "làm ơn/xin vui lòng"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000089",
+      "row_hint": 89,
+      "triple": [
+        "thanks",
+        "ありがとう",
+        "cảm ơn"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000090",
+      "row_hint": 90,
+      "triple": [
+        "sorry",
+        "すみません",
+        "xin lỗi"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000091",
+      "row_hint": 91,
+      "triple": [
+        "apartment",
+        "アパート",
+        "căn hộ"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000092",
+      "row_hint": 92,
+      "triple": [
+        "dictionary",
+        "じしょ",
+        "từ điển"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000093",
+      "row_hint": 93,
+      "triple": [
+        "supermarket",
+        "スーパーマーケット",
+        "siêu thị"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000094",
+      "row_hint": 94,
+      "triple": [
+        "pharmacy",
+        "やっきょく",
+        "nhà thuốc"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000095",
+      "row_hint": 95,
+      "triple": [
+        "museum",
+        "はくぶつかん",
+        "bảo tàng"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000096",
+      "row_hint": 96,
+      "triple": [
+        "waterfall",
+        "たき",
+        "thác nước"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000097",
+      "row_hint": 97,
+      "triple": [
+        "firefighter",
+        "しょうぼうし",
+        "lính cứu hỏa"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000098",
+      "row_hint": 98,
+      "triple": [
+        "neighbor",
+        "となりのひと",
+        "hàng xóm"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000099",
+      "row_hint": 99,
+      "triple": [
+        "daughter",
+        "むすめ",
+        "con gái"
+      ],
+      "history": []
+    },
+    {
+      "vocab_id": "vocab-000100",
+      "row_hint": 100,
+      "triple": [
+        "grandmother",
+        "そぼ",
+        "bà"
+      ],
+      "history": []
+    }
+  ]
+}

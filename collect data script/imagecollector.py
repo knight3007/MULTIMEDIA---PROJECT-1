@@ -20,6 +20,7 @@ from collector_common import (
     PROJECT_ROOT, CollectionError, add_common_arguments, load_vocabulary,
     resolve_project_path, run_cli, validate_common_arguments,
 )
+from image_scorer import flatten_to_rgb
 
 VOCABULARY_PATH = PROJECT_ROOT / "data" / "vocabulary" / "en.txt"
 IMAGE_DIR = PROJECT_ROOT / "data" / "image" / "en"
@@ -426,7 +427,7 @@ def normalize_image_to_jpeg(source: Any, destination: Path) -> None:
             width, height = downloaded.size
             if width < 1 or height < 1 or width * height > MAX_IMAGE_PIXELS:
                 raise CollectionError(f"unsupported image dimensions: {width}x{height}")
-            normalized = ImageOps.exif_transpose(downloaded).convert("RGB")
+            normalized = flatten_to_rgb(ImageOps.exif_transpose(downloaded))
             normalized.thumbnail(MAX_IMAGE_SIZE, Image.Resampling.LANCZOS)
             normalized.save(
                 temporary_path,

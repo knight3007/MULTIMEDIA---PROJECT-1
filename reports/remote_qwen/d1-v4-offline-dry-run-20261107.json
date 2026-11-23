@@ -1,0 +1,12 @@
+{
+  "status": "offline_valid",
+  "host": "offline-placeholder.trycloudflare.com",
+  "model": "Qwen/Qwen3-4B",
+  "network_calls": 0,
+  "inference_calls": 0,
+  "api_contract_version": "kaggle-qwen3-4b-v4",
+  "variant_a_contract": "compatible",
+  "variant_a_system_prompt_characters": 1993,
+  "variant_b_contract": "compatible",
+  "variant_b_system_prompt_characters": 1560
+}

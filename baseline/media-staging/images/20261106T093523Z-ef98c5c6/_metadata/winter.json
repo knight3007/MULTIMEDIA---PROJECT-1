@@ -1,0 +1,21 @@
+{
+  "word": "winter",
+  "search_query": "winter season",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://cdn.mos.cms.futurecdn.net/2LVWjEV65antgXRgEAXJRb-1200-80.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.ifV2ozEuCEyJcOvsgymqzAHaEs&pid=15.1",
+  "source_page_url": "https://www.livescience.com/25124-winter.html",
+  "title": "Winter: The Coldest Season | Live Science",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -2.7421875
+  }
+}

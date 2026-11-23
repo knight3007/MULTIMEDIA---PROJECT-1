@@ -1,0 +1,21 @@
+{
+  "word": "chicken",
+  "search_query": "chicken meat",
+  "query_provenance": "human_approved",
+  "provider": "duckduckgo",
+  "image_url": "https://thumbs.dreamstime.com/z/fresh-chicken-meat-wooden-board-top-view-83865597.jpg",
+  "thumbnail_url": "https://ts2.explicit.bing.net/th?id=OIP.V37euGMnM4dw7sP21yjHXAHaFW&pid=15.1",
+  "source_page_url": "https://cartoondealer.com/image/167897397/raw-chicken-meat-isolated-white-background-healthy-eating-fresh-chicken-meat-white-background.html",
+  "title": "Raw Chicken Meat Isolated On A White Background. Healthy Eating Fresh ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.5078125
+  }
+}

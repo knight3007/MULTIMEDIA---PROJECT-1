@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000050",
+  "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"a strong feeling or force\",\n  \"visual_description\": \"A person standing confidently with a determined expression, surrounded by a visual representation of strength (e.g., a mountain or a powerful object)\",\n  \"negative_constraints\": [\"not a literal image of a physical object\", \"avoid abstract concepts that are too vague\"],\n  \"reason\": \"The image should represent the concept of strength in a visual form that is clear and educational, while avoiding ambiguous or misleading representations.\"\n}",
+  "parsed": {
+    "visual_type": "abstract_concept",
+    "search_query": "a strong feeling or force",
+    "visual_description": "A person standing confidently with a determined expression, surrounded by a visual representation of strength (e.g., a mountain or a powerful object)",
+    "negative_constraints": [
+      "not a literal image of a physical object",
+      "avoid abstract concepts that are too vague"
+    ],
+    "reason": "The image should represent the concept of strength in a visual form that is clear and educational, while avoiding ambiguous or misleading representations."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 25.829
+}

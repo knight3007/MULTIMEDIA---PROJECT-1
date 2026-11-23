@@ -1,0 +1,21 @@
+{
+  "word": "car",
+  "search_query": "car vehicle",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://offshoreclipping.com/wp-content/uploads/2024/05/capture-driving-shot.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.zNN6rm3I224pUb_CmEnHCQHaE8&pid=15.1",
+  "source_page_url": "https://offshoreclipping.com/blog/car-product-photography/",
+  "title": "Car Product Photography: 17 Tips to Better Automotive Photos",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.3984375
+  }
+}

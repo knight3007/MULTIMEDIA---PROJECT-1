@@ -1,0 +1,18 @@
+{
+  "word": "milk",
+  "search_query": "milk beverage",
+  "provider": "duckduckgo",
+  "image_url": "https://interfresh.com.vn/wp-content/uploads/2024/12/1-14.png",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.RrSXaqU7ABMdvwBXqp0OmwHaEK&pid=15.1",
+  "source_page_url": "https://interfresh.com.vn/milk-based-beverages-exploring-global-beverage/",
+  "title": "Milk-Based Beverages: Exploring Global Beverage Trends",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "interfresh.com.vn",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.234395980834961
+  }
+}

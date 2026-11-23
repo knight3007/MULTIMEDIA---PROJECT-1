@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T093301Z-67bd98cc",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000031",
+    "vocab-000032",
+    "vocab-000033",
+    "vocab-000034",
+    "vocab-000035",
+    "vocab-000036",
+    "vocab-000037",
+    "vocab-000038",
+    "vocab-000039",
+    "vocab-000040"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000031",
+      "source_row_index": 31,
+      "english": "book",
+      "japanese_reading": "ほん",
+      "vietnamese": "sách",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "book object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.6018709999989369,
+        "selected_image_url": "https://i.pinimg.com/originals/26/ed/8c/26ed8c337110c7457577d203146d9209.png"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/originals/26/ed/8c/26ed8c337110c7457577d203146d9209.png",
+        "source_page_url": "https://uk.pinterest.com/pin/object-form-a-visual-journey-through-samuel-ross-sr_a-book--684547212136965342/",
+        "title": "Object - Form: A Visual Journey Through Samuel Ross' SR_A Book | Padded ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 3.7578125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/book.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/book.json",
+      "dimensions": [
+        682,
+        1024
+      ],
+      "size_bytes": 172310,
+      "sha256": "76978708a6d1454a31f3a01cdecd8d18c5b455b742386c2baa433f6048928a3a",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000032",
+      "source_row_index": 32,
+      "english": "phone",
+      "japanese_reading": "でんわ",
+      "vietnamese": "điện thoại",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "phone device",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5610618999999133,
+        "selected_image_url": "https://missbslab.com/wp-content/uploads/2023/04/Mobile_devices_1-2048x1152.png"
+      },
+      "selected_result": {
+        "image_url": "https://missbslab.com/wp-content/uploads/2023/04/Mobile_devices_1-2048x1152.png",
+        "source_page_url": "https://missbslab.com/mobile-devices-or-handheld-computers/",
+        "title": "Mobile Devices | Examples and Types",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -2.2890625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/phone.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/phone.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 72774,
+      "sha256": "2c10b72dc5ceceea9196312253722cc4d9ee3d8768ee4eee054bff7bb7b9a175",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000033",
+      "source_row_index": 33,
+      "english": "computer",
+      "japanese_reading": "コンピューター",
+      "vietnamese": "máy tính",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "computer device",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5309956999990391,
+        "selected_image_url": "https://i.ytimg.com/vi/3f5xSAEuyXU/maxresdefault.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.ytimg.com/vi/3f5xSAEuyXU/maxresdefault.jpg",
+        "source_page_url": "https://storage.googleapis.com/dijvlcpqzhxcne/are-storage-devices-input-and-output-devices.html",
+        "title": "Are Storage Devices Input And Output Devices at Mary Holden blog",
+        "width": null,
+        "height": null,
+        "result_source": "storage.googleapis.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.0234375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/computer.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/computer.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 110596,
+      "sha256": "d1d5d4f1028b0c73e278511971efea91a88315cb387db6638302e3ea434c7c85",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000034",
+      "source_row_index": 34,
+      "english": "umbrella",
+      "japanese_reading": "かさ",
+      "vietnamese": "ô/dù",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "umbrella object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.44440880000183824,
+        "selected_image_url": "https://png.pngtree.com/png-clipart/20240318/original/pngtree-3d-umbrella-object-png-image_14614689.png"
+      },
+      "selected_result": {
+        "image_url": "https://png.pngtree.com/png-clipart/20240318/original/pngtree-3d-umbrella-object-png-image_14614689.png",
+        "source_page_url": "https://pngtree.com/freepng/3d-umbrella-object_14614689.html",
+        "title": "3d Umbrella Object, 3d, Umbrella, Temple PNG Transparent Image and ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 2.6640625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/umbrella.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/umbrella.json",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "size_bytes": 133943,
+      "sha256": "7f61706e13d350dcdc903cc4a5a961c9adca4583d3fd4b9a79dd138455fa68fa",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000035",
+      "source_row_index": 35,
+      "english": "shirt",
+      "japanese_reading": "シャツ",
+      "vietnamese": "áo sơ mi",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "shirt clothing",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 1,
+        "valid_results": 1,
+        "downloaded_candidates": 1,
+        "search_seconds": 0.2650695000011183,
+        "selected_image_url": "https://i.pinimg.com/736x/52/33/76/52337679fcde94292f239aa087dc913a.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/736x/52/33/76/52337679fcde94292f239aa087dc913a.jpg",
+        "source_page_url": "https://co.pinterest.com/pin/5981411999512472/",
+        "title": "Anatomy of the Nasal Cavity Diagram | Organos del sistema respiratorio ...",
+        "width": null,
+        "height": null,
+        "result_source": "co.pinterest.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -15.8984375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/shirt.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/shirt.json",
+      "dimensions": [
+        522,
+        433
+      ],
+      "size_bytes": 52840,
+      "sha256": "7f1843aa5a8c26d8d800d26278387f66ec37811c34a0f446ac2ab486c99950c1",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000036",
+      "source_row_index": 36,
+      "english": "family",
+      "japanese_reading": "かぞく",
+      "vietnamese": "gia đình",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "family institution",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4723740000008547,
+        "selected_image_url": "https://image.slidesharecdn.com/socialinsti-160127020733/75/Social-institutions-10-2048.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://image.slidesharecdn.com/socialinsti-160127020733/75/Social-institutions-10-2048.jpg",
+        "source_page_url": "https://www.slideshare.net/slideshow/social-institutions-57536719/57536719",
+        "title": "Social institutions | PPTX",
+        "width": null,
+        "height": null,
+        "result_source": "slideshare.net"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.2734375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/family.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/family.json",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "size_bytes": 149148,
+      "sha256": "34426c614dbf3cea26a931e72f50c48566517aa159ea326596e47e98dcb9bd71",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000037",
+      "source_row_index": 37,
+      "english": "mother",
+      "japanese_reading": "はは",
+      "vietnamese": "mẹ",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "mother person",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5943232999998145,
+        "selected_image_url": "https://img.freepik.com/premium-photo/mothers-embrace-illustrate-unconditional-love-with-child_1141473-2479.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://img.freepik.com/premium-photo/mothers-embrace-illustrate-unconditional-love-with-child_1141473-2479.jpg",
+        "source_page_url": "https://www.freepik.com/premium-ai-image/mothers-embrace-illustrate-unconditional-love-with-child_195449540.htm",
+        "title": "Premium Photo | A mothers embrace Illustrate the unconditional love ...",
+        "width": null,
+        "height": null,
+        "result_source": "freepik.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.7109375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/mother.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/mother.json",
+      "dimensions": [
+        626,
+        470
+      ],
+      "size_bytes": 45590,
+      "sha256": "edb654cd19f38bc928c40a0a13147fc72bcc36a6f37bd2ee400822b3ec4a6262",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000038",
+      "source_row_index": 38,
+      "english": "friend",
+      "japanese_reading": "ともだち",
+      "vietnamese": "bạn",
+      "target_sense": "one friend (singular)",
+      "semantic_review_status": "approved",
+      "query": null,
+      "query_provenance": null,
+      "status": "blocked_semantic_review",
+      "failure": "Approved target sense has no image search intent: vocab-000038",
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": null,
+      "selected_result": null,
+      "siglip_selection": null,
+      "staged_image_path": null,
+      "staged_metadata_path": null,
+      "dimensions": null,
+      "size_bytes": null,
+      "sha256": null,
+      "validation_status": "not_downloaded",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": null
+    },
+    {
+      "vocab_id": "vocab-000039",
+      "source_row_index": 39,
+      "english": "teacher",
+      "japanese_reading": "せんせい",
+      "vietnamese": "giáo viên",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "teacher person",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.48463059999994584,
+        "selected_image_url": "https://d1y8sb8igg2f8e.cloudfront.net/images/teacher_kin.2e16d0ba.fill-1200x630.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://d1y8sb8igg2f8e.cloudfront.net/images/teacher_kin.2e16d0ba.fill-1200x630.jpg",
+        "source_page_url": "https://www.newamerica.org/education-policy/edcentral/new-research-suggests-ways-to-improve-every-stage-of-diverse-teachers-careers/",
+        "title": "New Research Suggests Ways to Improve Every Stage of Diverse Teachers ...",
+        "width": null,
+        "height": null,
+        "result_source": "newamerica.org"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.4765625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/teacher.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/teacher.json",
+      "dimensions": [
+        1024,
+        538
+      ],
+      "size_bytes": 100454,
+      "sha256": "799a5449f97919fb5793f281b6846e3a88c8cdc349ebbad4e9efd65c0a36fcf2",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000040",
+      "source_row_index": 40,
+      "english": "engineer",
+      "japanese_reading": "エンジニア",
+      "vietnamese": "kỹ sư",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "engineer profession",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4347478999989107,
+        "selected_image_url": "https://thumbs.dreamstime.com/b/engineer-working-blueprints-construction-plans-building-engineers-calculate-draft-drawings-civil-engineering-business-278296894.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://thumbs.dreamstime.com/b/engineer-working-blueprints-construction-plans-building-engineers-calculate-draft-drawings-civil-engineering-business-278296894.jpg",
+        "source_page_url": "https://www.dreamstime.com/two-engineer-working-office-blueprints-inspection-workplace-architectural-plan-construction-project-business-image285429469",
+        "title": "Two Engineer Working in Office with Blueprints, Inspection in Workplace ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.8984375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/engineer.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/_metadata/engineer.json",
+      "dimensions": [
+        800,
+        400
+      ],
+      "size_bytes": 52996,
+      "sha256": "d329126f9193bd57429b39d67c8a36e983142f17844a0e1312826db8aa8c6b86",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

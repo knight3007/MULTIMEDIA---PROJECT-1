@@ -1,0 +1,21 @@
+{
+  "word": "experience",
+  "search_query": "experience object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://imaginovation.net/static/35ee311a394b5d317c72b5d128c29b39/56e89/demystifying-object-oriented-user-experience.png",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.Ggzm7CLgGu9F13A-FTxBSgHaD5&pid=15.1",
+  "source_page_url": "https://imaginovation.net/blog/ooux-complete-guide/",
+  "title": "A Comprehensive Guide to Object-Oriented User Experience",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "imaginovation.net",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.6015625
+  }
+}

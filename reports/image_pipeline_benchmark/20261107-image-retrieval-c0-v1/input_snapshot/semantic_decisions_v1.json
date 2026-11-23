@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "approved": [
+    {
+      "vocab_id": "vocab-000004", "source_row_index": 4,
+      "review_status": "approved", "decision_source": "owner_approved",
+      "reviewer": "project_owner", "approval_recorded_on": "2026-10-28",
+      "target_sense": "cooked rice", "image_search_intent": "cooked rice",
+      "rationale": "Owner selected cooked rice / cơm chín; existing rice grain image is unsuitable."
+    },
+    {
+      "vocab_id": "vocab-000009", "source_row_index": 9,
+      "review_status": "approved", "decision_source": "owner_approved",
+      "reviewer": "project_owner", "approval_recorded_on": "2026-10-28",
+      "target_sense": "chicken meat", "image_search_intent": "chicken meat",
+      "rationale": "Owner selected chicken meat / thịt gà; existing chicken animal image is unsuitable."
+    },
+    {
+      "vocab_id": "vocab-000038", "source_row_index": 38,
+      "review_status": "approved", "decision_source": "owner_approved",
+      "reviewer": "project_owner", "approval_recorded_on": "2026-10-28",
+      "target_sense": "one friend (singular)",
+      "rationale": "Owner approved Vietnamese row 38 correction from bạn bè to bạn."
+    }
+  ],
+  "context": [
+    {"vocab_id": "vocab-000007", "source_row_index": 7, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "Japanese ぎゅうにゅう refers specifically to cow's milk; scope of the EN/VN pair needs review."},
+    {"vocab_id": "vocab-000015", "source_row_index": 15, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "written_form": "花", "usage_note": "はな can also mean nose; 花 denotes a flower."},
+    {"vocab_id": "vocab-000019", "source_row_index": 19, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "written_form": "雨", "usage_note": "あめ can also mean candy; 雨 denotes rain."},
+    {"vocab_id": "vocab-000030", "source_row_index": 30, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "written_form": "橋", "usage_note": "はし can also denote chopsticks; 橋 denotes a bridge."},
+    {"vocab_id": "vocab-000035", "source_row_index": 35, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "Vietnamese áo sơ mi is narrower than general English shirt; intended garment type needs review."},
+    {"vocab_id": "vocab-000037", "source_row_index": 37, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "はは commonly refers to one's own mother when speaking to others; not a direct respectful address."},
+    {"vocab_id": "vocab-000045", "source_row_index": 45, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "うれしい often means glad or pleased about an event; broader happy senses need review."},
+    {"vocab_id": "vocab-000047", "source_row_index": 47, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "written_form": "易しい", "usage_note": "やさしい may mean easy or kind; 易しい denotes not difficult."},
+    {"vocab_id": "vocab-000049", "source_row_index": 49, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "きれい can describe beauty or cleanliness; context determines the meaning."},
+    {"vocab_id": "vocab-000053", "source_row_index": 53, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "written_form": "書く", "usage_note": "かく can refer to writing or drawing; 書く denotes writing text."},
+    {"vocab_id": "vocab-000060", "source_row_index": 60, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "たすける often means aid or rescue someone in difficulty; ordinary assistance may use a different expression."},
+    {"vocab_id": "vocab-000070", "source_row_index": 70, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "ことば may mean language, words, or speech; intended scope needs review."},
+    {"vocab_id": "vocab-000078", "source_row_index": 78, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "ちがう is verbal: AとBはちがう means A and B differ."},
+    {"vocab_id": "vocab-000081", "source_row_index": 81, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "なぜなら introduces an explanation, often followed by a reason and から; clause placement matters."},
+    {"vocab_id": "vocab-000087", "source_row_index": 87, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "こんにちは is commonly a daytime greeting."},
+    {"vocab_id": "vocab-000088", "source_row_index": 88, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "おねがいします is a polite request formula, not a standalone equivalent in every use of please."},
+    {"vocab_id": "vocab-000090", "source_row_index": 90, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "すみません may be apology, excuse me, or attention-getting; use an apology context for sorry."},
+    {"vocab_id": "vocab-000091", "source_row_index": 91, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "アパート may denote a narrower housing type than generic apartment; intended housing scope needs review."},
+    {"vocab_id": "vocab-000098", "source_row_index": 98, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "となりのひと means the person next door; broader neighborhood scope needs review."},
+    {"vocab_id": "vocab-000100", "source_row_index": 100, "review_status": "needs_decision", "annotation_status": "context_added_pending_review", "usage_note": "そぼ commonly refers to one's own grandmother when speaking to others; not a direct respectful address."}
+  ]
+}

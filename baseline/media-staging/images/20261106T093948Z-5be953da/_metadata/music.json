@@ -1,0 +1,21 @@
+{
+  "word": "music",
+  "search_query": "music object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://thumbs.dreamstime.com/z/set-music-sound-objects-element-vector-48928442.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.V83Oj39x2lm-ifvVuLlnFQHaH0&pid=15.1",
+  "source_page_url": "https://www.dreamstime.com/stock-illustration-set-music-sound-objects-element-vector-image48928442",
+  "title": "Set of Music and Sound Objects Stock Vector - Illustration of audio ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "Dreamstime",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.7265625
+  }
+}

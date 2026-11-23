@@ -1,0 +1,21 @@
+{
+  "word": "sleep",
+  "search_query": "sleep object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://images.creativemarket.com/0.1.0/ps/3911158/1820/1213/m1/fpnw/wm1/gxx71glx77xf80cigegxu5uy13wmtlubjfe3e9v0fj8rabd5sk2wyhqx65klpd2b-.jpg?1517040859&s=1965357c048c6b941e773e2cb59793a8",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.u3_gjUtvh_OA0uJZYDWWzAHaE7&pid=15.1",
+  "source_page_url": "https://creativemarket.com/zasim.art/2248291-A-set-of-objects-and-symbols-of-sleep.-Vector-cartoon-illustration.",
+  "title": "A set of objects and symbols of sleep. Vector cartoon illustration ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.5078125
+  }
+}

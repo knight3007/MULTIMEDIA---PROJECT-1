@@ -1,0 +1,21 @@
+{
+  "word": "flower",
+  "search_query": "flower plant",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/bromeliad-flower-plants-for-home.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.J6i0uMC4q7fBh3JO6ofLjAHaHa&pid=15.1",
+  "source_page_url": "https://www.interiorcompany.com/in/trends/indoor-flowering-plants",
+  "title": "17 Best Indoor Blooming Plants that Bring Colours to Your Home",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "interiorcompany.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -4.3515625
+  }
+}

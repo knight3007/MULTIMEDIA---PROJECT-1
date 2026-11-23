@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "run_id": "20261029T032618Z-c2a89e06",
+  "purpose": "owner_approved_image_replacement_review",
+  "configuration": {
+    "timeout": 8,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "english": "rice",
+      "japanese_reading": "ごはん",
+      "vietnamese": "cơm",
+      "target_sense": "cooked rice",
+      "effective_query": "cooked rice",
+      "query_provenance": "human_approved",
+      "provider": "duckduckgo",
+      "status": "failed",
+      "approval_status": "pending_human_review",
+      "candidate_retrieval": {
+        "raw_results": 0,
+        "valid_results": 0,
+        "downloaded_candidates": 0,
+        "selected_image_url": null,
+        "search_seconds": 0.0
+      },
+      "selected_result": null,
+      "siglip_selection": null,
+      "staged_image_path": null,
+      "staged_metadata_path": null,
+      "dimensions": null,
+      "validation_status": "not_downloaded",
+      "failure": "DuckDuckGo image search failed: error sending request for url (https://duckduckgo.com/?q=cooked+rice) > operation timed out"
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "english": "chicken",
+      "japanese_reading": "とりにく",
+      "vietnamese": "thịt gà",
+      "target_sense": "chicken meat",
+      "effective_query": "chicken meat",
+      "query_provenance": "human_approved",
+      "provider": "duckduckgo",
+      "status": "failed",
+      "approval_status": "pending_human_review",
+      "candidate_retrieval": {
+        "raw_results": 0,
+        "valid_results": 0,
+        "downloaded_candidates": 0,
+        "selected_image_url": null,
+        "search_seconds": 0.0
+      },
+      "selected_result": null,
+      "siglip_selection": null,
+      "staged_image_path": null,
+      "staged_metadata_path": null,
+      "dimensions": null,
+      "validation_status": "not_downloaded",
+      "failure": "DuckDuckGo image search failed: error sending request for url (https://www.bing.com/images/async?q=chicken+meat&async=1&first=1&count=35) > operation timed out"
+    }
+  ]
+}

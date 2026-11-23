@@ -1,0 +1,21 @@
+{
+  "word": "computer",
+  "search_query": "computer device",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.ytimg.com/vi/3f5xSAEuyXU/maxresdefault.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.uMzK_8jSeU4klWo-o1sPSQHaEK&pid=15.1",
+  "source_page_url": "https://storage.googleapis.com/dijvlcpqzhxcne/are-storage-devices-input-and-output-devices.html",
+  "title": "Are Storage Devices Input And Output Devices at Mary Holden blog",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "storage.googleapis.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.0234375
+  }
+}

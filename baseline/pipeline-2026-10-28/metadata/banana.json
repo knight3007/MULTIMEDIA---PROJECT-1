@@ -1,0 +1,18 @@
+{
+  "word": "banana",
+  "search_query": "banana fruit",
+  "provider": "duckduckgo",
+  "image_url": "https://static.vecteezy.com/system/resources/previews/050/630/364/large_2x/close-up-sweet-fresh-banana-fruit-still-hanging-on-the-tree-free-photo.jpg",
+  "thumbnail_url": "https://ts2.explicit.bing.net/th?id=OIP.LVuVDcBsUMpkGlKhtb_kmwHaFw&pid=15.1",
+  "source_page_url": "https://www.vecteezy.com/photo/50630364-close-up-sweet-fresh-banana-fruit-still-hanging-on-the-tree",
+  "title": "Close-up Sweet fresh banana fruit still hanging on the tree 50630364 ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "vecteezy.com",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.08457088470458984
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "word": "strong",
+  "search_query": "strong object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.ytimg.com/vi/nz4HKED440k/maxresdefault.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.OeOHWYYvMWKKLz-95MbT1AHaEK&pid=15.1",
+  "source_page_url": "https://www.vrogue.co/post/10-strongest-material-in-the-world",
+  "title": "10 Strongest Material In The World - vrogue.co",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "vrogue.co",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -4.3515625
+  }
+}

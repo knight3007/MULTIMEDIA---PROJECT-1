@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000055",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person working\",\n  \"visual_description\": \"A person performing a task in a workplace\",\n  \"negative_constraints\": [\"non-literal imagery\", \"abstract concepts\"],\n  \"reason\": \"The depiction shows a person performing an action, which is a common way to represent 'work' in educational visuals.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "person working",
+    "visual_description": "A person performing a task in a workplace",
+    "negative_constraints": [
+      "non-literal imagery",
+      "abstract concepts"
+    ],
+    "reason": "The depiction shows a person performing an action, which is a common way to represent 'work' in educational visuals."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 19.188
+}

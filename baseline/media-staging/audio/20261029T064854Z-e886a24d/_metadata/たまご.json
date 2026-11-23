@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "6",
+  "word": "たまご",
+  "reading": "たまご",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261029T064854Z-e886a24d/たまご.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 7488,
+  "duration_seconds": 0.936,
+  "status": "success"
+}

@@ -1,0 +1,21 @@
+{
+  "word": "dog",
+  "search_query": "dog animal",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://cdn.pixabay.com/photo/2023/06/02/22/26/dog-8036596_1280.jpg",
+  "thumbnail_url": "https://ts2.explicit.bing.net/th?id=OIP.jhrkozvshlLB93XFauNU7QHaE7&pid=15.1",
+  "source_page_url": "https://pixabay.com/illustrations/dog-domestic-animal-mammal-portrait-8036596/",
+  "title": "Download Dog, Domestic Animal, Mammal. Royalty-Free Stock Illustration ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.3515625
+  }
+}

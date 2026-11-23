@@ -1,0 +1,21 @@
+{
+  "word": "elephant",
+  "search_query": "elephant animal",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://cdn.pixabay.com/photo/2023/09/14/19/46/elephant-8253639_1280.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIF.+b6bsYwJfaG9eKoIW3RuwQ&pid=15.1",
+  "source_page_url": "https://picstank.com/explore/elephant",
+  "title": "Elephant - Images | Picstank.com",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.1640625
+  }
+}

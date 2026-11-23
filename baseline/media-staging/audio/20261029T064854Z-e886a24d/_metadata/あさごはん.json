@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "10",
+  "word": "あさごはん",
+  "reading": "あさごはん",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261029T064854Z-e886a24d/あさごはん.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 9216,
+  "duration_seconds": 1.152,
+  "status": "success"
+}

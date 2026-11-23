@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T092640Z-a11a8a8d",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000011"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000011",
+      "source_row_index": 11,
+      "english": "cat",
+      "japanese_reading": "ねこ",
+      "vietnamese": "mèo",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "cat animal",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.6905093999994278,
+        "selected_image_url": "https://pixnio.com/free-images/2017/09/26/2017-09-26-07-47-37.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://pixnio.com/free-images/2017/09/26/2017-09-26-07-47-37.jpg",
+        "source_page_url": "https://pkcke.vacuumcupsuppliers.co.uk/what-is-a-cat-animal-list-of-cat-breeds/",
+        "title": "What Is A Cat Animal? , List of cat breeds – FKCU",
+        "width": null,
+        "height": null,
+        "result_source": "pkcke.vacuumcupsuppliers.co.uk"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.9140625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092640Z-a11a8a8d/cat.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092640Z-a11a8a8d/_metadata/cat.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 157345,
+      "sha256": "8efb71ec761d195b32fab0569ca2bb57fda1b823d1b48dd0701e37859911d772",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000048",
+  "raw_decoded_text": "difficult object",
+  "raw_attempts": [
+    {
+      "word": "difficult",
+      "correction_prompt": null,
+      "raw_decoded_text": "difficult object",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "difficult object",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.847
+}

@@ -1,0 +1,31 @@
+{
+  "valid": true,
+  "errors": [],
+  "game_ready_count": 0,
+  "not_game_ready": [
+    {
+      "item_id": "item-55fc55cf-c25b-4e98-ab25-5960d90da51a",
+      "status": "pending",
+      "missing_media": [
+        "image",
+        "audio"
+      ]
+    },
+    {
+      "item_id": "item-0188c8d3-5e34-40c5-8339-36bb111e7428",
+      "status": "pending",
+      "missing_media": [
+        "image",
+        "audio"
+      ]
+    },
+    {
+      "item_id": "item-02d26ae5-0c5a-4910-b048-4846f7cd7b43",
+      "status": "pending",
+      "missing_media": [
+        "image",
+        "audio"
+      ]
+    }
+  ]
+}

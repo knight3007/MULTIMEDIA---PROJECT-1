@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "engine": "bundled Playwright + installed Edge, isolated context, file:// origin",
+  "cards": 100,
+  "images": 99,
+  "loadedImages": 99,
+  "audio": 100,
+  "humanSelects": 200,
+  "filterFailCount": 22,
+  "search": "PASS",
+  "reviewerGuard": "PASS",
+  "draftEditReloadExport": "PASS in isolated test profile only",
+  "responsive": [
+    {
+      "width": 320,
+      "scroll": 320,
+      "viewport": 320
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "viewport": 768
+    },
+    {
+      "width": 1024,
+      "scroll": 1024,
+      "viewport": 1024
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "viewport": 1440
+    }
+  ],
+  "audioLocalLoad": {
+    "readyState": 4,
+    "error": null,
+    "duration": 0.936
+  },
+  "keyboardFocusTag": "AUDIO",
+  "consoleErrors": [],
+  "externalPageRequests": []
+}

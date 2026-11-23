@@ -1,0 +1,21 @@
+{
+  "word": "library",
+  "search_query": "library place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/originals/78/bb/8e/78bb8ea027bb57afd867d9419cd7853e.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.IzEDQZpN8VG7JTzLhgFLfQHaE8&pid=15.1",
+  "source_page_url": "https://www.pinterest.com/pin/423971752414310678/",
+  "title": "Firestone Library renovation news: New 1st floor spaces now open ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "Pinterest",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.2578125
+  }
+}

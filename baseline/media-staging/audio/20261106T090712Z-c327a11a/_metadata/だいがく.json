@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "73",
+  "word": "だいがく",
+  "reading": "だいがく",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090712Z-c327a11a/だいがく.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 8832,
+  "duration_seconds": 1.104,
+  "status": "success"
+}

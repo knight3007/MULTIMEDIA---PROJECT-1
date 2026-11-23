@@ -1,0 +1,59 @@
+{
+  "task_id": "A-003.2",
+  "status": "RETRIEVAL_COMPLETE_OWNER_REVIEW_PENDING",
+  "frozen_date": "2026-11-23",
+  "git_branch": "main",
+  "git_head": "936d9fdd27810e50a144fb6399e647b1ba18c371",
+  "scope": "Seven owner-mentioned A-003 items; production assets and dataset read-only",
+  "new_retrieval": {
+    "vocab-000031": {
+      "english": "book",
+      "japanese": "ほん",
+      "vietnamese": "sách",
+      "queries": [],
+      "reason": "Existing A-003 ICON-03 clearly depicts an open physical book; existing-candidate-first rule makes another search unnecessary.",
+      "unexecuted_fallback_query": "open book on table"
+    },
+    "vocab-000083": {
+      "english": "sometimes",
+      "japanese": "ときどき",
+      "vietnamese": "thỉnh thoảng",
+      "queries": [
+        {"variant": "S1", "query": "some days calendar activity illustration"},
+        {"variant": "S2", "query": "occasional rain sunny days illustration"}
+      ],
+      "reason": "No useful candidate in either original A-003 pool; test two short visual contexts for frequency without requiring text-heavy charts."
+    }
+  },
+  "settings": {
+    "provider": "duckduckgo",
+    "region": "wt-wt",
+    "safesearch": "moderate",
+    "max_candidates_per_variant": 7,
+    "timeout_seconds": 20,
+    "search_retries": 2,
+    "download_retries": 2,
+    "retry_delay_seconds": 2.0,
+    "image_normalization": "imagecollector.normalize_image_to_jpeg with FIX-001 white alpha compositing",
+    "siglip": "not run; candidate suitability is visually reviewed"
+  },
+  "source_sha256": {
+    "collect data script/imagecollector.py": "c1e39f1cad667e4e170a27b6a3839eefed1e3b7d7167852a9fe453e45e9372be",
+    "collect data script/image_scorer.py": "d31a9dea9cef024890141a85d8c3bd01b3fdba1ef25684d27c050cf39444305b",
+    "collect data script/collector_common.py": "d45f49ffea34b955f4e39ffd796f80f5da8fc8576dc54daad95b59188a5b1cc5",
+    "A003_CONDITIONAL_SEARCH/retrieval_results.json": "adc173f4d2885e0cf1daca361543bb3246b6a19e8fa2707a0f8463b201e7f35d",
+    "A003_RANKING_DIAGNOSIS/owner_feedback.json": "bc4ed13f2a6be597bb98f08b0762c5803678cd6b085c66f3adaaff29f8bde511"
+  },
+  "retrieval_summary": {
+    "completed_at_utc": "2026-11-23T03:30:44.316971+00:00",
+    "query_variants_executed": 2,
+    "book_query_variants_executed": 0,
+    "sometimes_query_variants_executed": 2,
+    "searches_succeeded": 2,
+    "candidates": 14,
+    "downloaded_valid_images": 13,
+    "download_failures": 1,
+    "initial_sandbox_attempts": "Both frozen queries timed out; exact queries retried with network access, without adding variants."
+  },
+  "approval_state": "PROPOSED_ONLY"
+}

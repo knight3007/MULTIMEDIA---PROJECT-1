@@ -1,0 +1,21 @@
+{
+  "word": "house",
+  "search_query": "house building",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://ahouseinthehills.com/wp-content/uploads/2025/12/how-much-time-does-it-take-to-build-a-house.webp",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.gaTM-e03hFqPXL2XSZhYWAHaEJ&pid=15.1",
+  "source_page_url": "https://ahouseinthehills.com/build-a-house/",
+  "title": "How Long Does It Take to Build a House - A House in the Hills",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "ahouseinthehills.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.703125
+  }
+}

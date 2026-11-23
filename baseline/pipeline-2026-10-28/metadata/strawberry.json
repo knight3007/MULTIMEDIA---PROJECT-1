@@ -1,0 +1,18 @@
+{
+  "word": "strawberry",
+  "search_query": "strawberry fruit",
+  "provider": "duckduckgo",
+  "image_url": "https://get.pxhere.com/photo/strawberry-natural-foods-strawberries-fruit-produce-food-superfood-diet-food-accessory-fruit-macro-photography-frutti-di-bosco-still-life-photography-local-food-1539941.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.CmbO_IgvScBpt9QSGcMG8QHaE7&pid=15.1",
+  "source_page_url": "https://ar.inspiredpencil.com/pictures-2023/strawberry-photography",
+  "title": "Strawberry Photography",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "ar.inspiredpencil.com",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.17981338500976562
+  }
+}

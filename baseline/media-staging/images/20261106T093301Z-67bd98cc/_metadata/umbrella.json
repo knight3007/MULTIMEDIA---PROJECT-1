@@ -1,0 +1,21 @@
+{
+  "word": "umbrella",
+  "search_query": "umbrella object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://png.pngtree.com/png-clipart/20240318/original/pngtree-3d-umbrella-object-png-image_14614689.png",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.Kcejfp2N3M_-LyPfDPkgnwHaHa&pid=15.1",
+  "source_page_url": "https://pngtree.com/freepng/3d-umbrella-object_14614689.html",
+  "title": "3d Umbrella Object, 3d, Umbrella, Temple PNG Transparent Image and ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 2.6640625
+  }
+}

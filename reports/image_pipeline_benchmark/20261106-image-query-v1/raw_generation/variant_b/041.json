@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000041",
+  "raw_decoded_text": "{\n  \"visual_type\": \"time_weather\",\n  \"search_query\": \"a calendar showing today's date\",\n  \"visual_description\": \"A calendar displaying the current day with the date marked clearly\",\n  \"negative_constraints\": [\"no time indicators\", \"no weather elements\"],\n  \"reason\": \"The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense.\"\n}",
+  "parsed": {
+    "visual_type": "time_weather",
+    "search_query": "a calendar showing today's date",
+    "visual_description": "A calendar displaying the current day with the date marked clearly",
+    "negative_constraints": [
+      "no time indicators",
+      "no weather elements"
+    ],
+    "reason": "The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 28.239
+}

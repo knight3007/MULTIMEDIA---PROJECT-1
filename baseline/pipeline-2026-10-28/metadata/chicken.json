@@ -1,0 +1,18 @@
+{
+  "word": "chicken",
+  "search_query": "chicken animal",
+  "provider": "duckduckgo",
+  "image_url": "https://zoo-guide.com/wp-content/uploads/2023/06/35729909431_b26c208dfe_k.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.haGPX5ORPB7Ezb6ijN2NlgHaE7&pid=15.1",
+  "source_page_url": "https://zoo-guide.com/listing/chicken/",
+  "title": "Definitive Guide To Domestic Chicken Facts, Habitat, Conservation ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "zoo-guide.com",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.0215282440185547
+  }
+}

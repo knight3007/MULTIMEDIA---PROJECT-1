@@ -1,0 +1,18 @@
+{
+  "word": "apple",
+  "search_query": "apple fruit",
+  "provider": "duckduckgo",
+  "image_url": "https://images.pexels.com/photos/39803/pexels-photo-39803.jpeg?cs=srgb&dl=apple-fruit-healthy-food-39803.jpg&fm=jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.kori7Y8NQzmHi4RLlD-T9AHaE5&pid=15.1",
+  "source_page_url": "https://storage.googleapis.com/dswhdcwgdllyle/apple-fruit-kitchen.html",
+  "title": "Apple Fruit Kitchen at Natasha Moulton blog",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "storage.googleapis.com",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.34046173095703125
+  }
+}

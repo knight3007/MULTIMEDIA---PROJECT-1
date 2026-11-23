@@ -1,0 +1,842 @@
+{
+  "task_id": "A004R_OWNER_FOLLOWUP_100",
+  "source_export_sha256": "964a63e33f50fd36536ee98ebb0fa0f2f2d6c4426bdf1bec71dfb5e807163aa6",
+  "reviewer": "HD",
+  "exported_at": "2026-11-23T13:49:26.800Z",
+  "reviews": [
+    {
+      "vocab_id": "vocab-000001",
+      "carried_forward": true,
+      "candidate_id": "vocab-000001-A004R-06",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000001/06.jpg",
+      "sha256": "6915ca67bbc68eb0f43a45960fa566f70df7ee772c75fab61e81b52e0dbe02a5"
+    },
+    {
+      "vocab_id": "vocab-000028",
+      "carried_forward": true,
+      "candidate_id": "vocab-000028-A004R-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000028/01.jpg",
+      "sha256": "bc002cdcf6833bd0d61f42d6a827f8de99120fcf931b30a8a84d4b13d1012c90"
+    },
+    {
+      "vocab_id": "vocab-000056",
+      "carried_forward": true,
+      "candidate_id": "vocab-000056-A004R-06",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000056/06.jpg",
+      "sha256": "eceb7941a26fa8099a3b7e3fdf172d9caf9ff06bcbabfbae02c6bfe017fd4757"
+    },
+    {
+      "vocab_id": "vocab-000053",
+      "carried_forward": true,
+      "candidate_id": "vocab-000053-A004R-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000053/02.jpg",
+      "sha256": "f7708324349b600d7ef4a5262c87e143eafc5c903bc915b142fd0ca21a78eb24"
+    },
+    {
+      "vocab_id": "vocab-000065",
+      "carried_forward": true,
+      "candidate_id": "vocab-000065-A004R-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000065/03.jpg",
+      "sha256": "dde8eeab34196caed54e87e1fa9d9a3e4c7a9ca649147f0eedd694e3d0800f1e"
+    },
+    {
+      "vocab_id": "vocab-000046",
+      "carried_forward": true,
+      "candidate_id": "vocab-000046-ICON-01",
+      "source": "A003_OWNER_DECISION",
+      "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000046/ICON/01.jpg",
+      "sha256": "14c6d40afc7ee656113ff3908bed29887ed4c4f3f3b5ae20c5ad92a0b56bfb0f"
+    },
+    {
+      "vocab_id": "vocab-000057",
+      "carried_forward": false,
+      "selected_candidate_id": "PRIOR_OWNER_REFERENCE",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000057/NORMAL/06.jpg",
+      "selected_jpeg_sha256": "d4c2831ab8143b81dabd79d66aeb0c4bb070957fd526c2ddc139ac91d0dc9918"
+    },
+    {
+      "vocab_id": "vocab-000083",
+      "carried_forward": true,
+      "candidate_id": "A001_REFERENCE",
+      "source": "A001_OWNER_PASS",
+      "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/sometimes.jpg",
+      "sha256": "aa48f7b6958d26edfab26d7b2466c950291bb87de97b702cd74d20aebb4c769c",
+      "supersedes_quality_decision": "A003_NO_SUITABLE_IMAGE; new owner PASS requests A001 reference"
+    },
+    {
+      "vocab_id": "vocab-000081",
+      "carried_forward": true,
+      "candidate_id": "V3-01",
+      "source": "INTERNAL_ONLY_TEMPORARY",
+      "path": "reports/image_pipeline_experiments/A002_CAUSAL_CONCEPT_PILOT/images/V2/01.jpg",
+      "sha256": "8dd3e8a22f6474a4a5dd3eb8adca453e61dfd7ca5aa65b2abc0e6036cfe2d7ab"
+    },
+    {
+      "vocab_id": "vocab-000041",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000041-FOLLOWUP-05",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000041/05.jpg",
+      "selected_jpeg_sha256": "d824733bf16ce095db54ae04ff2f3e3abaa964ffdce68f5824e4cbcddd8315f9"
+    },
+    {
+      "vocab_id": "vocab-000002",
+      "carried_forward": true,
+      "candidate_id": "vocab-000002-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000002/05.jpg",
+      "sha256": "d995996bb8c97e6c743ef37a539b97f3d14473d1c9dc9eff30c9e70662c07bd7"
+    },
+    {
+      "vocab_id": "vocab-000003",
+      "carried_forward": true,
+      "candidate_id": "vocab-000003-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000003/05.jpg",
+      "sha256": "8d652af0a663161c65a105ae6496fecd275d58f742e17030b03e7026916cd905"
+    },
+    {
+      "vocab_id": "vocab-000004",
+      "carried_forward": true,
+      "candidate_id": "vocab-000004-06",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000004/06.jpg",
+      "sha256": "49a16c985036cbefdcee9256616793e062a71ad49dd4ab37d20e3067e292df39"
+    },
+    {
+      "vocab_id": "vocab-000005",
+      "carried_forward": true,
+      "candidate_id": "vocab-000005-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000005/02.jpg",
+      "sha256": "c1aafe06bd54a0fb107b12ad7deae75310131be8cf0fbc396452a72da957ded0"
+    },
+    {
+      "vocab_id": "vocab-000006",
+      "carried_forward": true,
+      "candidate_id": "vocab-000006-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000006/02.jpg",
+      "sha256": "9a0921ec47f66bb199096b8188aa41f6758c7f05be18e21ee36292cd3a99082a"
+    },
+    {
+      "vocab_id": "vocab-000007",
+      "carried_forward": true,
+      "candidate_id": "A001_REFERENCE",
+      "source": "A001_OWNER_PASS",
+      "path": "data/image/en/milk.jpg",
+      "sha256": "2b7d194316d1101580581f8577c59f3dca1f57dbe309ec4357458621a2aca578"
+    },
+    {
+      "vocab_id": "vocab-000008",
+      "carried_forward": true,
+      "candidate_id": "vocab-000008-A004R-04",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000008/04.jpg",
+      "sha256": "298f642635fb50656130baacfe3be6086eb41c0da1d65a5ee3314b2d9a4c3912"
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "carried_forward": true,
+      "candidate_id": "vocab-000009-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000009/02.jpg",
+      "sha256": "df546b3a6a6aa5605958f4bae81b8a1901888efca278cba09de435b94039ff4a"
+    },
+    {
+      "vocab_id": "vocab-000010",
+      "carried_forward": true,
+      "candidate_id": "A001_REFERENCE",
+      "source": "A001_OWNER_PASS",
+      "path": "data/image/en/breakfast.jpg",
+      "sha256": "fa671e6a396b359fac5eab8fadf9347e286563271e85d02d9e1967599b487943"
+    },
+    {
+      "vocab_id": "vocab-000011",
+      "carried_forward": true,
+      "candidate_id": "vocab-000011-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000011/03.jpg",
+      "sha256": "c6ec7e24ce9682a3b8c20e86633bf151c9aa3526f4ce0121bd22b334aa97bade"
+    },
+    {
+      "vocab_id": "vocab-000012",
+      "carried_forward": true,
+      "candidate_id": "vocab-000012-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000012/01.jpg",
+      "sha256": "c35151ff11482ef9ac689d117a82365e9f5535fa91668474a273a228fc3bea6d"
+    },
+    {
+      "vocab_id": "vocab-000013",
+      "carried_forward": true,
+      "candidate_id": "vocab-000013-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000013/03.jpg",
+      "sha256": "4a2258b62f05b5118653cf6b2a94cdc8f5196185f561e48255cd936c83caead9"
+    },
+    {
+      "vocab_id": "vocab-000014",
+      "carried_forward": true,
+      "candidate_id": "vocab-000014-04",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000014/04.jpg",
+      "sha256": "31bef05b1b9cfdd60510c1a2506d7fa981e4198d03a0f321ad116967c3c5a866"
+    },
+    {
+      "vocab_id": "vocab-000015",
+      "carried_forward": true,
+      "candidate_id": "vocab-000015-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000015/02.jpg",
+      "sha256": "d89d7c991701dade0ddb836357f931f406343343e690c5f182d3ce2f2ff2f117"
+    },
+    {
+      "vocab_id": "vocab-000016",
+      "carried_forward": true,
+      "candidate_id": "vocab-000016-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000016/03.jpg",
+      "sha256": "3a04411e9f00eb665f9d7be0ccede6902ac4f46215ca1ac006b59c312c2252c6"
+    },
+    {
+      "vocab_id": "vocab-000017",
+      "carried_forward": true,
+      "candidate_id": "vocab-000017-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000017/01.jpg",
+      "sha256": "864c422db12eca371784fa739bc431d69dcb76d9bfa607a0c19cc51db5f316b9"
+    },
+    {
+      "vocab_id": "vocab-000018",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000018-FOLLOWUP-05",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000018/05.jpg",
+      "selected_jpeg_sha256": "cbaac7c896271b4fe81416d8ba146b486217700d072ad504944d99122dec1fc9"
+    },
+    {
+      "vocab_id": "vocab-000019",
+      "carried_forward": true,
+      "candidate_id": "vocab-000019-A004R-07",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000019/07.jpg",
+      "sha256": "e921470b9a8c21e5d461636af74cfbe10f113abe62e2fe58627be35c0abf21b2"
+    },
+    {
+      "vocab_id": "vocab-000020",
+      "carried_forward": true,
+      "candidate_id": "vocab-000020-04",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000020/04.jpg",
+      "sha256": "49984900f317f84c439b9893120dc5f3cc74e16d5549c31d02c2fe08d1a1f253"
+    },
+    {
+      "vocab_id": "vocab-000021",
+      "carried_forward": true,
+      "candidate_id": "vocab-000021-NORMAL-05",
+      "source": "A003_OWNER_DECISION",
+      "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000021/NORMAL/05.jpg",
+      "sha256": "e660532e0327ea30436177ac97bfd0cdf2e58825df3cc2a8a43915db4a33bc4e"
+    },
+    {
+      "vocab_id": "vocab-000022",
+      "carried_forward": true,
+      "candidate_id": "vocab-000022-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000022/01.jpg",
+      "sha256": "8433f77129ad92a2d2017b09ea741bf587cf82a6f38933ea8f1786d01f1ffcbe"
+    },
+    {
+      "vocab_id": "vocab-000023",
+      "carried_forward": true,
+      "candidate_id": "vocab-000023-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000023/05.jpg",
+      "sha256": "def8109d424d1cfb7bf4c27163462a8504c1aa43f3224ba6d7d8b96bbadb08c3"
+    },
+    {
+      "vocab_id": "vocab-000024",
+      "carried_forward": true,
+      "candidate_id": "vocab-000024-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000024/01.jpg",
+      "sha256": "352b82c23231cd8b7b543a8ba82b7cec56879661440d633267e28b78d4a6cbca"
+    },
+    {
+      "vocab_id": "vocab-000025",
+      "carried_forward": true,
+      "candidate_id": "vocab-000025-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000025/01.jpg",
+      "sha256": "555b11269c6f6d2132a56736bf42371864d25e3eab4e1a60cbaab8454408a751"
+    },
+    {
+      "vocab_id": "vocab-000026",
+      "carried_forward": true,
+      "candidate_id": "vocab-000026-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000026/03.jpg",
+      "sha256": "f2d1dfcb90d7ef22866cb3728f55053e4268e42c45914c4f87d346d5741b50af"
+    },
+    {
+      "vocab_id": "vocab-000027",
+      "carried_forward": true,
+      "candidate_id": "vocab-000027-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000027/01.jpg",
+      "sha256": "360768e46de6f86e1393235197b9519ab064b59c28472c379dfdc87de663f98f"
+    },
+    {
+      "vocab_id": "vocab-000029",
+      "carried_forward": true,
+      "candidate_id": "vocab-000029-06",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000029/06.jpg",
+      "sha256": "dcc75d3956015c22a6391972d334c8a62cf97d43b793a79ac5168566735a0e77"
+    },
+    {
+      "vocab_id": "vocab-000030",
+      "carried_forward": true,
+      "candidate_id": "vocab-000030-07",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000030/07.jpg",
+      "sha256": "4b301cba46f38afdce71fba000e575db67c572b7cb43190bb5c6fa5beaeb017e"
+    },
+    {
+      "vocab_id": "vocab-000031",
+      "carried_forward": true,
+      "candidate_id": "vocab-000031-ICON-03",
+      "source": "A003_OWNER_DECISION",
+      "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000031/ICON/03.jpg",
+      "sha256": "f467af64ecf5465c649e330fe363c3f122957da9a75318667c83f55204c4c71d"
+    },
+    {
+      "vocab_id": "vocab-000032",
+      "carried_forward": true,
+      "candidate_id": "vocab-000032-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000032/05.jpg",
+      "sha256": "514ebbf5c8e0b4b016afd7280df8b4a4af057193a0a6c1ec3ebce15331cd26ac"
+    },
+    {
+      "vocab_id": "vocab-000033",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000033-FOLLOWUP-R2-05",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000033/attempt2/05.jpg",
+      "selected_jpeg_sha256": "65d3dc11c1ce0ea63a7efe65540d93b942210822a2a5f90ce83f57b2b8d39ad3"
+    },
+    {
+      "vocab_id": "vocab-000034",
+      "carried_forward": true,
+      "candidate_id": "vocab-000034-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000034/03.jpg",
+      "sha256": "eea596b4411b16df55e666096d4b546744b88d54335ef926da5637d5455134eb"
+    },
+    {
+      "vocab_id": "vocab-000035",
+      "carried_forward": true,
+      "candidate_id": "vocab-000035-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000035/01.jpg",
+      "sha256": "9a33c21ddb70679d80263857bd10c0e250f8c5a6d279dcf32285e89c8cfe7417"
+    },
+    {
+      "vocab_id": "vocab-000036",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000036-FOLLOWUP-04",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000036/04.jpg",
+      "selected_jpeg_sha256": "922150d4d67aea2f99583013f60350d04f08dc8031e9d9cff1049494acb86529"
+    },
+    {
+      "vocab_id": "vocab-000037",
+      "carried_forward": true,
+      "candidate_id": "vocab-000037-07",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000037/07.jpg",
+      "sha256": "12917e2e57d505727011caa074cde864bcf0f68918ea79c3ce774e20184ca0d3"
+    },
+    {
+      "vocab_id": "vocab-000038",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000038-FOLLOWUP-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000038/02.jpg",
+      "selected_jpeg_sha256": "9173797e8532bed7e01086bfdd1a586d2f7cca0b1648565e7a9d34c1b216a9de"
+    },
+    {
+      "vocab_id": "vocab-000039",
+      "carried_forward": true,
+      "candidate_id": "vocab-000039-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000039/02.jpg",
+      "sha256": "799a5449f97919fb5793f281b6846e3a88c8cdc349ebbad4e9efd65c0a36fcf2"
+    },
+    {
+      "vocab_id": "vocab-000040",
+      "carried_forward": true,
+      "candidate_id": "vocab-000040-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000040/05.jpg",
+      "sha256": "d329126f9193bd57429b39d67c8a36e983142f17844a0e1312826db8aa8c6b86"
+    },
+    {
+      "vocab_id": "vocab-000042",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000042-FOLLOWUP-01",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000042/01.jpg",
+      "selected_jpeg_sha256": "4241e1f4ba92b0643936d9907221a803d114f13012c4e0c3d388d90498e2b887"
+    },
+    {
+      "vocab_id": "vocab-000043",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000043-FOLLOWUP-01",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000043/01.jpg",
+      "selected_jpeg_sha256": "921f0482b619c94da436d4b16252bc1c719c3c5ca47f05419a3dcc0d7d1c1af2"
+    },
+    {
+      "vocab_id": "vocab-000044",
+      "carried_forward": true,
+      "candidate_id": "vocab-000044-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000044/05.jpg",
+      "sha256": "2a03a99151a75fc0c81882badd2f98091dca0e04c04f36a38a023887ebac401a"
+    },
+    {
+      "vocab_id": "vocab-000045",
+      "carried_forward": true,
+      "candidate_id": "vocab-000045-04",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000045/04.jpg",
+      "sha256": "a1ef6357c0fd4f757f91eb47ef9bd5782911a3aa2e7a6731150e966c23b79d7d"
+    },
+    {
+      "vocab_id": "vocab-000047",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000047-FOLLOWUP-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000047/02.jpg",
+      "selected_jpeg_sha256": "1e839ab6975d3a862767fed4e5ed8128931cbedb33f63ce3549d09af9d716802"
+    },
+    {
+      "vocab_id": "vocab-000048",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000048-FOLLOWUP-06",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000048/06.jpg",
+      "selected_jpeg_sha256": "0c8237fbe0ef0f016951da660d248a84b88479d69b0c8d9349ecb23efb2305f6"
+    },
+    {
+      "vocab_id": "vocab-000049",
+      "carried_forward": true,
+      "candidate_id": "vocab-000049-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000049/03.jpg",
+      "sha256": "c8e236d5ff099702d3e8c3ca8a6ca6599c3f8a49d1974b3789c7af6316314a63"
+    },
+    {
+      "vocab_id": "vocab-000050",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000050-FOLLOWUP-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000050/02.jpg",
+      "selected_jpeg_sha256": "be70fa39e4914052814b6547fc83fd13f3563269cdaebcce359d4b6352416151"
+    },
+    {
+      "vocab_id": "vocab-000051",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000051-FOLLOWUP-01",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000051/01.jpg",
+      "selected_jpeg_sha256": "e71dd97d6f1703e2a7e0a832250dc2f225ce914ca738992357c8b3e41b133dc5"
+    },
+    {
+      "vocab_id": "vocab-000052",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000052-FOLLOWUP-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000052/02.jpg",
+      "selected_jpeg_sha256": "37be7d3d8403b73834752a03d923396109094f41e0c211c45234ac4d4c2e777a"
+    },
+    {
+      "vocab_id": "vocab-000054",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000054-FOLLOWUP-01",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000054/01.jpg",
+      "selected_jpeg_sha256": "f12f16fc7c7cb9b6c77a686839c4da396e5becceb64cd9f4c790ed245464b630"
+    },
+    {
+      "vocab_id": "vocab-000055",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000055-FOLLOWUP-05",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000055/05.jpg",
+      "selected_jpeg_sha256": "0c4b270bc1a654a5c44d26092e9a39cdef7e59d93b0d0fa86a7d058c51226620"
+    },
+    {
+      "vocab_id": "vocab-000058",
+      "carried_forward": true,
+      "candidate_id": "vocab-000058-03",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000058/03.jpg",
+      "sha256": "97666d81d482dd6c96a9bbc10b23c4e097b740e3940bda86f924d0bf7c650443"
+    },
+    {
+      "vocab_id": "vocab-000059",
+      "carried_forward": true,
+      "candidate_id": "vocab-000059-ICON-01",
+      "source": "A003_OWNER_DECISION",
+      "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000059/ICON/01.jpg",
+      "sha256": "56ac488b6083920c4ed872e42bb584d6a033aadf04124c22ae008c06c22a061e"
+    },
+    {
+      "vocab_id": "vocab-000060",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000060-FOLLOWUP-R2-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000060/attempt2/02.jpg",
+      "selected_jpeg_sha256": "e405a4a30393193e93cb15fc6087f726d120d6a4fb7197cc335689915263661a"
+    },
+    {
+      "vocab_id": "vocab-000061",
+      "carried_forward": true,
+      "candidate_id": "vocab-000061-A004R-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000061/02.jpg",
+      "sha256": "6bc3a5a8e804b08c5e1c375bd5840cbac658260c3832ef868e45017a286a7215"
+    },
+    {
+      "vocab_id": "vocab-000062",
+      "carried_forward": true,
+      "candidate_id": "vocab-000062-A004R-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000062/02.jpg",
+      "sha256": "f26faca748f17a84560eb8aff8d20272004808acad9fe433037850a260205726"
+    },
+    {
+      "vocab_id": "vocab-000063",
+      "carried_forward": true,
+      "candidate_id": "vocab-000063-ICON-07",
+      "source": "A003_OWNER_DECISION",
+      "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000063/ICON/07.jpg",
+      "sha256": "930991ac144b3387ae8143a2ef7eee62166b95f1f594435d0d208956973d04d7"
+    },
+    {
+      "vocab_id": "vocab-000064",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000064-FOLLOWUP-05",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000064/05.jpg",
+      "selected_jpeg_sha256": "0493c0dc28c41115861144f81167d44d56182bcef82328ea2c69227c515e0502"
+    },
+    {
+      "vocab_id": "vocab-000066",
+      "carried_forward": true,
+      "candidate_id": "A001_REFERENCE",
+      "source": "A001_OWNER_NOTE",
+      "path": "baseline/media-staging/images/20261106T093948Z-5be953da/software.jpg",
+      "sha256": "a4994aef0cdffbbb334663f9158678bb757a97de6ebaa628ec232d9d704a6394"
+    },
+    {
+      "vocab_id": "vocab-000067",
+      "carried_forward": true,
+      "candidate_id": "vocab-000067-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000067/01.jpg",
+      "sha256": "dfcea2dc4b7c31b2ac125f9fcc3a99940e63f2c08c25c4607d10d4aacbe57c4a"
+    },
+    {
+      "vocab_id": "vocab-000068",
+      "carried_forward": true,
+      "candidate_id": "vocab-000068-07",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000068/07.jpg",
+      "sha256": "592050c0a9afec09ebfa080b9d57cc7ea31c38f624700b632d937e245ab33aff"
+    },
+    {
+      "vocab_id": "vocab-000069",
+      "carried_forward": true,
+      "candidate_id": "vocab-000069-04",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000069/04.jpg",
+      "sha256": "1a0ed19dbf5a8e85b056199c5104fa144056259707d0227f59d67e34d7b5957e"
+    },
+    {
+      "vocab_id": "vocab-000070",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000070-FOLLOWUP-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000070/02.jpg",
+      "selected_jpeg_sha256": "84dac9c1098cb92cd2083c6132c0f1e3904b8ae5620550c22fd132424feb62d7"
+    },
+    {
+      "vocab_id": "vocab-000071",
+      "carried_forward": true,
+      "candidate_id": "vocab-000071-06",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000071/06.jpg",
+      "sha256": "4b4a895ccdfddb6ef75ea9ea474f76260faf58cd1fb67cc86114f50fa940a321"
+    },
+    {
+      "vocab_id": "vocab-000072",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000072-FOLLOWUP-01",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000072/01.jpg",
+      "selected_jpeg_sha256": "89b8be295d5b2574217d844c8b88ca7d007e17da673171ef439cbe4d3d8414a1"
+    },
+    {
+      "vocab_id": "vocab-000073",
+      "carried_forward": true,
+      "candidate_id": "vocab-000073-04",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000073/04.jpg",
+      "sha256": "46754e65a1571e0ce73349d8f9c3133b3952c6643bab1bb332776ddd78dd5cc9"
+    },
+    {
+      "vocab_id": "vocab-000074",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000074-FOLLOWUP-05",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000074/05.jpg",
+      "selected_jpeg_sha256": "af960689bb4f6495f175cac36218f2301445b05db449a8aff0bf3560c3bbe724"
+    },
+    {
+      "vocab_id": "vocab-000075",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000075-FOLLOWUP-06",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000075/06.jpg",
+      "selected_jpeg_sha256": "e5172bce1df06a39ef17356c6d2f828682e274e30b51a87878516c5111550d39"
+    },
+    {
+      "vocab_id": "vocab-000076",
+      "carried_forward": true,
+      "candidate_id": "vocab-000076-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000076/05.jpg",
+      "sha256": "e0c1f21d344cb4c24de7bed1cba9aa7305582e391ae593d123dc6f38fa8bb417"
+    },
+    {
+      "vocab_id": "vocab-000077",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000077-FOLLOWUP-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000077/02.jpg",
+      "selected_jpeg_sha256": "da15775f3ffb3f31a2f091cf817de412c0c8846ec3cc528428b48b9fc6f568da"
+    },
+    {
+      "vocab_id": "vocab-000078",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000078-03",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000078/03.jpg",
+      "selected_jpeg_sha256": "c0b9922e985eee9c5cfdb540003816bf5e243091060169ad8bcbf5a44e6a82fc"
+    },
+    {
+      "vocab_id": "vocab-000079",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000079-FOLLOWUP-R2-02",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000079/attempt2/02.jpg",
+      "selected_jpeg_sha256": "3a2a31890f554b1ff03fea47cac2528b5bc44a8364a481e3e582f50ca3030012"
+    },
+    {
+      "vocab_id": "vocab-000080",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000080-FOLLOWUP-R2-04",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000080/attempt2/04.jpg",
+      "selected_jpeg_sha256": "b2dc7d4d3fa5f02e175b79579d71eb08e0b89a131dbb5fd3542624e471fdfb9c"
+    },
+    {
+      "vocab_id": "vocab-000082",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000082-FOLLOWUP-04",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000082/04.jpg",
+      "selected_jpeg_sha256": "d1debafc6eac67282c5e892c697015c3b900424596774fbffbcd47e735d3e408"
+    },
+    {
+      "vocab_id": "vocab-000084",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000084-FOLLOWUP-06",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000084/06.jpg",
+      "selected_jpeg_sha256": "ce04c0f4706f00a6e7950b057c247e2545a2289af4d551b7845924e2242ca55f"
+    },
+    {
+      "vocab_id": "vocab-000085",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000085-FOLLOWUP-06",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000085/06.jpg",
+      "selected_jpeg_sha256": "d96053a4e458fb3f93bf27f1cda27a1c668341087a1cfe190fb56bd3d65de72c"
+    },
+    {
+      "vocab_id": "vocab-000086",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000086-FOLLOWUP-03",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000086/03.jpg",
+      "selected_jpeg_sha256": "57b364851416a3e12230549de93978f925348c3d67cca4750e2bb69529a65718"
+    },
+    {
+      "vocab_id": "vocab-000087",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000087-FOLLOWUP-03",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000087/03.jpg",
+      "selected_jpeg_sha256": "9d8515aab6af4eb9da92761f0e3540657beb477bf69f2fc47f78d8df8676ec5b"
+    },
+    {
+      "vocab_id": "vocab-000088",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000088-FOLLOWUP-03",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000088/03.jpg",
+      "selected_jpeg_sha256": "57a2ac5cc638b030c9ee766afe2b403aa26261277aac15cfb7a06139ff6622d1"
+    },
+    {
+      "vocab_id": "vocab-000089",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000089-FOLLOWUP-06",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000089/06.jpg",
+      "selected_jpeg_sha256": "32037702c91f6e83783fc717c4c2b05b7ed520fb2510e7d8ba79b18a81d41ce3"
+    },
+    {
+      "vocab_id": "vocab-000090",
+      "carried_forward": true,
+      "candidate_id": "vocab-000090-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000090/05.jpg",
+      "sha256": "13375b9374b00da3d525c88a369416cc3326fff4eb4d7db1aa11b05cd4e61819"
+    },
+    {
+      "vocab_id": "vocab-000091",
+      "carried_forward": true,
+      "candidate_id": "vocab-000091-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000091/02.jpg",
+      "sha256": "7c0b3a2fe1a07643f7abc1cfa9880ef9068842de259d3c66e949628f71ef46a7"
+    },
+    {
+      "vocab_id": "vocab-000092",
+      "carried_forward": false,
+      "selected_candidate_id": "vocab-000092-FOLLOWUP-07",
+      "image_label": "PASS",
+      "notes": "",
+      "selected_jpeg_path": "reports/image_pipeline_experiments/A004R_OWNER_FOLLOWUP_100/images/vocab-000092/07.jpg",
+      "selected_jpeg_sha256": "c91b18cbfdbb449080d6c08146de4287741f04a53210ede9f093149dd5834847"
+    },
+    {
+      "vocab_id": "vocab-000093",
+      "carried_forward": true,
+      "candidate_id": "vocab-000093-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000093/01.jpg",
+      "sha256": "1837de8d3ecc0288d2511406a63e3c9e42a7ef8fbe7b5d7e68cf72faf8041e41"
+    },
+    {
+      "vocab_id": "vocab-000094",
+      "carried_forward": true,
+      "candidate_id": "vocab-000094-02",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000094/02.jpg",
+      "sha256": "cf0c520085e7478da23d3c2a9913800b91019d6ff460683d2f284ef2dd07d522"
+    },
+    {
+      "vocab_id": "vocab-000095",
+      "carried_forward": true,
+      "candidate_id": "vocab-000095-06",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000095/06.jpg",
+      "sha256": "1f78b4d9baedc0128871fed20104642f7c0c4362f640b03472db516ec90766ab"
+    },
+    {
+      "vocab_id": "vocab-000096",
+      "carried_forward": true,
+      "candidate_id": "A001_REFERENCE",
+      "source": "A001_OWNER_PASS",
+      "path": "baseline/media-staging/images/20261106T094724Z-11be2473/waterfall.jpg",
+      "sha256": "422387dc55d0cd84e7ec3b493fa0d0de81cfaa77eb2da86b449fc5aa7f2ddacc"
+    },
+    {
+      "vocab_id": "vocab-000097",
+      "carried_forward": true,
+      "candidate_id": "vocab-000097-06",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000097/06.jpg",
+      "sha256": "a713835f5476bf1e31dc305c15581206b02cba363fc4f8d08e35e046467a5f42"
+    },
+    {
+      "vocab_id": "vocab-000098",
+      "carried_forward": true,
+      "candidate_id": "vocab-000098-01",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000098/01.jpg",
+      "sha256": "263a0f5ab52a37a7691c5d4e646807e8f66f389548b4ae3610c2fb52bea16495"
+    },
+    {
+      "vocab_id": "vocab-000099",
+      "carried_forward": true,
+      "candidate_id": "vocab-000099-05",
+      "source": "A004R_OWNER_PASS",
+      "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000099/05.jpg",
+      "sha256": "a86e453a07fabb98f1caf0b3b37c8a971dec7930ab72b7b916c1ab52e49c38b5"
+    },
+    {
+      "vocab_id": "vocab-000100",
+      "carried_forward": true,
+      "candidate_id": "A001_REFERENCE",
+      "source": "A001_OWNER_PASS",
+      "path": "baseline/media-staging/images/20261106T094724Z-11be2473/grandmother.jpg",
+      "sha256": "f8b4a323ec7abb2b261db5a978818b55d9d0479818733d88aab1261cc39cd2e0"
+    }
+  ]
+}

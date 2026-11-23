@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000053",
+  "raw_decoded_text": "write action",
+  "raw_attempts": [
+    {
+      "word": "write",
+      "correction_prompt": null,
+      "raw_decoded_text": "write action",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "write action",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.807
+}

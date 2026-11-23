@@ -1,0 +1,19 @@
+{
+  "policy_version": "image-pipeline-v2",
+  "frozen_at_utc": "2026-11-23T14:42:29.790838+00:00",
+  "base_git_head": "936d9fdd27810e50a144fb6399e647b1ba18c371",
+  "validation_passed": false,
+  "final_iteration": 3,
+  "final_prompt_sha256": "f905ac5d39bdff349023b212c2e76480a0b5052deaaa760d430df43616ac4083",
+  "files": {
+    "collect data script/visual_query_policy.py": "b73674d405d040c6593680caed4c0706f6f7633efcd9afb1ef566005b98864d3",
+    "collect data script/image_pipeline_v2.py": "12fc41a6efffd8be5c92eb7e153b8d8b555f8c7fcced41b50905749b74437473",
+    "collect data script/test_image_pipeline_v2.py": "51feb52fb96cbe60666aa62d6f3e2eb968dd54086c635fd9fd979653ebab2232",
+    "collect data script/imagecollector.py": "c1e39f1cad667e4e170a27b6a3839eefed1e3b7d7167852a9fe453e45e9372be",
+    "collect data script/image_scorer.py": "d31a9dea9cef024890141a85d8c3bd01b3fdba1ef25684d27c050cf39444305b",
+    "collect data script/query_generator.py": "dbc7d65ccead461750b465503faf2fe8fdad47953de784f030bcdef0de34459d",
+    "data/vocabulary/approved_images_v1.json": "de32a923f66c1194854c9678c2986dfbe020f04cab4c4222fe3d4e7643a38529",
+    "docs/IMAGE_PIPELINE_V2.md": "ee2eb87a183336298e5ac1ffd6a687e2f9b8eacbed47f4161643f1688f47e034"
+  },
+  "status": "CANDIDATE_NOT_FROZEN (validation 99/100 valid queries; owner decision pending)"
+}

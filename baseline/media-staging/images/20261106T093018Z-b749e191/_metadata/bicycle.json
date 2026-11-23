@@ -1,0 +1,21 @@
+{
+  "word": "bicycle",
+  "search_query": "bicycle vehicle",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://cdn.pixabay.com/photo/2018/02/20/17/34/bicycle-3168273_960_720.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.AAykWp4dMYMq9bR_t4zfowHaE8&pid=15.1",
+  "source_page_url": "https://pixabay.com/photos/bicycle-vehicle-transportation-3168273/",
+  "title": "Bicycle Vehicle Transportation - Free photo on Pixabay",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "pixabay.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -4.953125
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000043",
+  "raw_decoded_text": "{\n  \"visual_type\": \"time_weather\",\n  \"search_query\": \"a calendar showing a day before today\",\n  \"visual_description\": \"A calendar displaying a day before today with a date marker and a sun icon\",\n  \"negative_constraints\": [\"no time markers\", \"no sun icon\"],\n  \"reason\": \"A calendar showing a day before today is an appropriate visual for the concept of 'yesterday' in the target sense, with uncertainty about the exact representation of time.\"\n}",
+  "parsed": {
+    "visual_type": "time_weather",
+    "search_query": "a calendar showing a day before today",
+    "visual_description": "A calendar displaying a day before today with a date marker and a sun icon",
+    "negative_constraints": [
+      "no time markers",
+      "no sun icon"
+    ],
+    "reason": "A calendar showing a day before today is an appropriate visual for the concept of 'yesterday' in the target sense, with uncertainty about the exact representation of time."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 28.541
+}

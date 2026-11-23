@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000077",
+  "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"important concept\",\n  \"visual_description\": \"A person holding a book with the word 'important' highlighted in bold text\",\n  \"negative_constraints\": [\"not a literal image\", \"no specific context\"],\n  \"reason\": \"The image should represent a concept that is visually emphasized, but the exact visual representation is pending review.\"\n}",
+  "parsed": {
+    "visual_type": "abstract_concept",
+    "search_query": "important concept",
+    "visual_description": "A person holding a book with the word 'important' highlighted in bold text",
+    "negative_constraints": [
+      "not a literal image",
+      "no specific context"
+    ],
+    "reason": "The image should represent a concept that is visually emphasized, but the exact visual representation is pending review."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 19.751
+}

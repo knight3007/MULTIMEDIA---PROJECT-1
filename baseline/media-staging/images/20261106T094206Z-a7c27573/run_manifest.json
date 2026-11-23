@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T094206Z-a7c27573",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000071",
+    "vocab-000072",
+    "vocab-000073",
+    "vocab-000074",
+    "vocab-000075",
+    "vocab-000076",
+    "vocab-000077",
+    "vocab-000078",
+    "vocab-000079",
+    "vocab-000080"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000071",
+      "source_row_index": 71,
+      "english": "problem",
+      "japanese_reading": "もんだい",
+      "vietnamese": "vấn đề",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "problem object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 1.3073666999989655,
+        "selected_image_url": "https://www.tech-posts.com/wp-content/uploads/2026/03/thinking-in-objects-problem-solving-infographic-1200x800.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://www.tech-posts.com/wp-content/uploads/2026/03/thinking-in-objects-problem-solving-infographic-1200x800.jpg",
+        "source_page_url": "https://www.tech-posts.com/category/object-oriented-analysis-and-design/",
+        "title": "Object-Oriented Analysis and Design Archives - Tech Posts - Latest ...",
+        "width": null,
+        "height": null,
+        "result_source": "tech-posts.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.9765625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/problem.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/problem.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 166250,
+      "sha256": "367c4ef84f50db68f7a909c34aaa0c49b85a5bb5a54ca2400103356712621a0b",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000072",
+      "source_row_index": 72,
+      "english": "business",
+      "japanese_reading": "ビジネス",
+      "vietnamese": "kinh doanh",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "business institution",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4585123000033491,
+        "selected_image_url": "https://thumbs.dreamstime.com/z/college-business-building-university-institution-higher-learning-brick-usa-281126566.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://thumbs.dreamstime.com/z/college-business-building-university-institution-higher-learning-brick-usa-281126566.jpg",
+        "source_page_url": "https://www.dreamstime.com/college-business-building-university-institution-higher-learning-brick-usa-image281126566",
+        "title": "College of Business Building University Institution of Higher Learning ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.2578125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/business.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/business.json",
+      "dimensions": [
+        1024,
+        511
+      ],
+      "size_bytes": 173833,
+      "sha256": "6165231e06955089441ded20cf4c9ec95d9d6638bbb6e54c4f5ec2df5fc0b795",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000073",
+      "source_row_index": 73,
+      "english": "university",
+      "japanese_reading": "だいがく",
+      "vietnamese": "trường đại học",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "university institution",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.4651555000018561,
+        "selected_image_url": "https://thumbs.dreamstime.com/b/modern-university-campus-seen-above-beautiful-green-spaces-contemporary-buildings-peaceful-surroundings-wallpaper-348153967.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://thumbs.dreamstime.com/b/modern-university-campus-seen-above-beautiful-green-spaces-contemporary-buildings-peaceful-surroundings-wallpaper-348153967.jpg",
+        "source_page_url": "https://www.dreamstime.com/modern-university-campus-seen-above-beautiful-green-spaces-contemporary-buildings-peaceful-surroundings-wallpaper-image348153967",
+        "title": "Modern University Campus Seen from Above, with Beautiful Green Spaces ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.1171875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/university.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/university.json",
+      "dimensions": [
+        800,
+        534
+      ],
+      "size_bytes": 142468,
+      "sha256": "8b31e807ee8b24a48938816a1b0f11a60175c58151fd53ff40553c418479249b",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000074",
+      "source_row_index": 74,
+      "english": "project",
+      "japanese_reading": "プロジェクト",
+      "vietnamese": "dự án",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "project object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.44821220000085304,
+        "selected_image_url": "https://docs.oracle.com/en/applications/jd-edwards/obe-promoting-objects-to-package-through-web-object-management-workbench/img/project_objects.png"
+      },
+      "selected_result": {
+        "image_url": "https://docs.oracle.com/en/applications/jd-edwards/obe-promoting-objects-to-package-through-web-object-management-workbench/img/project_objects.png",
+        "source_page_url": "https://docs.oracle.com/en/applications/jd-edwards/obe-promoting-objects-to-package-through-web-object-management-workbench/",
+        "title": "Promoting Objects to Package Through Web Object Management Workbench",
+        "width": null,
+        "height": null,
+        "result_source": "docs.oracle.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.8359375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/project.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/project.json",
+      "dimensions": [
+        1024,
+        483
+      ],
+      "size_bytes": 58206,
+      "sha256": "203e280f52dc62442c9321cbff5f803a7f6be1a4c8a300258a34e55e1ba170a4",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000075",
+      "source_row_index": 75,
+      "english": "experience",
+      "japanese_reading": "けいけん",
+      "vietnamese": "kinh nghiệm",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "experience object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.49799979999806965,
+        "selected_image_url": "https://imaginovation.net/static/35ee311a394b5d317c72b5d128c29b39/56e89/demystifying-object-oriented-user-experience.png"
+      },
+      "selected_result": {
+        "image_url": "https://imaginovation.net/static/35ee311a394b5d317c72b5d128c29b39/56e89/demystifying-object-oriented-user-experience.png",
+        "source_page_url": "https://imaginovation.net/blog/ooux-complete-guide/",
+        "title": "A Comprehensive Guide to Object-Oriented User Experience",
+        "width": null,
+        "height": null,
+        "result_source": "imaginovation.net"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.6015625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/experience.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/experience.json",
+      "dimensions": [
+        750,
+        394
+      ],
+      "size_bytes": 36015,
+      "sha256": "8d85dd4d78147d071b6c99c865b187a9f6550a6a46a5277c714284293a3484f0",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000076",
+      "source_row_index": 76,
+      "english": "vegetable",
+      "japanese_reading": "やさい",
+      "vietnamese": "rau",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "vegetable plant",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 1,
+        "search_seconds": 0.4804474999982631,
+        "selected_image_url": "https://www.familyhandyman.com/wp-content/uploads/2023/04/GettyImages-1418173645.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://www.familyhandyman.com/wp-content/uploads/2023/04/GettyImages-1418173645.jpg",
+        "source_page_url": "https://lovahomy.com/2025/04/19/pictures-of-vegetable-gardens/",
+        "title": "7 Stunning Pictures Of Vegetable Gardens",
+        "width": null,
+        "height": null,
+        "result_source": "lovahomy.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.921875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/vegetable.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/vegetable.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 351100,
+      "sha256": "da413ab4537ce07a1a010af8cca770cd2698fc5c6d44c467df9f029d282b35d2",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000077",
+      "source_row_index": 77,
+      "english": "important",
+      "japanese_reading": "たいせつ",
+      "vietnamese": "quan trọng",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "important object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.5244443000010506,
+        "selected_image_url": "https://i.pinimg.com/736x/bc/2b/47/bc2b479c0aa5c5b200b44c53264ba50e.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/736x/bc/2b/47/bc2b479c0aa5c5b200b44c53264ba50e.jpg",
+        "source_page_url": "https://www.pinterest.com/pin/477311260499949928/",
+        "title": "Image result for paleolithic artifacts north america | Arrowheads ...",
+        "width": null,
+        "height": null,
+        "result_source": "Pinterest"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -7.8515625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/important.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/important.json",
+      "dimensions": [
+        736,
+        974
+      ],
+      "size_bytes": 132721,
+      "sha256": "af64948167ec3409496ec6c72b6fb45c2e4fded04ec2fe84139206f64f5a3e5b",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000078",
+      "source_row_index": 78,
+      "english": "different",
+      "japanese_reading": "ちがう",
+      "vietnamese": "khác",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "different object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.48940139999831445,
+        "selected_image_url": "https://st4.depositphotos.com/1763191/28192/v/1600/depositphotos_281925028-stock-illustration-set-of-different-objects.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://st4.depositphotos.com/1763191/28192/v/1600/depositphotos_281925028-stock-illustration-set-of-different-objects.jpg",
+        "source_page_url": "https://depositphotos.com/281925028/stock-illustration-set-of-different-objects.html",
+        "title": "Set of different objects Stock Vector Image by ©blueringmedia #281925028",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.5859375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/different.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/different.json",
+      "dimensions": [
+        1024,
+        781
+      ],
+      "size_bytes": 198986,
+      "sha256": "2b8fe7b1d9ff1a730918ea5ea5fb192f8781e82ec8b9feac7d6850170180aa06",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000079",
+      "source_row_index": 79,
+      "english": "dangerous",
+      "japanese_reading": "あぶない",
+      "vietnamese": "nguy hiểm",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "dangerous object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5548054999999295,
+        "selected_image_url": "https://imgv2-1-f.scribdassets.com/img/document/946929339/original/ab13eba7fe/1?v=1"
+      },
+      "selected_result": {
+        "image_url": "https://imgv2-1-f.scribdassets.com/img/document/946929339/original/ab13eba7fe/1?v=1",
+        "source_page_url": "https://www.scribd.com/document/946929339/Dangerous-Objects",
+        "title": "Dangerous Objects | PDF",
+        "width": null,
+        "height": null,
+        "result_source": "scribd.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 5.0546875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/dangerous.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/dangerous.json",
+      "dimensions": [
+        768,
+        1024
+      ],
+      "size_bytes": 77094,
+      "sha256": "92308ddc0bad8838a986526589f16806135cbdeb179146b9ed0477e1fd034c83",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000080",
+      "source_row_index": 80,
+      "english": "impossible",
+      "japanese_reading": "ふかのう",
+      "vietnamese": "không thể",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "impossible object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4507061000003887,
+        "selected_image_url": "https://fbi.cults3d.com/uploaders/22820957/illustration-file/af023420-9815-440a-87dd-69177e7c069d/Holding.png"
+      },
+      "selected_result": {
+        "image_url": "https://fbi.cults3d.com/uploaders/22820957/illustration-file/af023420-9815-440a-87dd-69177e7c069d/Holding.png",
+        "source_page_url": "https://cults3d.com/en/3d-model/art/penrose-triangle-impossible-object-optical-illusion-struckduck",
+        "title": "🔺 Penrose Triangle Impossible Object Optical Illusion・Free STL File for ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.3984375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/impossible.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094206Z-a7c27573/_metadata/impossible.json",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "size_bytes": 50132,
+      "sha256": "480b7487a8de3cb653bbc7aede5aee93fe1fe5e7d85345751661ab2bae8b73c1",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

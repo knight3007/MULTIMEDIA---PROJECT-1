@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "run_id": "20261029T041516Z-eea4173d",
+  "purpose": "owner_approved_image_replacement_review",
+  "configuration": {
+    "timeout": 8,
+    "retries": 0,
+    "retry_delay": 0.0,
+    "page_size": 1,
+    "rate_limit_delay": 0.0,
+    "search_backend": "auto",
+    "curated_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Kycklingfil%C3%A9.jpg",
+    "curated_source_page_url": "https://commons.wikimedia.org/wiki/File:Kycklingfil%C3%A9.jpg",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "english": "chicken",
+      "japanese_reading": "とりにく",
+      "vietnamese": "thịt gà",
+      "target_sense": "chicken meat",
+      "effective_query": "chicken meat",
+      "query_provenance": "human_approved",
+      "provider": "curated_direct",
+      "search_client": "curated_direct",
+      "search_backend": "curated_direct",
+      "status": "staged",
+      "approval_status": "pending_human_review",
+      "candidate_retrieval": {
+        "raw_results": 1,
+        "valid_results": 1,
+        "downloaded_candidates": 1,
+        "selected_image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Kycklingfil%C3%A9.jpg",
+        "search_seconds": 0.0
+      },
+      "selected_result": {
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Kycklingfil%C3%A9.jpg",
+        "source_page_url": "https://commons.wikimedia.org/wiki/File:Kycklingfil%C3%A9.jpg",
+        "title": "Wikimedia Commons file page",
+        "width": null,
+        "height": null,
+        "result_source": "commons.wikimedia.org"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261029T041516Z-eea4173d/chicken.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261029T041516Z-eea4173d/_metadata/chicken.json",
+      "dimensions": [
+        1024,
+        682
+      ],
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure": null,
+      "failure_stage": null,
+      "failure_type": null
+    }
+  ]
+}

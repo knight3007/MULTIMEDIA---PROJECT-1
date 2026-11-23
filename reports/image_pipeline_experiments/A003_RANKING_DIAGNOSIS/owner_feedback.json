@@ -1,0 +1,25 @@
+{
+  "source": "OWNER_CHAT_FEEDBACK",
+  "source_note": "Owner assessment supplied in A-003.1 task; no gallery JSON export was provided.",
+  "reviewed_count": 7,
+  "a003_total_count": 12,
+  "feedback": [
+    {"vocab_id": "vocab-000083", "english": "sometimes", "statement": "Both original and icon images are unsuitable", "preference": "BOTH_BAD"},
+    {"vocab_id": "vocab-000046", "english": "hungry", "statement": "Icon result is better", "preference": "ICON_BETTER"},
+    {"vocab_id": "vocab-000063", "english": "receive", "statement": "Icon result is visually oversized", "preference": null},
+    {"vocab_id": "vocab-000059", "english": "buy", "statement": "Icon result is better", "preference": "ICON_BETTER"},
+    {"vocab_id": "vocab-000057", "english": "eat", "statement": "Original image is better", "preference": "ORIGINAL_BETTER"},
+    {"vocab_id": "vocab-000031", "english": "book", "statement": "Original image is unsuitable despite being a simple word", "preference": null},
+    {"vocab_id": "vocab-000021", "english": "house", "statement": "Original image should show a fully constructed house", "preference": null}
+  ],
+  "unreviewed_ids": ["vocab-000001", "vocab-000011", "vocab-000016", "vocab-000028", "vocab-000045"],
+  "semantic_descriptions_frozen_before_scoring": {
+    "vocab-000083": "An activity that happens on some occasions, but not every time.",
+    "vocab-000046": "A hungry person wanting food.",
+    "vocab-000063": "A person receiving a package from another person.",
+    "vocab-000059": "A person buying an item in a shop.",
+    "vocab-000057": "A person eating food.",
+    "vocab-000031": "A physical book with pages for reading.",
+    "vocab-000021": "A complete, fully built house used as a home."
+  }
+}

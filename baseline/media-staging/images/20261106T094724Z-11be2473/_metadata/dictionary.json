@@ -1,0 +1,21 @@
+{
+  "word": "dictionary",
+  "search_query": "dictionary object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://pythontic.com/DictionaryViews_Python.png",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.oiLNnDqI0NF15v8RSLECmQHaFk&pid=15.1",
+  "source_page_url": "https://pythontic.com/containers/dictionary_view/introduction",
+  "title": "Dictionary view objects in Python | Pythontic.com",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 4.5234375
+  }
+}

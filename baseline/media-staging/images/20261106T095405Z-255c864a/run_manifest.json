@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T095405Z-255c864a",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000051",
+    "vocab-000052",
+    "vocab-000057",
+    "vocab-000060",
+    "vocab-000064",
+    "vocab-000065"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000051",
+      "source_row_index": 51,
+      "english": "go",
+      "japanese_reading": "いく",
+      "vietnamese": "đi",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "person going",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.7004592000012053,
+        "selected_image_url": "https://images.pexels.com/photos/18718906/pexels-photo-18718906.jpeg?cs=srgb&dl=pexels-best-photography-748452391-18718906.jpg&fm=jpg"
+      },
+      "selected_result": {
+        "image_url": "https://images.pexels.com/photos/18718906/pexels-photo-18718906.jpeg?cs=srgb&dl=pexels-best-photography-748452391-18718906.jpg&fm=jpg",
+        "source_page_url": "https://detroitchinatown.org/a-person-should-consume-more-of-something-when-its-marginal/",
+        "title": "A Person Should Consume More Of Something When Its Marginal | Detroit ...",
+        "width": null,
+        "height": null,
+        "result_source": "detroitchinatown.org"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -7.171875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T095405Z-255c864a/go.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T095405Z-255c864a/_metadata/go.json",
+      "dimensions": [
+        683,
+        1024
+      ],
+      "size_bytes": 153963,
+      "sha256": "e909681a73367df7a322128c50c0e3d25c67e6613ea7fb6110f2f9236a94f5df",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000052",
+      "source_row_index": 52,
+      "english": "read",
+      "japanese_reading": "よむ",
+      "vietnamese": "đọc",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "person reading",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5055100000026869,
+        "selected_image_url": "https://images.pexels.com/photos/4640846/pexels-photo-4640846.jpeg?cs=srgb&dl=pexels-arthousestudio-4640846.jpg&fm=jpg"
+      },
+      "selected_result": {
+        "image_url": "https://images.pexels.com/photos/4640846/pexels-photo-4640846.jpeg?cs=srgb&dl=pexels-arthousestudio-4640846.jpg&fm=jpg",
+        "source_page_url": "https://www.pexels.com/photo/person-reading-book-2898207/",
+        "title": "Person Reading Book · Free Stock Photo",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.9921875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T095405Z-255c864a/read.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T095405Z-255c864a/_metadata/read.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 122833,
+      "sha256": "142c37a665a2149bc1ea2a01c9039401a6e5b6eb048d15475ef94df4d1ce0eaf",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000057",
+      "source_row_index": 57,
+      "english": "eat",
+      "japanese_reading": "たべる",
+      "vietnamese": "ăn",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "person eating",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5559102999977767,
+        "selected_image_url": "https://img.freepik.com/free-photo/people-eating-delicious-salmon-bowl_52683-116802.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://img.freepik.com/free-photo/people-eating-delicious-salmon-bowl_52683-116802.jpg",
+        "source_page_url": "https://www.freepik.com/free-photo/people-eating-delicious-salmon-bowl_44595163.htm",
+        "title": "Free Photo | People eating delicious salmon bowl",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.1328125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T095405Z-255c864a/eat.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T095405Z-255c864a/_metadata/eat.json",
+      "dimensions": [
+        417,
+        626
+      ],
+      "size_bytes": 63135,
+      "sha256": "03ba96150c7aefa26fb4fdc7fffb3090296136e70ee7862591859a73f4fa56f1",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000060",
+      "source_row_index": 60,
+      "english": "help",
+      "japanese_reading": "たすける",
+      "vietnamese": "giúp đỡ",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "person helping",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5663755999994464,
+        "selected_image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/951/751/small_2x/silhouette-of-helping-hand-between-two-climber-couple-hiking-help-each-other-silhouette-in-mountains-with-sunlight-the-men-helping-pull-people-up-from-high-cliffs-photo.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/951/751/small_2x/silhouette-of-helping-hand-between-two-climber-couple-hiking-help-each-other-silhouette-in-mountains-with-sunlight-the-men-helping-pull-people-up-from-high-cliffs-photo.jpg",
+        "source_page_url": "https://www.vecteezy.com/free-photos/helping-others",
+        "title": "Helping Others Stock Photos, Images and Backgrounds for Free Download",
+        "width": null,
+        "height": null,
+        "result_source": "vecteezy.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 2.0859375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T095405Z-255c864a/help.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T095405Z-255c864a/_metadata/help.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 88273,
+      "sha256": "32fd07e445f6cabd060aacb3cf3bed592667f1f139e744f885887ae44e96a2e2",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000064",
+      "source_row_index": 64,
+      "english": "choose",
+      "japanese_reading": "えらぶ",
+      "vietnamese": "chọn",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "person choosing",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.45873430000210647,
+        "selected_image_url": "https://cdn4.vectorstock.com/i/1000x1000/90/68/people-character-making-their-own-choice-choosing-vector-44649068.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://cdn4.vectorstock.com/i/1000x1000/90/68/people-character-making-their-own-choice-choosing-vector-44649068.jpg",
+        "source_page_url": "https://www.vectorstock.com/royalty-free-vector/people-character-making-their-own-choice-choosing-vector-44649068",
+        "title": "People character making their own choice choosing Vector Image",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.0390625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T095405Z-255c864a/choose.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T095405Z-255c864a/_metadata/choose.json",
+      "dimensions": [
+        948,
+        1024
+      ],
+      "size_bytes": 116875,
+      "sha256": "80c58471e31038b4e6950a222e383948897098fc0f1be492c0056877f1e8c0ba",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000065",
+      "source_row_index": 65,
+      "english": "swim",
+      "japanese_reading": "およぐ",
+      "vietnamese": "bơi",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "person swimming",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.37388819999978296,
+        "selected_image_url": "https://www.kevinashleyphotography.com/wp-content/uploads/2015/11/person.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://www.kevinashleyphotography.com/wp-content/uploads/2015/11/person.jpg",
+        "source_page_url": "https://www.kevinashleyphotography.com/person/",
+        "title": "person | Kevin Ashley Photography - Kansas City and Overland Park ...",
+        "width": null,
+        "height": null,
+        "result_source": "kevinashleyphotography.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -11.84375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T095405Z-255c864a/swim.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T095405Z-255c864a/_metadata/swim.json",
+      "dimensions": [
+        577,
+        734
+      ],
+      "size_bytes": 69407,
+      "sha256": "7b38c5a65050eec4ad76a099695b764baac662ca69c0d882411cd957eeea34c2",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

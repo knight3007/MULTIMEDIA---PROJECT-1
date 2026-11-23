@@ -1,0 +1,21 @@
+{
+  "word": "software",
+  "search_query": "software device",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://img.freepik.com/premium-vector/network-interconnected-devices-software_1280751-31968.jpg?w=1480",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.zCNyjdEpnExnKJN4gp8BDAHaHa&pid=15.1",
+  "source_page_url": "https://www.freepik.com/premium-vector/network-interconnected-devices-software_286546255.htm",
+  "title": "Network of interconnected devices and software | Premium AI-generated ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "freepik.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.46875
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "word": "hello",
+  "search_query": "hello object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.ytimg.com/vi/9ofGaZgTilY/maxresdefault.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.iBK_0fIuNXt7K4H3LCB83AHaEK&pid=15.1",
+  "source_page_url": "https://www.youtube.com/watch?v=9ofGaZgTilY",
+  "title": "HELLO NEIGHBOR MOD KIT - HELLO OBJECTS: REMASTERED - YouTube",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "www.youtube.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.4140625
+  }
+}

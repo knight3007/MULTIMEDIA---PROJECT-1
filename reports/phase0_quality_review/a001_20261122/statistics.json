@@ -1,0 +1,239 @@
+{
+  "query_overall": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 37,
+      "FAIL": 22,
+      "NEEDS_REVIEW": 41,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 37.0,
+      "FAIL": 22.0,
+      "NEEDS_REVIEW": 41.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 59,
+    "pass_percent_definitive_only": 62.71,
+    "new_independent_per_item_labels": 0
+  },
+  "image_relevance": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 44,
+      "FAIL": 27,
+      "NEEDS_REVIEW": 28,
+      "UNKNOWN": 1
+    },
+    "percent_all_ids": {
+      "PASS": 44.0,
+      "FAIL": 27.0,
+      "NEEDS_REVIEW": 28.0,
+      "UNKNOWN": 1.0
+    },
+    "definitive_pass_fail_denominator": 71,
+    "pass_percent_definitive_only": 61.97,
+    "new_independent_per_item_labels": 0
+  },
+  "image_visual_quality": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 39,
+      "FAIL": 47,
+      "NEEDS_REVIEW": 13,
+      "UNKNOWN": 1
+    },
+    "percent_all_ids": {
+      "PASS": 39.0,
+      "FAIL": 47.0,
+      "NEEDS_REVIEW": 13.0,
+      "UNKNOWN": 1.0
+    },
+    "definitive_pass_fail_denominator": 86,
+    "pass_percent_definitive_only": 45.35,
+    "new_independent_per_item_labels": 0
+  },
+  "image_learning_suitability": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 27,
+      "FAIL": 55,
+      "NEEDS_REVIEW": 17,
+      "UNKNOWN": 1
+    },
+    "percent_all_ids": {
+      "PASS": 27.0,
+      "FAIL": 55.0,
+      "NEEDS_REVIEW": 17.0,
+      "UNKNOWN": 1.0
+    },
+    "definitive_pass_fail_denominator": 82,
+    "pass_percent_definitive_only": 32.93,
+    "new_independent_per_item_labels": 0
+  },
+  "audio_pronunciation_review": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 100,
+      "FAIL": 0,
+      "NEEDS_REVIEW": 0,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 100.0,
+      "FAIL": 0.0,
+      "NEEDS_REVIEW": 0.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 100,
+    "pass_percent_definitive_only": 100.0,
+    "new_independent_per_item_labels": 0
+  },
+  "query_correct_meaning": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 75,
+      "FAIL": 16,
+      "NEEDS_REVIEW": 9,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 75.0,
+      "FAIL": 16.0,
+      "NEEDS_REVIEW": 9.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 91,
+    "pass_percent_definitive_only": 82.42,
+    "new_independent_per_item_labels": 0
+  },
+  "query_specificity": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 54,
+      "FAIL": 0,
+      "NEEDS_REVIEW": 46,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 54.0,
+      "FAIL": 0.0,
+      "NEEDS_REVIEW": 46.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 54,
+    "pass_percent_definitive_only": 100.0,
+    "new_independent_per_item_labels": 0
+  },
+  "query_context_appropriateness": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 37,
+      "FAIL": 16,
+      "NEEDS_REVIEW": 47,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 37.0,
+      "FAIL": 16.0,
+      "NEEDS_REVIEW": 47.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 53,
+    "pass_percent_definitive_only": 69.81,
+    "new_independent_per_item_labels": 0
+  },
+  "query_ambiguity": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 37,
+      "FAIL": 8,
+      "NEEDS_REVIEW": 55,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 37.0,
+      "FAIL": 8.0,
+      "NEEDS_REVIEW": 55.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 45,
+    "pass_percent_definitive_only": 82.22,
+    "new_independent_per_item_labels": 0
+  },
+  "query_translation_consistency": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 78,
+      "FAIL": 3,
+      "NEEDS_REVIEW": 19,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 78.0,
+      "FAIL": 3.0,
+      "NEEDS_REVIEW": 19.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 81,
+    "pass_percent_definitive_only": 96.3,
+    "new_independent_per_item_labels": 0
+  },
+  "query_visual_search_suitability": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 49,
+      "FAIL": 20,
+      "NEEDS_REVIEW": 31,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 49.0,
+      "FAIL": 20.0,
+      "NEEDS_REVIEW": 31.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 69,
+    "pass_percent_definitive_only": 71.01,
+    "new_independent_per_item_labels": 0
+  },
+  "image_technical": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 99,
+      "FAIL": 0,
+      "NEEDS_REVIEW": 0,
+      "UNKNOWN": 1
+    },
+    "percent_all_ids": {
+      "PASS": 99.0,
+      "FAIL": 0.0,
+      "NEEDS_REVIEW": 0.0,
+      "UNKNOWN": 1.0
+    },
+    "definitive_pass_fail_denominator": 99,
+    "pass_percent_definitive_only": 100.0,
+    "new_independent_per_item_labels": 0
+  },
+  "audio_technical": {
+    "denominator_all_ids": 100,
+    "counts": {
+      "PASS": 100,
+      "FAIL": 0,
+      "NEEDS_REVIEW": 0,
+      "UNKNOWN": 0
+    },
+    "percent_all_ids": {
+      "PASS": 100.0,
+      "FAIL": 0.0,
+      "NEEDS_REVIEW": 0.0,
+      "UNKNOWN": 0.0
+    },
+    "definitive_pass_fail_denominator": 100,
+    "pass_percent_definitive_only": 100.0,
+    "new_independent_per_item_labels": 0
+  },
+  "new_independent_query_image_labels": 0,
+  "owner_audio_batch_accepted": 100,
+  "new_independent_audio_listening_sessions": 0
+}

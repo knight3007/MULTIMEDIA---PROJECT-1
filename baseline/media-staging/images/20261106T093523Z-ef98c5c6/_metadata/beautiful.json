@@ -1,0 +1,21 @@
+{
+  "word": "beautiful",
+  "search_query": "beautiful object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://img.freepik.com/premium-photo/beautiful-object-isolated-white-background_926199-1555794.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.OqcOO1XgahFrMQ2OGvVE1AHaHa&pid=15.1",
+  "source_page_url": "https://www.freepik.com/premium-ai-image/beautiful-object-isolated-white-background_134638086.htm",
+  "title": "Premium AI Image | Beautiful object isolated on white background",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "freepik.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.5390625
+  }
+}

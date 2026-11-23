@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000043",
+  "raw_decoded_text": "yesterday place",
+  "raw_attempts": [
+    {
+      "word": "yesterday",
+      "correction_prompt": null,
+      "raw_decoded_text": "yesterday place",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "yesterday place",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.845
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "42",
+  "word": "あした",
+  "reading": "あした",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090539Z-4a029141/あした.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 7296,
+  "duration_seconds": 0.912,
+  "status": "success"
+}

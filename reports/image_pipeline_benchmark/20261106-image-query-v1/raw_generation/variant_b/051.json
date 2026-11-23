@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000051",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"a person walking\",\n  \"visual_description\": \"A person walking across a grassy field, moving forward with a determined expression\",\n  \"negative_constraints\": [\"no background elements\", \"no lighting effects\"],\n  \"reason\": \"The depiction shows a person performing the action of walking, which is the target sense for the word 'go' in the context of movement. The uncertainty arises from the lack of specific details in the target sense, which may require further clarification.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "a person walking",
+    "visual_description": "A person walking across a grassy field, moving forward with a determined expression",
+    "negative_constraints": [
+      "no background elements",
+      "no lighting effects"
+    ],
+    "reason": "The depiction shows a person performing the action of walking, which is the target sense for the word 'go' in the context of movement. The uncertainty arises from the lack of specific details in the target sense, which may require further clarification."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 27.758
+}

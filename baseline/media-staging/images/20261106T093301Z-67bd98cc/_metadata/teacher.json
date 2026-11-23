@@ -1,0 +1,21 @@
+{
+  "word": "teacher",
+  "search_query": "teacher person",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://d1y8sb8igg2f8e.cloudfront.net/images/teacher_kin.2e16d0ba.fill-1200x630.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.z9eZu4kJrak7gJ1r6ziMBwHaD4&pid=15.1",
+  "source_page_url": "https://www.newamerica.org/education-policy/edcentral/new-research-suggests-ways-to-improve-every-stage-of-diverse-teachers-careers/",
+  "title": "New Research Suggests Ways to Improve Every Stage of Diverse Teachers ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "newamerica.org",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.4765625
+  }
+}

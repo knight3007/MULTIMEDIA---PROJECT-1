@@ -14,6 +14,20 @@ class ImageScoringError(Exception):
     pass
 
 
+def flatten_to_rgb(image: Image.Image, background: tuple[int, int, int] = (255, 255, 255)) -> Image.Image:
+    """Return an RGB copy; transparent pixels are composited onto `background`.
+
+    A bare ``convert("RGB")`` drops the alpha channel and exposes whatever colour
+    is stored under transparent pixels (often black), turning icons into black squares.
+    """
+    if image.mode in ("RGBA", "LA", "PA") or "transparency" in image.info:
+        rgba = image.convert("RGBA")
+        flattened = Image.new("RGB", rgba.size, background)
+        flattened.paste(rgba, mask=rgba.getchannel("A"))
+        return flattened
+    return image.convert("RGB")
+
+
 @dataclass(frozen=True)
 class ScoreResult:
     image_path: Path
@@ -92,7 +106,7 @@ class SiglipImageScorer:
         for image_path in image_paths:
             try:
                 with Image.open(image_path) as image:
-                    images.append(image.convert("RGB").copy())
+                    images.append(flatten_to_rgb(image))
             except OSError as error:
                 raise ImageScoringError(f"cannot open image for scoring: {image_path}") from error
 

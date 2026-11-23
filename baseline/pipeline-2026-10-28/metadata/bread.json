@@ -1,0 +1,18 @@
+{
+  "word": "bread",
+  "search_query": "bread food",
+  "provider": "duckduckgo",
+  "image_url": "https://cdn.pixabay.com/photo/2014/07/08/14/33/breads-387544_1280.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.NJVg36oxlRCyEonGeCtgRwHaE6&pid=15.1",
+  "source_page_url": "https://pixabay.com/photos/breads-foods-baked-bakery-387544/",
+  "title": "Breads Foods Baked - Free photo on Pixabay",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "pixabay.com",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.020154953002929688
+  }
+}

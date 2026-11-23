@@ -1,0 +1,21 @@
+{
+  "word": "waterfall",
+  "search_query": "waterfall object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://png.pngtree.com/png-vector/20240327/ourmid/pngtree-waterfall-single-object-png-image_12211794.png",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.EtP3Q6IGpRIKrn2eU9g8DgAAAA&pid=15.1",
+  "source_page_url": "https://pngtree.com/freepng/waterfall-single-object_15106684.html",
+  "title": "Waterfall Single Object, Fall, Aqua, River PNG Transparent Image and ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 3.3359375
+  }
+}

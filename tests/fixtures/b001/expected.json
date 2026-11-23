@@ -1,0 +1,60 @@
+{
+  "test_only": true,
+  "cases": {
+    "excel_valid.xlsx": {
+      "accepted_rows": [
+        2,
+        3,
+        4
+      ],
+      "errors": [],
+      "empty_rows": []
+    },
+    "excel_missing_column.xlsx": {
+      "accepted_rows": [],
+      "errors": [
+        {
+          "code": "INVALID_HEADER",
+          "row": 1,
+          "column": "vietnamese"
+        }
+      ],
+      "empty_rows": []
+    },
+    "excel_blank_row.xlsx": {
+      "accepted_rows": [
+        2,
+        4
+      ],
+      "errors": [],
+      "empty_rows": [
+        3
+      ]
+    },
+    "excel_duplicate.xlsx": {
+      "accepted_rows": [],
+      "errors": [
+        {
+          "code": "DUPLICATE_ROW",
+          "row": 3,
+          "column": null,
+          "related_row": 2
+        }
+      ],
+      "empty_rows": []
+    },
+    "excel_unicode.xlsx": {
+      "accepted_rows": [
+        2
+      ],
+      "errors": [],
+      "empty_rows": [],
+      "normalized_row": [
+        "school",
+        "がっこう",
+        "trường học",
+        null
+      ]
+    }
+  }
+}

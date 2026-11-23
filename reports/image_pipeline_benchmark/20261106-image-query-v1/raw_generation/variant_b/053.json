@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000053",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person writing\",\n  \"visual_description\": \"A person holding a pen and writing on a paper\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a textbook illustration\"],\n  \"reason\": \"The image shows a person performing the action of writing, which aligns with the target sense of 'write' in the context of writing text, while the alternative meaning of 'draw' is not shown.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "person writing",
+    "visual_description": "A person holding a pen and writing on a paper",
+    "negative_constraints": [
+      "not a literal photo",
+      "not a textbook illustration"
+    ],
+    "reason": "The image shows a person performing the action of writing, which aligns with the target sense of 'write' in the context of writing text, while the alternative meaning of 'draw' is not shown."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 24.445
+}

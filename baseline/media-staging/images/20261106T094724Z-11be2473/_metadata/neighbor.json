@@ -1,0 +1,21 @@
+{
+  "word": "neighbor",
+  "search_query": "neighbor person",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://homecadet.com/wp-content/uploads/2025/04/neighbor-interaction.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.q4ckLMVbJQrgOdkiuN4cgAHaE8&pid=15.1",
+  "source_page_url": "https://homecadet.com/signs-of-a-nosy-neighbor/",
+  "title": "Signs of a Nosy Neighbor (And How to Respond) - Home Cadet",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 3.8671875
+  }
+}

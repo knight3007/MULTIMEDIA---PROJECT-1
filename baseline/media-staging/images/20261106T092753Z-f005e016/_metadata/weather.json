@@ -1,0 +1,21 @@
+{
+  "word": "weather",
+  "search_query": "weather phenomenon",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2022/10/CLI371.weather.double_rainbow_cammie_czuchnicki.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.aNdkMB2qqrjZ7gX0notefAHaE8&pid=15.1",
+  "source_page_url": "https://www.eatmy.news/2023/07/what-is-science-behind-different-types.html",
+  "title": "What Is the Science Behind Different Types of Weather Phenomenon",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "eatmy.news",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -2.9375
+  }
+}

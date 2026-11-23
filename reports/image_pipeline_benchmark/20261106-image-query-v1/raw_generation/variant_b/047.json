@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000047",
+  "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"easy in a learning context\",\n  \"visual_description\": \"A simple, clear illustration of a learning concept, such as a child learning to read or a student solving a math problem.\",\n  \"negative_constraints\": [\"avoid abstract concepts not related to learning\"],\n  \"reason\": \"The image should represent a clear, straightforward learning scenario to convey the meaning of 'easy' in a practical context.\"\n}",
+  "parsed": {
+    "visual_type": "educational_visual",
+    "search_query": "easy in a learning context",
+    "visual_description": "A simple, clear illustration of a learning concept, such as a child learning to read or a student solving a math problem.",
+    "negative_constraints": [
+      "avoid abstract concepts not related to learning"
+    ],
+    "reason": "The image should represent a clear, straightforward learning scenario to convey the meaning of 'easy' in a practical context."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 24.312
+}

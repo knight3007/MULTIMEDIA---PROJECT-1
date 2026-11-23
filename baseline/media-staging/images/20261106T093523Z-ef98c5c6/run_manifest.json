@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T093523Z-ef98c5c6",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000041",
+    "vocab-000042",
+    "vocab-000043",
+    "vocab-000044",
+    "vocab-000045",
+    "vocab-000046",
+    "vocab-000047",
+    "vocab-000048",
+    "vocab-000049",
+    "vocab-000050"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000041",
+      "source_row_index": 41,
+      "english": "today",
+      "japanese_reading": "きょう",
+      "vietnamese": "hôm nay",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "today timepiece",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 1,
+        "downloaded_candidates": 1,
+        "search_seconds": 0.6105380999979388,
+        "selected_image_url": "https://images.squarespace-cdn.com/content/v1/681b9f60a194f13396f0289b/1747774425155-ZQWF5TQ4NNG39L8JU53I/MZfbac1.jpeg"
+      },
+      "selected_result": {
+        "image_url": "https://images.squarespace-cdn.com/content/v1/681b9f60a194f13396f0289b/1747774425155-ZQWF5TQ4NNG39L8JU53I/MZfbac1.jpeg",
+        "source_page_url": "https://www.timepieceundertension.com/about",
+        "title": "About | Explore Luxury Watches – Buy Today — Timepiece Under Tension",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -6.8046875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/today.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/today.json",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "size_bytes": 239412,
+      "sha256": "924e2b4c5a240190620a0af3d6643c7c86d4f765b53a8bab95469a827c56b300",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000042",
+      "source_row_index": 42,
+      "english": "tomorrow",
+      "japanese_reading": "あした",
+      "vietnamese": "ngày mai",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "tomorrow timepiece",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4644997000032163,
+        "selected_image_url": "https://i.ytimg.com/vi/phrrQPh1NQ4/maxresdefault.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.ytimg.com/vi/phrrQPh1NQ4/maxresdefault.jpg",
+        "source_page_url": "https://www.youtube.com/watch?v=phrrQPh1NQ4",
+        "title": "Timepieces for Tomorrow LIVE SHOW - Episode #9 - Best Watches to Buy ...",
+        "width": null,
+        "height": null,
+        "result_source": "YouTube"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.7890625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/tomorrow.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/tomorrow.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 142152,
+      "sha256": "5e38d7e87bbff72cbf240357a8cddd474bdcbfd7fd489155693e739bccea6a49",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000043",
+      "source_row_index": 43,
+      "english": "yesterday",
+      "japanese_reading": "きのう",
+      "vietnamese": "hôm qua",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "yesterday place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 2,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.48643359999914537,
+        "selected_image_url": "https://www.dramabl.com/wp-content/uploads/2025/12/Yesterday.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://www.dramabl.com/wp-content/uploads/2025/12/Yesterday.jpg",
+        "source_page_url": "https://www.dramabl.com/drama/yesterday/",
+        "title": "Yesterday - DramaBL",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -2.8046875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/yesterday.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/yesterday.json",
+      "dimensions": [
+        819,
+        1024
+      ],
+      "size_bytes": 174957,
+      "sha256": "9943a46fa08a8d5890d84e54687e2bf9e8c4cb7eb55eba882d0c0a884e233597",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000044",
+      "source_row_index": 44,
+      "english": "winter",
+      "japanese_reading": "ふゆ",
+      "vietnamese": "mùa đông",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "winter season",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.5271907999995165,
+        "selected_image_url": "https://cdn.mos.cms.futurecdn.net/2LVWjEV65antgXRgEAXJRb-1200-80.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://cdn.mos.cms.futurecdn.net/2LVWjEV65antgXRgEAXJRb-1200-80.jpg",
+        "source_page_url": "https://www.livescience.com/25124-winter.html",
+        "title": "Winter: The Coldest Season | Live Science",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -2.7421875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/winter.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/winter.json",
+      "dimensions": [
+        1000,
+        635
+      ],
+      "size_bytes": 161922,
+      "sha256": "2a03a99151a75fc0c81882badd2f98091dca0e04c04f36a38a023887ebac401a",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000045",
+      "source_row_index": 45,
+      "english": "happy",
+      "japanese_reading": "うれしい",
+      "vietnamese": "vui",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "happy emotion",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 2,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.671426099997916,
+        "selected_image_url": "https://static.vecteezy.com/system/resources/thumbnails/027/377/088/small_2x/yellow-smiley-emoji-with-isolated-background-generative-ai-photo.jpeg"
+      },
+      "selected_result": {
+        "image_url": "https://static.vecteezy.com/system/resources/thumbnails/027/377/088/small_2x/yellow-smiley-emoji-with-isolated-background-generative-ai-photo.jpeg",
+        "source_page_url": "https://www.vecteezy.com/free-photos/happy-emotion",
+        "title": "Happy Emotion Stock Photos, Images and Backgrounds for Free Download",
+        "width": null,
+        "height": null,
+        "result_source": "vecteezy.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.2421875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/happy.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/happy.json",
+      "dimensions": [
+        929,
+        700
+      ],
+      "size_bytes": 41519,
+      "sha256": "6dae467880b1cddcea6af71ad3387b8908afc714afb19e99e1af43ef0c072a66",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000046",
+      "source_row_index": 46,
+      "english": "hungry",
+      "japanese_reading": "おなかがすいた",
+      "vietnamese": "đói",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "hungry appetite",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.44274399999994785,
+        "selected_image_url": "https://i.pinimg.com/736x/68/78/91/6878912409bd822fd31aeb327b15d60d.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/736x/68/78/91/6878912409bd822fd31aeb327b15d60d.jpg",
+        "source_page_url": "https://www.pinterest.com/pin/discover-the-difference-between-appetite-and-hunger--242209286201481785/",
+        "title": "Discover the Difference Between Appetite and Hunger | Pretty notes ...",
+        "width": null,
+        "height": null,
+        "result_source": "www.pinterest.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.9921875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/hungry.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/hungry.json",
+      "dimensions": [
+        700,
+        700
+      ],
+      "size_bytes": 48755,
+      "sha256": "09570231f99a76326b1a38262c2d7bd3616340abea72c908b5056daf3b59e5e0",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000047",
+      "source_row_index": 47,
+      "english": "easy",
+      "japanese_reading": "やさしい",
+      "vietnamese": "dễ",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "easy object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4469515999990108,
+        "selected_image_url": "https://i.ytimg.com/vi/EISWMJ18Ff4/maxresdefault.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.ytimg.com/vi/EISWMJ18Ff4/maxresdefault.jpg",
+        "source_page_url": "https://www.youtube.com/watch?v=EISWMJ18Ff4",
+        "title": "10 Daily Objects Easy Drawing for Kids and Toddlers - YouTube",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 2.7734375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/easy.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/easy.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 89492,
+      "sha256": "502882f33e7c713204c57b119bc29ba5c183ddbafe7a02cd7bd14bb11767d4c3",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000048",
+      "source_row_index": 48,
+      "english": "difficult",
+      "japanese_reading": "むずかしい",
+      "vietnamese": "khó",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "difficult object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.43794010000056005,
+        "selected_image_url": "https://i.ytimg.com/vi/ViQTZ21jEY8/maxresdefault.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.ytimg.com/vi/ViQTZ21jEY8/maxresdefault.jpg",
+        "source_page_url": "https://www.youtube.com/watch?v=ViQTZ21jEY8",
+        "title": "HOW TO TACKLE DRAWING DIFFICULT OBJECTS - YouTube",
+        "width": null,
+        "height": null,
+        "result_source": "YouTube"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.4140625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/difficult.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/difficult.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 155068,
+      "sha256": "c9aa74df99ebbbfb5aefac39fc8b1bdb8517619698bb095fc3220addd5d61263",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000049",
+      "source_row_index": 49,
+      "english": "beautiful",
+      "japanese_reading": "きれい",
+      "vietnamese": "đẹp",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "beautiful object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5019627999972727,
+        "selected_image_url": "https://img.freepik.com/premium-photo/beautiful-object-isolated-white-background_926199-1555794.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://img.freepik.com/premium-photo/beautiful-object-isolated-white-background_926199-1555794.jpg",
+        "source_page_url": "https://www.freepik.com/premium-ai-image/beautiful-object-isolated-white-background_134638086.htm",
+        "title": "Premium AI Image | Beautiful object isolated on white background",
+        "width": null,
+        "height": null,
+        "result_source": "freepik.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.5390625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/beautiful.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/beautiful.json",
+      "dimensions": [
+        626,
+        626
+      ],
+      "size_bytes": 54058,
+      "sha256": "df93efb644dc9ec4fddc2157ce94b139894633b9e0ce9fe6c97dc8dfa1193df5",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000050",
+      "source_row_index": 50,
+      "english": "strong",
+      "japanese_reading": "つよい",
+      "vietnamese": "mạnh",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "strong object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.4280512999976054,
+        "selected_image_url": "https://i.ytimg.com/vi/nz4HKED440k/maxresdefault.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.ytimg.com/vi/nz4HKED440k/maxresdefault.jpg",
+        "source_page_url": "https://www.vrogue.co/post/10-strongest-material-in-the-world",
+        "title": "10 Strongest Material In The World - vrogue.co",
+        "width": null,
+        "height": null,
+        "result_source": "vrogue.co"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -4.3515625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/strong.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/_metadata/strong.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 122592,
+      "sha256": "a0734ee7e4821a2b74b8798438ad83d38f284a608c5b1a4e88f0a501e8b0b977",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

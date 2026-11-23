@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T094724Z-11be2473",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000091",
+    "vocab-000092",
+    "vocab-000093",
+    "vocab-000094",
+    "vocab-000095",
+    "vocab-000096",
+    "vocab-000097",
+    "vocab-000098",
+    "vocab-000099",
+    "vocab-000100"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000091",
+      "source_row_index": 91,
+      "english": "apartment",
+      "japanese_reading": "アパート",
+      "vietnamese": "căn hộ",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "apartment place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.7726724999993166,
+        "selected_image_url": "https://static.vecteezy.com/system/resources/previews/044/838/269/large_2x/modern-residential-building-with-new-apartments-in-a-green-residential-area-eco-architecture-green-tree-and-new-apartment-building-the-harmony-of-nature-and-modernity-photo.JPG"
+      },
+      "selected_result": {
+        "image_url": "https://static.vecteezy.com/system/resources/previews/044/838/269/large_2x/modern-residential-building-with-new-apartments-in-a-green-residential-area-eco-architecture-green-tree-and-new-apartment-building-the-harmony-of-nature-and-modernity-photo.JPG",
+        "source_page_url": "https://www.vecteezy.com/photo/44838269-modern-residential-building-with-new-apartments-in-a-green-residential-area-eco-architecture-green-tree-and-new-apartment-building-the-harmony-of-nature-and-modernity",
+        "title": "Modern residential building with new apartments in a green residential ...",
+        "width": null,
+        "height": null,
+        "result_source": "vecteezy.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.4921875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/apartment.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/apartment.json",
+      "dimensions": [
+        1024,
+        575
+      ],
+      "size_bytes": 221921,
+      "sha256": "11116f57df343e1d97e44cc882213da39de10379294e7e2c4b6b2f2a99404d5c",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000092",
+      "source_row_index": 92,
+      "english": "dictionary",
+      "japanese_reading": "じしょ",
+      "vietnamese": "từ điển",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "dictionary object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.43497449999995297,
+        "selected_image_url": "https://pythontic.com/DictionaryViews_Python.png"
+      },
+      "selected_result": {
+        "image_url": "https://pythontic.com/DictionaryViews_Python.png",
+        "source_page_url": "https://pythontic.com/containers/dictionary_view/introduction",
+        "title": "Dictionary view objects in Python | Pythontic.com",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 4.5234375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/dictionary.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/dictionary.json",
+      "dimensions": [
+        1024,
+        771
+      ],
+      "size_bytes": 52543,
+      "sha256": "c383a971f54308b926e9c5fdaa03f953380d2585bc5ca4c9306c0d638c459ce5",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000093",
+      "source_row_index": 93,
+      "english": "supermarket",
+      "japanese_reading": "スーパーマーケット",
+      "vietnamese": "siêu thị",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "supermarket place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4632789999996021,
+        "selected_image_url": "https://www.macopkg.com/wp-content/uploads/2023/02/supermarket-aisle.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://www.macopkg.com/wp-content/uploads/2023/02/supermarket-aisle.jpg",
+        "source_page_url": "https://cscloset.de/food-prices-in-belgian-supermarkets-up-20-in-a-year/",
+        "title": "Food Prices In Belgian Supermarkets Up 20% In A Year – ZWEX",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -2.921875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/supermarket.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/supermarket.json",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "size_bytes": 311145,
+      "sha256": "4da6f5df790e72908ac18b60c50185282015822fddd6938975852675fb84f502",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000094",
+      "source_row_index": 94,
+      "english": "pharmacy",
+      "japanese_reading": "やっきょく",
+      "vietnamese": "nhà thuốc",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "pharmacy institution",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4667092000017874,
+        "selected_image_url": "https://nu.edu.om/pharmacy/assets/uploads/sites/4/2022/02/img-15-1920x1080.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://nu.edu.om/pharmacy/assets/uploads/sites/4/2022/02/img-15-1920x1080.jpg",
+        "source_page_url": "https://kaufentv.de/pharmacy-institute-of-pharmacy/",
+        "title": "Pharmacy _ Institute of Pharmacy – PCHVMF",
+        "width": null,
+        "height": null,
+        "result_source": "kaufentv.de"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.6171875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/pharmacy.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/pharmacy.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 140097,
+      "sha256": "cf0c520085e7478da23d3c2a9913800b91019d6ff460683d2f284ef2dd07d522",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000095",
+      "source_row_index": 95,
+      "english": "museum",
+      "japanese_reading": "はくぶつかん",
+      "vietnamese": "bảo tàng",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "museum place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 1.206585099997028,
+        "selected_image_url": "http://www.knotstudio.com/wp-content/uploads/2019/07/Museum-Place_1.jpg"
+      },
+      "selected_result": {
+        "image_url": "http://www.knotstudio.com/wp-content/uploads/2019/07/Museum-Place_1.jpg",
+        "source_page_url": "https://www.knotstudio.com/projects/museum-place-and-safeway/",
+        "title": "Museum Place and Safeway - Knot",
+        "width": null,
+        "height": null,
+        "result_source": "knotstudio.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 4.2890625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/museum.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/museum.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 108299,
+      "sha256": "2c2fe05fd06ced79c503c4dad429a71d54e1ccb4b5d008a5ed7f15532c208186",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000096",
+      "source_row_index": 96,
+      "english": "waterfall",
+      "japanese_reading": "たき",
+      "vietnamese": "thác nước",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "waterfall object",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5426936000003479,
+        "selected_image_url": "https://png.pngtree.com/png-vector/20240327/ourmid/pngtree-waterfall-single-object-png-image_12211794.png"
+      },
+      "selected_result": {
+        "image_url": "https://png.pngtree.com/png-vector/20240327/ourmid/pngtree-waterfall-single-object-png-image_12211794.png",
+        "source_page_url": "https://pngtree.com/freepng/waterfall-single-object_15106684.html",
+        "title": "Waterfall Single Object, Fall, Aqua, River PNG Transparent Image and ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 3.3359375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/waterfall.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/waterfall.json",
+      "dimensions": [
+        360,
+        360
+      ],
+      "size_bytes": 39145,
+      "sha256": "422387dc55d0cd84e7ec3b493fa0d0de81cfaa77eb2da86b449fc5aa7f2ddacc",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000097",
+      "source_row_index": 97,
+      "english": "firefighter",
+      "japanese_reading": "しょうぼうし",
+      "vietnamese": "lính cứu hỏa",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "firefighter person",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.43237370000133524,
+        "selected_image_url": "https://as2.ftcdn.net/v2/jpg/05/60/51/03/1000_F_560510379_hrRVF7hfKJCw8RW7saki0y2IjgNSxXjP.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://as2.ftcdn.net/v2/jpg/05/60/51/03/1000_F_560510379_hrRVF7hfKJCw8RW7saki0y2IjgNSxXjP.jpg",
+        "source_page_url": "https://stock.adobe.com/images/firefighter-training-fireman-using-water-and-extinguisher-to-fighting-with-fire-flame-in-an-emergency-situation-under-danger-situation-all-firemen-wearing-fire-fighter-suit-for-safety-generative/560510379",
+        "title": "firefighter training., fireman using water and extinguisher to fighting ...",
+        "width": null,
+        "height": null,
+        "result_source": "stock.adobe.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.1953125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/firefighter.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/firefighter.json",
+      "dimensions": [
+        1000,
+        667
+      ],
+      "size_bytes": 151503,
+      "sha256": "0fe4915f8f5144f6c1c00986a1efceac6a0fedd58472653fbf84a17a81107806",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000098",
+      "source_row_index": 98,
+      "english": "neighbor",
+      "japanese_reading": "となりのひと",
+      "vietnamese": "hàng xóm",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "neighbor person",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.473185700000613,
+        "selected_image_url": "https://homecadet.com/wp-content/uploads/2025/04/neighbor-interaction.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://homecadet.com/wp-content/uploads/2025/04/neighbor-interaction.jpg",
+        "source_page_url": "https://homecadet.com/signs-of-a-nosy-neighbor/",
+        "title": "Signs of a Nosy Neighbor (And How to Respond) - Home Cadet",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 3.8671875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/neighbor.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/neighbor.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 135675,
+      "sha256": "48659fce21b245cdf923fed9cc6ec3f594866547b6ac8dac6d075937d447ae46",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000099",
+      "source_row_index": 99,
+      "english": "daughter",
+      "japanese_reading": "むすめ",
+      "vietnamese": "con gái",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "daughter person",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4728810999986308,
+        "selected_image_url": "https://img.freepik.com/premium-photo/mother-with-daughter-people-person-family_53876-528135.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://img.freepik.com/premium-photo/mother-with-daughter-people-person-family_53876-528135.jpg",
+        "source_page_url": "https://www.freepik.com/premium-ai-image/mother-with-daughter-people-person-family_357271116.htm",
+        "title": "Mother with daughter people person family | Premium AI-generated image",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 1.0703125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/daughter.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/daughter.json",
+      "dimensions": [
+        626,
+        626
+      ],
+      "size_bytes": 44285,
+      "sha256": "ee90b4c537c37e0cafc765757ccf210658a9839f15b9270322c812bd3c1bb3db",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000100",
+      "source_row_index": 100,
+      "english": "grandmother",
+      "japanese_reading": "そぼ",
+      "vietnamese": "bà",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "grandmother person",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4952726999981678,
+        "selected_image_url": "https://img.freepik.com/premium-photo/grandmother-grandson-looking-camera-happy_1009902-15357.jpg?w=1380"
+      },
+      "selected_result": {
+        "image_url": "https://img.freepik.com/premium-photo/grandmother-grandson-looking-camera-happy_1009902-15357.jpg?w=1380",
+        "source_page_url": "https://www.freepik.com/premium-ai-image/grandmother-grandson-looking-camera-happy_156171351.htm",
+        "title": "Premium Photo | Grandmother and grandson looking at the camera happy",
+        "width": null,
+        "height": null,
+        "result_source": "freepik.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.5859375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T094724Z-11be2473/grandmother.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T094724Z-11be2473/_metadata/grandmother.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 134325,
+      "sha256": "f8b4a323ec7abb2b261db5a978818b55d9d0479818733d88aab1261cc39cd2e0",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

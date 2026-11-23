@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T093018Z-b749e191",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000021",
+    "vocab-000022",
+    "vocab-000023",
+    "vocab-000024",
+    "vocab-000025",
+    "vocab-000026",
+    "vocab-000027",
+    "vocab-000028",
+    "vocab-000029",
+    "vocab-000030"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000021",
+      "source_row_index": 21,
+      "english": "house",
+      "japanese_reading": "いえ",
+      "vietnamese": "ngôi nhà",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "house building",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.850203000001784,
+        "selected_image_url": "https://ahouseinthehills.com/wp-content/uploads/2025/12/how-much-time-does-it-take-to-build-a-house.webp"
+      },
+      "selected_result": {
+        "image_url": "https://ahouseinthehills.com/wp-content/uploads/2025/12/how-much-time-does-it-take-to-build-a-house.webp",
+        "source_page_url": "https://ahouseinthehills.com/build-a-house/",
+        "title": "How Long Does It Take to Build a House - A House in the Hills",
+        "width": null,
+        "height": null,
+        "result_source": "ahouseinthehills.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.703125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/house.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/house.json",
+      "dimensions": [
+        1024,
+        574
+      ],
+      "size_bytes": 165290,
+      "sha256": "5c444c3332263578fc344aa9429849bd5515792af2e3b7a11f312e21a9e4806a",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000022",
+      "source_row_index": 22,
+      "english": "kitchen",
+      "japanese_reading": "だいどころ",
+      "vietnamese": "nhà bếp",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "kitchen place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4349364000008791,
+        "selected_image_url": "https://koala.sh/api/image/v2-a8a5b-42j4p.jpg?width=1216&height=832&dream"
+      },
+      "selected_result": {
+        "image_url": "https://koala.sh/api/image/v2-a8a5b-42j4p.jpg?width=1216&height=832&dream",
+        "source_page_url": "https://wondrouslavie.com/kitchen-area-design-tips-and-trends-for-a-modern-home/",
+        "title": "Kitchen Area Design: Tips and Trends for a Modern Home",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.4921875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/kitchen.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/kitchen.json",
+      "dimensions": [
+        1024,
+        701
+      ],
+      "size_bytes": 139707,
+      "sha256": "8433f77129ad92a2d2017b09ea741bf587cf82a6f38933ea8f1786d01f1ffcbe",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000023",
+      "source_row_index": 23,
+      "english": "school",
+      "japanese_reading": "がっこう",
+      "vietnamese": "trường học",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "school institution",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.6473110999977507,
+        "selected_image_url": "https://c8.alamy.com/comp/2J5WT98/educational-institutions-set-kindergarten-school-state-and-science-university-buildings-front-view-isolated-on-white-background-modern-city-establ-2J5WT98.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://c8.alamy.com/comp/2J5WT98/educational-institutions-set-kindergarten-school-state-and-science-university-buildings-front-view-isolated-on-white-background-modern-city-establ-2J5WT98.jpg",
+        "source_page_url": "https://www.alamy.com/educational-institutions-set-kindergarten-school-state-and-science-university-buildings-front-view-isolated-on-white-background-modern-city-establ-image468321092.html",
+        "title": "Educational institutions set, kindergarten, school, state and science ...",
+        "width": null,
+        "height": null,
+        "result_source": "alamy.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.4921875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/school.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/school.json",
+      "dimensions": [
+        1024,
+        802
+      ],
+      "size_bytes": 129141,
+      "sha256": "fa7280363e2df4c3943cb575a082029091c9b55d1da99b342ece719799018f63",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000024",
+      "source_row_index": 24,
+      "english": "library",
+      "japanese_reading": "としょかん",
+      "vietnamese": "thư viện",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "library place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4355037999994238,
+        "selected_image_url": "https://i.pinimg.com/originals/78/bb/8e/78bb8ea027bb57afd867d9419cd7853e.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/originals/78/bb/8e/78bb8ea027bb57afd867d9419cd7853e.jpg",
+        "source_page_url": "https://www.pinterest.com/pin/423971752414310678/",
+        "title": "Firestone Library renovation news: New 1st floor spaces now open ...",
+        "width": null,
+        "height": null,
+        "result_source": "Pinterest"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 0.2578125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/library.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/library.json",
+      "dimensions": [
+        1024,
+        683
+      ],
+      "size_bytes": 159560,
+      "sha256": "352b82c23231cd8b7b543a8ba82b7cec56879661440d633267e28b78d4a6cbca",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000025",
+      "source_row_index": 25,
+      "english": "hospital",
+      "japanese_reading": "びょういん",
+      "vietnamese": "bệnh viện",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "hospital institution",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5008899000022211,
+        "selected_image_url": "https://img.freepik.com/premium-photo/modern-hospital-building-glass-facade-geometric-architecture-tiered-structure-illuminated-interior-b_1308352-9259.jpg?w=1480"
+      },
+      "selected_result": {
+        "image_url": "https://img.freepik.com/premium-photo/modern-hospital-building-glass-facade-geometric-architecture-tiered-structure-illuminated-interior-b_1308352-9259.jpg?w=1480",
+        "source_page_url": "https://www.freepik.com/premium-ai-image/modern-hospital-building-glass-facade-geometric-architecture-tiered-structure-illuminated-interior-b_278304986.htm",
+        "title": "Premium Photo | Modern hospital building glass facade geometric ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.5234375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/hospital.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/hospital.json",
+      "dimensions": [
+        1024,
+        574
+      ],
+      "size_bytes": 123176,
+      "sha256": "1ca65bbfb3ec86317748b962b0f39907ed9380ef26fc745a23d80d34a939d40e",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000026",
+      "source_row_index": 26,
+      "english": "airport",
+      "japanese_reading": "くうこう",
+      "vietnamese": "sân bay",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "airport place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 3.321657700002106,
+        "selected_image_url": "https://www.greshamsmith.com/wp-content/uploads/2024/03/why-airports-use-design-visioning-to-create-a-sense-of-place-01-1200x900.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://www.greshamsmith.com/wp-content/uploads/2024/03/why-airports-use-design-visioning-to-create-a-sense-of-place-01-1200x900.jpg",
+        "source_page_url": "https://www.greshamsmith.com/news-and-insights/the-final-product-using-design-visioning-to-create-a-sense-of-place-in-airports-part-3/",
+        "title": "The Final Product: Using Design Visioning to Create a Sense of Place in ...",
+        "width": null,
+        "height": null,
+        "result_source": "greshamsmith.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.65625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/airport.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/airport.json",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "size_bytes": 215309,
+      "sha256": "88e2827de926bf79e354fcfde136ffa0909e3b0f374c01f4ba4b015f8485a606",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000027",
+      "source_row_index": 27,
+      "english": "restaurant",
+      "japanese_reading": "レストラン",
+      "vietnamese": "nhà hàng",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "restaurant place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5316654999987804,
+        "selected_image_url": "https://i.pinimg.com/736x/0a/cb/f2/0acbf24550beba398b358aed05e5e0fd.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/736x/0a/cb/f2/0acbf24550beba398b358aed05e5e0fd.jpg",
+        "source_page_url": "https://www.pinterest.com/pin/87398049015481754/",
+        "title": "Stunning Bar Design at Club Como Restaurant | Hospitality design ...",
+        "width": null,
+        "height": null,
+        "result_source": "www.pinterest.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -2.6953125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/restaurant.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/restaurant.json",
+      "dimensions": [
+        736,
+        920
+      ],
+      "size_bytes": 144846,
+      "sha256": "6fe662beb5ff22a9fae59daf186b985397c1a55c4469cd768300c0b57fae24f5",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000028",
+      "source_row_index": 28,
+      "english": "car",
+      "japanese_reading": "くるま",
+      "vietnamese": "ô tô",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "car vehicle",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.5044047999981558,
+        "selected_image_url": "https://offshoreclipping.com/wp-content/uploads/2024/05/capture-driving-shot.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://offshoreclipping.com/wp-content/uploads/2024/05/capture-driving-shot.jpg",
+        "source_page_url": "https://offshoreclipping.com/blog/car-product-photography/",
+        "title": "Car Product Photography: 17 Tips to Better Automotive Photos",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.3984375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/car.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/car.json",
+      "dimensions": [
+        1000,
+        667
+      ],
+      "size_bytes": 74300,
+      "sha256": "436f32755da21884356e66802d862ff5ad3a67cff486ed1ea8669d74c81367ea",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000029",
+      "source_row_index": 29,
+      "english": "bicycle",
+      "japanese_reading": "じてんしゃ",
+      "vietnamese": "xe đạp",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "bicycle vehicle",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.48013580000042566,
+        "selected_image_url": "https://cdn.pixabay.com/photo/2018/02/20/17/34/bicycle-3168273_960_720.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://cdn.pixabay.com/photo/2018/02/20/17/34/bicycle-3168273_960_720.jpg",
+        "source_page_url": "https://pixabay.com/photos/bicycle-vehicle-transportation-3168273/",
+        "title": "Bicycle Vehicle Transportation - Free photo on Pixabay",
+        "width": null,
+        "height": null,
+        "result_source": "pixabay.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -4.953125
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/bicycle.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/bicycle.json",
+      "dimensions": [
+        960,
+        640
+      ],
+      "size_bytes": 347959,
+      "sha256": "8f70eebec02b4a94dddcde61e639c06acd886040ef787eda04e7b3ed7fdc4b1c",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000030",
+      "source_row_index": 30,
+      "english": "bridge",
+      "japanese_reading": "はし",
+      "vietnamese": "cây cầu",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "bridge structure",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.4890884999986156,
+        "selected_image_url": "https://engineeringdiscoveries.com/wp-content/uploads/2019/11/Untitled-1fdgdgfhfdg.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://engineeringdiscoveries.com/wp-content/uploads/2019/11/Untitled-1fdgdgfhfdg.jpg",
+        "source_page_url": "https://engineeringdiscoveries.com/structural-elements-of-bridge/",
+        "title": "Structural Elements Of Bridge | Engineering Discoveries",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": 2.0390625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T093018Z-b749e191/bridge.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T093018Z-b749e191/_metadata/bridge.json",
+      "dimensions": [
+        1024,
+        528
+      ],
+      "size_bytes": 92275,
+      "sha256": "e83b8861ca8b7fdb03a40622c8b087eeda2afd6011f17147d9fdd1c9e0f265f9",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "18",
+  "word": "たいよう",
+  "reading": "たいよう",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/たいよう.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 8256,
+  "duration_seconds": 1.032,
+  "status": "success"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000004",
+  "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"cooked rice\",\n  \"visual_description\": \"A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image captures the target sense of cooked rice as a concrete object, with no misleading elements.\"\n}",
+  "parsed": {
+    "visual_type": "concrete_object",
+    "search_query": "cooked rice",
+    "visual_description": "A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice",
+    "negative_constraints": [],
+    "reason": "The image captures the target sense of cooked rice as a concrete object, with no misleading elements."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 21.092
+}

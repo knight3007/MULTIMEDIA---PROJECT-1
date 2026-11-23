@@ -1,0 +1,7 @@
+﻿variant,vocab_id,query,query_source,rationale
+ORIGINAL,vocab-000081,because cause,A-001 Qwen3-1.7B cache,Baseline reference; not searched again.
+ICON,vocab-000081,because icon,A002_ICON_PILOT_20,Previous pilot; not searched again.
+V1,vocab-000081,cause and effect pictogram,owner task,Owner-specified: generic cause-effect pictogram.
+V2,vocab-000081,reason and result visual illustration,owner task,Owner-specified: reason/result framing.
+V3,vocab-000081,cause effect visual sequence illustration,owner task,Owner-specified: sequential causality.
+V4,vocab-000081,child opening umbrella in the rain illustration,"agent-written, recorded before search","Agent-written before searching (no Qwen): one frame can show both the cause (rain falling) and the result (child opening an umbrella), a familiar child-level situation, and the query avoids the word 'because' to reduce grammar slides and printed captions. Known risk: may read as 'rain' or 'umbrella' rather than the causal relation."

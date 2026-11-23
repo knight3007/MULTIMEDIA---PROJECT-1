@@ -1,0 +1,21 @@
+{
+  "word": "grandmother",
+  "search_query": "grandmother person",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://img.freepik.com/premium-photo/grandmother-grandson-looking-camera-happy_1009902-15357.jpg?w=1380",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.Q08BvZbU9GMgVFoBdOv4xAHaE8&pid=15.1",
+  "source_page_url": "https://www.freepik.com/premium-ai-image/grandmother-grandson-looking-camera-happy_156171351.htm",
+  "title": "Premium Photo | Grandmother and grandson looking at the camera happy",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "freepik.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.5859375
+  }
+}

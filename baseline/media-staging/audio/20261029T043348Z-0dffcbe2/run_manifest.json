@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "run_id": "20261029T043348Z-0dffcbe2",
+  "vocab_ids": [
+    "vocab-000001",
+    "vocab-000002",
+    "vocab-000003",
+    "vocab-000004",
+    "vocab-000005"
+  ],
+  "configuration": {
+    "timeout": 12,
+    "retries": 1,
+    "retry_delay": 2.0,
+    "rate_limit_delay": 1.0,
+    "reuse_smoke": true
+  },
+  "entries": [
+    {
+      "vocab_id": "vocab-000001",
+      "source_row_index": 1,
+      "english": "apple",
+      "japanese_reading": "りんご",
+      "vietnamese": "quả táo",
+      "mp3_filename": "りんご.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/りんご.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/_metadata/りんご.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 0.936,
+      "size_bytes": 7488,
+      "sha256": "6a455497070ac66d9c2c7da22cf09181b0d90ecfc40d3e9faa65526a5ca49f07",
+      "status": "staged",
+      "cache_status": "reused_smoke",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": "baseline/gtts-smoke-2026-10-28/りんご.mp3",
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000002",
+      "source_row_index": 2,
+      "english": "banana",
+      "japanese_reading": "バナナ",
+      "vietnamese": "quả chuối",
+      "mp3_filename": "バナナ.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/バナナ.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/_metadata/バナナ.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 0.888,
+      "size_bytes": 7104,
+      "sha256": "40f021c5937c13d3b2025841e767cb1a2cf2bd5730ecff60d1607e4873750ae4",
+      "status": "staged",
+      "cache_status": "reused_smoke",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": "baseline/gtts-smoke-2026-10-28/バナナ.mp3",
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000003",
+      "source_row_index": 3,
+      "english": "strawberry",
+      "japanese_reading": "いちご",
+      "vietnamese": "dâu tây",
+      "mp3_filename": "いちご.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/いちご.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/_metadata/いちご.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 0.936,
+      "size_bytes": 7488,
+      "sha256": "94552122dbcd8df727ea0ec7873b094e4830e83212ca92ebca0caa6f16db49d9",
+      "status": "staged",
+      "cache_status": "reused_smoke",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": "baseline/gtts-smoke-2026-10-28/いちご.mp3",
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "english": "rice",
+      "japanese_reading": "ごはん",
+      "vietnamese": "cơm",
+      "mp3_filename": "ごはん.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/ごはん.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/_metadata/ごはん.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 0.864,
+      "size_bytes": 6912,
+      "sha256": "0480fd9bcc975fb04c780f9857dae3d4bb5298cbd40867649573a56f65db9cbf",
+      "status": "staged",
+      "cache_status": "downloaded",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": null,
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000005",
+      "source_row_index": 5,
+      "english": "bread",
+      "japanese_reading": "パン",
+      "vietnamese": "bánh mì",
+      "mp3_filename": "パン.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/パン.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/_metadata/パン.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 0.672,
+      "size_bytes": 5376,
+      "sha256": "caa798268034256e20ae6d183245830d4852ebaf31ffa9db8bbc541cb0a1e663",
+      "status": "staged",
+      "cache_status": "downloaded",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": null,
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

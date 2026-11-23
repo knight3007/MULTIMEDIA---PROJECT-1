@@ -1,0 +1,21 @@
+{
+  "word": "difficult",
+  "search_query": "difficult object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.ytimg.com/vi/ViQTZ21jEY8/maxresdefault.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.LmRH-hdQM_HHYtI54-KsdQHaEK&pid=15.1",
+  "source_page_url": "https://www.youtube.com/watch?v=ViQTZ21jEY8",
+  "title": "HOW TO TACKLE DRAWING DIFFICULT OBJECTS - YouTube",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "YouTube",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.4140625
+  }
+}

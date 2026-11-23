@@ -1,0 +1,208 @@
+{
+  "version": 2,
+  "model": "Qwen/Qwen3-1.7B",
+  "signature": "9db04b31515b9f492a95bc0f4873c28226a5f318bb48f27dbf3d44a8d201a692",
+  "vocabulary_count": 100,
+  "records": [
+    {
+      "word": "apple",
+      "query": "apple fruit"
+    },
+    {
+      "word": "banana",
+      "query": "banana fruit"
+    },
+    {
+      "word": "strawberry",
+      "query": "strawberry fruit"
+    },
+    {
+      "word": "rice",
+      "query": "rice grain"
+    },
+    {
+      "word": "bread",
+      "query": "bread food"
+    },
+    {
+      "word": "egg",
+      "query": "egg food"
+    },
+    {
+      "word": "milk",
+      "query": "milk beverage"
+    },
+    {
+      "word": "water",
+      "query": "water beverage"
+    },
+    {
+      "word": "chicken",
+      "query": "chicken animal"
+    },
+    {
+      "word": "breakfast",
+      "query": "breakfast meal"
+    },
+    {
+      "word": "cat",
+      "query": "cat animal"
+    },
+    {
+      "word": "dog",
+      "query": "dog animal"
+    },
+    {
+      "word": "elephant",
+      "query": "elephant animal"
+    },
+    {
+      "word": "tree",
+      "query": "tree plant"
+    },
+    {
+      "word": "flower",
+      "query": "flower plant"
+    },
+    {
+      "word": "mountain",
+      "query": "mountain place"
+    },
+    {
+      "word": "river",
+      "query": "river water"
+    },
+    {
+      "word": "sun",
+      "query": "sun illumination"
+    },
+    {
+      "word": "rain",
+      "query": "rain illumination"
+    },
+    {
+      "word": "weather",
+      "query": "weather phenomenon"
+    },
+    {
+      "word": "house",
+      "query": "house building"
+    },
+    {
+      "word": "kitchen",
+      "query": "kitchen place"
+    },
+    {
+      "word": "school",
+      "query": "school institution"
+    },
+    {
+      "word": "library",
+      "query": "library place"
+    },
+    {
+      "word": "hospital",
+      "query": "hospital institution"
+    },
+    {
+      "word": "airport",
+      "query": "airport place"
+    },
+    {
+      "word": "restaurant",
+      "query": "restaurant place"
+    },
+    {
+      "word": "car",
+      "query": "car vehicle"
+    },
+    {
+      "word": "bicycle",
+      "query": "bicycle vehicle"
+    },
+    {
+      "word": "bridge",
+      "query": "bridge structure"
+    },
+    {
+      "word": "book",
+      "query": "book object"
+    },
+    {
+      "word": "phone",
+      "query": "phone device"
+    },
+    {
+      "word": "computer",
+      "query": "computer device"
+    },
+    {
+      "word": "umbrella",
+      "query": "umbrella object"
+    },
+    {
+      "word": "shirt",
+      "query": "shirt clothing"
+    },
+    {
+      "word": "family",
+      "query": "family institution"
+    },
+    {
+      "word": "mother",
+      "query": "mother person"
+    },
+    {
+      "word": "friend",
+      "query": "friend person"
+    },
+    {
+      "word": "teacher",
+      "query": "teacher person"
+    },
+    {
+      "word": "engineer",
+      "query": "engineer profession"
+    },
+    {
+      "word": "today",
+      "query": "today timepiece"
+    },
+    {
+      "word": "tomorrow",
+      "query": "tomorrow timepiece"
+    },
+    {
+      "word": "yesterday",
+      "query": "yesterday place"
+    },
+    {
+      "word": "winter",
+      "query": "winter season"
+    },
+    {
+      "word": "happy",
+      "query": "happy emotion"
+    },
+    {
+      "word": "hungry",
+      "query": "hungry appetite"
+    },
+    {
+      "word": "easy",
+      "query": "easy object"
+    },
+    {
+      "word": "difficult",
+      "query": "difficult object"
+    },
+    {
+      "word": "beautiful",
+      "query": "beautiful object"
+    },
+    {
+      "word": "strong",
+      "query": "strong object"
+    }
+  ]
+}

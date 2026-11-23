@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000067",
+  "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"database interface\",\n  \"visual_description\": \"A screen displaying a database structure with icons and labels for data organization\",\n  \"negative_constraints\": [\"non-literal imagery\", \"abstract concepts not visually represented\"],\n  \"reason\": \"A database interface is an educational visual that represents the concept of a database, but the semantic review status indicates uncertainty about the target sense.\"\n}",
+  "parsed": {
+    "visual_type": "educational_visual",
+    "search_query": "database interface",
+    "visual_description": "A screen displaying a database structure with icons and labels for data organization",
+    "negative_constraints": [
+      "non-literal imagery",
+      "abstract concepts not visually represented"
+    ],
+    "reason": "A database interface is an educational visual that represents the concept of a database, but the semantic review status indicates uncertainty about the target sense."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 21.159
+}

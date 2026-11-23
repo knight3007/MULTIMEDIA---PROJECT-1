@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "variant": "a",
+  "vocab_id": "vocab-000035",
+  "raw_decoded_text": "shirt clothing",
+  "raw_attempts": [
+    {
+      "word": "shirt",
+      "correction_prompt": null,
+      "raw_decoded_text": "shirt clothing",
+      "ended_with_eos": true
+    }
+  ],
+  "parsed_query": "shirt clothing",
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 5.763
+}

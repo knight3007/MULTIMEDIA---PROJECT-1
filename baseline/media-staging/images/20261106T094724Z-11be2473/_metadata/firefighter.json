@@ -1,0 +1,21 @@
+{
+  "word": "firefighter",
+  "search_query": "firefighter person",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://as2.ftcdn.net/v2/jpg/05/60/51/03/1000_F_560510379_hrRVF7hfKJCw8RW7saki0y2IjgNSxXjP.jpg",
+  "thumbnail_url": "https://ts4.explicit.bing.net/th?id=OIP._N0He9_MhXKoXogzDn3oFAHaE8&pid=15.1",
+  "source_page_url": "https://stock.adobe.com/images/firefighter-training-fireman-using-water-and-extinguisher-to-fighting-with-fire-flame-in-an-emergency-situation-under-danger-situation-all-firemen-wearing-fire-fighter-suit-for-safety-generative/560510379",
+  "title": "firefighter training., fireman using water and extinguisher to fighting ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "stock.adobe.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.1953125
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000054",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person studying\",\n  \"visual_description\": \"A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand\",\n  \"negative_constraints\": [\"no background noise\", \"no lighting issues\"],\n  \"reason\": \"A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "person studying",
+    "visual_description": "A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand",
+    "negative_constraints": [
+      "no background noise",
+      "no lighting issues"
+    ],
+    "reason": "A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 23.411
+}

@@ -1,0 +1,21 @@
+{
+  "word": "where",
+  "search_query": "where place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://images.justwatch.com/poster/335803096/s718/a-place-where-i-belong.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIF.FtNEHSWhPSxlBmQ7t4vlIQ&pid=15.1",
+  "source_page_url": "https://www.justwatch.com/hu/film/a-place-where-i-belong",
+  "title": "A Place Where I Belong stream: hol látható online?",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "justwatch.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -6.5078125
+  }
+}

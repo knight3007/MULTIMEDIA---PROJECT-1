@@ -1,0 +1,21 @@
+{
+  "word": "database",
+  "search_query": "database object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.interviewbit.com/blog/wp-content/uploads/2022/04/Object-Oriented-Database-2.png",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.qFMVGlLOlqwHzrOOJDZ5JwHaEb&pid=15.1",
+  "source_page_url": "https://www.interviewbit.com/blog/types-of-databases/",
+  "title": "Types of Databases - InterviewBit",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "interviewbit.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 4.1796875
+  }
+}

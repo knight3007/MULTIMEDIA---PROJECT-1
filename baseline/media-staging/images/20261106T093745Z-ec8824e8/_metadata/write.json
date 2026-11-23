@@ -1,0 +1,21 @@
+{
+  "word": "write",
+  "search_query": "write action",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://slidemodel.com/wp-content/uploads/0002-how-to-write-action-plan-diagram-1200px.png",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.XRSMk0ZRlj3K5-lb2qENcQHaEK&pid=15.1",
+  "source_page_url": "https://ppassessment.moonlightchai.com/how-to-build-action-plan.html",
+  "title": "How To Build Action Plan » Ppassessment",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "ppassessment.moonlightchai.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.625
+  }
+}

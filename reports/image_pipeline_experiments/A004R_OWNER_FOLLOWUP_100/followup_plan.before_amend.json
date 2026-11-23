@@ -1,0 +1,1742 @@
+{
+  "task_id": "A004R_OWNER_FOLLOWUP_100",
+  "source_export_sha256": "964a63e33f50fd36536ee98ebb0fa0f2f2d6c4426bdf1bec71dfb5e807163aa6",
+  "source_routing_sha256": "c99c15e4b0dd567889e44335bb342018096431c5f5815ef113417bd8ca2fa85c",
+  "dataset_sha256": "644c2dc9899077dad15d2e2916d7dc3d1cef49ecd151ea406115bb3da19481bd",
+  "source_retrieval_sha256": "bd9e345cac27fc10e3389c6f40b447ed790b00c953a06e13503efd6f417fa621",
+  "fixed_count": 66,
+  "search_count": 34,
+  "rights": "UNKNOWN; because INTERNAL_ONLY_TEMPORARY",
+  "items": [
+    {
+      "vocab_id": "vocab-000001",
+      "english": "apple",
+      "japanese": "りんご",
+      "vietnamese": "quả táo",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000001-A004R-06",
+      "fixed": {
+        "candidate_id": "vocab-000001-A004R-06",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000001/06.jpg",
+        "sha256": "6915ca67bbc68eb0f43a45960fa566f70df7ee772c75fab61e81b52e0dbe02a5"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000028",
+      "english": "car",
+      "japanese": "くるま",
+      "vietnamese": "ô tô",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000028-A004R-01",
+      "fixed": {
+        "candidate_id": "vocab-000028-A004R-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000028/01.jpg",
+        "sha256": "bc002cdcf6833bd0d61f42d6a827f8de99120fcf931b30a8a84d4b13d1012c90"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000056",
+      "english": "sleep",
+      "japanese": "ねる",
+      "vietnamese": "ngủ",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000056-A004R-06",
+      "fixed": {
+        "candidate_id": "vocab-000056-A004R-06",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000056/06.jpg",
+        "sha256": "eceb7941a26fa8099a3b7e3fdf172d9caf9ff06bcbabfbae02c6bfe017fd4757"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000053",
+      "english": "write",
+      "japanese": "かく",
+      "vietnamese": "viết",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000053-A004R-02",
+      "fixed": {
+        "candidate_id": "vocab-000053-A004R-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000053/02.jpg",
+        "sha256": "f7708324349b600d7ef4a5262c87e143eafc5c903bc915b142fd0ca21a78eb24"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000065",
+      "english": "swim",
+      "japanese": "およぐ",
+      "vietnamese": "bơi",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000065-A004R-03",
+      "fixed": {
+        "candidate_id": "vocab-000065-A004R-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000065/03.jpg",
+        "sha256": "dde8eeab34196caed54e87e1fa9d9a3e4c7a9ca649147f0eedd694e3d0800f1e"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000046",
+      "english": "hungry",
+      "japanese": "おなかがすいた",
+      "vietnamese": "đói",
+      "prior_label": "PASS",
+      "owner_note": "Chủ sở hữu chọn / internal \nảnh này tốt lấy cái này",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "vocab-000046-ICON-01",
+        "source": "A003_OWNER_DECISION",
+        "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000046/ICON/01.jpg",
+        "sha256": "14c6d40afc7ee656113ff3908bed29887ed4c4f3f3b5ae20c5ad92a0b56bfb0f"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000057",
+      "english": "eat",
+      "japanese": "たべる",
+      "vietnamese": "ăn",
+      "prior_label": "PASS",
+      "owner_note": "2 ảnh đều tốt",
+      "prior_selected_candidate_id": "NO_SUITABLE_IMAGE",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T095405Z-255c864a/eat.jpg",
+        "sha256": "03ba96150c7aefa26fb4fdc7fffb3090296136e70ee7862591859a73f4fa56f1"
+      },
+      "query": "person eating food icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000083",
+      "english": "sometimes",
+      "japanese": "ときどき",
+      "vietnamese": "thỉnh thoảng",
+      "prior_label": "PASS",
+      "owner_note": "lấy ảnh A001 ",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "A001_REFERENCE",
+        "source": "A001_OWNER_PASS",
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/sometimes.jpg",
+        "sha256": "aa48f7b6958d26edfab26d7b2466c950291bb87de97b702cd74d20aebb4c769c",
+        "supersedes_quality_decision": "A003_NO_SUITABLE_IMAGE; new owner PASS requests A001 reference"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000081",
+      "english": "because",
+      "japanese": "なぜなら",
+      "vietnamese": "bởi vì",
+      "prior_label": "PASS",
+      "owner_note": "Chủ sở hữu chọn / internal \nlấy có tag này",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "V3-01",
+        "source": "INTERNAL_ONLY_TEMPORARY",
+        "path": "reports/image_pipeline_experiments/A002_CAUSAL_CONCEPT_PILOT/images/V2/01.jpg",
+        "sha256": "8dd3e8a22f6474a4a5dd3eb8adca453e61dfd7ca5aa65b2abc0e6036cfe2d7ab"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000041",
+      "english": "today",
+      "japanese": "きょう",
+      "vietnamese": "hôm nay",
+      "prior_label": "FAIL",
+      "owner_note": "không ổn và cũng không lấy được ứng viên",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/today.jpg",
+        "sha256": "924e2b4c5a240190620a0af3d6643c7c86d4f765b53a8bab95469a827c56b300"
+      },
+      "query": "today calendar current day highlighted illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000002",
+      "english": "banana",
+      "japanese": "バナナ",
+      "vietnamese": "quả chuối",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000002-05",
+      "fixed": {
+        "candidate_id": "vocab-000002-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000002/05.jpg",
+        "sha256": "d995996bb8c97e6c743ef37a539b97f3d14473d1c9dc9eff30c9e70662c07bd7"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000003",
+      "english": "strawberry",
+      "japanese": "いちご",
+      "vietnamese": "dâu tây",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000003-05",
+      "fixed": {
+        "candidate_id": "vocab-000003-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000003/05.jpg",
+        "sha256": "8d652af0a663161c65a105ae6496fecd275d58f742e17030b03e7026916cd905"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000004",
+      "english": "rice",
+      "japanese": "ごはん",
+      "vietnamese": "cơm",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000004-06",
+      "fixed": {
+        "candidate_id": "vocab-000004-06",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000004/06.jpg",
+        "sha256": "49a16c985036cbefdcee9256616793e062a71ad49dd4ab37d20e3067e292df39"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000005",
+      "english": "bread",
+      "japanese": "パン",
+      "vietnamese": "bánh mì",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000005-02",
+      "fixed": {
+        "candidate_id": "vocab-000005-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000005/02.jpg",
+        "sha256": "c1aafe06bd54a0fb107b12ad7deae75310131be8cf0fbc396452a72da957ded0"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000006",
+      "english": "egg",
+      "japanese": "たまご",
+      "vietnamese": "trứng",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000006-02",
+      "fixed": {
+        "candidate_id": "vocab-000006-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000006/02.jpg",
+        "sha256": "9a0921ec47f66bb199096b8188aa41f6758c7f05be18e21ee36292cd3a99082a"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000007",
+      "english": "milk",
+      "japanese": "ぎゅうにゅう",
+      "vietnamese": "sữa",
+      "prior_label": "PASS",
+      "owner_note": "lấy ảnh gốc A 001",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "A001_REFERENCE",
+        "source": "A001_OWNER_PASS",
+        "path": "data/image/en/milk.jpg",
+        "sha256": "2b7d194316d1101580581f8577c59f3dca1f57dbe309ec4357458621a2aca578"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000008",
+      "english": "water",
+      "japanese": "みず",
+      "vietnamese": "nước",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000008-A004R-04",
+      "fixed": {
+        "candidate_id": "vocab-000008-A004R-04",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000008/04.jpg",
+        "sha256": "298f642635fb50656130baacfe3be6086eb41c0da1d65a5ee3314b2d9a4c3912"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "english": "chicken",
+      "japanese": "とりにく",
+      "vietnamese": "thịt gà",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000009-02",
+      "fixed": {
+        "candidate_id": "vocab-000009-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000009/02.jpg",
+        "sha256": "df546b3a6a6aa5605958f4bae81b8a1901888efca278cba09de435b94039ff4a"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000010",
+      "english": "breakfast",
+      "japanese": "あさごはん",
+      "vietnamese": "bữa sáng",
+      "prior_label": "PASS",
+      "owner_note": "lấy ảnh gốc A001",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "A001_REFERENCE",
+        "source": "A001_OWNER_PASS",
+        "path": "data/image/en/breakfast.jpg",
+        "sha256": "fa671e6a396b359fac5eab8fadf9347e286563271e85d02d9e1967599b487943"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000011",
+      "english": "cat",
+      "japanese": "ねこ",
+      "vietnamese": "mèo",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000011-03",
+      "fixed": {
+        "candidate_id": "vocab-000011-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000011/03.jpg",
+        "sha256": "c6ec7e24ce9682a3b8c20e86633bf151c9aa3526f4ce0121bd22b334aa97bade"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000012",
+      "english": "dog",
+      "japanese": "いぬ",
+      "vietnamese": "chó",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000012-01",
+      "fixed": {
+        "candidate_id": "vocab-000012-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000012/01.jpg",
+        "sha256": "c35151ff11482ef9ac689d117a82365e9f5535fa91668474a273a228fc3bea6d"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000013",
+      "english": "elephant",
+      "japanese": "ぞう",
+      "vietnamese": "voi",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000013-03",
+      "fixed": {
+        "candidate_id": "vocab-000013-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000013/03.jpg",
+        "sha256": "4a2258b62f05b5118653cf6b2a94cdc8f5196185f561e48255cd936c83caead9"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000014",
+      "english": "tree",
+      "japanese": "き",
+      "vietnamese": "cây",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000014-04",
+      "fixed": {
+        "candidate_id": "vocab-000014-04",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000014/04.jpg",
+        "sha256": "31bef05b1b9cfdd60510c1a2506d7fa981e4198d03a0f321ad116967c3c5a866"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000015",
+      "english": "flower",
+      "japanese": "はな",
+      "vietnamese": "hoa",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000015-02",
+      "fixed": {
+        "candidate_id": "vocab-000015-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000015/02.jpg",
+        "sha256": "d89d7c991701dade0ddb836357f931f406343343e690c5f182d3ce2f2ff2f117"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000016",
+      "english": "mountain",
+      "japanese": "やま",
+      "vietnamese": "núi",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000016-03",
+      "fixed": {
+        "candidate_id": "vocab-000016-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000016/03.jpg",
+        "sha256": "3a04411e9f00eb665f9d7be0ccede6902ac4f46215ca1ac006b59c312c2252c6"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000017",
+      "english": "river",
+      "japanese": "かわ",
+      "vietnamese": "sông",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000017-01",
+      "fixed": {
+        "candidate_id": "vocab-000017-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000017/01.jpg",
+        "sha256": "864c422db12eca371784fa739bc431d69dcb76d9bfa607a0c19cc51db5f316b9"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000018",
+      "english": "sun",
+      "japanese": "たいよう",
+      "vietnamese": "mặt trời",
+      "prior_label": "FAIL",
+      "owner_note": "ảnh này kh có cái nào liên quan đến mặt trời cả",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T092753Z-f005e016/sun.jpg",
+        "sha256": "51140f5cc4d8d20248528707ea0685a2e957dac5841fd9044493bd115060dfc1"
+      },
+      "query": "sun in blue sky illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000019",
+      "english": "rain",
+      "japanese": "あめ",
+      "vietnamese": "mưa",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000019-A004R-07",
+      "fixed": {
+        "candidate_id": "vocab-000019-A004R-07",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000019/07.jpg",
+        "sha256": "e921470b9a8c21e5d461636af74cfbe10f113abe62e2fe58627be35c0abf21b2"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000020",
+      "english": "weather",
+      "japanese": "てんき",
+      "vietnamese": "thời tiết",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000020-04",
+      "fixed": {
+        "candidate_id": "vocab-000020-04",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000020/04.jpg",
+        "sha256": "49984900f317f84c439b9893120dc5f3cc74e16d5549c31d02c2fe08d1a1f253"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000021",
+      "english": "house",
+      "japanese": "いえ",
+      "vietnamese": "ngôi nhà",
+      "prior_label": "PASS",
+      "owner_note": "Chủ sở hữu chọn / internal\nlấy ảnh mang tag trên",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "vocab-000021-NORMAL-05",
+        "source": "A003_OWNER_DECISION",
+        "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000021/NORMAL/05.jpg",
+        "sha256": "e660532e0327ea30436177ac97bfd0cdf2e58825df3cc2a8a43915db4a33bc4e"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000022",
+      "english": "kitchen",
+      "japanese": "だいどころ",
+      "vietnamese": "nhà bếp",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000022-01",
+      "fixed": {
+        "candidate_id": "vocab-000022-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000022/01.jpg",
+        "sha256": "8433f77129ad92a2d2017b09ea741bf587cf82a6f38933ea8f1786d01f1ffcbe"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000023",
+      "english": "school",
+      "japanese": "がっこう",
+      "vietnamese": "trường học",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000023-05",
+      "fixed": {
+        "candidate_id": "vocab-000023-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000023/05.jpg",
+        "sha256": "def8109d424d1cfb7bf4c27163462a8504c1aa43f3224ba6d7d8b96bbadb08c3"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000024",
+      "english": "library",
+      "japanese": "としょかん",
+      "vietnamese": "thư viện",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000024-01",
+      "fixed": {
+        "candidate_id": "vocab-000024-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000024/01.jpg",
+        "sha256": "352b82c23231cd8b7b543a8ba82b7cec56879661440d633267e28b78d4a6cbca"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000025",
+      "english": "hospital",
+      "japanese": "びょういん",
+      "vietnamese": "bệnh viện",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000025-01",
+      "fixed": {
+        "candidate_id": "vocab-000025-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000025/01.jpg",
+        "sha256": "555b11269c6f6d2132a56736bf42371864d25e3eab4e1a60cbaab8454408a751"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000026",
+      "english": "airport",
+      "japanese": "くうこう",
+      "vietnamese": "sân bay",
+      "prior_label": "PASS",
+      "owner_note": "ảnh sân bay phải có máy bay trong đấy",
+      "prior_selected_candidate_id": "vocab-000026-03",
+      "fixed": {
+        "candidate_id": "vocab-000026-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000026/03.jpg",
+        "sha256": "f2d1dfcb90d7ef22866cb3728f55053e4268e42c45914c4f87d346d5741b50af"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000027",
+      "english": "restaurant",
+      "japanese": "レストラン",
+      "vietnamese": "nhà hàng",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000027-01",
+      "fixed": {
+        "candidate_id": "vocab-000027-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000027/01.jpg",
+        "sha256": "360768e46de6f86e1393235197b9519ab064b59c28472c379dfdc87de663f98f"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000029",
+      "english": "bicycle",
+      "japanese": "じてんしゃ",
+      "vietnamese": "xe đạp",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000029-06",
+      "fixed": {
+        "candidate_id": "vocab-000029-06",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000029/06.jpg",
+        "sha256": "dcc75d3956015c22a6391972d334c8a62cf97d43b793a79ac5168566735a0e77"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000030",
+      "english": "bridge",
+      "japanese": "はし",
+      "vietnamese": "cây cầu",
+      "prior_label": "PASS",
+      "owner_note": "là cây cầu chứ không phải bản vẽ cây cầu",
+      "prior_selected_candidate_id": "vocab-000030-07",
+      "fixed": {
+        "candidate_id": "vocab-000030-07",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000030/07.jpg",
+        "sha256": "4b301cba46f38afdce71fba000e575db67c572b7cb43190bb5c6fa5beaeb017e"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000031",
+      "english": "book",
+      "japanese": "ほん",
+      "vietnamese": "sách",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "Chủ sở hữu chọn / internal\nlấy ảnh mang tag trên",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "vocab-000031-ICON-03",
+        "source": "A003_OWNER_DECISION",
+        "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000031/ICON/03.jpg",
+        "sha256": "f467af64ecf5465c649e330fe363c3f122957da9a75318667c83f55204c4c71d"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000032",
+      "english": "phone",
+      "japanese": "でんわ",
+      "vietnamese": "điện thoại",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000032-05",
+      "fixed": {
+        "candidate_id": "vocab-000032-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000032/05.jpg",
+        "sha256": "514ebbf5c8e0b4b016afd7280df8b4a4af057193a0a6c1ec3ebce15331cd26ac"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000033",
+      "english": "computer",
+      "japanese": "コンピューター",
+      "vietnamese": "máy tính",
+      "prior_label": "FAIL",
+      "owner_note": "chỉ cần 1 đồ vật trong ảnh là được",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/computer.jpg",
+        "sha256": "d1d5d4f1028b0c73e278511971efea91a88315cb387db6638302e3ea434c7c85"
+      },
+      "query": "single desktop computer isolated white background",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000034",
+      "english": "umbrella",
+      "japanese": "かさ",
+      "vietnamese": "ô/dù",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000034-03",
+      "fixed": {
+        "candidate_id": "vocab-000034-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000034/03.jpg",
+        "sha256": "eea596b4411b16df55e666096d4b546744b88d54335ef926da5637d5455134eb"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000035",
+      "english": "shirt",
+      "japanese": "シャツ",
+      "vietnamese": "áo sơ mi",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000035-01",
+      "fixed": {
+        "candidate_id": "vocab-000035-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000035/01.jpg",
+        "sha256": "9a33c21ddb70679d80263857bd10c0e250f8c5a6d279dcf32285e89c8cfe7417"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000036",
+      "english": "family",
+      "japanese": "かぞく",
+      "vietnamese": "gia đình",
+      "prior_label": "PASS",
+      "owner_note": "không có cái nào phù hợp cả",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093301Z-67bd98cc/family.jpg",
+        "sha256": "34426c614dbf3cea26a931e72f50c48566517aa159ea326596e47e98dcb9bd71"
+      },
+      "query": "family parents children portrait illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000037",
+      "english": "mother",
+      "japanese": "はは",
+      "vietnamese": "mẹ",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000037-07",
+      "fixed": {
+        "candidate_id": "vocab-000037-07",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000037/07.jpg",
+        "sha256": "12917e2e57d505727011caa074cde864bcf0f68918ea79c3ce774e20184ca0d3"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000038",
+      "english": "friend",
+      "japanese": "ともだち",
+      "vietnamese": "bạn",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "???? why ",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": null,
+      "query": "two friends together illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000039",
+      "english": "teacher",
+      "japanese": "せんせい",
+      "vietnamese": "giáo viên",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000039-02",
+      "fixed": {
+        "candidate_id": "vocab-000039-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000039/02.jpg",
+        "sha256": "799a5449f97919fb5793f281b6846e3a88c8cdc349ebbad4e9efd65c0a36fcf2"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000040",
+      "english": "engineer",
+      "japanese": "エンジニア",
+      "vietnamese": "kỹ sư",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000040-05",
+      "fixed": {
+        "candidate_id": "vocab-000040-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000040/05.jpg",
+        "sha256": "d329126f9193bd57429b39d67c8a36e983142f17844a0e1312826db8aa8c6b86"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000042",
+      "english": "tomorrow",
+      "japanese": "あした",
+      "vietnamese": "ngày mai",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "chưa có ảnh nào ổn cả từ này khó có thể sử dụng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/tomorrow.jpg",
+        "sha256": "5e38d7e87bbff72cbf240357a8cddd474bdcbfd7fd489155693e739bccea6a49"
+      },
+      "query": "tomorrow next day calendar illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000043",
+      "english": "yesterday",
+      "japanese": "きのう",
+      "vietnamese": "hôm qua",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "từ này khó có thể dùng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/yesterday.jpg",
+        "sha256": "9943a46fa08a8d5890d84e54687e2bf9e8c4cb7eb55eba882d0c0a884e233597"
+      },
+      "query": "yesterday previous day calendar illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000044",
+      "english": "winter",
+      "japanese": "ふゆ",
+      "vietnamese": "mùa đông",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000044-05",
+      "fixed": {
+        "candidate_id": "vocab-000044-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000044/05.jpg",
+        "sha256": "2a03a99151a75fc0c81882badd2f98091dca0e04c04f36a38a023887ebac401a"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000045",
+      "english": "happy",
+      "japanese": "うれしい",
+      "vietnamese": "vui",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000045-04",
+      "fixed": {
+        "candidate_id": "vocab-000045-04",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000045/04.jpg",
+        "sha256": "a1ef6357c0fd4f757f91eb47ef9bd5782911a3aa2e7a6731150e966c23b79d7d"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000047",
+      "english": "easy",
+      "japanese": "やさしい",
+      "vietnamese": "dễ",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "từ này cũng khó có thể dùng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/easy.jpg",
+        "sha256": "502882f33e7c713204c57b119bc29ba5c183ddbafe7a02cd7bd14bb11767d4c3"
+      },
+      "query": "easy task simple puzzle illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000048",
+      "english": "difficult",
+      "japanese": "むずかしい",
+      "vietnamese": "khó",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "từ này khó có thể dùng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/difficult.jpg",
+        "sha256": "c9aa74df99ebbbfb5aefac39fc8b1bdb8517619698bb095fc3220addd5d61263"
+      },
+      "query": "difficult task challenging puzzle illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000049",
+      "english": "beautiful",
+      "japanese": "きれい",
+      "vietnamese": "đẹp",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000049-03",
+      "fixed": {
+        "candidate_id": "vocab-000049-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000049/03.jpg",
+        "sha256": "c8e236d5ff099702d3e8c3ca8a6ca6599c3f8a49d1974b3789c7af6316314a63"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000050",
+      "english": "strong",
+      "japanese": "つよい",
+      "vietnamese": "mạnh",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "có thể dùng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093523Z-ef98c5c6/strong.jpg",
+        "sha256": "a0734ee7e4821a2b74b8798438ad83d38f284a608c5b1a4e88f0a501e8b0b977"
+      },
+      "query": "strong arm muscle icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000051",
+      "english": "go",
+      "japanese": "いく",
+      "vietnamese": "đi",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "từ này chưa ổn",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T095405Z-255c864a/go.jpg",
+        "sha256": "e909681a73367df7a322128c50c0e3d25c67e6613ea7fb6110f2f9236a94f5df"
+      },
+      "query": "person walking away icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000052",
+      "english": "read",
+      "japanese": "よむ",
+      "vietnamese": "đọc",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T095405Z-255c864a/read.jpg",
+        "sha256": "142c37a665a2149bc1ea2a01c9039401a6e5b6eb048d15475ef94df4d1ce0eaf"
+      },
+      "query": "person reading book icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000054",
+      "english": "study",
+      "japanese": "べんきょうする",
+      "vietnamese": "học tập",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093745Z-ec8824e8/study.jpg",
+        "sha256": "ef7c7f762d994bed2464fe92327d9089a4f8e25fe7c00e4d7b0874888645d679"
+      },
+      "query": "student studying at desk icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000055",
+      "english": "work",
+      "japanese": "はたらく",
+      "vietnamese": "làm việc",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093745Z-ec8824e8/work.jpg",
+        "sha256": "e95ac8cd2bacef0572eb751c1ff6fb4b95ce70f6cfbb7378f9cc48bfc386114f"
+      },
+      "query": "person working at desk icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000058",
+      "english": "drink",
+      "japanese": "のむ",
+      "vietnamese": "uống",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000058-03",
+      "fixed": {
+        "candidate_id": "vocab-000058-03",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000058/03.jpg",
+        "sha256": "97666d81d482dd6c96a9bbc10b23c4e097b740e3940bda86f924d0bf7c650443"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000059",
+      "english": "buy",
+      "japanese": "かう",
+      "vietnamese": "mua",
+      "prior_label": "PASS",
+      "owner_note": "Chủ sở hữu chọn / internal\nlấy ảnh mang tag trên",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "vocab-000059-ICON-01",
+        "source": "A003_OWNER_DECISION",
+        "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000059/ICON/01.jpg",
+        "sha256": "56ac488b6083920c4ed872e42bb584d6a033aadf04124c22ae008c06c22a061e"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000060",
+      "english": "help",
+      "japanese": "たすける",
+      "vietnamese": "giúp đỡ",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T095405Z-255c864a/help.jpg",
+        "sha256": "32fd07e445f6cabd060aacb3cf3bed592667f1f139e744f885887ae44e96a2e2"
+      },
+      "query": "helping hand icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000061",
+      "english": "understand",
+      "japanese": "わかる",
+      "vietnamese": "hiểu",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000061-A004R-02",
+      "fixed": {
+        "candidate_id": "vocab-000061-A004R-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000061/02.jpg",
+        "sha256": "6bc3a5a8e804b08c5e1c375bd5840cbac658260c3832ef868e45017a286a7215"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000062",
+      "english": "remember",
+      "japanese": "おぼえる",
+      "vietnamese": "nhớ",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000062-A004R-02",
+      "fixed": {
+        "candidate_id": "vocab-000062-A004R-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004R_CONDITIONAL_100/images/vocab-000062/02.jpg",
+        "sha256": "f26faca748f17a84560eb8aff8d20272004808acad9fe433037850a260205726"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000063",
+      "english": "receive",
+      "japanese": "うけとる",
+      "vietnamese": "nhận",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "Chủ sở hữu chọn / internal\nlấy ảnh mang tag trên",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "vocab-000063-ICON-07",
+        "source": "A003_OWNER_DECISION",
+        "path": "reports/image_pipeline_experiments/A003_CONDITIONAL_SEARCH/images/vocab-000063/ICON/07.jpg",
+        "sha256": "930991ac144b3387ae8143a2ef7eee62166b95f1f594435d0d208956973d04d7"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000064",
+      "english": "choose",
+      "japanese": "えらぶ",
+      "vietnamese": "chọn",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "có thể dùng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T095405Z-255c864a/choose.jpg",
+        "sha256": "80c58471e31038b4e6950a222e383948897098fc0f1be492c0056877f1e8c0ba"
+      },
+      "query": "choosing between options icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000066",
+      "english": "software",
+      "japanese": "ソフトウェア",
+      "vietnamese": "phần mềm",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "lấy ảnh A001 ",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093948Z-5be953da/software.jpg",
+        "sha256": "a4994aef0cdffbbb334663f9158678bb757a97de6ebaa628ec232d9d704a6394"
+      },
+      "query": "software application screen icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000067",
+      "english": "database",
+      "japanese": "データベース",
+      "vietnamese": "cơ sở dữ liệu",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000067-01",
+      "fixed": {
+        "candidate_id": "vocab-000067-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000067/01.jpg",
+        "sha256": "dfcea2dc4b7c31b2ac125f9fcc3a99940e63f2c08c25c4607d10d4aacbe57c4a"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000068",
+      "english": "password",
+      "japanese": "パスワード",
+      "vietnamese": "mật khẩu",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000068-07",
+      "fixed": {
+        "candidate_id": "vocab-000068-07",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000068/07.jpg",
+        "sha256": "592050c0a9afec09ebfa080b9d57cc7ea31c38f624700b632d937e245ab33aff"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000069",
+      "english": "music",
+      "japanese": "おんがく",
+      "vietnamese": "âm nhạc",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000069-04",
+      "fixed": {
+        "candidate_id": "vocab-000069-04",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000069/04.jpg",
+        "sha256": "1a0ed19dbf5a8e85b056199c5104fa144056259707d0227f59d67e34d7b5957e"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000070",
+      "english": "language",
+      "japanese": "ことば",
+      "vietnamese": "ngôn ngữ",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "có thể dùng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T093948Z-5be953da/language.jpg",
+        "sha256": "bdeff6306410b11c5c497f1c98c98d4c2054ec2da116476d2f2a7c928fad292e"
+      },
+      "query": "language speech bubbles icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000071",
+      "english": "problem",
+      "japanese": "もんだい",
+      "vietnamese": "vấn đề",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000071-06",
+      "fixed": {
+        "candidate_id": "vocab-000071-06",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000071/06.jpg",
+        "sha256": "4b4a895ccdfddb6ef75ea9ea474f76260faf58cd1fb67cc86114f50fa940a321"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000072",
+      "english": "business",
+      "japanese": "ビジネス",
+      "vietnamese": "kinh doanh",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "từ vựng trừu tựng có thể dùng icon",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094206Z-a7c27573/business.jpg",
+        "sha256": "6165231e06955089441ded20cf4c9ec95d9d6638bbb6e54c4f5ec2df5fc0b795"
+      },
+      "query": "business meeting icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000073",
+      "english": "university",
+      "japanese": "だいがく",
+      "vietnamese": "trường đại học",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000073-04",
+      "fixed": {
+        "candidate_id": "vocab-000073-04",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000073/04.jpg",
+        "sha256": "46754e65a1571e0ce73349d8f9c3133b3952c6643bab1bb332776ddd78dd5cc9"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000074",
+      "english": "project",
+      "japanese": "プロジェクト",
+      "vietnamese": "dự án",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094206Z-a7c27573/project.jpg",
+        "sha256": "203e280f52dc62442c9321cbff5f803a7f6be1a4c8a300258a34e55e1ba170a4"
+      },
+      "query": "project plan teamwork illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000075",
+      "english": "experience",
+      "japanese": "けいけん",
+      "vietnamese": "kinh nghiệm",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094206Z-a7c27573/experience.jpg",
+        "sha256": "8d85dd4d78147d071b6c99c865b187a9f6550a6a46a5277c714284293a3484f0"
+      },
+      "query": "learning from experience illustration",
+      "strategy": "SCENE"
+    },
+    {
+      "vocab_id": "vocab-000076",
+      "english": "vegetable",
+      "japanese": "やさい",
+      "vietnamese": "rau",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000076-05",
+      "fixed": {
+        "candidate_id": "vocab-000076-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000076/05.jpg",
+        "sha256": "e0c1f21d344cb4c24de7bed1cba9aa7305582e391ae593d123dc6f38fa8bb417"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000077",
+      "english": "important",
+      "japanese": "たいせつ",
+      "vietnamese": "quan trọng",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094206Z-a7c27573/important.jpg",
+        "sha256": "af64948167ec3409496ec6c72b6fb45c2e4fded04ec2fe84139206f64f5a3e5b"
+      },
+      "query": "important exclamation mark icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000078",
+      "english": "different",
+      "japanese": "ちがう",
+      "vietnamese": "khác",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094206Z-a7c27573/different.jpg",
+        "sha256": "2b8fe7b1d9ff1a730918ea5ea5fb192f8781e82ec8b9feac7d6850170180aa06"
+      },
+      "query": "different objects comparison icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000079",
+      "english": "dangerous",
+      "japanese": "あぶない",
+      "vietnamese": "nguy hiểm",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094206Z-a7c27573/dangerous.jpg",
+        "sha256": "92308ddc0bad8838a986526589f16806135cbdeb179146b9ed0477e1fd034c83"
+      },
+      "query": "danger warning sign icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000080",
+      "english": "impossible",
+      "japanese": "ふかのう",
+      "vietnamese": "không thể",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094206Z-a7c27573/impossible.jpg",
+        "sha256": "480b7487a8de3cb653bbc7aede5aee93fe1fe5e7d85345751661ab2bae8b73c1"
+      },
+      "query": "impossible blocked action icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000082",
+      "english": "always",
+      "japanese": "いつも",
+      "vietnamese": "luôn luôn",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/always.jpg",
+        "sha256": "f2dcc6a98d82958fb65cef51b2e576f4f667af1adb3236156402615ee4ef22c6"
+      },
+      "query": "always repeating arrow icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000084",
+      "english": "together",
+      "japanese": "いっしょに",
+      "vietnamese": "cùng nhau",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/together.jpg",
+        "sha256": "c4b1277985d7b5f94de59fd084140e63c6f2534062d3a799d892ee64d453cbaa"
+      },
+      "query": "people together icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000085",
+      "english": "where",
+      "japanese": "どこ",
+      "vietnamese": "ở đâu",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/where.jpg",
+        "sha256": "1ba61f7085670f6fcc18bbcf943c5a6db54172fc2b279cf142461d7072ec2531"
+      },
+      "query": "where location question mark icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000086",
+      "english": "why",
+      "japanese": "なぜ",
+      "vietnamese": "tại sao",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/why.jpg",
+        "sha256": "a13bf30f0fcb8bfd5bc04aa8847a6a6687f050b1411da7914c92996d7e20b3ed"
+      },
+      "query": "thinking why question mark icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000087",
+      "english": "hello",
+      "japanese": "こんにちは",
+      "vietnamese": "xin chào",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/hello.jpg",
+        "sha256": "b0606e37dd2a56cb66f5bc0cafadb15236234af8637cf6511ce6a1225ffd27a0"
+      },
+      "query": "person waving hello icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000088",
+      "english": "please",
+      "japanese": "おねがいします",
+      "vietnamese": "làm ơn/xin vui lòng",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/please.jpg",
+        "sha256": "1388a8f19f1fc1715dedac57c627fe39d8d93214b284ed2533d145b61c10285b"
+      },
+      "query": "person asking politely icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000089",
+      "english": "thanks",
+      "japanese": "ありがとう",
+      "vietnamese": "cảm ơn",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094449Z-6cf101fa/thanks.jpg",
+        "sha256": "0503c60d42c15073e11ed35d7f4543d7dcb82b5b191d0ede9109a6bff2043a50"
+      },
+      "query": "person thanking another icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000090",
+      "english": "sorry",
+      "japanese": "すみません",
+      "vietnamese": "xin lỗi",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000090-05",
+      "fixed": {
+        "candidate_id": "vocab-000090-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000090/05.jpg",
+        "sha256": "13375b9374b00da3d525c88a369416cc3326fff4eb4d7db1aa11b05cd4e61819"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000091",
+      "english": "apartment",
+      "japanese": "アパート",
+      "vietnamese": "căn hộ",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000091-02",
+      "fixed": {
+        "candidate_id": "vocab-000091-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000091/02.jpg",
+        "sha256": "7c0b3a2fe1a07643f7abc1cfa9880ef9068842de259d3c66e949628f71ef46a7"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000092",
+      "english": "dictionary",
+      "japanese": "じしょ",
+      "vietnamese": "từ điển",
+      "prior_label": "UNREVIEWED",
+      "owner_note": "",
+      "prior_selected_candidate_id": "",
+      "fixed": null,
+      "a001_reference": {
+        "path": "baseline/media-staging/images/20261106T094724Z-11be2473/dictionary.jpg",
+        "sha256": "c383a971f54308b926e9c5fdaa03f953380d2585bc5ca4c9306c0d638c459ce5"
+      },
+      "query": "dictionary book icon",
+      "strategy": "ICON"
+    },
+    {
+      "vocab_id": "vocab-000093",
+      "english": "supermarket",
+      "japanese": "スーパーマーケット",
+      "vietnamese": "siêu thị",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000093-01",
+      "fixed": {
+        "candidate_id": "vocab-000093-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000093/01.jpg",
+        "sha256": "1837de8d3ecc0288d2511406a63e3c9e42a7ef8fbe7b5d7e68cf72faf8041e41"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000094",
+      "english": "pharmacy",
+      "japanese": "やっきょく",
+      "vietnamese": "nhà thuốc",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000094-02",
+      "fixed": {
+        "candidate_id": "vocab-000094-02",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000094/02.jpg",
+        "sha256": "cf0c520085e7478da23d3c2a9913800b91019d6ff460683d2f284ef2dd07d522"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000095",
+      "english": "museum",
+      "japanese": "はくぶつかん",
+      "vietnamese": "bảo tàng",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000095-06",
+      "fixed": {
+        "candidate_id": "vocab-000095-06",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000095/06.jpg",
+        "sha256": "1f78b4d9baedc0128871fed20104642f7c0c4362f640b03472db516ec90766ab"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000096",
+      "english": "waterfall",
+      "japanese": "たき",
+      "vietnamese": "thác nước",
+      "prior_label": "PASS",
+      "owner_note": "lấy ảnh A001",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "A001_REFERENCE",
+        "source": "A001_OWNER_PASS",
+        "path": "baseline/media-staging/images/20261106T094724Z-11be2473/waterfall.jpg",
+        "sha256": "422387dc55d0cd84e7ec3b493fa0d0de81cfaa77eb2da86b449fc5aa7f2ddacc"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000097",
+      "english": "firefighter",
+      "japanese": "しょうぼうし",
+      "vietnamese": "lính cứu hỏa",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000097-06",
+      "fixed": {
+        "candidate_id": "vocab-000097-06",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000097/06.jpg",
+        "sha256": "a713835f5476bf1e31dc305c15581206b02cba363fc4f8d08e35e046467a5f42"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000098",
+      "english": "neighbor",
+      "japanese": "となりのひと",
+      "vietnamese": "hàng xóm",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000098-01",
+      "fixed": {
+        "candidate_id": "vocab-000098-01",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000098/01.jpg",
+        "sha256": "263a0f5ab52a37a7691c5d4e646807e8f66f389548b4ae3610c2fb52bea16495"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000099",
+      "english": "daughter",
+      "japanese": "むすめ",
+      "vietnamese": "con gái",
+      "prior_label": "PASS",
+      "owner_note": "",
+      "prior_selected_candidate_id": "vocab-000099-05",
+      "fixed": {
+        "candidate_id": "vocab-000099-05",
+        "source": "A004R_OWNER_PASS",
+        "path": "reports/image_pipeline_experiments/A004_FULL_100_RERUN/images/vocab-000099/05.jpg",
+        "sha256": "a86e453a07fabb98f1caf0b3b37c8a971dec7930ab72b7b916c1ab52e49c38b5"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    },
+    {
+      "vocab_id": "vocab-000100",
+      "english": "grandmother",
+      "japanese": "そぼ",
+      "vietnamese": "bà",
+      "prior_label": "PASS",
+      "owner_note": "lấy ảnh A001",
+      "prior_selected_candidate_id": "",
+      "fixed": {
+        "candidate_id": "A001_REFERENCE",
+        "source": "A001_OWNER_PASS",
+        "path": "baseline/media-staging/images/20261106T094724Z-11be2473/grandmother.jpg",
+        "sha256": "f8b4a323ec7abb2b261db5a978818b55d9d0479818733d88aab1261cc39cd2e0"
+      },
+      "a001_reference": null,
+      "query": null,
+      "strategy": "KEEP"
+    }
+  ]
+}

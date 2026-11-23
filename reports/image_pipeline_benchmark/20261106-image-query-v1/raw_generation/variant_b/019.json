@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000019",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"rain\",\n  \"visual_description\": \"A person standing under an umbrella during a rainy day\",\n  \"negative_constraints\": [\"not a literal photo of rain\", \"not a photo of candy\"],\n  \"reason\": \"The image shows a person under an umbrella during rain, which represents the action of rain in a visual context. The uncertainty lies in the target sense of 'rain' as both weather and candy, which is not fully clear from the provided information.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "rain",
+    "visual_description": "A person standing under an umbrella during a rainy day",
+    "negative_constraints": [
+      "not a literal photo of rain",
+      "not a photo of candy"
+    ],
+    "reason": "The image shows a person under an umbrella during rain, which represents the action of rain in a visual context. The uncertainty lies in the target sense of 'rain' as both weather and candy, which is not fully clear from the provided information."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 35.007
+}

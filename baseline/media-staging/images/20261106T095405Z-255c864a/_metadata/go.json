@@ -1,0 +1,21 @@
+{
+  "word": "go",
+  "search_query": "person going",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://images.pexels.com/photos/18718906/pexels-photo-18718906.jpeg?cs=srgb&dl=pexels-best-photography-748452391-18718906.jpg&fm=jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.r-p6HB-JeSoh1ET10RzcbwHaLH&pid=15.1",
+  "source_page_url": "https://detroitchinatown.org/a-person-should-consume-more-of-something-when-its-marginal/",
+  "title": "A Person Should Consume More Of Something When Its Marginal | Detroit ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "detroitchinatown.org",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -7.171875
+  }
+}

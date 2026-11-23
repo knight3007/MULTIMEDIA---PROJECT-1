@@ -1,0 +1,21 @@
+{
+  "word": "rice",
+  "search_query": "cooked rice",
+  "query_provenance": "human_approved",
+  "provider": "duckduckgo",
+  "image_url": "https://www.lemonblossoms.com/wp-content/uploads/2019/11/How-To-Cook-White-Rice-S1-1.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.QmbKiAD-FgbT-71PvIJlCQHaHa&pid=15.1",
+  "source_page_url": "https://www.lemonblossoms.com/web-stories/https-www-lemonblossoms-com-blog-how-to-cook-rice-2/",
+  "title": "How to Cook White Rice Perfectly - Lemon Blossoms",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "lemonblossoms.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.2265625
+  }
+}

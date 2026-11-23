@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "33",
+  "word": "コンピューター",
+  "reading": "コンピューター",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/コンピューター.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 10752,
+  "duration_seconds": 1.344,
+  "status": "success"
+}

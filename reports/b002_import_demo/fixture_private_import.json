@@ -1,0 +1,34 @@
+{
+  "contract_version": 1,
+  "import_id": "imp-3e130d77-9848-4f67-b52a-aab79c2512c7",
+  "pack_id": "pack-2217a4f0-4c2e-4bbe-885b-6845d2d09236",
+  "workbook_sha256": "1c79ea66ba4576a97e6f7b79dee886e439de979b44a90393bfba2fd8bd96865e",
+  "normalized_payload_sha256": "d7efbaf23abac2e23c637c8e8f24089763dc12a45d0547f9884154a77a20eaaf",
+  "rows": [
+    {
+      "item_id": "item-55fc55cf-c25b-4e98-ab25-5960d90da51a",
+      "source_row": 2,
+      "english": "apple",
+      "japanese": "りんご",
+      "vietnamese": "quả táo",
+      "target_sense": null
+    },
+    {
+      "item_id": "item-0188c8d3-5e34-40c5-8339-36bb111e7428",
+      "source_row": 3,
+      "english": "cat",
+      "japanese": "ねこ",
+      "vietnamese": "mèo",
+      "target_sense": null
+    },
+    {
+      "item_id": "item-02d26ae5-0c5a-4910-b048-4846f7cd7b43",
+      "source_row": 4,
+      "english": "rain",
+      "japanese": "あめ",
+      "vietnamese": "mưa",
+      "target_sense": "rain weather"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,18 @@
+{
+  "word": "water",
+  "search_query": "water beverage",
+  "provider": "duckduckgo",
+  "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e6d55449341671.58b1da35b327c.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.8CxyQ1fPf-JUBbGOBJa-vgHaDt&pid=15.1",
+  "source_page_url": "https://www.behance.net/gallery/49341671/Mineral-water-product-shot-in-3d-Made-for-STUDIOIN",
+  "title": "Mineral water product shot in 3d. Made for STUDIOIN on Behance",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "Behance",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.663376808166504
+  }
+}

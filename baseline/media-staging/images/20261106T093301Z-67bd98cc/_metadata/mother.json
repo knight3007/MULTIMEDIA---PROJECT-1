@@ -1,0 +1,21 @@
+{
+  "word": "mother",
+  "search_query": "mother person",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://img.freepik.com/premium-photo/mothers-embrace-illustrate-unconditional-love-with-child_1141473-2479.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.ew2EMX5UIA4eaVIwZ9ju3wHaFj&pid=15.1",
+  "source_page_url": "https://www.freepik.com/premium-ai-image/mothers-embrace-illustrate-unconditional-love-with-child_195449540.htm",
+  "title": "Premium Photo | A mothers embrace Illustrate the unconditional love ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "freepik.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.7109375
+  }
+}

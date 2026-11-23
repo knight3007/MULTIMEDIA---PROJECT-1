@@ -1,0 +1,21 @@
+{
+  "word": "kitchen",
+  "search_query": "kitchen place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://koala.sh/api/image/v2-a8a5b-42j4p.jpg?width=1216&height=832&dream",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.ya5A1V5BaqbKxM374_HX5AHaFE&pid=15.1",
+  "source_page_url": "https://wondrouslavie.com/kitchen-area-design-tips-and-trends-for-a-modern-home/",
+  "title": "Kitchen Area Design: Tips and Trends for a Modern Home",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.4921875
+  }
+}

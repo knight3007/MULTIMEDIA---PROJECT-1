@@ -1,0 +1,8 @@
+# A-003.3 verification — 2026-11-23
+
+- Input: `D:/Download/A003-selective-repair-review.json`, exact retained copy in `reports/image_pipeline_experiments/A003_OWNER_DECISIONS/owner_review_export.json`. Both SHA-256: `5fc03b5cc2ecc3cc5437d8915d61c0b763a85593301bfa5dc2c8fcca97265b87`.
+- Command: `.\.venv\Scripts\python.exe reports/image_pipeline_experiments/A003_OWNER_DECISIONS/consolidate_review.py D:\Download\A003-selective-repair-review.json` → exit 0. Output: approved 6, no_image 1, unresolved 0; candidate dispositions owner accepted 6, owner rejected explicit 4, not individually reviewed 85, unavailable download failed 8.
+- Validator checked export task/kind/reviewer/timestamp, seven unique vocabulary IDs, exact exported proposal IDs/outcomes/hashes against A-003.2 CSV, vocabulary labels against canonical data, decision shapes, candidate IDs and download ledger source URLs/paths, SHA-256 of baseline/current/selected raw and JPEG assets, and every downloaded candidate raw/JPEG asset used in the disposition ledger. It checked `because` override remains `INTERNAL_ONLY_TEMPORARY` and `NOT_ALLOWED_UNTIL_RIGHTS_CLEARED_OR_REPLACED`.
+- `.\.venv\Scripts\python.exe "collect data script\validate_vocabulary.py"` → 100 physical rows, 0 structural issues.
+- `git diff --quiet -- data/vocabulary/unified_dataset_v1.json` → exit 0; canonical dataset contents unchanged. `git diff --check` → exit 0 (only CRLF conversion warnings on pre-existing working files).
+- Scope: no retrieval, Qwen or SigLIP change, no candidate promotion, canonical dataset rewrite, conditional-search integration, B-002 work, commit or push. No new collector/Kaggle test run was needed because no production implementation changed.

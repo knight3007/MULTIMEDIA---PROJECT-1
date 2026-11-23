@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000049",
+  "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"beautiful scenery\",\n  \"visual_description\": \"A serene landscape with vibrant colors and natural elements representing beauty\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a real object\"],\n  \"reason\": \"The image should represent the abstract concept of beauty, with a focus on visual harmony and natural elements, while avoiding misleading or non-literal interpretations.\"\n}",
+  "parsed": {
+    "visual_type": "abstract_concept",
+    "search_query": "beautiful scenery",
+    "visual_description": "A serene landscape with vibrant colors and natural elements representing beauty",
+    "negative_constraints": [
+      "not a literal photo",
+      "not a real object"
+    ],
+    "reason": "The image should represent the abstract concept of beauty, with a focus on visual harmony and natural elements, while avoiding misleading or non-literal interpretations."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 26.424
+}

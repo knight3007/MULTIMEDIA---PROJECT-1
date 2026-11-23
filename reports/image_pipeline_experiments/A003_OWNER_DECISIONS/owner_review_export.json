@@ -1,0 +1,80 @@
+{
+  "task_id": "A-003.2",
+  "kind": "HUMAN_REVIEW_DRAFT_NOT_AUTO_APPROVAL",
+  "proposals": [
+    {
+      "vocab_id": "vocab-000083",
+      "proposed_candidate_id": "",
+      "proposed_sha256": "",
+      "proposed_outcome": "NO_SUITABLE_IMAGE"
+    },
+    {
+      "vocab_id": "vocab-000046",
+      "proposed_candidate_id": "vocab-000046-ICON-01",
+      "proposed_sha256": "14c6d40afc7ee656113ff3908bed29887ed4c4f3f3b5ae20c5ad92a0b56bfb0f",
+      "proposed_outcome": "CANDIDATE_FOR_REVIEW"
+    },
+    {
+      "vocab_id": "vocab-000063",
+      "proposed_candidate_id": "vocab-000063-ICON-07",
+      "proposed_sha256": "930991ac144b3387ae8143a2ef7eee62166b95f1f594435d0d208956973d04d7",
+      "proposed_outcome": "CANDIDATE_FOR_REVIEW"
+    },
+    {
+      "vocab_id": "vocab-000059",
+      "proposed_candidate_id": "vocab-000059-ICON-01",
+      "proposed_sha256": "56ac488b6083920c4ed872e42bb584d6a033aadf04124c22ae008c06c22a061e",
+      "proposed_outcome": "CANDIDATE_FOR_REVIEW"
+    },
+    {
+      "vocab_id": "vocab-000057",
+      "proposed_candidate_id": "vocab-000057-NORMAL-06",
+      "proposed_sha256": "d4c2831ab8143b81dabd79d66aeb0c4bb070957fd526c2ddc139ac91d0dc9918",
+      "proposed_outcome": "CANDIDATE_FOR_REVIEW"
+    },
+    {
+      "vocab_id": "vocab-000031",
+      "proposed_candidate_id": "vocab-000031-ICON-03",
+      "proposed_sha256": "f467af64ecf5465c649e330fe363c3f122957da9a75318667c83f55204c4c71d",
+      "proposed_outcome": "CANDIDATE_FOR_REVIEW"
+    },
+    {
+      "vocab_id": "vocab-000021",
+      "proposed_candidate_id": "vocab-000021-NORMAL-05",
+      "proposed_sha256": "e660532e0327ea30436177ac97bfd0cdf2e58825df3cc2a8a43915db4a33bc4e",
+      "proposed_outcome": "CANDIDATE_FOR_REVIEW"
+    }
+  ],
+  "reviewer": "HD",
+  "exported_at": "2026-11-23T03:48:35.091Z",
+  "reviews": {
+    "vocab-000083": {
+      "decision": "NONE_SUITABLE",
+      "notes": ""
+    },
+    "vocab-000046": {
+      "decision": "ACCEPT_PROPOSED",
+      "notes": ""
+    },
+    "vocab-000063": {
+      "decision": "ACCEPT_PROPOSED",
+      "notes": ""
+    },
+    "vocab-000059": {
+      "decision": "ACCEPT_PROPOSED",
+      "notes": ""
+    },
+    "vocab-000057": {
+      "decision": "ACCEPT_PROPOSED",
+      "notes": ""
+    },
+    "vocab-000031": {
+      "decision": "ACCEPT_PROPOSED",
+      "notes": ""
+    },
+    "vocab-000021": {
+      "decision": "ACCEPT_PROPOSED",
+      "notes": ""
+    }
+  }
+}

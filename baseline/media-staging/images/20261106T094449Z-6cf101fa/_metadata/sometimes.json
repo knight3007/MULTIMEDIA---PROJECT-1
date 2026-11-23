@@ -1,0 +1,21 @@
+{
+  "word": "sometimes",
+  "search_query": "sometimes event",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://media.zim.vn/6440b6c30337036e159e92ba/sometime-sometimes-some-time.jpeg?w=750&q=75",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.xolMuy4OB01MmmmOA3rlegHaD4&pid=15.1",
+  "source_page_url": "https://zim.vn/phan-biet-sometime-sometimes-va-some-time",
+  "title": "Phân biệt Sometime, Sometimes và Some time | ZIM Academy",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.15625
+  }
+}

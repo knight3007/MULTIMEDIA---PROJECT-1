@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000087",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person greeting with hand towards face\",\n  \"visual_description\": \"A person extending their hand towards their face, making a greeting gesture\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a real person\"],\n  \"reason\": \"The gesture is a common way to greet in Japanese, but the image should focus on the action rather than a literal photo of a person\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "person greeting with hand towards face",
+    "visual_description": "A person extending their hand towards their face, making a greeting gesture",
+    "negative_constraints": [
+      "not a literal photo",
+      "not a real person"
+    ],
+    "reason": "The gesture is a common way to greet in Japanese, but the image should focus on the action rather than a literal photo of a person"
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 23.292
+}

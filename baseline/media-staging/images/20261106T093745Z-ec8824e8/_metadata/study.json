@@ -1,0 +1,21 @@
+{
+  "word": "study",
+  "search_query": "study object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/736x/67/a6/ea/67a6ea28f4551fc138f614530cfc0c69.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.utf1DH7yVkt1kEOvuwWYigHaGq&pid=15.1",
+  "source_page_url": "https://www.pinterest.com/pin/494551602838718598/",
+  "title": "Happy Diwali Diya Rangoli Design | Happy diwali rangoli designs unique ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "www.pinterest.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -17.1875
+  }
+}

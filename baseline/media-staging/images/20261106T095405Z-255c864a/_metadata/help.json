@@ -1,0 +1,21 @@
+{
+  "word": "help",
+  "search_query": "person helping",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://static.vecteezy.com/system/resources/thumbnails/015/951/751/small_2x/silhouette-of-helping-hand-between-two-climber-couple-hiking-help-each-other-silhouette-in-mountains-with-sunlight-the-men-helping-pull-people-up-from-high-cliffs-photo.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.oEoU9Bc0WgSR6sI9BxA2mQHaE8&pid=15.1",
+  "source_page_url": "https://www.vecteezy.com/free-photos/helping-others",
+  "title": "Helping Others Stock Photos, Images and Backgrounds for Free Download",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "vecteezy.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 2.0859375
+  }
+}

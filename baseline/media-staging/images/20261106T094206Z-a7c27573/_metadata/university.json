@@ -1,0 +1,21 @@
+{
+  "word": "university",
+  "search_query": "university institution",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://thumbs.dreamstime.com/b/modern-university-campus-seen-above-beautiful-green-spaces-contemporary-buildings-peaceful-surroundings-wallpaper-348153967.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.JIUiSEKjmpuFwJfbu5LU3AHaE8&pid=15.1",
+  "source_page_url": "https://www.dreamstime.com/modern-university-campus-seen-above-beautiful-green-spaces-contemporary-buildings-peaceful-surroundings-wallpaper-image348153967",
+  "title": "Modern University Campus Seen from Above, with Beautiful Green Spaces ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.1171875
+  }
+}

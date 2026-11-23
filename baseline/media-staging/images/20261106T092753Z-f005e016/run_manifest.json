@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106T092753Z-f005e016",
+  "purpose": "generic_vocabulary_image_staging",
+  "vocab_ids": [
+    "vocab-000012",
+    "vocab-000013",
+    "vocab-000014",
+    "vocab-000015",
+    "vocab-000016",
+    "vocab-000017",
+    "vocab-000018",
+    "vocab-000019",
+    "vocab-000020"
+  ],
+  "configuration": {
+    "timeout": 10,
+    "retries": 1,
+    "retry_delay": 1.0,
+    "page_size": 3,
+    "rate_limit_delay": 1.0,
+    "search_backend": "bing",
+    "qwen_model": "Qwen/Qwen3-1.7B",
+    "qwen_cache": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+    "siglip_model": "google/siglip2-so400m-patch16-384",
+    "siglip_device": "auto",
+    "siglip_dtype": "auto"
+  },
+  "targets": [
+    {
+      "vocab_id": "vocab-000012",
+      "source_row_index": 12,
+      "english": "dog",
+      "japanese_reading": "いぬ",
+      "vietnamese": "chó",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "dog animal",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.6895683000002464,
+        "selected_image_url": "https://cdn.pixabay.com/photo/2023/06/02/22/26/dog-8036596_1280.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://cdn.pixabay.com/photo/2023/06/02/22/26/dog-8036596_1280.jpg",
+        "source_page_url": "https://pixabay.com/illustrations/dog-domestic-animal-mammal-portrait-8036596/",
+        "title": "Download Dog, Domestic Animal, Mammal. Royalty-Free Stock Illustration ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.3515625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/dog.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/dog.json",
+      "dimensions": [
+        1024,
+        682
+      ],
+      "size_bytes": 93005,
+      "sha256": "eec58aa137b0f8968295cec8e49eddf5a32cbdb4c9a543b16ceac72434df2958",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000013",
+      "source_row_index": 13,
+      "english": "elephant",
+      "japanese_reading": "ぞう",
+      "vietnamese": "voi",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "elephant animal",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.45078750000175205,
+        "selected_image_url": "https://cdn.pixabay.com/photo/2023/09/14/19/46/elephant-8253639_1280.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://cdn.pixabay.com/photo/2023/09/14/19/46/elephant-8253639_1280.jpg",
+        "source_page_url": "https://picstank.com/explore/elephant",
+        "title": "Elephant - Images | Picstank.com",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.1640625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/elephant.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/elephant.json",
+      "dimensions": [
+        682,
+        1024
+      ],
+      "size_bytes": 227894,
+      "sha256": "2360e59d42839b9630f79032a57865a476df2e5f1fdc9c897045beb09dc2fc55",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000014",
+      "source_row_index": 14,
+      "english": "tree",
+      "japanese_reading": "き",
+      "vietnamese": "cây",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "tree plant",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 1.4558101000002353,
+        "selected_image_url": "https://i.pinimg.com/736x/4b/9a/0c/4b9a0c0e54e8c9d8e730f43ab6248739.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/736x/4b/9a/0c/4b9a0c0e54e8c9d8e730f43ab6248739.jpg",
+        "source_page_url": "https://www.pinterest.com/pin/788481847282624532/",
+        "title": "People hands planting small tree in sunset concept save earth | Premium ...",
+        "width": null,
+        "height": null,
+        "result_source": "www.pinterest.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -0.796875
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/tree.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/tree.json",
+      "dimensions": [
+        626,
+        417
+      ],
+      "size_bytes": 61599,
+      "sha256": "4ef3ade1931b0f99bb38879b79d05db385a3e1d1e076a5941e9a5aa343626cc0",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000015",
+      "source_row_index": 15,
+      "english": "flower",
+      "japanese_reading": "はな",
+      "vietnamese": "hoa",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "flower plant",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 2,
+        "downloaded_candidates": 1,
+        "search_seconds": 1.2945254000005662,
+        "selected_image_url": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/bromeliad-flower-plants-for-home.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://cms.interiorcompany.com/wp-content/uploads/2024/01/bromeliad-flower-plants-for-home.jpg",
+        "source_page_url": "https://www.interiorcompany.com/in/trends/indoor-flowering-plants",
+        "title": "17 Best Indoor Blooming Plants that Bring Colours to Your Home",
+        "width": null,
+        "height": null,
+        "result_source": "interiorcompany.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -4.3515625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/flower.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/flower.json",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "size_bytes": 227666,
+      "sha256": "d89d7c991701dade0ddb836357f931f406343343e690c5f182d3ce2f2ff2f117",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000016",
+      "source_row_index": 16,
+      "english": "mountain",
+      "japanese_reading": "やま",
+      "vietnamese": "núi",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "mountain place",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 2,
+        "search_seconds": 2.01135389999763,
+        "selected_image_url": "https://i.pinimg.com/originals/22/3c/88/223c8863d91c4b120dfe2bdeafa4bc4c.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://i.pinimg.com/originals/22/3c/88/223c8863d91c4b120dfe2bdeafa4bc4c.jpg",
+        "source_page_url": "https://www.pinterest.com/pin/549017010843303242/",
+        "title": "Pin on Travel | Beautiful landscape photography, Beautiful places ...",
+        "width": null,
+        "height": null,
+        "result_source": "www.pinterest.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -3.8984375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/mountain.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/mountain.json",
+      "dimensions": [
+        590,
+        898
+      ],
+      "size_bytes": 174786,
+      "sha256": "3a04411e9f00eb665f9d7be0ccede6902ac4f46215ca1ac006b59c312c2252c6",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000017",
+      "source_row_index": 17,
+      "english": "river",
+      "japanese_reading": "かわ",
+      "vietnamese": "sông",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "river water",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 2,
+        "downloaded_candidates": 2,
+        "search_seconds": 0.4560265000000072,
+        "selected_image_url": "https://www.hdwallpapers.in/download/river_water_stream_between_green_trees_forest_rocks_sunbeam_scenery_hd_nature-HD.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://www.hdwallpapers.in/download/river_water_stream_between_green_trees_forest_rocks_sunbeam_scenery_hd_nature-HD.jpg",
+        "source_page_url": "https://www.hdwallpapers.in/river_water_stream_between_green_trees_forest_rocks_sunbeam_scenery_hd_nature-wallpapers.html",
+        "title": "River Water Stream Between Green Trees Forest Rocks Sunbeam Scenery HD ...",
+        "width": null,
+        "height": null,
+        "result_source": ""
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -1.765625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/river.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/river.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 246493,
+      "sha256": "b8341fd19894b51b6f991a652d9e579d80675aafd0590d11b51264499d174add",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000018",
+      "source_row_index": 18,
+      "english": "sun",
+      "japanese_reading": "たいよう",
+      "vietnamese": "mặt trời",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "sun illumination",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 1,
+        "search_seconds": 0.5127017000013439,
+        "selected_image_url": "https://www.vizulo.com/media/imageresize/cache/catalog/product/s/u/1200x970_co_ar_tr_fr_bc_90/sun.png"
+      },
+      "selected_result": {
+        "image_url": "https://www.vizulo.com/media/imageresize/cache/catalog/product/s/u/1200x970_co_ar_tr_fr_bc_90/sun.png",
+        "source_page_url": "https://www.vizulo.com/en/products/interior/36149-sun-mimic-led",
+        "title": "Sun-Mimic LED - Vizulo",
+        "width": null,
+        "height": null,
+        "result_source": "vizulo.com"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -4.625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/sun.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/sun.json",
+      "dimensions": [
+        1024,
+        819
+      ],
+      "size_bytes": 53091,
+      "sha256": "51140f5cc4d8d20248528707ea0685a2e957dac5841fd9044493bd115060dfc1",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000019",
+      "source_row_index": 19,
+      "english": "rain",
+      "japanese_reading": "あめ",
+      "vietnamese": "mưa",
+      "target_sense": null,
+      "semantic_review_status": "needs_decision",
+      "query": "rain illumination",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 3,
+        "search_seconds": 0.2807165999984136,
+        "selected_image_url": "https://newlifetravel.vn/wp-content/uploads/2024/06/vinpearl-harbour-nha-trang-newlifetravelvn.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://newlifetravel.vn/wp-content/uploads/2024/06/vinpearl-harbour-nha-trang-newlifetravelvn.jpg",
+        "source_page_url": "https://newlifetravel.vn/du-lich-nha-trang-thang-2/",
+        "title": "Có Nên Du Lịch Nha Trang Tháng 2? Review Từ A - Z",
+        "width": null,
+        "height": null,
+        "result_source": "newlifetravel.vn"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -11.90625
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/rain.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/rain.json",
+      "dimensions": [
+        1024,
+        576
+      ],
+      "size_bytes": 254776,
+      "sha256": "2159e9da479e39c8754f4e39cdf2b17f5a96eed990027966082f89f6bb4c2c31",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000020",
+      "source_row_index": 20,
+      "english": "weather",
+      "japanese_reading": "てんき",
+      "vietnamese": "thời tiết",
+      "target_sense": null,
+      "semantic_review_status": "unreviewed",
+      "query": "weather phenomenon",
+      "query_provenance": "model_generated_unreviewed",
+      "status": "staged",
+      "failure": null,
+      "provider": "duckduckgo",
+      "search_client": "ddgs",
+      "search_backend": "bing",
+      "approval_status": "pending_human_review",
+      "license_status": "unknown",
+      "candidate_retrieval": {
+        "raw_results": 3,
+        "valid_results": 3,
+        "downloaded_candidates": 1,
+        "search_seconds": 0.4368184000013571,
+        "selected_image_url": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2022/10/CLI371.weather.double_rainbow_cammie_czuchnicki.jpg"
+      },
+      "selected_result": {
+        "image_url": "https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2022/10/CLI371.weather.double_rainbow_cammie_czuchnicki.jpg",
+        "source_page_url": "https://www.eatmy.news/2023/07/what-is-science-behind-different-types.html",
+        "title": "What Is the Science Behind Different Types of Weather Phenomenon",
+        "width": null,
+        "height": null,
+        "result_source": "eatmy.news"
+      },
+      "siglip_selection": {
+        "method": "siglip2",
+        "model": "google/siglip2-so400m-patch16-384",
+        "score": -2.9375
+      },
+      "staged_image_path": "baseline/media-staging/images/20261106T092753Z-f005e016/weather.jpg",
+      "staged_metadata_path": "baseline/media-staging/images/20261106T092753Z-f005e016/_metadata/weather.json",
+      "dimensions": [
+        1024,
+        684
+      ],
+      "size_bytes": 121139,
+      "sha256": "48b9902ff4f85b0f012dbde5725d9112e3a9d92733abd15cba04171f07b5af41",
+      "validation_status": "valid_jpeg_and_metadata",
+      "failure_stage": null,
+      "failure_type": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

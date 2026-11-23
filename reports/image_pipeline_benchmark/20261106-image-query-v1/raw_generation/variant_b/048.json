@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000048",
+  "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"difficult concept\",\n  \"visual_description\": \"A person looking at a complex puzzle or a challenging task.\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image depicts a challenging task, which aligns with the abstract concept of 'difficult' in a educational context.\"\n}",
+  "parsed": {
+    "visual_type": "abstract_concept",
+    "search_query": "difficult concept",
+    "visual_description": "A person looking at a complex puzzle or a challenging task.",
+    "negative_constraints": [],
+    "reason": "The image depicts a challenging task, which aligns with the abstract concept of 'difficult' in a educational context."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 18.449
+}

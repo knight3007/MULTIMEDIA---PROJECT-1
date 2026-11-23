@@ -1,0 +1,21 @@
+{
+  "word": "bridge",
+  "search_query": "bridge structure",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://engineeringdiscoveries.com/wp-content/uploads/2019/11/Untitled-1fdgdgfhfdg.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.zNzhAYNecdrq8XhBfB1wwgHaD0&pid=15.1",
+  "source_page_url": "https://engineeringdiscoveries.com/structural-elements-of-bridge/",
+  "title": "Structural Elements Of Bridge | Engineering Discoveries",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 2.0390625
+  }
+}

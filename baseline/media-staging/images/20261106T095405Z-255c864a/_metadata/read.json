@@ -1,0 +1,21 @@
+{
+  "word": "read",
+  "search_query": "person reading",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://images.pexels.com/photos/4640846/pexels-photo-4640846.jpeg?cs=srgb&dl=pexels-arthousestudio-4640846.jpg&fm=jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.IQXlOZq5iukrQWMkVbvgmQHaE8&pid=15.1",
+  "source_page_url": "https://www.pexels.com/photo/person-reading-book-2898207/",
+  "title": "Person Reading Book · Free Stock Photo",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.9921875
+  }
+}

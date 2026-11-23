@@ -1,0 +1,18 @@
+{
+  "word": "egg",
+  "search_query": "egg food",
+  "provider": "duckduckgo",
+  "image_url": "https://www.mashed.com/img/gallery/sizzling-reasons-eggs-are-one-of-the-most-versatile-foods/l-intro-1691714223.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.wnC017mML16lFbhFucKqyAHaEK&pid=15.1",
+  "source_page_url": "https://www.mashed.com/1363590/sizzling-reasons-eggs-versatile-foods/",
+  "title": "Sizzling Reasons Eggs Are One Of The Most Versatile Foods",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "mashed.com",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.6711301803588867
+  }
+}

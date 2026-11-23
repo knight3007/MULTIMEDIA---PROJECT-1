@@ -1,0 +1,21 @@
+{
+  "word": "yesterday",
+  "search_query": "yesterday place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.dramabl.com/wp-content/uploads/2025/12/Yesterday.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.qXiW3rvQGbSbRNZ5mVBFJgHaJQ&pid=15.1",
+  "source_page_url": "https://www.dramabl.com/drama/yesterday/",
+  "title": "Yesterday - DramaBL",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -2.8046875
+  }
+}

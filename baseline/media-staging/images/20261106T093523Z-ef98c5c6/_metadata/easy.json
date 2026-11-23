@@ -1,0 +1,21 @@
+{
+  "word": "easy",
+  "search_query": "easy object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.ytimg.com/vi/EISWMJ18Ff4/maxresdefault.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.GtRgDRFW8SMBw942Heq-bAHaEK&pid=15.1",
+  "source_page_url": "https://www.youtube.com/watch?v=EISWMJ18Ff4",
+  "title": "10 Daily Objects Easy Drawing for Kids and Toddlers - YouTube",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 2.7734375
+  }
+}

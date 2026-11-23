@@ -1,0 +1,101 @@
+vocab_id,english,approved_strategy,approved_query,expected_route
+vocab-000001,apple,QWEN_DEFAULT,apple fruit,PHOTO
+vocab-000002,banana,QWEN_DEFAULT,banana fruit,PHOTO
+vocab-000003,strawberry,QWEN_DEFAULT,strawberry fruit,PHOTO
+vocab-000004,rice,QWEN_DEFAULT,cooked rice,PHOTO
+vocab-000005,bread,QWEN_DEFAULT,bread food,PHOTO
+vocab-000006,egg,QWEN_DEFAULT,egg food,PHOTO
+vocab-000007,milk,QWEN_DEFAULT_A001,milk beverage,PHOTO
+vocab-000008,water,QWEN_DEFAULT,water beverage,PHOTO
+vocab-000009,chicken,QWEN_DEFAULT,chicken meat,PHOTO
+vocab-000010,breakfast,QWEN_DEFAULT_A001,breakfast meal,PHOTO
+vocab-000011,cat,QWEN_DEFAULT,cat animal,PHOTO
+vocab-000012,dog,QWEN_DEFAULT,dog animal,PHOTO
+vocab-000013,elephant,QWEN_DEFAULT,elephant animal,PHOTO
+vocab-000014,tree,QWEN_DEFAULT,tree plant,PHOTO
+vocab-000015,flower,QWEN_DEFAULT,flower plant,PHOTO
+vocab-000016,mountain,QWEN_DEFAULT,mountain place,PHOTO
+vocab-000017,river,QWEN_DEFAULT,river water,PHOTO
+vocab-000018,sun,SCENE_DESCRIPTIVE,sun in blue sky illustration,ANY
+vocab-000019,rain,ICON_WORD,rain icon,NON_PHOTO
+vocab-000020,weather,QWEN_DEFAULT,weather phenomenon,ANY
+vocab-000021,house,QWEN_DEFAULT,house building,PHOTO
+vocab-000022,kitchen,QWEN_DEFAULT,kitchen place,PHOTO
+vocab-000023,school,QWEN_DEFAULT,school institution,PHOTO
+vocab-000024,library,QWEN_DEFAULT,library place,PHOTO
+vocab-000025,hospital,QWEN_DEFAULT,hospital institution,PHOTO
+vocab-000026,airport,QWEN_DEFAULT,airport place,PHOTO
+vocab-000027,restaurant,QWEN_DEFAULT,restaurant place,PHOTO
+vocab-000028,car,QWEN_DEFAULT,car vehicle,PHOTO
+vocab-000029,bicycle,QWEN_DEFAULT,bicycle vehicle,PHOTO
+vocab-000030,bridge,QWEN_DEFAULT,bridge structure,PHOTO
+vocab-000031,book,ICON_WORD,book icon,ANY
+vocab-000032,phone,QWEN_DEFAULT,phone device,PHOTO
+vocab-000033,computer,ICON_DESCRIPTIVE,desktop computer monitor keyboard icon,ANY
+vocab-000034,umbrella,QWEN_DEFAULT,umbrella object,PHOTO
+vocab-000035,shirt,QWEN_DEFAULT,shirt clothing,PHOTO
+vocab-000036,family,SCENE_DESCRIPTIVE,family parents children portrait illustration,ANY
+vocab-000037,mother,QWEN_DEFAULT,mother person,PHOTO
+vocab-000038,friend,SCENE_DESCRIPTIVE,two friends together illustration,ANY
+vocab-000039,teacher,QWEN_DEFAULT,teacher person,PHOTO
+vocab-000040,engineer,QWEN_DEFAULT,engineer profession,PHOTO
+vocab-000041,today,SCENE_DESCRIPTIVE,today calendar current day highlighted illustration,NON_PHOTO
+vocab-000042,tomorrow,SCENE_DESCRIPTIVE,tomorrow next day calendar illustration,NON_PHOTO
+vocab-000043,yesterday,SCENE_DESCRIPTIVE,yesterday previous day calendar illustration,NON_PHOTO
+vocab-000044,winter,QWEN_DEFAULT,winter season,ANY
+vocab-000045,happy,QWEN_DEFAULT,happy emotion,ANY
+vocab-000046,hungry,ICON_WORD,hungry icon,NON_PHOTO
+vocab-000047,easy,SCENE_DESCRIPTIVE,easy task simple puzzle illustration,NON_PHOTO
+vocab-000048,difficult,SCENE_DESCRIPTIVE,difficult task challenging puzzle illustration,NON_PHOTO
+vocab-000049,beautiful,QWEN_DEFAULT,beautiful object,ANY
+vocab-000050,strong,ICON_DESCRIPTIVE,strong arm muscle icon,NON_PHOTO
+vocab-000051,go,ICON_DESCRIPTIVE,person walking away icon,NON_PHOTO
+vocab-000052,read,ICON_DESCRIPTIVE,person reading book icon,NON_PHOTO
+vocab-000053,write,ICON_WORD,write icon,NON_PHOTO
+vocab-000054,study,ICON_DESCRIPTIVE,student studying at desk icon,NON_PHOTO
+vocab-000055,work,ICON_DESCRIPTIVE,person working at desk icon,NON_PHOTO
+vocab-000056,sleep,ICON_WORD,sleep icon,NON_PHOTO
+vocab-000057,eat,QWEN_DEFAULT,person eating,ANY
+vocab-000058,drink,QWEN_DEFAULT,drink beverage,ANY
+vocab-000059,buy,ICON_WORD,buy icon,NON_PHOTO
+vocab-000060,help,ICON_DESCRIPTIVE,person helping another person icon,NON_PHOTO
+vocab-000061,understand,ICON_WORD,understand icon,NON_PHOTO
+vocab-000062,remember,ICON_WORD,remember icon,NON_PHOTO
+vocab-000063,receive,ICON_WORD,receive icon,NON_PHOTO
+vocab-000064,choose,ICON_DESCRIPTIVE,choosing between options icon,NON_PHOTO
+vocab-000065,swim,ICON_WORD,swim icon,NON_PHOTO
+vocab-000066,software,QWEN_DEFAULT_A001,software device,ANY
+vocab-000067,database,QWEN_DEFAULT,database object,ANY
+vocab-000068,password,QWEN_DEFAULT,password object,ANY
+vocab-000069,music,QWEN_DEFAULT,music object,ANY
+vocab-000070,language,ICON_DESCRIPTIVE,language speech bubbles icon,NON_PHOTO
+vocab-000071,problem,QWEN_DEFAULT,problem object,ANY
+vocab-000072,business,ICON_DESCRIPTIVE,business meeting icon,NON_PHOTO
+vocab-000073,university,QWEN_DEFAULT,university institution,PHOTO
+vocab-000074,project,SCENE_DESCRIPTIVE,project plan teamwork illustration,NON_PHOTO
+vocab-000075,experience,SCENE_DESCRIPTIVE,learning from experience illustration,NON_PHOTO
+vocab-000076,vegetable,QWEN_DEFAULT,vegetable plant,PHOTO
+vocab-000077,important,ICON_DESCRIPTIVE,important exclamation mark icon,NON_PHOTO
+vocab-000078,different,QWEN_DEFAULT,different object,ANY
+vocab-000079,dangerous,ICON_DESCRIPTIVE,danger warning triangle sign icon,NON_PHOTO
+vocab-000080,impossible,ICON_DESCRIPTIVE,impossible task icon,NON_PHOTO
+vocab-000081,because,CURATED_CONCEPT,cause effect visual sequence illustration,CURATE
+vocab-000082,always,ICON_DESCRIPTIVE,always repeating arrow icon,NON_PHOTO
+vocab-000083,sometimes,QWEN_DEFAULT_A001,sometimes event,ANY
+vocab-000084,together,ICON_DESCRIPTIVE,people together icon,NON_PHOTO
+vocab-000085,where,ICON_DESCRIPTIVE,where location question mark icon,NON_PHOTO
+vocab-000086,why,ICON_DESCRIPTIVE,thinking why question mark icon,NON_PHOTO
+vocab-000087,hello,ICON_DESCRIPTIVE,person waving hello icon,NON_PHOTO
+vocab-000088,please,ICON_DESCRIPTIVE,person asking politely icon,NON_PHOTO
+vocab-000089,thanks,ICON_DESCRIPTIVE,person thanking another icon,NON_PHOTO
+vocab-000090,sorry,QWEN_DEFAULT,sorry emotion,ANY
+vocab-000091,apartment,QWEN_DEFAULT,apartment place,PHOTO
+vocab-000092,dictionary,ICON_DESCRIPTIVE,dictionary book icon,ANY
+vocab-000093,supermarket,QWEN_DEFAULT,supermarket place,PHOTO
+vocab-000094,pharmacy,QWEN_DEFAULT,pharmacy institution,PHOTO
+vocab-000095,museum,QWEN_DEFAULT,museum place,PHOTO
+vocab-000096,waterfall,QWEN_DEFAULT_A001,waterfall object,PHOTO
+vocab-000097,firefighter,QWEN_DEFAULT,firefighter person,PHOTO
+vocab-000098,neighbor,QWEN_DEFAULT,neighbor person,PHOTO
+vocab-000099,daughter,QWEN_DEFAULT,daughter person,PHOTO
+vocab-000100,grandmother,QWEN_DEFAULT_A001,grandmother person,PHOTO

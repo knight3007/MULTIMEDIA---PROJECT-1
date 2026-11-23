@@ -1,0 +1,21 @@
+{
+  "word": "apartment",
+  "search_query": "apartment place",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://static.vecteezy.com/system/resources/previews/044/838/269/large_2x/modern-residential-building-with-new-apartments-in-a-green-residential-area-eco-architecture-green-tree-and-new-apartment-building-the-harmony-of-nature-and-modernity-photo.JPG",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.LL7zrFaxa7duUvEUANsPgAHaEK&pid=15.1",
+  "source_page_url": "https://www.vecteezy.com/photo/44838269-modern-residential-building-with-new-apartments-in-a-green-residential-area-eco-architecture-green-tree-and-new-apartment-building-the-harmony-of-nature-and-modernity",
+  "title": "Modern residential building with new apartments in a green residential ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "vecteezy.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.4921875
+  }
+}

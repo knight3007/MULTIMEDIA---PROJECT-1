@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "run_id": "20261029T064854Z-e886a24d",
+  "vocab_ids": [
+    "vocab-000006",
+    "vocab-000007",
+    "vocab-000008",
+    "vocab-000009",
+    "vocab-000010"
+  ],
+  "configuration": {
+    "timeout": 12,
+    "retries": 1,
+    "retry_delay": 2.0,
+    "rate_limit_delay": 1.0,
+    "reuse_smoke": true
+  },
+  "entries": [
+    {
+      "vocab_id": "vocab-000006",
+      "source_row_index": 6,
+      "english": "egg",
+      "japanese_reading": "たまご",
+      "vietnamese": "trứng",
+      "mp3_filename": "たまご.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/たまご.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/_metadata/たまご.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 0.936,
+      "size_bytes": 7488,
+      "sha256": "1b719f650b81ce41d95e620d45a1f8561be7c648b8af6522f56d7d7f70e8b430",
+      "status": "staged",
+      "cache_status": "downloaded",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": null,
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000007",
+      "source_row_index": 7,
+      "english": "milk",
+      "japanese_reading": "ぎゅうにゅう",
+      "vietnamese": "sữa",
+      "mp3_filename": "ぎゅうにゅう.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/ぎゅうにゅう.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/_metadata/ぎゅうにゅう.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 1.056,
+      "size_bytes": 8448,
+      "sha256": "d0b8a17db1f18d375f480fa3a4bbd4394a05bd634578673a6948819d8c3fff65",
+      "status": "staged",
+      "cache_status": "downloaded",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": null,
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000008",
+      "source_row_index": 8,
+      "english": "water",
+      "japanese_reading": "みず",
+      "vietnamese": "nước",
+      "mp3_filename": "みず.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/みず.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/_metadata/みず.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 0.84,
+      "size_bytes": 6720,
+      "sha256": "e10c97b88c6228e4054d7b78fa0b63b9d2356e17697b9d98f5bca5e5bfb68694",
+      "status": "staged",
+      "cache_status": "downloaded",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": null,
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "english": "chicken",
+      "japanese_reading": "とりにく",
+      "vietnamese": "thịt gà",
+      "mp3_filename": "とりにく.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/とりにく.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/_metadata/とりにく.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 1.152,
+      "size_bytes": 9216,
+      "sha256": "aa22f2800a7b73fc46fa3172102fde7da4873149aec2020ae1885f240059b93b",
+      "status": "staged",
+      "cache_status": "downloaded",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": null,
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    },
+    {
+      "vocab_id": "vocab-000010",
+      "source_row_index": 10,
+      "english": "breakfast",
+      "japanese_reading": "あさごはん",
+      "vietnamese": "bữa sáng",
+      "mp3_filename": "あさごはん.mp3",
+      "mp3_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/あさごはん.mp3",
+      "metadata_path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/_metadata/あさごはん.json",
+      "provider": "google_translate_gtts",
+      "locale": "ja",
+      "voice": {
+        "tld": "com",
+        "slow": false
+      },
+      "duration_seconds": 1.152,
+      "size_bytes": 9216,
+      "sha256": "bdf4a28eb1eaded85ad981fb0fa70204cc8a41b379e54399eb315da3ce361f21",
+      "status": "staged",
+      "cache_status": "downloaded",
+      "validation_status": "valid_mp3_and_metadata",
+      "reused_from": null,
+      "failure": null,
+      "resume_cache_status": "cache_hit"
+    }
+  ]
+}

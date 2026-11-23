@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "key": "39",
+  "word": "せんせい",
+  "reading": "せんせい",
+  "locale": "ja",
+  "voice": {
+    "tld": "com",
+    "slow": false
+  },
+  "audio": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/せんせい.mp3",
+  "source": "google_translate_gtts",
+  "format": "mp3",
+  "size": 8448,
+  "duration_seconds": 1.056,
+  "status": "success"
+}

@@ -1,0 +1,21 @@
+{
+  "word": "daughter",
+  "search_query": "daughter person",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://img.freepik.com/premium-photo/mother-with-daughter-people-person-family_53876-528135.jpg",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.ox3J_Y6381qC482gB6KWbAHaHa&pid=15.1",
+  "source_page_url": "https://www.freepik.com/premium-ai-image/mother-with-daughter-people-person-family_357271116.htm",
+  "title": "Mother with daughter people person family | Premium AI-generated image",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.0703125
+  }
+}

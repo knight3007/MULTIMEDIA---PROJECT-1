@@ -1,0 +1,21 @@
+{
+  "word": "business",
+  "search_query": "business institution",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://thumbs.dreamstime.com/z/college-business-building-university-institution-higher-learning-brick-usa-281126566.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.YQYFKKoT5CVbYtLJESPHWwHaDs&pid=15.1",
+  "source_page_url": "https://www.dreamstime.com/college-business-building-university-institution-higher-learning-brick-usa-image281126566",
+  "title": "College of Business Building University Institution of Higher Learning ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.2578125
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "word": "sorry",
+  "search_query": "sorry emotion",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://static.vecteezy.com/system/resources/previews/066/893/824/large_2x/sad-yellow-emoticon-apology-sorry-face-teary-eyes-regret-vector.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.mqbWJVVl0rr7ZD4-UP4ozwHaHa&pid=15.1",
+  "source_page_url": "https://www.vecteezy.com/vector-art/66893824-sad-yellow-emoticon-apology-sorry-face-teary-eyes-regret",
+  "title": "Sad Yellow Emoticon Apology Sorry Face, Teary Eyes, Regret 66893824 ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "vecteezy.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 3.3671875
+  }
+}

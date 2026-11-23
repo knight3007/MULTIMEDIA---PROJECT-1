@@ -1,0 +1,21 @@
+{
+  "word": "sun",
+  "search_query": "sun illumination",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://www.vizulo.com/media/imageresize/cache/catalog/product/s/u/1200x970_co_ar_tr_fr_bc_90/sun.png",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.eVQq3ZuBHEV89B4eJfVoiQHaF7&pid=15.1",
+  "source_page_url": "https://www.vizulo.com/en/products/interior/36149-sun-mimic-led",
+  "title": "Sun-Mimic LED - Vizulo",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "vizulo.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -4.625
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "word": "impossible",
+  "search_query": "impossible object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://fbi.cults3d.com/uploaders/22820957/illustration-file/af023420-9815-440a-87dd-69177e7c069d/Holding.png",
+  "thumbnail_url": "https://ts3.explicit.bing.net/th?id=OIP.vkWvMR3kV2P_icFMCnnJ4wHaFj&pid=15.1",
+  "source_page_url": "https://cults3d.com/en/3d-model/art/penrose-triangle-impossible-object-optical-illusion-struckduck",
+  "title": "🔺 Penrose Triangle Impossible Object Optical Illusion・Free STL File for ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.3984375
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "model": "Qwen/Qwen3-1.7B",
+  "vocabulary_signature": "9db04b31515b9f492a95bc0f4873c28226a5f318bb48f27dbf3d44a8d201a692",
+  "prefix_count": 50,
+  "prefix_sha256": "4706df7585fdebd06021d3be3a04c12f9b51ab0d6bc4603d57ce90c86b80afca",
+  "records": [
+    {
+      "source_row_index": 51,
+      "word": "go",
+      "status": "generated",
+      "query": "person going",
+      "failure": null,
+      "prior_failure": "Qwen output for 'go' after one retry: Qwen returned meta text instead of concrete search terms: 'go verb'",
+      "generation_method": "qwen_corrected_verb_prompt",
+      "correction_prompt": "The input is an action verb, not an object. Output a short image search phrase showing a person visibly performing the action. Examples: Input: run -> Query: person running. Input: read -> Query: person reading a book. Never output verb, action, object, icon or explanation. Use only lowercase English words.",
+      "corrected_raw_output": "person going"
+    },
+    {
+      "source_row_index": 52,
+      "word": "read",
+      "status": "generated",
+      "query": "person reading",
+      "failure": null,
+      "prior_failure": "Qwen output for 'read' after one retry: Qwen returned meta text instead of concrete search terms: 'read verb'",
+      "generation_method": "qwen_corrected_verb_prompt",
+      "correction_prompt": "The input is an action verb, not an object. Output a short image search phrase showing a person visibly performing the action. Examples: Input: run -> Query: person running. Input: read -> Query: person reading a book. Never output verb, action, object, icon or explanation. Use only lowercase English words.",
+      "corrected_raw_output": "person reading"
+    },
+    {
+      "source_row_index": 53,
+      "word": "write",
+      "status": "generated",
+      "query": "write action",
+      "failure": null
+    },
+    {
+      "source_row_index": 54,
+      "word": "study",
+      "status": "generated",
+      "query": "study object",
+      "failure": null
+    },
+    {
+      "source_row_index": 55,
+      "word": "work",
+      "status": "generated",
+      "query": "work object",
+      "failure": null
+    },
+    {
+      "source_row_index": 56,
+      "word": "sleep",
+      "status": "generated",
+      "query": "sleep object",
+      "failure": null
+    },
+    {
+      "source_row_index": 57,
+      "word": "eat",
+      "status": "generated",
+      "query": "person eating",
+      "failure": null,
+      "prior_failure": "Qwen output for 'eat' after one retry: Qwen returned meta text instead of concrete search terms: 'eat verb'",
+      "generation_method": "qwen_corrected_verb_prompt",
+      "correction_prompt": "The input is an action verb, not an object. Output a short image search phrase showing a person visibly performing the action. Examples: Input: run -> Query: person running. Input: read -> Query: person reading a book. Never output verb, action, object, icon or explanation. Use only lowercase English words.",
+      "corrected_raw_output": "person eating"
+    },
+    {
+      "source_row_index": 58,
+      "word": "drink",
+      "status": "generated",
+      "query": "drink beverage",
+      "failure": null
+    },
+    {
+      "source_row_index": 59,
+      "word": "buy",
+      "status": "generated",
+      "query": "buy action",
+      "failure": null
+    },
+    {
+      "source_row_index": 60,
+      "word": "help",
+      "status": "generated",
+      "query": "person helping",
+      "failure": null,
+      "prior_failure": "Qwen output for 'help' after one retry: Qwen returned meta text instead of concrete search terms: 'help verb'",
+      "generation_method": "qwen_corrected_verb_prompt",
+      "correction_prompt": "The input is an action verb, not an object. Output a short image search phrase showing a person visibly performing the action. Examples: Input: run -> Query: person running. Input: read -> Query: person reading a book. Never output verb, action, object, icon or explanation. Use only lowercase English words.",
+      "corrected_raw_output": "person helping"
+    },
+    {
+      "source_row_index": 61,
+      "word": "understand",
+      "status": "generated",
+      "query": "understand action",
+      "failure": null
+    },
+    {
+      "source_row_index": 62,
+      "word": "remember",
+      "status": "generated",
+      "query": "remember object",
+      "failure": null
+    },
+    {
+      "source_row_index": 63,
+      "word": "receive",
+      "status": "generated",
+      "query": "receive action",
+      "failure": null
+    },
+    {
+      "source_row_index": 64,
+      "word": "choose",
+      "status": "generated",
+      "query": "person choosing",
+      "failure": null,
+      "prior_failure": "Qwen output for 'choose' after one retry: Qwen returned meta text instead of concrete search terms: 'choose verb'",
+      "generation_method": "qwen_corrected_verb_prompt",
+      "correction_prompt": "The input is an action verb, not an object. Output a short image search phrase showing a person visibly performing the action. Examples: Input: run -> Query: person running. Input: read -> Query: person reading a book. Never output verb, action, object, icon or explanation. Use only lowercase English words.",
+      "corrected_raw_output": "person choosing"
+    },
+    {
+      "source_row_index": 65,
+      "word": "swim",
+      "status": "generated",
+      "query": "person swimming",
+      "failure": null,
+      "prior_failure": "Qwen output for 'swim' after one retry: Qwen returned meta text instead of concrete search terms: 'swim verb'",
+      "generation_method": "qwen_corrected_verb_prompt",
+      "correction_prompt": "The input is an action verb, not an object. Output a short image search phrase showing a person visibly performing the action. Examples: Input: run -> Query: person running. Input: read -> Query: person reading a book. Never output verb, action, object, icon or explanation. Use only lowercase English words.",
+      "corrected_raw_output": "person swimming"
+    },
+    {
+      "source_row_index": 66,
+      "word": "software",
+      "status": "generated",
+      "query": "software device",
+      "failure": null
+    },
+    {
+      "source_row_index": 67,
+      "word": "database",
+      "status": "generated",
+      "query": "database object",
+      "failure": null
+    },
+    {
+      "source_row_index": 68,
+      "word": "password",
+      "status": "generated",
+      "query": "password object",
+      "failure": null
+    },
+    {
+      "source_row_index": 69,
+      "word": "music",
+      "status": "generated",
+      "query": "music object",
+      "failure": null
+    },
+    {
+      "source_row_index": 70,
+      "word": "language",
+      "status": "generated",
+      "query": "language object",
+      "failure": null
+    },
+    {
+      "source_row_index": 71,
+      "word": "problem",
+      "status": "generated",
+      "query": "problem object",
+      "failure": null
+    },
+    {
+      "source_row_index": 72,
+      "word": "business",
+      "status": "generated",
+      "query": "business institution",
+      "failure": null
+    },
+    {
+      "source_row_index": 73,
+      "word": "university",
+      "status": "generated",
+      "query": "university institution",
+      "failure": null
+    },
+    {
+      "source_row_index": 74,
+      "word": "project",
+      "status": "generated",
+      "query": "project object",
+      "failure": null
+    },
+    {
+      "source_row_index": 75,
+      "word": "experience",
+      "status": "generated",
+      "query": "experience object",
+      "failure": null
+    },
+    {
+      "source_row_index": 76,
+      "word": "vegetable",
+      "status": "generated",
+      "query": "vegetable plant",
+      "failure": null
+    },
+    {
+      "source_row_index": 77,
+      "word": "important",
+      "status": "generated",
+      "query": "important object",
+      "failure": null
+    },
+    {
+      "source_row_index": 78,
+      "word": "different",
+      "status": "generated",
+      "query": "different object",
+      "failure": null
+    },
+    {
+      "source_row_index": 79,
+      "word": "dangerous",
+      "status": "generated",
+      "query": "dangerous object",
+      "failure": null
+    },
+    {
+      "source_row_index": 80,
+      "word": "impossible",
+      "status": "generated",
+      "query": "impossible object",
+      "failure": null
+    },
+    {
+      "source_row_index": 81,
+      "word": "because",
+      "status": "generated",
+      "query": "because cause",
+      "failure": null
+    },
+    {
+      "source_row_index": 82,
+      "word": "always",
+      "status": "generated",
+      "query": "always object",
+      "failure": null
+    },
+    {
+      "source_row_index": 83,
+      "word": "sometimes",
+      "status": "generated",
+      "query": "sometimes event",
+      "failure": null
+    },
+    {
+      "source_row_index": 84,
+      "word": "together",
+      "status": "generated",
+      "query": "together object",
+      "failure": null
+    },
+    {
+      "source_row_index": 85,
+      "word": "where",
+      "status": "generated",
+      "query": "where place",
+      "failure": null
+    },
+    {
+      "source_row_index": 86,
+      "word": "why",
+      "status": "generated",
+      "query": "why icon",
+      "failure": null
+    },
+    {
+      "source_row_index": 87,
+      "word": "hello",
+      "status": "generated",
+      "query": "hello object",
+      "failure": null
+    },
+    {
+      "source_row_index": 88,
+      "word": "please",
+      "status": "generated",
+      "query": "please action",
+      "failure": null
+    },
+    {
+      "source_row_index": 89,
+      "word": "thanks",
+      "status": "generated",
+      "query": "thanks expression",
+      "failure": null
+    },
+    {
+      "source_row_index": 90,
+      "word": "sorry",
+      "status": "generated",
+      "query": "sorry emotion",
+      "failure": null
+    },
+    {
+      "source_row_index": 91,
+      "word": "apartment",
+      "status": "generated",
+      "query": "apartment place",
+      "failure": null
+    },
+    {
+      "source_row_index": 92,
+      "word": "dictionary",
+      "status": "generated",
+      "query": "dictionary object",
+      "failure": null
+    },
+    {
+      "source_row_index": 93,
+      "word": "supermarket",
+      "status": "generated",
+      "query": "supermarket place",
+      "failure": null
+    },
+    {
+      "source_row_index": 94,
+      "word": "pharmacy",
+      "status": "generated",
+      "query": "pharmacy institution",
+      "failure": null
+    },
+    {
+      "source_row_index": 95,
+      "word": "museum",
+      "status": "generated",
+      "query": "museum place",
+      "failure": null
+    },
+    {
+      "source_row_index": 96,
+      "word": "waterfall",
+      "status": "generated",
+      "query": "waterfall object",
+      "failure": null
+    },
+    {
+      "source_row_index": 97,
+      "word": "firefighter",
+      "status": "generated",
+      "query": "firefighter person",
+      "failure": null
+    },
+    {
+      "source_row_index": 98,
+      "word": "neighbor",
+      "status": "generated",
+      "query": "neighbor person",
+      "failure": null
+    },
+    {
+      "source_row_index": 99,
+      "word": "daughter",
+      "status": "generated",
+      "query": "daughter person",
+      "failure": null
+    },
+    {
+      "source_row_index": 100,
+      "word": "grandmother",
+      "status": "generated",
+      "query": "grandmother person",
+      "failure": null
+    }
+  ]
+}

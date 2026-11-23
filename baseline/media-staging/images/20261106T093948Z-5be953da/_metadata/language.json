@@ -1,0 +1,21 @@
+{
+  "word": "language",
+  "search_query": "language object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://image.slidesharecdn.com/whatislanguage-130605162257-phpapp02/75/What-is-Language-5-2048.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.wwZLVG-iczDk19w8gTPkdQHaFj&pid=15.1",
+  "source_page_url": "https://www.slideshare.net/slideshow/what-is-language-22508509/22508509",
+  "title": "What is Language | PPTX",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 3.9140625
+  }
+}

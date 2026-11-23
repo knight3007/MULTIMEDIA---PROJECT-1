@@ -1,0 +1,1750 @@
+{
+  "schema_version": 1,
+  "run_id": "20261106-image-query-v1",
+  "input_hashes": {
+    "data/vocabulary/en.txt": "329288167d7c62ff34e6c2490a642533d6c9f756e89bac955a86e3515a990b04",
+    "data/vocabulary/jp.txt": "7353198d89812c6ca2f3aa949638580d033a84de80a7db8f3a176cfdbcece542",
+    "data/vocabulary/vn.txt": "00b40d8d6b78d089b400210dac0aa71f60390d8aea72ba33caa9c274996f5a4f",
+    "data/vocabulary/id_registry_v1.json": "ecc5ee5322ea6ba8bb7f1f23a2e815c8587ea3e36c5d68145711359455960699",
+    "data/vocabulary/semantic_decisions_v1.json": "a8c23bb756c6f40c980bb55206d3610813064fee06b72b29f122de16a1aa5009",
+    "data/vocabulary/unified_dataset_v1.json": "644c2dc9899077dad15d2e2916d7dc3d1cef49ecd151ea406115bb3da19481bd",
+    "reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/02_qwen_queries_100.json": "2dd9357aeec2cef600eff003540762e796283c85168475476c61e837453c426b",
+    "data/query/generated_qwen.json": "ea06b45dea9022a20dead0909b57071342150b3f0eef905b0ce1d9ef93edc3b7",
+    "data/query/generated_qwen_water_beverage.json": "ea06b45dea9022a20dead0909b57071342150b3f0eef905b0ce1d9ef93edc3b7",
+    "baseline/media-staging/image-queries/generated_qwen_full_v1.json": "4706df7585fdebd06021d3be3a04c12f9b51ab0d6bc4603d57ce90c86b80afca",
+    "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json": "49c38ac000b98a1a223e1c4a9de271dd2da04e07664eac75def98fedd1243005",
+    "collect data script/query_generator.py": "dbc7d65ccead461750b465503faf2fe8fdad47953de784f030bcdef0de34459d",
+    "collect data script/stage_vocabulary_images.py": "0ec2c52c88121891eedd355873203125b2c32312c5ec9e1815934067fc53fd92",
+    "collect data script/dataset_builder.py": "1f65d337d2710daff7ce8b1302d9bf300d5d19af00dd5d73d198c26672a6887d",
+    "collect data script/semantic_decisions.py": "657690f02488c746bbc75907b038b70497d1332b8b1daa0fe5cd2491e389012e",
+    "collect data script/vocabulary_registry.py": "6db9270571f7665bf64edfbe1f899aaec5c63c8d2ba269564b4602967c47c9ac"
+  },
+  "records": [
+    {
+      "vocab_id": "vocab-000004",
+      "source_row_index": 4,
+      "english": "rice",
+      "japanese": {
+        "display": "ごはん",
+        "reading": "ごはん",
+        "written_form": null
+      },
+      "vietnamese": "cơm",
+      "semantic_review_status": "approved",
+      "target_sense": "cooked rice",
+      "image_search_intent": "cooked rice",
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "rice grain",
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000004",
+        "raw_decoded_text": "rice grain",
+        "raw_attempts": [
+          {
+            "word": "rice",
+            "correction_prompt": null,
+            "raw_decoded_text": "rice grain",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "rice grain",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 42.773,
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000004",
+        "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"cooked rice\",\n  \"visual_description\": \"A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image captures the target sense of cooked rice as a concrete object, with no misleading elements.\"\n}",
+        "parsed": {
+          "visual_type": "concrete_object",
+          "search_query": "cooked rice",
+          "visual_description": "A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice",
+          "negative_constraints": [],
+          "reason": "The image captures the target sense of cooked rice as a concrete object, with no misleading elements."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 21.092,
+        "parsed_query": "cooked rice",
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved"
+      }
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "source_row_index": 9,
+      "english": "chicken",
+      "japanese": {
+        "display": "とりにく",
+        "reading": "とりにく",
+        "written_form": null
+      },
+      "vietnamese": "thịt gà",
+      "semantic_review_status": "approved",
+      "target_sense": "chicken meat",
+      "image_search_intent": "chicken meat",
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "chicken animal",
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000009",
+        "raw_decoded_text": "chicken animal",
+        "raw_attempts": [
+          {
+            "word": "chicken",
+            "correction_prompt": null,
+            "raw_decoded_text": "chicken animal",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "chicken animal",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.691,
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000009",
+        "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"chicken meat\",\n  \"visual_description\": \"A visible slice of chicken meat, showing the texture and color of the flesh.\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "concrete_object",
+          "search_query": "chicken meat",
+          "visual_description": "A visible slice of chicken meat, showing the texture and color of the flesh.",
+          "negative_constraints": [],
+          "reason": "The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 27.582,
+        "parsed_query": "chicken meat",
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved"
+      }
+    },
+    {
+      "vocab_id": "vocab-000019",
+      "source_row_index": 19,
+      "english": "rain",
+      "japanese": {
+        "display": "あめ",
+        "reading": "あめ",
+        "written_form": "雨"
+      },
+      "vietnamese": "mưa",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "あめ can also mean candy; 雨 denotes rain.",
+      "annotation_status": "context_added_pending_review",
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "rain illumination",
+        "effective_search_query": "rain illumination",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000019",
+        "raw_decoded_text": "rain illumination",
+        "raw_attempts": [
+          {
+            "word": "rain",
+            "correction_prompt": null,
+            "raw_decoded_text": "rain illumination",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "rain illumination",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.404,
+        "effective_search_query": "rain illumination",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000019",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"rain\",\n  \"visual_description\": \"A person standing under an umbrella during a rainy day\",\n  \"negative_constraints\": [\"not a literal photo of rain\", \"not a photo of candy\"],\n  \"reason\": \"The image shows a person under an umbrella during rain, which represents the action of rain in a visual context. The uncertainty lies in the target sense of 'rain' as both weather and candy, which is not fully clear from the provided information.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "rain",
+          "visual_description": "A person standing under an umbrella during a rainy day",
+          "negative_constraints": [
+            "not a literal photo of rain",
+            "not a photo of candy"
+          ],
+          "reason": "The image shows a person under an umbrella during rain, which represents the action of rain in a visual context. The uncertainty lies in the target sense of 'rain' as both weather and candy, which is not fully clear from the provided information."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 35.007,
+        "parsed_query": "rain",
+        "effective_search_query": "rain",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000035",
+      "source_row_index": 35,
+      "english": "shirt",
+      "japanese": {
+        "display": "シャツ",
+        "reading": "シャツ",
+        "written_form": null
+      },
+      "vietnamese": "áo sơ mi",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "Vietnamese áo sơ mi is narrower than general English shirt; intended garment type needs review.",
+      "annotation_status": "context_added_pending_review",
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "shirt clothing",
+        "effective_search_query": "shirt clothing",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000035",
+        "raw_decoded_text": "shirt clothing",
+        "raw_attempts": [
+          {
+            "word": "shirt",
+            "correction_prompt": null,
+            "raw_decoded_text": "shirt clothing",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "shirt clothing",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.763,
+        "effective_search_query": "shirt clothing",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000035",
+        "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"shirt\",\n  \"visual_description\": \"A white shirt worn by a person standing in a typical clothing store\",\n  \"negative_constraints\": [\"not a clothing item\", \"not a specific type of shirt\"],\n  \"reason\": \"The image should show a specific type of shirt (e.g., formal or casual) to distinguish it from a general shirt. The semantic review status indicates uncertainty in the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "concrete_object",
+          "search_query": "shirt",
+          "visual_description": "A white shirt worn by a person standing in a typical clothing store",
+          "negative_constraints": [
+            "not a clothing item",
+            "not a specific type of shirt"
+          ],
+          "reason": "The image should show a specific type of shirt (e.g., formal or casual) to distinguish it from a general shirt. The semantic review status indicates uncertainty in the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 28.8,
+        "parsed_query": "shirt",
+        "effective_search_query": "shirt",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000041",
+      "source_row_index": 41,
+      "english": "today",
+      "japanese": {
+        "display": "きょう",
+        "reading": "きょう",
+        "written_form": null
+      },
+      "vietnamese": "hôm nay",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "today timepiece",
+        "effective_search_query": "today timepiece",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000041",
+        "raw_decoded_text": "today timepiece",
+        "raw_attempts": [
+          {
+            "word": "today",
+            "correction_prompt": null,
+            "raw_decoded_text": "today timepiece",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "today timepiece",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.896,
+        "effective_search_query": "today timepiece",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000041",
+        "raw_decoded_text": "{\n  \"visual_type\": \"time_weather\",\n  \"search_query\": \"a calendar showing today's date\",\n  \"visual_description\": \"A calendar displaying the current day with the date marked clearly\",\n  \"negative_constraints\": [\"no time indicators\", \"no weather elements\"],\n  \"reason\": \"The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "time_weather",
+          "search_query": "a calendar showing today's date",
+          "visual_description": "A calendar displaying the current day with the date marked clearly",
+          "negative_constraints": [
+            "no time indicators",
+            "no weather elements"
+          ],
+          "reason": "The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 28.239,
+        "parsed_query": "a calendar showing today's date",
+        "effective_search_query": "a calendar showing today's date",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000042",
+      "source_row_index": 42,
+      "english": "tomorrow",
+      "japanese": {
+        "display": "あした",
+        "reading": "あした",
+        "written_form": null
+      },
+      "vietnamese": "ngày mai",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "tomorrow timepiece",
+        "effective_search_query": "tomorrow timepiece",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000042",
+        "raw_decoded_text": "tomorrow timepiece",
+        "raw_attempts": [
+          {
+            "word": "tomorrow",
+            "correction_prompt": null,
+            "raw_decoded_text": "tomorrow timepiece",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "tomorrow timepiece",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 6.112,
+        "effective_search_query": "tomorrow timepiece",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000042",
+        "raw_decoded_text": "{\n  \"visual_type\": \"time_weather\",\n  \"search_query\": \"a calendar showing a future date\",\n  \"visual_description\": \"A calendar displaying a future date with a day marked as 'tomorrow'\",\n  \"negative_constraints\": [\"no time indicators\", \"no visual representation of the day\"],\n  \"reason\": \"A calendar showing a future date is a provisional depiction of 'tomorrow' and may not accurately represent the actual time.\"\n}",
+        "parsed": {
+          "visual_type": "time_weather",
+          "search_query": "a calendar showing a future date",
+          "visual_description": "A calendar displaying a future date with a day marked as 'tomorrow'",
+          "negative_constraints": [
+            "no time indicators",
+            "no visual representation of the day"
+          ],
+          "reason": "A calendar showing a future date is a provisional depiction of 'tomorrow' and may not accurately represent the actual time."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 21.692,
+        "parsed_query": "a calendar showing a future date",
+        "effective_search_query": "a calendar showing a future date",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000043",
+      "source_row_index": 43,
+      "english": "yesterday",
+      "japanese": {
+        "display": "きのう",
+        "reading": "きのう",
+        "written_form": null
+      },
+      "vietnamese": "hôm qua",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "yesterday place",
+        "effective_search_query": "yesterday place",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000043",
+        "raw_decoded_text": "yesterday place",
+        "raw_attempts": [
+          {
+            "word": "yesterday",
+            "correction_prompt": null,
+            "raw_decoded_text": "yesterday place",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "yesterday place",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.845,
+        "effective_search_query": "yesterday place",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000043",
+        "raw_decoded_text": "{\n  \"visual_type\": \"time_weather\",\n  \"search_query\": \"a calendar showing a day before today\",\n  \"visual_description\": \"A calendar displaying a day before today with a date marker and a sun icon\",\n  \"negative_constraints\": [\"no time markers\", \"no sun icon\"],\n  \"reason\": \"A calendar showing a day before today is an appropriate visual for the concept of 'yesterday' in the target sense, with uncertainty about the exact representation of time.\"\n}",
+        "parsed": {
+          "visual_type": "time_weather",
+          "search_query": "a calendar showing a day before today",
+          "visual_description": "A calendar displaying a day before today with a date marker and a sun icon",
+          "negative_constraints": [
+            "no time markers",
+            "no sun icon"
+          ],
+          "reason": "A calendar showing a day before today is an appropriate visual for the concept of 'yesterday' in the target sense, with uncertainty about the exact representation of time."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 28.541,
+        "parsed_query": "a calendar showing a day before today",
+        "effective_search_query": "a calendar showing a day before today",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000047",
+      "source_row_index": 47,
+      "english": "easy",
+      "japanese": {
+        "display": "やさしい",
+        "reading": "やさしい",
+        "written_form": "易しい"
+      },
+      "vietnamese": "dễ",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "やさしい may mean easy or kind; 易しい denotes not difficult.",
+      "annotation_status": "context_added_pending_review",
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "easy object",
+        "effective_search_query": "easy object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000047",
+        "raw_decoded_text": "easy object",
+        "raw_attempts": [
+          {
+            "word": "easy",
+            "correction_prompt": null,
+            "raw_decoded_text": "easy object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "easy object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.475,
+        "effective_search_query": "easy object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000047",
+        "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"easy in a learning context\",\n  \"visual_description\": \"A simple, clear illustration of a learning concept, such as a child learning to read or a student solving a math problem.\",\n  \"negative_constraints\": [\"avoid abstract concepts not related to learning\"],\n  \"reason\": \"The image should represent a clear, straightforward learning scenario to convey the meaning of 'easy' in a practical context.\"\n}",
+        "parsed": {
+          "visual_type": "educational_visual",
+          "search_query": "easy in a learning context",
+          "visual_description": "A simple, clear illustration of a learning concept, such as a child learning to read or a student solving a math problem.",
+          "negative_constraints": [
+            "avoid abstract concepts not related to learning"
+          ],
+          "reason": "The image should represent a clear, straightforward learning scenario to convey the meaning of 'easy' in a practical context."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 24.312,
+        "parsed_query": "easy in a learning context",
+        "effective_search_query": "easy in a learning context",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000048",
+      "source_row_index": 48,
+      "english": "difficult",
+      "japanese": {
+        "display": "むずかしい",
+        "reading": "むずかしい",
+        "written_form": null
+      },
+      "vietnamese": "khó",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "difficult object",
+        "effective_search_query": "difficult object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000048",
+        "raw_decoded_text": "difficult object",
+        "raw_attempts": [
+          {
+            "word": "difficult",
+            "correction_prompt": null,
+            "raw_decoded_text": "difficult object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "difficult object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.847,
+        "effective_search_query": "difficult object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000048",
+        "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"difficult concept\",\n  \"visual_description\": \"A person looking at a complex puzzle or a challenging task.\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image depicts a challenging task, which aligns with the abstract concept of 'difficult' in a educational context.\"\n}",
+        "parsed": {
+          "visual_type": "abstract_concept",
+          "search_query": "difficult concept",
+          "visual_description": "A person looking at a complex puzzle or a challenging task.",
+          "negative_constraints": [],
+          "reason": "The image depicts a challenging task, which aligns with the abstract concept of 'difficult' in a educational context."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 18.449,
+        "parsed_query": "difficult concept",
+        "effective_search_query": "difficult concept",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000049",
+      "source_row_index": 49,
+      "english": "beautiful",
+      "japanese": {
+        "display": "きれい",
+        "reading": "きれい",
+        "written_form": null
+      },
+      "vietnamese": "đẹp",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "きれい can describe beauty or cleanliness; context determines the meaning.",
+      "annotation_status": "context_added_pending_review",
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "beautiful object",
+        "effective_search_query": "beautiful object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000049",
+        "raw_decoded_text": "beautiful object",
+        "raw_attempts": [
+          {
+            "word": "beautiful",
+            "correction_prompt": null,
+            "raw_decoded_text": "beautiful object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "beautiful object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.877,
+        "effective_search_query": "beautiful object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000049",
+        "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"beautiful scenery\",\n  \"visual_description\": \"A serene landscape with vibrant colors and natural elements representing beauty\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a real object\"],\n  \"reason\": \"The image should represent the abstract concept of beauty, with a focus on visual harmony and natural elements, while avoiding misleading or non-literal interpretations.\"\n}",
+        "parsed": {
+          "visual_type": "abstract_concept",
+          "search_query": "beautiful scenery",
+          "visual_description": "A serene landscape with vibrant colors and natural elements representing beauty",
+          "negative_constraints": [
+            "not a literal photo",
+            "not a real object"
+          ],
+          "reason": "The image should represent the abstract concept of beauty, with a focus on visual harmony and natural elements, while avoiding misleading or non-literal interpretations."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 26.424,
+        "parsed_query": "beautiful scenery",
+        "effective_search_query": "beautiful scenery",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000050",
+      "source_row_index": 50,
+      "english": "strong",
+      "japanese": {
+        "display": "つよい",
+        "reading": "つよい",
+        "written_form": null
+      },
+      "vietnamese": "mạnh",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "strong object",
+        "effective_search_query": "strong object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000050",
+        "raw_decoded_text": "strong object",
+        "raw_attempts": [
+          {
+            "word": "strong",
+            "correction_prompt": null,
+            "raw_decoded_text": "strong object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "strong object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.764,
+        "effective_search_query": "strong object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000050",
+        "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"a strong feeling or force\",\n  \"visual_description\": \"A person standing confidently with a determined expression, surrounded by a visual representation of strength (e.g., a mountain or a powerful object)\",\n  \"negative_constraints\": [\"not a literal image of a physical object\", \"avoid abstract concepts that are too vague\"],\n  \"reason\": \"The image should represent the concept of strength in a visual form that is clear and educational, while avoiding ambiguous or misleading representations.\"\n}",
+        "parsed": {
+          "visual_type": "abstract_concept",
+          "search_query": "a strong feeling or force",
+          "visual_description": "A person standing confidently with a determined expression, surrounded by a visual representation of strength (e.g., a mountain or a powerful object)",
+          "negative_constraints": [
+            "not a literal image of a physical object",
+            "avoid abstract concepts that are too vague"
+          ],
+          "reason": "The image should represent the concept of strength in a visual form that is clear and educational, while avoiding ambiguous or misleading representations."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 25.829,
+        "parsed_query": "a strong feeling or force",
+        "effective_search_query": "a strong feeling or force",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000051",
+      "source_row_index": 51,
+      "english": "go",
+      "japanese": {
+        "display": "いく",
+        "reading": "いく",
+        "written_form": null
+      },
+      "vietnamese": "đi",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": "person going",
+        "raw_model_query": "person going",
+        "effective_search_query": "person going",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000051",
+        "raw_decoded_text": "go verb",
+        "raw_attempts": [
+          {
+            "word": "go",
+            "correction_prompt": null,
+            "raw_decoded_text": "go verb",
+            "ended_with_eos": true
+          },
+          {
+            "word": "go",
+            "correction_prompt": "The previous answer failed validation. Start over without copying it. Preserve the input as the target. For a concrete noun, use the input exactly once followed only by one broad semantic class. Do not enumerate alternatives, synonyms, or related objects. Do not repeat words or place singular and plural forms together; use no icon for a physical subject. Output only lowercase English words.",
+            "raw_decoded_text": "go verb",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": null,
+        "validation_status": "invalid",
+        "error": "Qwen output for 'go' after one retry: Qwen returned meta text instead of concrete search terms: 'go verb'",
+        "ended_with_eos": true,
+        "duration_seconds": 11.73,
+        "effective_search_query": null,
+        "query_provenance": null
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000051",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"a person walking\",\n  \"visual_description\": \"A person walking across a grassy field, moving forward with a determined expression\",\n  \"negative_constraints\": [\"no background elements\", \"no lighting effects\"],\n  \"reason\": \"The depiction shows a person performing the action of walking, which is the target sense for the word 'go' in the context of movement. The uncertainty arises from the lack of specific details in the target sense, which may require further clarification.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "a person walking",
+          "visual_description": "A person walking across a grassy field, moving forward with a determined expression",
+          "negative_constraints": [
+            "no background elements",
+            "no lighting effects"
+          ],
+          "reason": "The depiction shows a person performing the action of walking, which is the target sense for the word 'go' in the context of movement. The uncertainty arises from the lack of specific details in the target sense, which may require further clarification."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 27.758,
+        "parsed_query": "a person walking",
+        "effective_search_query": "a person walking",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000053",
+      "source_row_index": 53,
+      "english": "write",
+      "japanese": {
+        "display": "かく",
+        "reading": "かく",
+        "written_form": "書く"
+      },
+      "vietnamese": "viết",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "かく can refer to writing or drawing; 書く denotes writing text.",
+      "annotation_status": "context_added_pending_review",
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "write action",
+        "effective_search_query": "write action",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000053",
+        "raw_decoded_text": "write action",
+        "raw_attempts": [
+          {
+            "word": "write",
+            "correction_prompt": null,
+            "raw_decoded_text": "write action",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "write action",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.807,
+        "effective_search_query": "write action",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000053",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person writing\",\n  \"visual_description\": \"A person holding a pen and writing on a paper\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a textbook illustration\"],\n  \"reason\": \"The image shows a person performing the action of writing, which aligns with the target sense of 'write' in the context of writing text, while the alternative meaning of 'draw' is not shown.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person writing",
+          "visual_description": "A person holding a pen and writing on a paper",
+          "negative_constraints": [
+            "not a literal photo",
+            "not a textbook illustration"
+          ],
+          "reason": "The image shows a person performing the action of writing, which aligns with the target sense of 'write' in the context of writing text, while the alternative meaning of 'draw' is not shown."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 24.445,
+        "parsed_query": "person writing",
+        "effective_search_query": "person writing",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000054",
+      "source_row_index": 54,
+      "english": "study",
+      "japanese": {
+        "display": "べんきょうする",
+        "reading": "べんきょうする",
+        "written_form": null
+      },
+      "vietnamese": "học tập",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "study object",
+        "effective_search_query": "study object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000054",
+        "raw_decoded_text": "study object",
+        "raw_attempts": [
+          {
+            "word": "study",
+            "correction_prompt": null,
+            "raw_decoded_text": "study object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "study object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.533,
+        "effective_search_query": "study object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000054",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person studying\",\n  \"visual_description\": \"A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand\",\n  \"negative_constraints\": [\"no background noise\", \"no lighting issues\"],\n  \"reason\": \"A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person studying",
+          "visual_description": "A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand",
+          "negative_constraints": [
+            "no background noise",
+            "no lighting issues"
+          ],
+          "reason": "A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 23.411,
+        "parsed_query": "person studying",
+        "effective_search_query": "person studying",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000055",
+      "source_row_index": 55,
+      "english": "work",
+      "japanese": {
+        "display": "はたらく",
+        "reading": "はたらく",
+        "written_form": null
+      },
+      "vietnamese": "làm việc",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "work object",
+        "effective_search_query": "work object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000055",
+        "raw_decoded_text": "work object",
+        "raw_attempts": [
+          {
+            "word": "work",
+            "correction_prompt": null,
+            "raw_decoded_text": "work object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "work object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.518,
+        "effective_search_query": "work object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000055",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person working\",\n  \"visual_description\": \"A person performing a task in a workplace\",\n  \"negative_constraints\": [\"non-literal imagery\", \"abstract concepts\"],\n  \"reason\": \"The depiction shows a person performing an action, which is a common way to represent 'work' in educational visuals.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person working",
+          "visual_description": "A person performing a task in a workplace",
+          "negative_constraints": [
+            "non-literal imagery",
+            "abstract concepts"
+          ],
+          "reason": "The depiction shows a person performing an action, which is a common way to represent 'work' in educational visuals."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 19.188,
+        "parsed_query": "person working",
+        "effective_search_query": "person working",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000061",
+      "source_row_index": 61,
+      "english": "understand",
+      "japanese": {
+        "display": "わかる",
+        "reading": "わかる",
+        "written_form": null
+      },
+      "vietnamese": "hiểu",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "understand action",
+        "effective_search_query": "understand action",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000061",
+        "raw_decoded_text": "understand action",
+        "raw_attempts": [
+          {
+            "word": "understand",
+            "correction_prompt": null,
+            "raw_decoded_text": "understand action",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "understand action",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.706,
+        "effective_search_query": "understand action",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000061",
+        "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"person understanding a concept\",\n  \"visual_description\": \"A teacher demonstrating a concept to a group of students, showing a clear visual of the learning process\",\n  \"negative_constraints\": [\"no literal images of abstract concepts\", \"no images of actions in a literal sense\"],\n  \"reason\": \"The visual depicts a person demonstrating understanding, which aligns with the target sense of 'understand' in an educational context, but the semantic review status indicates uncertainty about the exact meaning.\"\n}",
+        "parsed": {
+          "visual_type": "educational_visual",
+          "search_query": "person understanding a concept",
+          "visual_description": "A teacher demonstrating a concept to a group of students, showing a clear visual of the learning process",
+          "negative_constraints": [
+            "no literal images of abstract concepts",
+            "no images of actions in a literal sense"
+          ],
+          "reason": "The visual depicts a person demonstrating understanding, which aligns with the target sense of 'understand' in an educational context, but the semantic review status indicates uncertainty about the exact meaning."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 28.521,
+        "parsed_query": "person understanding a concept",
+        "effective_search_query": "person understanding a concept",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000062",
+      "source_row_index": 62,
+      "english": "remember",
+      "japanese": {
+        "display": "おぼえる",
+        "reading": "おぼえる",
+        "written_form": null
+      },
+      "vietnamese": "nhớ",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "remember object",
+        "effective_search_query": "remember object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000062",
+        "raw_decoded_text": "remember object",
+        "raw_attempts": [
+          {
+            "word": "remember",
+            "correction_prompt": null,
+            "raw_decoded_text": "remember object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "remember object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.491,
+        "effective_search_query": "remember object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000062",
+        "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"person remembering information\",\n  \"visual_description\": \"A person looking at a book or screen with a focused expression, showing they are trying to recall information\",\n  \"negative_constraints\": [\"no action\", \"no emotion\", \"no object\"],\n  \"reason\": \"The depiction shows a person engaged in the action of remembering, which aligns with the target sense of 'remember' in an educational context. The uncertainty is in the exact visual representation of the cognitive process, which may vary based on the learner's individual experience.\"\n}",
+        "parsed": {
+          "visual_type": "educational_visual",
+          "search_query": "person remembering information",
+          "visual_description": "A person looking at a book or screen with a focused expression, showing they are trying to recall information",
+          "negative_constraints": [
+            "no action",
+            "no emotion",
+            "no object"
+          ],
+          "reason": "The depiction shows a person engaged in the action of remembering, which aligns with the target sense of 'remember' in an educational context. The uncertainty is in the exact visual representation of the cognitive process, which may vary based on the learner's individual experience."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 29.978,
+        "parsed_query": "person remembering information",
+        "effective_search_query": "person remembering information",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000065",
+      "source_row_index": 65,
+      "english": "swim",
+      "japanese": {
+        "display": "およぐ",
+        "reading": "およぐ",
+        "written_form": null
+      },
+      "vietnamese": "bơi",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": "person swimming",
+        "raw_model_query": "person swimming",
+        "effective_search_query": "person swimming",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000065",
+        "raw_decoded_text": "swim verb",
+        "raw_attempts": [
+          {
+            "word": "swim",
+            "correction_prompt": null,
+            "raw_decoded_text": "swim verb",
+            "ended_with_eos": true
+          },
+          {
+            "word": "swim",
+            "correction_prompt": "The previous answer failed validation. Start over without copying it. Preserve the input as the target. For a concrete noun, use the input exactly once followed only by one broad semantic class. Do not enumerate alternatives, synonyms, or related objects. Do not repeat words or place singular and plural forms together; use no icon for a physical subject. Output only lowercase English words.",
+            "raw_decoded_text": "swim verb",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": null,
+        "validation_status": "invalid",
+        "error": "Qwen output for 'swim' after one retry: Qwen returned meta text instead of concrete search terms: 'swim verb'",
+        "ended_with_eos": true,
+        "duration_seconds": 12.064,
+        "effective_search_query": null,
+        "query_provenance": null
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000065",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"a person swimming in a pool\",\n  \"visual_description\": \"A person performing the action of swimming in a pool, showing the motion and the water environment\",\n  \"negative_constraints\": [\"no action visible\", \"no water depicted\"],\n  \"reason\": \"The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "a person swimming in a pool",
+          "visual_description": "A person performing the action of swimming in a pool, showing the motion and the water environment",
+          "negative_constraints": [
+            "no action visible",
+            "no water depicted"
+          ],
+          "reason": "The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 31.449,
+        "parsed_query": "a person swimming in a pool",
+        "effective_search_query": "a person swimming in a pool",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000066",
+      "source_row_index": 66,
+      "english": "software",
+      "japanese": {
+        "display": "ソフトウェア",
+        "reading": "ソフトウェア",
+        "written_form": null
+      },
+      "vietnamese": "phần mềm",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "software device",
+        "effective_search_query": "software device",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000066",
+        "raw_decoded_text": "software device",
+        "raw_attempts": [
+          {
+            "word": "software",
+            "correction_prompt": null,
+            "raw_decoded_text": "software device",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "software device",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.593,
+        "effective_search_query": "software device",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000066",
+        "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"software\",\n  \"visual_description\": \"A digital interface with icons and text representing a program or application\",\n  \"negative_constraints\": [],\n  \"reason\": \"The target sense is unreviewed, so the depiction is provisional and uncertain.\"\n}",
+        "parsed": {
+          "visual_type": "abstract_concept",
+          "search_query": "software",
+          "visual_description": "A digital interface with icons and text representing a program or application",
+          "negative_constraints": [],
+          "reason": "The target sense is unreviewed, so the depiction is provisional and uncertain."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 18.644,
+        "parsed_query": "software",
+        "effective_search_query": "software",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000067",
+      "source_row_index": 67,
+      "english": "database",
+      "japanese": {
+        "display": "データベース",
+        "reading": "データベース",
+        "written_form": null
+      },
+      "vietnamese": "cơ sở dữ liệu",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "database object",
+        "effective_search_query": "database object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000067",
+        "raw_decoded_text": "database object",
+        "raw_attempts": [
+          {
+            "word": "database",
+            "correction_prompt": null,
+            "raw_decoded_text": "database object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "database object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 6.057,
+        "effective_search_query": "database object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000067",
+        "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"database interface\",\n  \"visual_description\": \"A screen displaying a database structure with icons and labels for data organization\",\n  \"negative_constraints\": [\"non-literal imagery\", \"abstract concepts not visually represented\"],\n  \"reason\": \"A database interface is an educational visual that represents the concept of a database, but the semantic review status indicates uncertainty about the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "educational_visual",
+          "search_query": "database interface",
+          "visual_description": "A screen displaying a database structure with icons and labels for data organization",
+          "negative_constraints": [
+            "non-literal imagery",
+            "abstract concepts not visually represented"
+          ],
+          "reason": "A database interface is an educational visual that represents the concept of a database, but the semantic review status indicates uncertainty about the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 21.159,
+        "parsed_query": "database interface",
+        "effective_search_query": "database interface",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000071",
+      "source_row_index": 71,
+      "english": "problem",
+      "japanese": {
+        "display": "もんだい",
+        "reading": "もんだい",
+        "written_form": null
+      },
+      "vietnamese": "vấn đề",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "problem object",
+        "effective_search_query": "problem object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000071",
+        "raw_decoded_text": "problem object",
+        "raw_attempts": [
+          {
+            "word": "problem",
+            "correction_prompt": null,
+            "raw_decoded_text": "problem object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "problem object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.829,
+        "effective_search_query": "problem object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000071",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person solving a problem\",\n  \"visual_description\": \"A person looking at a puzzle or a complex task, indicating they are trying to solve a problem.\",\n  \"negative_constraints\": [\"no literal photo of a problem\", \"no action of solving a problem\"],\n  \"reason\": \"The depiction shows a person engaged in an action that represents the concept of solving a problem, which is a common way to visualize the idea in educational contexts.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person solving a problem",
+          "visual_description": "A person looking at a puzzle or a complex task, indicating they are trying to solve a problem.",
+          "negative_constraints": [
+            "no literal photo of a problem",
+            "no action of solving a problem"
+          ],
+          "reason": "The depiction shows a person engaged in an action that represents the concept of solving a problem, which is a common way to visualize the idea in educational contexts."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 24.661,
+        "parsed_query": "person solving a problem",
+        "effective_search_query": "person solving a problem",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000074",
+      "source_row_index": 74,
+      "english": "project",
+      "japanese": {
+        "display": "プロジェクト",
+        "reading": "プロジェクト",
+        "written_form": null
+      },
+      "vietnamese": "dự án",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "project object",
+        "effective_search_query": "project object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000074",
+        "raw_decoded_text": "project object",
+        "raw_attempts": [
+          {
+            "word": "project",
+            "correction_prompt": null,
+            "raw_decoded_text": "project object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "project object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.608,
+        "effective_search_query": "project object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000074",
+        "raw_decoded_text": "{\n  \"visual_type\": \"educational_visual\",\n  \"search_query\": \"project in a workspace\",\n  \"visual_description\": \"A person working on a computer with a document open, showing a project management interface\",\n  \"negative_constraints\": [\"not a literal photo\", \"no specific context\"],\n  \"reason\": \"A provisional depiction of a project in a workspace, with uncertainty about the exact meaning due to unreviewed semantic status.\"\n}",
+        "parsed": {
+          "visual_type": "educational_visual",
+          "search_query": "project in a workspace",
+          "visual_description": "A person working on a computer with a document open, showing a project management interface",
+          "negative_constraints": [
+            "not a literal photo",
+            "no specific context"
+          ],
+          "reason": "A provisional depiction of a project in a workspace, with uncertainty about the exact meaning due to unreviewed semantic status."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 21.723,
+        "parsed_query": "project in a workspace",
+        "effective_search_query": "project in a workspace",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000077",
+      "source_row_index": 77,
+      "english": "important",
+      "japanese": {
+        "display": "たいせつ",
+        "reading": "たいせつ",
+        "written_form": null
+      },
+      "vietnamese": "quan trọng",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "important object",
+        "effective_search_query": "important object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000077",
+        "raw_decoded_text": "important object",
+        "raw_attempts": [
+          {
+            "word": "important",
+            "correction_prompt": null,
+            "raw_decoded_text": "important object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "important object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.579,
+        "effective_search_query": "important object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000077",
+        "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"important concept\",\n  \"visual_description\": \"A person holding a book with the word 'important' highlighted in bold text\",\n  \"negative_constraints\": [\"not a literal image\", \"no specific context\"],\n  \"reason\": \"The image should represent a concept that is visually emphasized, but the exact visual representation is pending review.\"\n}",
+        "parsed": {
+          "visual_type": "abstract_concept",
+          "search_query": "important concept",
+          "visual_description": "A person holding a book with the word 'important' highlighted in bold text",
+          "negative_constraints": [
+            "not a literal image",
+            "no specific context"
+          ],
+          "reason": "The image should represent a concept that is visually emphasized, but the exact visual representation is pending review."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 19.751,
+        "parsed_query": "important concept",
+        "effective_search_query": "important concept",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000082",
+      "source_row_index": 82,
+      "english": "always",
+      "japanese": {
+        "display": "いつも",
+        "reading": "いつも",
+        "written_form": null
+      },
+      "vietnamese": "luôn luôn",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "annotation_status": null,
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "always object",
+        "effective_search_query": "always object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000082",
+        "raw_decoded_text": "always object",
+        "raw_attempts": [
+          {
+            "word": "always",
+            "correction_prompt": null,
+            "raw_decoded_text": "always object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "always object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.625,
+        "effective_search_query": "always object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000082",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person doing an action repeatedly\",\n  \"visual_description\": \"A person repeatedly performing an action, such as smiling or waving, in a dynamic and clear visual context\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a brand name\", \"not a logo\"],\n  \"reason\": \"The visual depicts a person performing an action repeatedly, which aligns with the semantic review status of 'unreviewed' and the target sense of 'always' as an action verb.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person doing an action repeatedly",
+          "visual_description": "A person repeatedly performing an action, such as smiling or waving, in a dynamic and clear visual context",
+          "negative_constraints": [
+            "not a literal photo",
+            "not a brand name",
+            "not a logo"
+          ],
+          "reason": "The visual depicts a person performing an action repeatedly, which aligns with the semantic review status of 'unreviewed' and the target sense of 'always' as an action verb."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 28.673,
+        "parsed_query": "person doing an action repeatedly",
+        "effective_search_query": "person doing an action repeatedly",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    },
+    {
+      "vocab_id": "vocab-000087",
+      "source_row_index": 87,
+      "english": "hello",
+      "japanese": {
+        "display": "こんにちは",
+        "reading": "こんにちは",
+        "written_form": null
+      },
+      "vietnamese": "xin chào",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "こんにちは is commonly a daytime greeting.",
+      "annotation_status": "context_added_pending_review",
+      "historical": {
+        "raw_decoded_text": null,
+        "raw_model_query": "hello object",
+        "effective_search_query": "hello object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_a": {
+        "schema_version": 1,
+        "variant": "a",
+        "vocab_id": "vocab-000087",
+        "raw_decoded_text": "hello object",
+        "raw_attempts": [
+          {
+            "word": "hello",
+            "correction_prompt": null,
+            "raw_decoded_text": "hello object",
+            "ended_with_eos": true
+          }
+        ],
+        "parsed_query": "hello object",
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 5.61,
+        "effective_search_query": "hello object",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "variant_b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000087",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person greeting with hand towards face\",\n  \"visual_description\": \"A person extending their hand towards their face, making a greeting gesture\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a real person\"],\n  \"reason\": \"The gesture is a common way to greet in Japanese, but the image should focus on the action rather than a literal photo of a person\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person greeting with hand towards face",
+          "visual_description": "A person extending their hand towards their face, making a greeting gesture",
+          "negative_constraints": [
+            "not a literal photo",
+            "not a real person"
+          ],
+          "reason": "The gesture is a common way to greet in Japanese, but the image should focus on the action rather than a literal photo of a person"
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 23.292,
+        "parsed_query": "person greeting with hand towards face",
+        "effective_search_query": "person greeting with hand towards face",
+        "query_provenance": "model_generated_unreviewed"
+      }
+    }
+  ]
+}

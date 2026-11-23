@@ -1,0 +1,21 @@
+{
+  "word": "tomorrow",
+  "search_query": "tomorrow timepiece",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.ytimg.com/vi/phrrQPh1NQ4/maxresdefault.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.f8ek4q4lvQ5Uy6E3O6KdIwHaEK&pid=15.1",
+  "source_page_url": "https://www.youtube.com/watch?v=phrrQPh1NQ4",
+  "title": "Timepieces for Tomorrow LIVE SHOW - Episode #9 - Best Watches to Buy ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "YouTube",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.7890625
+  }
+}

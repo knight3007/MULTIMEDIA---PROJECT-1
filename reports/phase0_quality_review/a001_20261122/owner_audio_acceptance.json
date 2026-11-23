@@ -1,0 +1,513 @@
+{
+  "decision_id": "A001-AUDIO-OWNER-20261122",
+  "date": "2026-11-22",
+  "source": "direct user instruction in A-001 session",
+  "statement": "audio đều pass cả không cần review lại chỉ có ảnh là cần xử lý cho chính xác hơn",
+  "status": "CONFIRMED",
+  "scope": "All 100 current audio files mapped by the evaluation inventory; owner batch acceptance, not a new independent per-file listening study",
+  "audio_status": "PASS",
+  "new_listening_performed_by_agent": false,
+  "re_review_required": false,
+  "items": [
+    {
+      "vocab_id": "vocab-000001",
+      "path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/りんご.mp3",
+      "sha256": "6a455497070ac66d9c2c7da22cf09181b0d90ecfc40d3e9faa65526a5ca49f07"
+    },
+    {
+      "vocab_id": "vocab-000002",
+      "path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/バナナ.mp3",
+      "sha256": "40f021c5937c13d3b2025841e767cb1a2cf2bd5730ecff60d1607e4873750ae4"
+    },
+    {
+      "vocab_id": "vocab-000003",
+      "path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/いちご.mp3",
+      "sha256": "94552122dbcd8df727ea0ec7873b094e4830e83212ca92ebca0caa6f16db49d9"
+    },
+    {
+      "vocab_id": "vocab-000004",
+      "path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/ごはん.mp3",
+      "sha256": "0480fd9bcc975fb04c780f9857dae3d4bb5298cbd40867649573a56f65db9cbf"
+    },
+    {
+      "vocab_id": "vocab-000005",
+      "path": "baseline/media-staging/audio/20261029T043348Z-0dffcbe2/パン.mp3",
+      "sha256": "caa798268034256e20ae6d183245830d4852ebaf31ffa9db8bbc541cb0a1e663"
+    },
+    {
+      "vocab_id": "vocab-000006",
+      "path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/たまご.mp3",
+      "sha256": "1b719f650b81ce41d95e620d45a1f8561be7c648b8af6522f56d7d7f70e8b430"
+    },
+    {
+      "vocab_id": "vocab-000007",
+      "path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/ぎゅうにゅう.mp3",
+      "sha256": "d0b8a17db1f18d375f480fa3a4bbd4394a05bd634578673a6948819d8c3fff65"
+    },
+    {
+      "vocab_id": "vocab-000008",
+      "path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/みず.mp3",
+      "sha256": "e10c97b88c6228e4054d7b78fa0b63b9d2356e17697b9d98f5bca5e5bfb68694"
+    },
+    {
+      "vocab_id": "vocab-000009",
+      "path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/とりにく.mp3",
+      "sha256": "aa22f2800a7b73fc46fa3172102fde7da4873149aec2020ae1885f240059b93b"
+    },
+    {
+      "vocab_id": "vocab-000010",
+      "path": "baseline/media-staging/audio/20261029T064854Z-e886a24d/あさごはん.mp3",
+      "sha256": "bdf4a28eb1eaded85ad981fb0fa70204cc8a41b379e54399eb315da3ce361f21"
+    },
+    {
+      "vocab_id": "vocab-000011",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/ねこ.mp3",
+      "sha256": "417001f1b04b3accbaa6ae903c28f5560f32970ccc1d016a9dfbd48b7975501c"
+    },
+    {
+      "vocab_id": "vocab-000012",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/いぬ.mp3",
+      "sha256": "3b50dffbbc1fb2b503a40452b008d58f76cc2f4d13d6741547d9758091ecdb1b"
+    },
+    {
+      "vocab_id": "vocab-000013",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/ぞう.mp3",
+      "sha256": "8075358ebd660a042db595e6d14dfb5f8a6a0547d3e20d4fca1444c4268dea01"
+    },
+    {
+      "vocab_id": "vocab-000014",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/き.mp3",
+      "sha256": "fef64347db91fbfc6a52df7701e5febf772a6b12cdd5b1b072025113a4a2c61c"
+    },
+    {
+      "vocab_id": "vocab-000015",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/はな.mp3",
+      "sha256": "5af0a916e12cb71d0a80f9c4fc6addcdf02a46234cb66226a8ac335e51b97f13"
+    },
+    {
+      "vocab_id": "vocab-000016",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/やま.mp3",
+      "sha256": "557266c79f61400dfcc3635a3b4e3bd3deec3a8f9b995da746d042908b7713c1"
+    },
+    {
+      "vocab_id": "vocab-000017",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/かわ.mp3",
+      "sha256": "7e2d1a16b35ff302466fbd12b4fdc32aed96f4c17655e8782535b4e1ed5928ac"
+    },
+    {
+      "vocab_id": "vocab-000018",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/たいよう.mp3",
+      "sha256": "7229794888cfba327a28b5170d0683b657323ee868f1005feaa767e6f29c8b97"
+    },
+    {
+      "vocab_id": "vocab-000019",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/あめ.mp3",
+      "sha256": "4dc00051069576a81bcac0799b19dad67d1643ff8c40ecf0c6699e8d4a86724f"
+    },
+    {
+      "vocab_id": "vocab-000020",
+      "path": "baseline/media-staging/audio/20261106T084604Z-7eae8a7e/てんき.mp3",
+      "sha256": "140ec453470000ff60a870d2d0d20c261cb127b5d8637baa5d6b9881b042db97"
+    },
+    {
+      "vocab_id": "vocab-000021",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/いえ.mp3",
+      "sha256": "5905045f90f59bccb9e0ee265dd2709a664a02a26cf130a467ff74a80be73698"
+    },
+    {
+      "vocab_id": "vocab-000022",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/だいどころ.mp3",
+      "sha256": "d8eb1e4c4a76519b992c33d3a5f57234f65e6605301c926770506dff04e5b515"
+    },
+    {
+      "vocab_id": "vocab-000023",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/がっこう.mp3",
+      "sha256": "681615c566a9844aa78b28235d544a40e36c63a5281d541cdb443b87865ebb3c"
+    },
+    {
+      "vocab_id": "vocab-000024",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/としょかん.mp3",
+      "sha256": "3df78533683a16ea18426c0c0d397ad7a3850a0990ff01992e8c9d11084f7e6d"
+    },
+    {
+      "vocab_id": "vocab-000025",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/びょういん.mp3",
+      "sha256": "12754e8b8a18c23fcfbc9a6a774e40e448e18cbe61efbb0e210442be236ee5d8"
+    },
+    {
+      "vocab_id": "vocab-000026",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/くうこう.mp3",
+      "sha256": "3232dd7d529f3a7623842ea43fdfd055c9f1f20efd2e0b8f431c385aeeaec9a5"
+    },
+    {
+      "vocab_id": "vocab-000027",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/レストラン.mp3",
+      "sha256": "bd003917f22ceef233cab1de8445ea4e0f0cc488e020bd69ff1ef73ad8fc746e"
+    },
+    {
+      "vocab_id": "vocab-000028",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/くるま.mp3",
+      "sha256": "29ba6c8e24045be64c789bf0f6ab0c8f8df69ec214c70fb915110339c9360198"
+    },
+    {
+      "vocab_id": "vocab-000029",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/じてんしゃ.mp3",
+      "sha256": "1342916c8428d8b44bc8ed907a8564c1ca0395feb960a5e0d0836f13e355c46b"
+    },
+    {
+      "vocab_id": "vocab-000030",
+      "path": "baseline/media-staging/audio/20261106T090418Z-d68cc7d3/はし.mp3",
+      "sha256": "5f0d13dd2b4127f0128cd8f2fb22ad9ba35d90fa33e0e02ba7f4abbbd9a8bf91"
+    },
+    {
+      "vocab_id": "vocab-000031",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/ほん.mp3",
+      "sha256": "cdfa2a39af45f63fdc79d4fce3a1a40ed6d4b85d3ecacc777575e4ed60a2521f"
+    },
+    {
+      "vocab_id": "vocab-000032",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/でんわ.mp3",
+      "sha256": "756977eaa6ea05919a6eda131029f3f6256bd2f511d01d68047f0e7a7e496424"
+    },
+    {
+      "vocab_id": "vocab-000033",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/コンピューター.mp3",
+      "sha256": "a7026f71ee58fcbd62bdc909d0b6bf67912ffcc5fccc64c2fad807eaae315954"
+    },
+    {
+      "vocab_id": "vocab-000034",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/かさ.mp3",
+      "sha256": "2793c09e2af0c0a00dea10adca784d5388e34a3dc7a6b9906d1a5facb1deb7a7"
+    },
+    {
+      "vocab_id": "vocab-000035",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/シャツ.mp3",
+      "sha256": "61303fa87250321a86602538fe94b49d1d3908a0c332e748d60cb9dca6325683"
+    },
+    {
+      "vocab_id": "vocab-000036",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/かぞく.mp3",
+      "sha256": "1853174c32510915719979294b4b9b3e968697322b4fabb76a58ebdc1e757f77"
+    },
+    {
+      "vocab_id": "vocab-000037",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/はは.mp3",
+      "sha256": "b2649510e872d62e5fe119c4cb16babffab4b9a3a74e099e90c3c5efb6f96c53"
+    },
+    {
+      "vocab_id": "vocab-000038",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/ともだち.mp3",
+      "sha256": "49933dd64a6f1b017f426e8811d5cd7914a69d4807bff617d46cc10c6f1e8f19"
+    },
+    {
+      "vocab_id": "vocab-000039",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/せんせい.mp3",
+      "sha256": "0692be2fed14cbfddf246ae67be4fead8276b97b56d872f108bb6047a06a1d3f"
+    },
+    {
+      "vocab_id": "vocab-000040",
+      "path": "baseline/media-staging/audio/20261106T090514Z-3e1524e5/エンジニア.mp3",
+      "sha256": "843c080e0af3132ece04c1b25d3777a0b2de57fb26d63c18b9d799204333d4b1"
+    },
+    {
+      "vocab_id": "vocab-000041",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/きょう.mp3",
+      "sha256": "9698020fa4b96417e18086f5a4bd2d0246680aea158e05ff4bfae8aa246e7268"
+    },
+    {
+      "vocab_id": "vocab-000042",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/あした.mp3",
+      "sha256": "2146d0482d8eedb5d141dd09656edc8e4ec898fd9a2b946c4523a403a58bb003"
+    },
+    {
+      "vocab_id": "vocab-000043",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/きのう.mp3",
+      "sha256": "85c40f2e9a6d2d8959a2840c83b4528ba2703dbd6aed419d8186a171780c0b50"
+    },
+    {
+      "vocab_id": "vocab-000044",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/ふゆ.mp3",
+      "sha256": "0502b9c04d8cee078979c3afe0ab787702073044cecf98a91062fa88ef8a9e18"
+    },
+    {
+      "vocab_id": "vocab-000045",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/うれしい.mp3",
+      "sha256": "d4fdf9ddac34a67399649246670303149c1e89d15ad16fb05dca492f825345aa"
+    },
+    {
+      "vocab_id": "vocab-000046",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/おなかがすいた.mp3",
+      "sha256": "e389a415da8957946a8933adc974cfa2feabd98c68505aac3bae7bd9db377bad"
+    },
+    {
+      "vocab_id": "vocab-000047",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/やさしい.mp3",
+      "sha256": "6c57ac188bf76a2fd0824dcf3da567c11bd9e6422cb0676fe3a2d1ac300dd118"
+    },
+    {
+      "vocab_id": "vocab-000048",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/むずかしい.mp3",
+      "sha256": "9a089d709281bca86f4dc5bcfe8672a612ff49fd793ca809c2c19b77fc7efe3a"
+    },
+    {
+      "vocab_id": "vocab-000049",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/きれい.mp3",
+      "sha256": "89537b918beed18158f60505a97b2cdf584d5c81d35c2e8864a5277c84b0fe7a"
+    },
+    {
+      "vocab_id": "vocab-000050",
+      "path": "baseline/media-staging/audio/20261106T090539Z-4a029141/つよい.mp3",
+      "sha256": "57710bc307f330e197105106f26e0dc126b51113fe81aaf6686f20cefc3ea905"
+    },
+    {
+      "vocab_id": "vocab-000051",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/いく.mp3",
+      "sha256": "69693b02af701cbbcbe2436bd48f80f63d1f5d9b8ca42b8b8d524bb09fb9c019"
+    },
+    {
+      "vocab_id": "vocab-000052",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/よむ.mp3",
+      "sha256": "0a51d28d8f109b0f9e49f8d73c8f00f684e4721502f90a89d69af6425cfeb4ff"
+    },
+    {
+      "vocab_id": "vocab-000053",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/かく.mp3",
+      "sha256": "850d5c6bbebab8fe494cd1b775de752b40e59bbb8c0cb292ecfa14eaf1a9a4ca"
+    },
+    {
+      "vocab_id": "vocab-000054",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/べんきょうする.mp3",
+      "sha256": "a06a1eeb8d3b6ac90681f2083326be7a2a2667fdcdffffd4757a2137619853b4"
+    },
+    {
+      "vocab_id": "vocab-000055",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/はたらく.mp3",
+      "sha256": "6440a8a36670cf02110b9485910817e2634ca05529f3848f03d67c737ee396da"
+    },
+    {
+      "vocab_id": "vocab-000056",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/ねる.mp3",
+      "sha256": "2f01d8527cc7e78221aa4fe7fb896583099d60bf92b67390ab5be2e7a33254f4"
+    },
+    {
+      "vocab_id": "vocab-000057",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/たべる.mp3",
+      "sha256": "1880b55274a487bf1fbac70dee7be6399b7d71e5c4c7dcf1fd4a3e25890db53d"
+    },
+    {
+      "vocab_id": "vocab-000058",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/のむ.mp3",
+      "sha256": "39f4077a154c2473256a3961884c2b7332a1c4057debe2fc8b9905f73d851e21"
+    },
+    {
+      "vocab_id": "vocab-000059",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/かう.mp3",
+      "sha256": "a036595546b25d6b18126bcf377e5dbcf2b97f1be7044799cae6671917528e2d"
+    },
+    {
+      "vocab_id": "vocab-000060",
+      "path": "baseline/media-staging/audio/20261106T090614Z-e0de17f1/たすける.mp3",
+      "sha256": "6282295c958ce1046fddcd98b648fa396eee96b3343b81f73c6921cda8457640"
+    },
+    {
+      "vocab_id": "vocab-000061",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/わかる.mp3",
+      "sha256": "5d0b0f2258a57858ef3ef0a8d8b952293d21162d99e0ce7e645b5a025fe982d0"
+    },
+    {
+      "vocab_id": "vocab-000062",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/おぼえる.mp3",
+      "sha256": "704b1e0a23d4b431cc6bbea8657ebe064c9c4e2669415e88a1c2133e8c33b2fe"
+    },
+    {
+      "vocab_id": "vocab-000063",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/うけとる.mp3",
+      "sha256": "7cf7f9808c25782bb604c335412a9ce6960b30e6c8bf358ff9115f84276bfae6"
+    },
+    {
+      "vocab_id": "vocab-000064",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/えらぶ.mp3",
+      "sha256": "39da70ef16ed2848ba4235773fd726bfc32fc6bbb448e0bd61a87e6d79bd37d9"
+    },
+    {
+      "vocab_id": "vocab-000065",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/およぐ.mp3",
+      "sha256": "faf23c5cbec63663a9cca86aac882c64ae3e03847f93d7558f31ab598c6cb070"
+    },
+    {
+      "vocab_id": "vocab-000066",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/ソフトウェア.mp3",
+      "sha256": "3337aad31ccaed6a36d30d646a598edbb180d502c5c84ef4bd88afd69dae88fc"
+    },
+    {
+      "vocab_id": "vocab-000067",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/データベース.mp3",
+      "sha256": "7617ea0c2941ecba130bcdf88f2e3476a08263dfdbb335266b7d391091b09d60"
+    },
+    {
+      "vocab_id": "vocab-000068",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/パスワード.mp3",
+      "sha256": "546cb652cbc1f3ed1a91fd37f86f5287faf0d7347221e8f956bb34af934b745a"
+    },
+    {
+      "vocab_id": "vocab-000069",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/おんがく.mp3",
+      "sha256": "f4d77d4c0543da89959cdb1089645cdfbf7865fe4e341e6d3910d08ec98443ff"
+    },
+    {
+      "vocab_id": "vocab-000070",
+      "path": "baseline/media-staging/audio/20261106T090638Z-5aa78ca3/ことば.mp3",
+      "sha256": "83ddbccf72261536d189e42d898e8cf6bd2bb51fe890f2eee0b62d6589d7d621"
+    },
+    {
+      "vocab_id": "vocab-000071",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/もんだい.mp3",
+      "sha256": "d991366c2e0b7fb78f59666e56db3c8944ab7e4f576d952192685507e7c16329"
+    },
+    {
+      "vocab_id": "vocab-000072",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/ビジネス.mp3",
+      "sha256": "3f30e57bafcd5adf38d64eb70b99bc57f34d0fb4d37a497a2f6cabb85ca14491"
+    },
+    {
+      "vocab_id": "vocab-000073",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/だいがく.mp3",
+      "sha256": "d48d37e6fd1481bc4179a9e97c67785304a6b9be3a3368359e9468721810c6f6"
+    },
+    {
+      "vocab_id": "vocab-000074",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/プロジェクト.mp3",
+      "sha256": "88d5319f4c16fb3c74c3a60c38da4eddefb92e4802be119f2206f2f3d269b338"
+    },
+    {
+      "vocab_id": "vocab-000075",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/けいけん.mp3",
+      "sha256": "c2c21500afd013f97f28492638b10fba0e36c3cf69dab393ebfc82ad065eb366"
+    },
+    {
+      "vocab_id": "vocab-000076",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/やさい.mp3",
+      "sha256": "599795bf53e9860ed3d489749afc01be3ef691e06d37f4fef46eb5458d924c42"
+    },
+    {
+      "vocab_id": "vocab-000077",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/たいせつ.mp3",
+      "sha256": "b4b5b873b9cf798db85a58e50071beb60658bbd110e8d85359171d9d02644d5a"
+    },
+    {
+      "vocab_id": "vocab-000078",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/ちがう.mp3",
+      "sha256": "2f0c64ead7465dd4fad20885f105b549675b2192caf5847d406680e53228a505"
+    },
+    {
+      "vocab_id": "vocab-000079",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/あぶない.mp3",
+      "sha256": "fe5a222107e1012f1a62619f2f7d4c5b6bf7be88a372ac3e8f076c06ff5ddf57"
+    },
+    {
+      "vocab_id": "vocab-000080",
+      "path": "baseline/media-staging/audio/20261106T090712Z-c327a11a/ふかのう.mp3",
+      "sha256": "27795c0641520e8d5add54f6b0a159fe67853f97b2af1bbb2bd03388317252f8"
+    },
+    {
+      "vocab_id": "vocab-000081",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/なぜなら.mp3",
+      "sha256": "9069444cee9fafd1486a2964c5c1e642d0b2dab822073e08c790548bdc220477"
+    },
+    {
+      "vocab_id": "vocab-000082",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/いつも.mp3",
+      "sha256": "5972e7a1f8577d86fa5e69b53f2ea03cb70b60098b475fd30ec360652f4533c2"
+    },
+    {
+      "vocab_id": "vocab-000083",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/ときどき.mp3",
+      "sha256": "a9cba7791d636a7397aa3b9bf2222f70526de0f27ac9538f21e2eda8f168c39b"
+    },
+    {
+      "vocab_id": "vocab-000084",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/いっしょに.mp3",
+      "sha256": "bf7fbf636e4f2e19410f9dbbdd84a39cd0a14bed4ed61f9ed41064aebf809b18"
+    },
+    {
+      "vocab_id": "vocab-000085",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/どこ.mp3",
+      "sha256": "2e72e56ad204b91fcf4fd164417b22257650ec21a244525dc36e621c30d50586"
+    },
+    {
+      "vocab_id": "vocab-000086",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/なぜ.mp3",
+      "sha256": "54472d0a6ed479e79ffac1d29b18516a1788e7ee498c3ac3e33b0612e892be64"
+    },
+    {
+      "vocab_id": "vocab-000087",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/こんにちは.mp3",
+      "sha256": "8113524e3d11e4bc77aa9fa91cfe142b404e4560b95502741711d44c551a8d00"
+    },
+    {
+      "vocab_id": "vocab-000088",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/おねがいします.mp3",
+      "sha256": "15218d20204465e4b79008d2a68e941626680687db21d59f79bd5efb797600f0"
+    },
+    {
+      "vocab_id": "vocab-000089",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/ありがとう.mp3",
+      "sha256": "483677763082d950a156ee391938f8aa48b2d72a6f08dca2116a302a5863a2b6"
+    },
+    {
+      "vocab_id": "vocab-000090",
+      "path": "baseline/media-staging/audio/20261106T090735Z-e2fd33b3/すみません.mp3",
+      "sha256": "8b1de347dff1a6b1c58d429ada4f996570fa7728adc058cf761bbb3aeb9f885d"
+    },
+    {
+      "vocab_id": "vocab-000091",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/アパート.mp3",
+      "sha256": "0b43c554a02be849b66cca23d8ee380854b045c0c2248dc163c50bfdd3a796b8"
+    },
+    {
+      "vocab_id": "vocab-000092",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/じしょ.mp3",
+      "sha256": "dd789c900a98cdfb5561c30e5e99a7630bf00e1433f21b0dd296bf186a20f8e3"
+    },
+    {
+      "vocab_id": "vocab-000093",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/スーパーマーケット.mp3",
+      "sha256": "a57051c7b12662da7d363f518ef31ee9eae4a41086fa3d2ff09e5d48d767e4f9"
+    },
+    {
+      "vocab_id": "vocab-000094",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/やっきょく.mp3",
+      "sha256": "f3b06b31c195f986c836400b30dafbc1fe14d0c61c8f81d91195afc41f1e4981"
+    },
+    {
+      "vocab_id": "vocab-000095",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/はくぶつかん.mp3",
+      "sha256": "5b0b72d0b7cddf3024ff160d11fce285051ae7e09189c84b9ed747ec3ba00b98"
+    },
+    {
+      "vocab_id": "vocab-000096",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/たき.mp3",
+      "sha256": "d9adfbfefcc1f2e9af50be1114f67b5edf31e9ecfae77b57c138f9f705de6dcb"
+    },
+    {
+      "vocab_id": "vocab-000097",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/しょうぼうし.mp3",
+      "sha256": "42c8002ed0742a410cad5e58364e4f1a2d788997ff0ff63c9ef633034d400896"
+    },
+    {
+      "vocab_id": "vocab-000098",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/となりのひと.mp3",
+      "sha256": "f18399ae1120b5062eceee4aa6dd446ccc9b4f6a89e63a67a513cbc0f59748fb"
+    },
+    {
+      "vocab_id": "vocab-000099",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/むすめ.mp3",
+      "sha256": "2a916908fd67fd205cae48be4dbd7425a3572778551713310274b7ee18050f8e"
+    },
+    {
+      "vocab_id": "vocab-000100",
+      "path": "baseline/media-staging/audio/20261106T090809Z-a62c463b/そぼ.mp3",
+      "sha256": "2d767da0b8209ffb0778e9013eecd14362f5843f03c6f123e985e9245a21f284"
+    }
+  ]
+}

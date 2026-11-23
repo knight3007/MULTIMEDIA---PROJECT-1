@@ -1,0 +1,86 @@
+{
+  "experiment_id": "A003_CONDITIONAL_SEARCH",
+  "status": "retrieval_complete",
+  "frozen_at_utc": "2026-11-22T06:48:17.072470+00:00",
+  "git_head": "936d9fdd27810e50a144fb6399e647b1ba18c371",
+  "sample_size": 12,
+  "composition": {
+    "CONCRETE": 6,
+    "DIFFICULT_ACTION": 3,
+    "DIFFICULT_ABSTRACT": 3
+  },
+  "sample_ids": [
+    "vocab-000001",
+    "vocab-000011",
+    "vocab-000016",
+    "vocab-000021",
+    "vocab-000028",
+    "vocab-000031",
+    "vocab-000057",
+    "vocab-000059",
+    "vocab-000063",
+    "vocab-000045",
+    "vocab-000046",
+    "vocab-000083"
+  ],
+  "excluded": {
+    "icon_pilot_20": [
+      19,
+      41,
+      42,
+      43,
+      47,
+      48,
+      51,
+      53,
+      54,
+      55,
+      56,
+      58,
+      61,
+      62,
+      65,
+      75,
+      77,
+      78,
+      81,
+      82
+    ],
+    "causal_pilot": [
+      81
+    ],
+    "vocab-000086 why": "baseline query is already 'why icon' (arms would be confounded)",
+    "vocab-000038 friend": "no baseline image query"
+  },
+  "arms": {
+    "NORMAL": "A-001 effective_image_query (cached Qwen output; Qwen not called)",
+    "ICON": "<english> icon"
+  },
+  "settings_both_arms": {
+    "provider": "duckduckgo",
+    "region": "wt-wt",
+    "safesearch": "moderate",
+    "page_size": 7,
+    "timeout_seconds": 20,
+    "search_retries": 2,
+    "download_retries": 2,
+    "retry_delay_seconds": 2.0,
+    "pause_between_requests_seconds": 2.0,
+    "siglip_model": "google/siglip2-so400m-patch16-384"
+  },
+  "siglip_primary_text": "each arm's own query (production rule); top score selected",
+  "siglip_shared_text": "the bare English word, applied to both arms' candidates (cross-arm yardstick only)",
+  "source_hashes": {
+    "collect data script/imagecollector.py": "9e9003b9469349e13835593eaa694a0d97ffdf469e3784809a85de88f30a9930",
+    "collect data script/image_scorer.py": "d41201a46259e0e6131b98c8c246a91b842e54746c984549a3f7c7c8e24c47df",
+    "collect data script/collector_common.py": "d45f49ffea34b955f4e39ffd796f80f5da8fc8576dc54daad95b59188a5b1cc5",
+    "reports/phase0_quality_review/a001_20261122/evaluation_matrix.json": "0e066ed052f07ca7de59a8b75a723aaba9ca89be364c6c2827785b1577b23e5f",
+    "data/vocabulary/unified_dataset_v1.json": "644c2dc9899077dad15d2e2916d7dc3d1cef49ecd151ea406115bb3da19481bd"
+  },
+  "frozen_sample_sha256": "c8265401bcadb8591c9bf63324be5ff9e635191a3080e5d6f5fb4a8d2fec8a9c",
+  "qwen_called": false,
+  "production_files_modified": false,
+  "completed_at_utc": "2026-11-22T07:01:19.557448+00:00",
+  "siglip_status": "SCORED",
+  "siglip_error": null
+}

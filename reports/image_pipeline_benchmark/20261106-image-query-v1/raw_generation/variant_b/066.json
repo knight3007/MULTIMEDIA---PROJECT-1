@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000066",
+  "raw_decoded_text": "{\n  \"visual_type\": \"abstract_concept\",\n  \"search_query\": \"software\",\n  \"visual_description\": \"A digital interface with icons and text representing a program or application\",\n  \"negative_constraints\": [],\n  \"reason\": \"The target sense is unreviewed, so the depiction is provisional and uncertain.\"\n}",
+  "parsed": {
+    "visual_type": "abstract_concept",
+    "search_query": "software",
+    "visual_description": "A digital interface with icons and text representing a program or application",
+    "negative_constraints": [],
+    "reason": "The target sense is unreviewed, so the depiction is provisional and uncertain."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 18.644
+}

@@ -1,0 +1,21 @@
+{
+  "word": "receive",
+  "search_query": "receive action",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://o.quizlet.com/ypbQZgeo4.rc5PMuaY1KZw_b.png",
+  "thumbnail_url": "https://ts3.mm.bing.net/th?id=OIP.tg8yRG5ADBHW_m9jwwLcTQHaHS&pid=15.1",
+  "source_page_url": "https://quizlet.com/931055798/give-or-receive-action-diagram/",
+  "title": "Give or receive action Diagram | Quizlet",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.9921875
+  }
+}

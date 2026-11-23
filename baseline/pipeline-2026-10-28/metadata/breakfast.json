@@ -1,0 +1,18 @@
+{
+  "word": "breakfast",
+  "search_query": "breakfast meal",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/originals/62/8f/3e/628f3ea4a166aa333169ac2ae5a4c404.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.4zynI85MM4fS3jm8RAjFWwHaHa&pid=15.1",
+  "source_page_url": "https://ph.pinterest.com/pin/filipino-breakfast--3377768463671936/",
+  "title": "Filipino breakfast | Breakfast ideas philippines",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "ph.pinterest.com",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 0.33359527587890625
+  }
+}

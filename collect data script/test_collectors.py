@@ -277,6 +277,39 @@ class DuckDuckGoProviderTests(unittest.TestCase):
             self.assertEqual(saved.format, "PNG")
             self.assertEqual(saved.mode, "RGBA")
 
+    def test_transparent_images_are_flattened_onto_white_not_black(self):
+        directory = self.enterContext(tempfile.TemporaryDirectory())
+        root = Path(directory)
+        rgba = Image.new("RGBA", (40, 40), (0, 0, 0, 0))  # transparent pixels store black
+        rgba.paste((200, 0, 0, 255), (10, 10, 30, 30))
+        palette = rgba.convert("P", palette=Image.Palette.ADAPTIVE, colors=8)
+        palette.info["transparency"] = palette.getpixel((0, 0))
+        cases = {"rgba.png": rgba, "palette.png": palette,
+                 "la.png": Image.new("LA", (40, 40), (0, 0)), "rgba.webp": rgba}
+
+        for name, source in cases.items():
+            with self.subTest(source=name):
+                source_path, destination = root / name, root / f"{name}.jpg"
+                source.save(source_path)
+                image.normalize_image_to_jpeg(source_path, destination)
+                with Image.open(destination) as saved:
+                    corner = saved.convert("RGB").getpixel((0, 0))
+                    self.assertTrue(all(channel >= 230 for channel in corner), corner)  # black would be ~0
+                    if name != "la.png":
+                        red, green, blue = saved.convert("RGB").getpixel((20, 20))
+                        self.assertGreater(red, 150)
+                        self.assertLess(green, 60)
+
+    def test_flatten_to_rgb_keeps_opaque_images_unchanged(self):
+        from image_scorer import flatten_to_rgb
+
+        opaque = Image.new("RGB", (4, 4), (10, 20, 30))
+        self.assertEqual(flatten_to_rgb(opaque).getpixel((0, 0)), (10, 20, 30))
+        grey = Image.new("L", (4, 4), 77)
+        self.assertEqual(flatten_to_rgb(grey).getpixel((0, 0)), (77, 77, 77))
+        half = Image.new("RGBA", (4, 4), (0, 0, 0, 128))
+        self.assertEqual(flatten_to_rgb(half).getpixel((0, 0)), (127, 127, 127))
+
     def test_final_image_is_normalized_without_crop_or_upscale(self):
         directory = self.enterContext(tempfile.TemporaryDirectory())
         root = Path(directory)

@@ -1,0 +1,21 @@
+{
+  "word": "hospital",
+  "search_query": "hospital institution",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://img.freepik.com/premium-photo/modern-hospital-building-glass-facade-geometric-architecture-tiered-structure-illuminated-interior-b_1308352-9259.jpg?w=1480",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.Iew7EIJffxR9QxQ0IfZ7fwHaEJ&pid=15.1",
+  "source_page_url": "https://www.freepik.com/premium-ai-image/modern-hospital-building-glass-facade-geometric-architecture-tiered-structure-illuminated-interior-b_278304986.htm",
+  "title": "Premium Photo | Modern hospital building glass facade geometric ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -3.5234375
+  }
+}

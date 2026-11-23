@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "run_id": "d0-five-20261107",
+  "status": "contract_incompatible",
+  "prepared_at_utc": "2026-11-07T04:21:15.853646+00:00",
+  "remote_provider": "kaggle_gpu_cloudflare_quick_tunnel",
+  "requested_model": "Qwen/Qwen3-4B",
+  "api_contract_version": "kaggle-qwen3-4b-v1",
+  "prompt_version": "sense-aware-visual-intent-v1",
+  "system_prompt": "You design image-search queries for a trilingual vocabulary lesson. Return exactly one JSON object with exactly these keys: visual_type, search_query, visual_description, negative_constraints, reason. No Markdown or extra text.\n\nvisual_type must be one of: concrete_object, food, animal, person_role, place, action, emotion_state, physical_attribute, time_weather, abstract_concept, function_word, educational_visual.\nsearch_query: a concise English phrase for visible content, not a dictionary definition or a bare abstract word.\nvisual_description: one English sentence describing what a viewer can actually see.\nnegative_constraints: a JSON array of short English phrases identifying likely wrong senses or misleading imagery; use [] if none.\nreason: one short English sentence connecting the depiction to the supplied meaning and noting uncertainty when the semantic decision is pending.\n\nUse the English, Japanese, Vietnamese and any approved target sense together. An approved target sense and approved image search intent take precedence. A pending or unreviewed status does not authorize a new meaning; describe a provisional depiction and state the uncertainty in reason. Do not turn every word into an object. Show actions as a person visibly doing the action, time words as calendars or time sequences, and abstract or function words as educational visuals when a literal photo cannot express them. Avoid logos, watermarks, stock-preview text, unrelated objects and words used as brand names. Keep JSON compact and finish it within the token budget.",
+  "system_prompt_sha256": "54b7fe7910fdd177c37336f975c5f288af65d0370673e65900e08734dd4dd2f6",
+  "system_prompt_characters": 1560,
+  "generation_parameters": {
+    "max_new_tokens": 256,
+    "decoding": "greedy",
+    "thinking": false
+  },
+  "model_revision": null,
+  "input_hashes": {
+    "data/vocabulary/en.txt": "329288167d7c62ff34e6c2490a642533d6c9f756e89bac955a86e3515a990b04",
+    "data/vocabulary/jp.txt": "7353198d89812c6ca2f3aa949638580d033a84de80a7db8f3a176cfdbcece542",
+    "data/vocabulary/vn.txt": "00b40d8d6b78d089b400210dac0aa71f60390d8aea72ba33caa9c274996f5a4f",
+    "data/vocabulary/id_registry_v1.json": "ecc5ee5322ea6ba8bb7f1f23a2e815c8587ea3e36c5d68145711359455960699",
+    "data/vocabulary/semantic_decisions_v1.json": "a8c23bb756c6f40c980bb55206d3610813064fee06b72b29f122de16a1aa5009",
+    "data/vocabulary/unified_dataset_v1.json": "644c2dc9899077dad15d2e2916d7dc3d1cef49ecd151ea406115bb3da19481bd",
+    "reports/image_pipeline_benchmark/20261106-image-query-v1/query_experiment.json": "81862daf723701e267edc33bbd663a273287450556e66ad5df3e3d311d1c4f78",
+    "reports/image_pipeline_benchmark/20261106-image-query-v1/prompts.json": "2c89feef06497953e3a44d5474b9d982d0924da4282511bbceccd2dd0f19856a"
+  },
+  "records": [
+    {
+      "source_row_index": 4,
+      "vocab_id": "vocab-000004",
+      "english": "rice",
+      "japanese": {
+        "display": "ごはん",
+        "reading": "ごはん",
+        "written_form": null
+      },
+      "vietnamese": "cơm",
+      "semantic_review_status": "approved",
+      "target_sense": "cooked rice",
+      "image_search_intent": "cooked rice",
+      "usage_note": null,
+      "historical_1_7b": {
+        "raw_decoded_text": null,
+        "raw_model_query": "rice grain",
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "variant_b_1_7b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000004",
+        "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"cooked rice\",\n  \"visual_description\": \"A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image captures the target sense of cooked rice as a concrete object, with no misleading elements.\"\n}",
+        "parsed": {
+          "visual_type": "concrete_object",
+          "search_query": "cooked rice",
+          "visual_description": "A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice",
+          "negative_constraints": [],
+          "reason": "The image captures the target sense of cooked rice as a concrete object, with no misleading elements."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 21.092,
+        "parsed_query": "cooked rice",
+        "effective_search_query": "cooked rice",
+        "query_provenance": "human_approved"
+      },
+      "submitted_prompt": "Vocabulary record (JSON): {\"english\": \"rice\", \"japanese\": {\"display\": \"ごはん\", \"reading\": \"ごはん\", \"written_form\": null}, \"vietnamese\": \"cơm\", \"semantic_review_status\": \"approved\", \"target_sense\": \"cooked rice\", \"image_search_intent\": \"cooked rice\", \"usage_note\": null}"
+    },
+    {
+      "source_row_index": 9,
+      "vocab_id": "vocab-000009",
+      "english": "chicken",
+      "japanese": {
+        "display": "とりにく",
+        "reading": "とりにく",
+        "written_form": null
+      },
+      "vietnamese": "thịt gà",
+      "semantic_review_status": "approved",
+      "target_sense": "chicken meat",
+      "image_search_intent": "chicken meat",
+      "usage_note": null,
+      "historical_1_7b": {
+        "raw_decoded_text": null,
+        "raw_model_query": "chicken animal",
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved",
+        "cache_status": "original_prefix",
+        "evidence_source_file": "data/query/generated_qwen.json",
+        "generation_method": null
+      },
+      "variant_b_1_7b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000009",
+        "raw_decoded_text": "{\n  \"visual_type\": \"concrete_object\",\n  \"search_query\": \"chicken meat\",\n  \"visual_description\": \"A visible slice of chicken meat, showing the texture and color of the flesh.\",\n  \"negative_constraints\": [],\n  \"reason\": \"The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "concrete_object",
+          "search_query": "chicken meat",
+          "visual_description": "A visible slice of chicken meat, showing the texture and color of the flesh.",
+          "negative_constraints": [],
+          "reason": "The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 27.582,
+        "parsed_query": "chicken meat",
+        "effective_search_query": "chicken meat",
+        "query_provenance": "human_approved"
+      },
+      "submitted_prompt": "Vocabulary record (JSON): {\"english\": \"chicken\", \"japanese\": {\"display\": \"とりにく\", \"reading\": \"とりにく\", \"written_form\": null}, \"vietnamese\": \"thịt gà\", \"semantic_review_status\": \"approved\", \"target_sense\": \"chicken meat\", \"image_search_intent\": \"chicken meat\", \"usage_note\": null}"
+    },
+    {
+      "source_row_index": 41,
+      "vocab_id": "vocab-000041",
+      "english": "today",
+      "japanese": {
+        "display": "きょう",
+        "reading": "きょう",
+        "written_form": null
+      },
+      "vietnamese": "hôm nay",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "historical_1_7b": {
+        "raw_decoded_text": null,
+        "raw_model_query": "today timepiece",
+        "effective_search_query": "today timepiece",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_prefix",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_full_v1.json",
+        "generation_method": null
+      },
+      "variant_b_1_7b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000041",
+        "raw_decoded_text": "{\n  \"visual_type\": \"time_weather\",\n  \"search_query\": \"a calendar showing today's date\",\n  \"visual_description\": \"A calendar displaying the current day with the date marked clearly\",\n  \"negative_constraints\": [\"no time indicators\", \"no weather elements\"],\n  \"reason\": \"The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense.\"\n}",
+        "parsed": {
+          "visual_type": "time_weather",
+          "search_query": "a calendar showing today's date",
+          "visual_description": "A calendar displaying the current day with the date marked clearly",
+          "negative_constraints": [
+            "no time indicators",
+            "no weather elements"
+          ],
+          "reason": "The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 28.239,
+        "parsed_query": "a calendar showing today's date",
+        "effective_search_query": "a calendar showing today's date",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "submitted_prompt": "Vocabulary record (JSON): {\"english\": \"today\", \"japanese\": {\"display\": \"きょう\", \"reading\": \"きょう\", \"written_form\": null}, \"vietnamese\": \"hôm nay\", \"semantic_review_status\": \"unreviewed\", \"target_sense\": null, \"image_search_intent\": null, \"usage_note\": null}"
+    },
+    {
+      "source_row_index": 54,
+      "vocab_id": "vocab-000054",
+      "english": "study",
+      "japanese": {
+        "display": "べんきょうする",
+        "reading": "べんきょうする",
+        "written_form": null
+      },
+      "vietnamese": "học tập",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "historical_1_7b": {
+        "raw_decoded_text": null,
+        "raw_model_query": "study object",
+        "effective_search_query": "study object",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_b_1_7b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000054",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person studying\",\n  \"visual_description\": \"A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand\",\n  \"negative_constraints\": [\"no background noise\", \"no lighting issues\"],\n  \"reason\": \"A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "person studying",
+          "visual_description": "A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand",
+          "negative_constraints": [
+            "no background noise",
+            "no lighting issues"
+          ],
+          "reason": "A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 23.411,
+        "parsed_query": "person studying",
+        "effective_search_query": "person studying",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "submitted_prompt": "Vocabulary record (JSON): {\"english\": \"study\", \"japanese\": {\"display\": \"べんきょうする\", \"reading\": \"べんきょうする\", \"written_form\": null}, \"vietnamese\": \"học tập\", \"semantic_review_status\": \"unreviewed\", \"target_sense\": null, \"image_search_intent\": null, \"usage_note\": null}"
+    },
+    {
+      "source_row_index": 65,
+      "vocab_id": "vocab-000065",
+      "english": "swim",
+      "japanese": {
+        "display": "およぐ",
+        "reading": "およぐ",
+        "written_form": null
+      },
+      "vietnamese": "bơi",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null,
+      "historical_1_7b": {
+        "raw_decoded_text": "person swimming",
+        "raw_model_query": "person swimming",
+        "effective_search_query": "person swimming",
+        "query_provenance": "model_generated_unreviewed",
+        "cache_status": "staging_sparse",
+        "evidence_source_file": "baseline/media-staging/image-queries/generated_qwen_sparse_v1.json",
+        "generation_method": null
+      },
+      "variant_b_1_7b": {
+        "schema_version": 1,
+        "variant": "b",
+        "vocab_id": "vocab-000065",
+        "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"a person swimming in a pool\",\n  \"visual_description\": \"A person performing the action of swimming in a pool, showing the motion and the water environment\",\n  \"negative_constraints\": [\"no action visible\", \"no water depicted\"],\n  \"reason\": \"The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself.\"\n}",
+        "parsed": {
+          "visual_type": "action",
+          "search_query": "a person swimming in a pool",
+          "visual_description": "A person performing the action of swimming in a pool, showing the motion and the water environment",
+          "negative_constraints": [
+            "no action visible",
+            "no water depicted"
+          ],
+          "reason": "The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself."
+        },
+        "validation_status": "valid",
+        "error": null,
+        "ended_with_eos": true,
+        "duration_seconds": 31.449,
+        "parsed_query": "a person swimming in a pool",
+        "effective_search_query": "a person swimming in a pool",
+        "query_provenance": "model_generated_unreviewed"
+      },
+      "submitted_prompt": "Vocabulary record (JSON): {\"english\": \"swim\", \"japanese\": {\"display\": \"およぐ\", \"reading\": \"およぐ\", \"written_form\": null}, \"vietnamese\": \"bơi\", \"semantic_review_status\": \"unreviewed\", \"target_sense\": null, \"image_search_intent\": null, \"usage_note\": null}"
+    }
+  ],
+  "contract_blocker": "Variant B system prompt is 1560 characters; API v1 limit is 800"
+}

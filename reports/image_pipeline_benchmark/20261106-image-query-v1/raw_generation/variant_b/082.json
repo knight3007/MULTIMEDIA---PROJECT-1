@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "variant": "b",
+  "vocab_id": "vocab-000082",
+  "raw_decoded_text": "{\n  \"visual_type\": \"action\",\n  \"search_query\": \"person doing an action repeatedly\",\n  \"visual_description\": \"A person repeatedly performing an action, such as smiling or waving, in a dynamic and clear visual context\",\n  \"negative_constraints\": [\"not a literal photo\", \"not a brand name\", \"not a logo\"],\n  \"reason\": \"The visual depicts a person performing an action repeatedly, which aligns with the semantic review status of 'unreviewed' and the target sense of 'always' as an action verb.\"\n}",
+  "parsed": {
+    "visual_type": "action",
+    "search_query": "person doing an action repeatedly",
+    "visual_description": "A person repeatedly performing an action, such as smiling or waving, in a dynamic and clear visual context",
+    "negative_constraints": [
+      "not a literal photo",
+      "not a brand name",
+      "not a logo"
+    ],
+    "reason": "The visual depicts a person performing an action repeatedly, which aligns with the semantic review status of 'unreviewed' and the target sense of 'always' as an action verb."
+  },
+  "validation_status": "valid",
+  "error": null,
+  "ended_with_eos": true,
+  "duration_seconds": 28.673
+}

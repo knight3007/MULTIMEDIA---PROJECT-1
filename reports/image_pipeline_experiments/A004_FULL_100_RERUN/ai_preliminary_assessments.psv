@@ -1,0 +1,84 @@
+vocab_id|relevance|suitability|comparison|note
+vocab-000011|PASS|PASS|UNCHANGED|Cat is clear; prior cat was also clear.
+vocab-000012|PASS|PASS|UNCHANGED|Clear dog; visually the same as A-001.
+vocab-000013|PASS|PASS|UNCHANGED|Elephant and calf are clear; prior elephant was clear.
+vocab-000014|PASS|PASS|IMPROVED|Tree is the clear subject; prior image focused on planting a sapling.
+vocab-000015|PASS|PASS|UNCHANGED|Clear flowers; visually the same as A-001.
+vocab-000016|PASS|PASS|UNCHANGED|Clear mountain landscape; visually the same as A-001.
+vocab-000017|PASS|PASS|UNCHANGED|River is visible; prior river was also clear.
+vocab-000018|FAIL|FAIL|UNCHANGED|Top image is an English science diagram about illumination, not a clear sun; prior image was also a spectrum diagram.
+vocab-000019|NEEDS_REVIEW|NEEDS_REVIEW|IMPROVED|Wet street suggests recent rain but falling rain is not obvious; prior city scene gave little rain evidence.
+vocab-000020|NEEDS_REVIEW|NEEDS_REVIEW|UNCHANGED|Storm sky is a weather example, not the broad concept; prior image also showed one weather scene.
+vocab-000021|PASS|NEEDS_REVIEW|UNCHANGED|Unfinished timber house shows construction rather than a completed home; prior image had the same issue.
+vocab-000022|PASS|PASS|UNCHANGED|Clear kitchen; visually the same as A-001.
+vocab-000023|PASS|PASS|IMPROVED|School building is clearer than the prior text-heavy institutions illustration.
+vocab-000024|PASS|PASS|UNCHANGED|Library interior is clear; visually the same as A-001.
+vocab-000025|PASS|PASS|UNCHANGED|Hospital interior is recognizable; prior hospital exterior was also clear.
+vocab-000026|PASS|NEEDS_REVIEW|DEGRADED|Airport aerial view is less recognizable at learning size than the prior terminal exterior.
+vocab-000027|PASS|NEEDS_REVIEW|UNCHANGED|Restaurant interior and sign are visible but the scene is busy; prior interior was similarly indirect.
+vocab-000028|PASS|PASS|UNCHANGED|Car is clear despite brand logo; prior car was also clear.
+vocab-000029|PASS|PASS|UNCHANGED|Bicycles are clear; prior bicycle was also clear.
+vocab-000030|PASS|FAIL|UNCHANGED|Bridge is shown in a text-heavy structural diagram; prior was also an instructional diagram.
+vocab-000031|NEEDS_REVIEW|FAIL|UNCHANGED|Top image resembles a book-shaped art object rather than an ordinary book; prior image was also abstract.
+vocab-000032|PASS|FAIL|UNCHANGED|Many phones in a collage impede a single clear example; prior was also a device grid.
+vocab-000033|PASS|FAIL|UNCHANGED|Computer devices appear only inside a text-heavy presentation slide; prior was also a diagram.
+vocab-000034|PASS|PASS|IMPROVED|Single clean umbrella replaces a watermarked prior umbrella.
+vocab-000035|PASS|PASS|IMPROVED|Folded shirts are clear; prior image depicted nasal anatomy.
+vocab-000036|FAIL|FAIL|UNCHANGED|Social-institutions diagram does not depict a family; prior text slide was also unsuitable.
+vocab-000037|PASS|PASS|UNCHANGED|Mother and child are clear; visually the same as A-001.
+vocab-000039|PASS|PASS|UNCHANGED|Teacher in classroom is clear; visually the same as A-001.
+vocab-000040|NEEDS_REVIEW|NEEDS_REVIEW|UNCHANGED|Person in hard hat may be a construction worker rather than an engineer; visually the same as A-001.
+vocab-000041|FAIL|FAIL|UNCHANGED|Search for today timepiece returned the back of a clock; no day concept, prior also clock.
+vocab-000042|FAIL|FAIL|UNCHANGED|Image is a watch advertisement with the word tomorrow, not the temporal meaning; prior was similar.
+vocab-000043|FAIL|FAIL|UNCHANGED|Yesterday is a business name on a building, not the temporal concept; prior was a titled poster.
+vocab-000044|PASS|FAIL|DEGRADED|Winter scene has prominent answer-revealing WINTER label; prior snow landscape was clearer.
+vocab-000045|PASS|PASS|UNCHANGED|Happy-face icon is clear; prior happy-face image was also clear.
+vocab-000046|NEEDS_REVIEW|FAIL|UNCHANGED|Dense hunger-versus-appetite infographic relies on English text; prior was similarly text-heavy.
+vocab-000047|FAIL|FAIL|UNCHANGED|Easy drawing tutorial is about drawing easy objects, not the general adjective; prior image had the same query problem.
+vocab-000048|FAIL|FAIL|UNCHANGED|Difficult objects drawing tutorial does not teach the general adjective; same as prior.
+vocab-000049|NEEDS_REVIEW|NEEDS_REVIEW|UNCHANGED|Decorative globe could suggest beauty but is subjective and not self-explanatory; visually same as prior.
+vocab-000050|NEEDS_REVIEW|NEEDS_REVIEW|IMPROVED|Kettlebell under a press suggests strength but the intended adjective is indirect; prior infographic was worse.
+vocab-000053|FAIL|FAIL|UNCHANGED|WRITE ACTION is a film title, not the act of writing; prior action-plan chart was also wrong.
+vocab-000054|NEEDS_REVIEW|FAIL|IMPROVED|Study icon collage includes books but is busy and watermarked; prior Happy Diwali image was unrelated.
+vocab-000055|FAIL|FAIL|UNCHANGED|Industrial robot with WORK OBJECTS text does not show a person working; prior Work Objects promotion was also wrong.
+vocab-000056|FAIL|FAIL|UNCHANGED|Clipart grid of sleep-related objects does not show sleeping; visually same as prior.
+vocab-000058|PASS|NEEDS_REVIEW|UNCHANGED|Drinks are clear but the act of drinking is not shown; visually same as prior.
+vocab-000059|FAIL|FAIL|UNCHANGED|Action Collectibles storefront matches query words by name, not the act of buying; prior Action store also failed.
+vocab-000061|FAIL|FAIL|UNCHANGED|English grammar lesson about understand as a verb does not depict understanding; visually same as prior.
+vocab-000062|FAIL|FAIL|UNCHANGED|Remember the Objects is answer-revealing text and a game title, not the act of remembering; visually same as prior.
+vocab-000063|NEEDS_REVIEW|FAIL|UNCHANGED|Tiny Give and Receive Actions flowchart is unreadable as a standalone learning image; visually same as prior.
+vocab-000066|NEEDS_REVIEW|FAIL|UNCHANGED|Software stack diagram is text-heavy and branded; prior icon collage was clearer but still indirect.
+vocab-000067|NEEDS_REVIEW|FAIL|UNCHANGED|Database Objects technical chart relies on English labels; prior technical database chart was also text-heavy.
+vocab-000068|NEEDS_REVIEW|FAIL|UNCHANGED|HTML DOM Password Object tutorial is not a clear depiction of a password; visually same as prior.
+vocab-000069|PASS|NEEDS_REVIEW|UNCHANGED|Musical instruments convey music but stock watermark and collage reduce suitability; prior was also a collage.
+vocab-000070|NEEDS_REVIEW|FAIL|UNCHANGED|Language as an Object slide relies on English prose and an unrelated definition; visually same as prior.
+vocab-000071|NEEDS_REVIEW|FAIL|IMPROVED|Problem Statement graphic at least shows a confused person, but the English answer text dominates; prior was denser.
+vocab-000072|NEEDS_REVIEW|FAIL|UNCHANGED|A college building is labeled Business, which is not the general concept of doing business; prior was another business college.
+vocab-000073|PASS|PASS|UNCHANGED|University campus building is clear; prior campus was also clear.
+vocab-000074|FAIL|FAIL|UNCHANGED|Software screenshot of a project list is unreadable and does not depict a project; visually same as prior.
+vocab-000075|FAIL|FAIL|UNCHANGED|Venn diagram about object experiences in UX is not general experience; prior UX slide was also off-target.
+vocab-000076|PASS|PASS|UNCHANGED|Vegetables in a garden are clear; prior vegetables were also clear.
+vocab-000077|FAIL|FAIL|UNCHANGED|Historical artifacts do not convey the adjective important; prior artifact grid also missed the adjective.
+vocab-000078|NEEDS_REVIEW|FAIL|UNCHANGED|Different Objects collage is cluttered, watermarked and does not show a clear comparison; visually same as prior.
+vocab-000079|PASS|FAIL|UNCHANGED|Dangerous objects appear but tiny English labels and collage reduce learning clarity; visually same as prior.
+vocab-000080|PASS|NEEDS_REVIEW|UNCHANGED|Impossible triangle conveys impossibility but needs explanation for a novice; prior physical illusion was similar.
+vocab-000081|NEEDS_REVIEW|FAIL|UNCHANGED|Cause-and-effect teaching chart is tiny and English-text heavy; prior because sentence chart was also text-heavy. Internal-only A-002 override was not used.
+vocab-000082|FAIL|FAIL|UNCHANGED|Tiny page of text with always in a sentence does not visually teach frequency; prior exercise sheet also failed.
+vocab-000083|FAIL|FAIL|UNCHANGED|Sometimes is a title on a text-heavy poster, not occasional frequency; separate A-003 owner NO_SUITABLE_IMAGE remains unchanged.
+vocab-000084|NEEDS_REVIEW|FAIL|UNCHANGED|What Goes Together activity page relies on answer-revealing English text; prior object-association chart was also indirect.
+vocab-000085|NEEDS_REVIEW|FAIL|UNCHANGED|Place Where We Go teaching sheet is text-heavy and addresses places rather than where; prior poster was also indirect.
+vocab-000086|PASS|FAIL|UNCHANGED|Question mark suggests why but the large word Why directly reveals the answer; prior icon also spelled WHY.
+vocab-000087|FAIL|FAIL|UNCHANGED|Hello Objects video-game title is unrelated to the greeting; prior game image was also unrelated.
+vocab-000088|FAIL|FAIL|UNCHANGED|PLEASE ACTION stock banner is only answer-revealing text, not a polite request; visually same as prior.
+vocab-000089|PASS|FAIL|IMPROVED|Thank you card conveys gratitude but directly reveals the English answer; prior list was even denser text.
+vocab-000090|PASS|FAIL|UNCHANGED|Sad emoji is relevant but carries the answer-revealing word SORRY; prior emoji also did.
+vocab-000091|PASS|PASS|UNCHANGED|Apartment building is clear; prior apartment building was also clear.
+vocab-000092|FAIL|FAIL|UNCHANGED|Programming diagram for a Dictionary class is the wrong sense; prior data-structure image was also wrong.
+vocab-000093|PASS|FAIL|DEGRADED|Supermarket aisle is clear but has a Dreamstime stock watermark; prior aisle was cleaner.
+vocab-000094|PASS|PASS|UNCHANGED|Pharmacy counter is clear; visually the same as A-001.
+vocab-000095|NEEDS_REVIEW|FAIL|DEGRADED|Generic plaza/buildings do not identify a museum; prior building had Museum signage.
+vocab-000096|NEEDS_REVIEW|FAIL|UNCHANGED|Miniature garden water feature is not a natural waterfall; prior miniature feature had the same problem.
+vocab-000097|PASS|PASS|UNCHANGED|Firefighter is clear; prior firefighter in action was also clear.
+vocab-000098|PASS|PASS|UNCHANGED|People greeting across a fence suggest neighbors; prior fence interaction was also clear.
+vocab-000099|PASS|PASS|UNCHANGED|Mother and daughter interaction is clear; prior image was also clear.
+vocab-000100|NEEDS_REVIEW|NEEDS_REVIEW|DEGRADED|Older woman alone does not establish grandmother relationship; prior woman with child was clearer.

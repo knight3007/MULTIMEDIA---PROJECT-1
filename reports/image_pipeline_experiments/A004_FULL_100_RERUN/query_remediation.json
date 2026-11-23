@@ -1,0 +1,51 @@
+[
+  {
+    "vocab_id": "vocab-000038",
+    "english": "friend",
+    "query_status": "BLOCKED_SEMANTIC_DECISION",
+    "raw_qwen_output": "friend person",
+    "reason": "Approved target sense has no image search intent: vocab-000038"
+  },
+  {
+    "vocab_id": "vocab-000051",
+    "english": "go",
+    "query_status": "FAILED",
+    "raw_qwen_output": "go verb",
+    "reason": "QueryGenerationError: Qwen returned meta text instead of concrete search terms: 'go verb'"
+  },
+  {
+    "vocab_id": "vocab-000052",
+    "english": "read",
+    "query_status": "FAILED",
+    "raw_qwen_output": "read verb",
+    "reason": "QueryGenerationError: Qwen returned meta text instead of concrete search terms: 'read verb'"
+  },
+  {
+    "vocab_id": "vocab-000057",
+    "english": "eat",
+    "query_status": "FAILED",
+    "raw_qwen_output": "eat verb",
+    "reason": "QueryGenerationError: Qwen returned meta text instead of concrete search terms: 'eat verb'"
+  },
+  {
+    "vocab_id": "vocab-000060",
+    "english": "help",
+    "query_status": "FAILED",
+    "raw_qwen_output": "help verb",
+    "reason": "QueryGenerationError: Qwen returned meta text instead of concrete search terms: 'help verb'"
+  },
+  {
+    "vocab_id": "vocab-000064",
+    "english": "choose",
+    "query_status": "FAILED",
+    "raw_qwen_output": "choose verb",
+    "reason": "QueryGenerationError: Qwen returned meta text instead of concrete search terms: 'choose verb'"
+  },
+  {
+    "vocab_id": "vocab-000065",
+    "english": "swim",
+    "query_status": "FAILED",
+    "raw_qwen_output": "swim verb",
+    "reason": "QueryGenerationError: Qwen returned meta text instead of concrete search terms: 'swim verb'"
+  }
+]

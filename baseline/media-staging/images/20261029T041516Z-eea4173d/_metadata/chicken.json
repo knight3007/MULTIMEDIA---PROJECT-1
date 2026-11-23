@@ -1,0 +1,21 @@
+{
+  "word": "chicken",
+  "search_query": "chicken meat",
+  "query_provenance": "human_approved",
+  "provider": "curated_direct",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Kycklingfil%C3%A9.jpg",
+  "thumbnail_url": null,
+  "source_page_url": "https://commons.wikimedia.org/wiki/File:Kycklingfil%C3%A9.jpg",
+  "title": "Wikimedia Commons file page",
+  "width": null,
+  "height": null,
+  "source": "curated_direct",
+  "result_source": "commons.wikimedia.org",
+  "search_client": "curated_direct",
+  "search_backend": "curated_direct",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -1.875
+  }
+}

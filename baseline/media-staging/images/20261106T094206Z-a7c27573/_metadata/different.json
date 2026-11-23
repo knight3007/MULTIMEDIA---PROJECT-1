@@ -1,0 +1,21 @@
+{
+  "word": "different",
+  "search_query": "different object",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://st4.depositphotos.com/1763191/28192/v/1600/depositphotos_281925028-stock-illustration-set-of-different-objects.jpg",
+  "thumbnail_url": "https://ts4.mm.bing.net/th?id=OIP.TJDJD9aTRwpWDWK3tiJUuQHaFp&pid=15.1",
+  "source_page_url": "https://depositphotos.com/281925028/stock-illustration-set-of-different-objects.html",
+  "title": "Set of different objects Stock Vector Image by ©blueringmedia #281925028",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.5859375
+  }
+}

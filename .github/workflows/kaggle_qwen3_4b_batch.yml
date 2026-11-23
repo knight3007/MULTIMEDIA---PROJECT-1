@@ -1,0 +1,379 @@
+name: Qwen3-4B private Kaggle batch (draft)
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Approved experiment mode
+        required: true
+        type: choice
+        options: [poc, full, resume]
+      experiment_id:
+        description: Owner-approved stable experiment ID
+        required: true
+        type: string
+      exclusive_gpu_reservation:
+        description: I reserve my Kaggle GPU for this experiment and will not start V4/direct GPU sessions
+        required: true
+        default: false
+        type: boolean
+permissions:
+  contents: read
+env:
+  D2_EXPERIMENT_ID: ${{ inputs.experiment_id }}
+  D2_MODE: ${{ inputs.mode }}
+  D2_GPU_RESERVATION: ${{ inputs.exclusive_gpu_reservation }}
+concurrency:
+  group: knight3007-kaggle-qwen3-4b-all-d2
+  cancel-in-progress: false
+  queue: max
+jobs:
+  approval:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      pinned_sha: ${{ steps.approved.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check owner approval and fixed input commit
+        id: approved
+        shell: bash
+        run: |
+          test "$D2_GPU_RESERVATION" = "true"
+          sha=$(python -m kaggle_batch.driver approval --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE")
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.approved.outputs.sha }}
+          path: approved-input
+      - name: Verify pinned snapshot before any Kaggle call
+        run: python -m kaggle_batch.driver gate --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --pinned-root approved-input --exclusive-gpu-reservation
+  batch_1:
+    needs: [approval]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 1
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 1 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":1,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-1
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_2:
+    needs: [approval, batch_1]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 2
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 2 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":2,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-2
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_3:
+    needs: [approval, batch_2]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 3
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 3 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":3,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-3
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_4:
+    needs: [approval, batch_3]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 4
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 4 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":4,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-4
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_5:
+    needs: [approval, batch_4]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 5
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 5 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":5,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-5
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_6:
+    needs: [approval, batch_5]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 6
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 6 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":6,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-6
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_7:
+    needs: [approval, batch_6]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 7
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 7 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":7,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-7
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_8:
+    needs: [approval, batch_7]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 8
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 8 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":8,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-8
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_9:
+    needs: [approval, batch_8]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 9
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 9 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":9,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-9
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30
+  batch_10:
+    needs: [approval, batch_9]
+    if: inputs.mode != 'poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.approval.outputs.pinned_sha }}
+          path: approved-input
+      - name: Install pinned Kaggle CLI
+        run: python -m pip install kaggle==2.2.5
+      - name: Reconcile and process batch 10
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        shell: bash
+        run: |
+          set +e
+          python -m kaggle_batch.driver step --experiment-id "$D2_EXPERIMENT_ID" --mode "$D2_MODE" --index 10 --variant B --pinned-root approved-input --exclusive-gpu-reservation > d2-step-summary.json
+          code=$?
+          printf '{"batch":10,"orchestrator_exit":%s}\n' "$code" > d2-filtered-events.json
+          exit "$code"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: d2-metadata-batch-10
+          path: |
+            d2-step-summary.json
+            d2-filtered-events.json
+          if-no-files-found: ignore
+          retention-days: 30

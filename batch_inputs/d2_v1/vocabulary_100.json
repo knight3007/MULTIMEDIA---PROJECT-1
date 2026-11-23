@@ -1,0 +1,1505 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "source_row_index": 1,
+      "vocab_id": "vocab-000001",
+      "english": "apple",
+      "japanese": {
+        "display": "りんご",
+        "reading": "りんご",
+        "written_form": null
+      },
+      "vietnamese": "quả táo",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 2,
+      "vocab_id": "vocab-000002",
+      "english": "banana",
+      "japanese": {
+        "display": "バナナ",
+        "reading": "バナナ",
+        "written_form": null
+      },
+      "vietnamese": "quả chuối",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 3,
+      "vocab_id": "vocab-000003",
+      "english": "strawberry",
+      "japanese": {
+        "display": "いちご",
+        "reading": "いちご",
+        "written_form": null
+      },
+      "vietnamese": "dâu tây",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 4,
+      "vocab_id": "vocab-000004",
+      "english": "rice",
+      "japanese": {
+        "display": "ごはん",
+        "reading": "ごはん",
+        "written_form": null
+      },
+      "vietnamese": "cơm",
+      "semantic_review_status": "approved",
+      "target_sense": "cooked rice",
+      "image_search_intent": "cooked rice",
+      "usage_note": null
+    },
+    {
+      "source_row_index": 5,
+      "vocab_id": "vocab-000005",
+      "english": "bread",
+      "japanese": {
+        "display": "パン",
+        "reading": "パン",
+        "written_form": null
+      },
+      "vietnamese": "bánh mì",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 6,
+      "vocab_id": "vocab-000006",
+      "english": "egg",
+      "japanese": {
+        "display": "たまご",
+        "reading": "たまご",
+        "written_form": null
+      },
+      "vietnamese": "trứng",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 7,
+      "vocab_id": "vocab-000007",
+      "english": "milk",
+      "japanese": {
+        "display": "ぎゅうにゅう",
+        "reading": "ぎゅうにゅう",
+        "written_form": null
+      },
+      "vietnamese": "sữa",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "Japanese ぎゅうにゅう refers specifically to cow's milk; scope of the EN/VN pair needs review."
+    },
+    {
+      "source_row_index": 8,
+      "vocab_id": "vocab-000008",
+      "english": "water",
+      "japanese": {
+        "display": "みず",
+        "reading": "みず",
+        "written_form": null
+      },
+      "vietnamese": "nước",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 9,
+      "vocab_id": "vocab-000009",
+      "english": "chicken",
+      "japanese": {
+        "display": "とりにく",
+        "reading": "とりにく",
+        "written_form": null
+      },
+      "vietnamese": "thịt gà",
+      "semantic_review_status": "approved",
+      "target_sense": "chicken meat",
+      "image_search_intent": "chicken meat",
+      "usage_note": null
+    },
+    {
+      "source_row_index": 10,
+      "vocab_id": "vocab-000010",
+      "english": "breakfast",
+      "japanese": {
+        "display": "あさごはん",
+        "reading": "あさごはん",
+        "written_form": null
+      },
+      "vietnamese": "bữa sáng",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 11,
+      "vocab_id": "vocab-000011",
+      "english": "cat",
+      "japanese": {
+        "display": "ねこ",
+        "reading": "ねこ",
+        "written_form": null
+      },
+      "vietnamese": "mèo",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 12,
+      "vocab_id": "vocab-000012",
+      "english": "dog",
+      "japanese": {
+        "display": "いぬ",
+        "reading": "いぬ",
+        "written_form": null
+      },
+      "vietnamese": "chó",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 13,
+      "vocab_id": "vocab-000013",
+      "english": "elephant",
+      "japanese": {
+        "display": "ぞう",
+        "reading": "ぞう",
+        "written_form": null
+      },
+      "vietnamese": "voi",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 14,
+      "vocab_id": "vocab-000014",
+      "english": "tree",
+      "japanese": {
+        "display": "き",
+        "reading": "き",
+        "written_form": null
+      },
+      "vietnamese": "cây",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 15,
+      "vocab_id": "vocab-000015",
+      "english": "flower",
+      "japanese": {
+        "display": "はな",
+        "reading": "はな",
+        "written_form": "花"
+      },
+      "vietnamese": "hoa",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "はな can also mean nose; 花 denotes a flower."
+    },
+    {
+      "source_row_index": 16,
+      "vocab_id": "vocab-000016",
+      "english": "mountain",
+      "japanese": {
+        "display": "やま",
+        "reading": "やま",
+        "written_form": null
+      },
+      "vietnamese": "núi",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 17,
+      "vocab_id": "vocab-000017",
+      "english": "river",
+      "japanese": {
+        "display": "かわ",
+        "reading": "かわ",
+        "written_form": null
+      },
+      "vietnamese": "sông",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 18,
+      "vocab_id": "vocab-000018",
+      "english": "sun",
+      "japanese": {
+        "display": "たいよう",
+        "reading": "たいよう",
+        "written_form": null
+      },
+      "vietnamese": "mặt trời",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 19,
+      "vocab_id": "vocab-000019",
+      "english": "rain",
+      "japanese": {
+        "display": "あめ",
+        "reading": "あめ",
+        "written_form": "雨"
+      },
+      "vietnamese": "mưa",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "あめ can also mean candy; 雨 denotes rain."
+    },
+    {
+      "source_row_index": 20,
+      "vocab_id": "vocab-000020",
+      "english": "weather",
+      "japanese": {
+        "display": "てんき",
+        "reading": "てんき",
+        "written_form": null
+      },
+      "vietnamese": "thời tiết",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 21,
+      "vocab_id": "vocab-000021",
+      "english": "house",
+      "japanese": {
+        "display": "いえ",
+        "reading": "いえ",
+        "written_form": null
+      },
+      "vietnamese": "ngôi nhà",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 22,
+      "vocab_id": "vocab-000022",
+      "english": "kitchen",
+      "japanese": {
+        "display": "だいどころ",
+        "reading": "だいどころ",
+        "written_form": null
+      },
+      "vietnamese": "nhà bếp",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 23,
+      "vocab_id": "vocab-000023",
+      "english": "school",
+      "japanese": {
+        "display": "がっこう",
+        "reading": "がっこう",
+        "written_form": null
+      },
+      "vietnamese": "trường học",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 24,
+      "vocab_id": "vocab-000024",
+      "english": "library",
+      "japanese": {
+        "display": "としょかん",
+        "reading": "としょかん",
+        "written_form": null
+      },
+      "vietnamese": "thư viện",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 25,
+      "vocab_id": "vocab-000025",
+      "english": "hospital",
+      "japanese": {
+        "display": "びょういん",
+        "reading": "びょういん",
+        "written_form": null
+      },
+      "vietnamese": "bệnh viện",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 26,
+      "vocab_id": "vocab-000026",
+      "english": "airport",
+      "japanese": {
+        "display": "くうこう",
+        "reading": "くうこう",
+        "written_form": null
+      },
+      "vietnamese": "sân bay",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 27,
+      "vocab_id": "vocab-000027",
+      "english": "restaurant",
+      "japanese": {
+        "display": "レストラン",
+        "reading": "レストラン",
+        "written_form": null
+      },
+      "vietnamese": "nhà hàng",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 28,
+      "vocab_id": "vocab-000028",
+      "english": "car",
+      "japanese": {
+        "display": "くるま",
+        "reading": "くるま",
+        "written_form": null
+      },
+      "vietnamese": "ô tô",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 29,
+      "vocab_id": "vocab-000029",
+      "english": "bicycle",
+      "japanese": {
+        "display": "じてんしゃ",
+        "reading": "じてんしゃ",
+        "written_form": null
+      },
+      "vietnamese": "xe đạp",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 30,
+      "vocab_id": "vocab-000030",
+      "english": "bridge",
+      "japanese": {
+        "display": "はし",
+        "reading": "はし",
+        "written_form": "橋"
+      },
+      "vietnamese": "cây cầu",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "はし can also denote chopsticks; 橋 denotes a bridge."
+    },
+    {
+      "source_row_index": 31,
+      "vocab_id": "vocab-000031",
+      "english": "book",
+      "japanese": {
+        "display": "ほん",
+        "reading": "ほん",
+        "written_form": null
+      },
+      "vietnamese": "sách",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 32,
+      "vocab_id": "vocab-000032",
+      "english": "phone",
+      "japanese": {
+        "display": "でんわ",
+        "reading": "でんわ",
+        "written_form": null
+      },
+      "vietnamese": "điện thoại",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 33,
+      "vocab_id": "vocab-000033",
+      "english": "computer",
+      "japanese": {
+        "display": "コンピューター",
+        "reading": "コンピューター",
+        "written_form": null
+      },
+      "vietnamese": "máy tính",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 34,
+      "vocab_id": "vocab-000034",
+      "english": "umbrella",
+      "japanese": {
+        "display": "かさ",
+        "reading": "かさ",
+        "written_form": null
+      },
+      "vietnamese": "ô/dù",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 35,
+      "vocab_id": "vocab-000035",
+      "english": "shirt",
+      "japanese": {
+        "display": "シャツ",
+        "reading": "シャツ",
+        "written_form": null
+      },
+      "vietnamese": "áo sơ mi",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "Vietnamese áo sơ mi is narrower than general English shirt; intended garment type needs review."
+    },
+    {
+      "source_row_index": 36,
+      "vocab_id": "vocab-000036",
+      "english": "family",
+      "japanese": {
+        "display": "かぞく",
+        "reading": "かぞく",
+        "written_form": null
+      },
+      "vietnamese": "gia đình",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 37,
+      "vocab_id": "vocab-000037",
+      "english": "mother",
+      "japanese": {
+        "display": "はは",
+        "reading": "はは",
+        "written_form": null
+      },
+      "vietnamese": "mẹ",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "はは commonly refers to one's own mother when speaking to others; not a direct respectful address."
+    },
+    {
+      "source_row_index": 38,
+      "vocab_id": "vocab-000038",
+      "english": "friend",
+      "japanese": {
+        "display": "ともだち",
+        "reading": "ともだち",
+        "written_form": null
+      },
+      "vietnamese": "bạn",
+      "semantic_review_status": "approved",
+      "target_sense": "one friend (singular)",
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 39,
+      "vocab_id": "vocab-000039",
+      "english": "teacher",
+      "japanese": {
+        "display": "せんせい",
+        "reading": "せんせい",
+        "written_form": null
+      },
+      "vietnamese": "giáo viên",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 40,
+      "vocab_id": "vocab-000040",
+      "english": "engineer",
+      "japanese": {
+        "display": "エンジニア",
+        "reading": "エンジニア",
+        "written_form": null
+      },
+      "vietnamese": "kỹ sư",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 41,
+      "vocab_id": "vocab-000041",
+      "english": "today",
+      "japanese": {
+        "display": "きょう",
+        "reading": "きょう",
+        "written_form": null
+      },
+      "vietnamese": "hôm nay",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 42,
+      "vocab_id": "vocab-000042",
+      "english": "tomorrow",
+      "japanese": {
+        "display": "あした",
+        "reading": "あした",
+        "written_form": null
+      },
+      "vietnamese": "ngày mai",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 43,
+      "vocab_id": "vocab-000043",
+      "english": "yesterday",
+      "japanese": {
+        "display": "きのう",
+        "reading": "きのう",
+        "written_form": null
+      },
+      "vietnamese": "hôm qua",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 44,
+      "vocab_id": "vocab-000044",
+      "english": "winter",
+      "japanese": {
+        "display": "ふゆ",
+        "reading": "ふゆ",
+        "written_form": null
+      },
+      "vietnamese": "mùa đông",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 45,
+      "vocab_id": "vocab-000045",
+      "english": "happy",
+      "japanese": {
+        "display": "うれしい",
+        "reading": "うれしい",
+        "written_form": null
+      },
+      "vietnamese": "vui",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "うれしい often means glad or pleased about an event; broader happy senses need review."
+    },
+    {
+      "source_row_index": 46,
+      "vocab_id": "vocab-000046",
+      "english": "hungry",
+      "japanese": {
+        "display": "おなかがすいた",
+        "reading": "おなかがすいた",
+        "written_form": null
+      },
+      "vietnamese": "đói",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 47,
+      "vocab_id": "vocab-000047",
+      "english": "easy",
+      "japanese": {
+        "display": "やさしい",
+        "reading": "やさしい",
+        "written_form": "易しい"
+      },
+      "vietnamese": "dễ",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "やさしい may mean easy or kind; 易しい denotes not difficult."
+    },
+    {
+      "source_row_index": 48,
+      "vocab_id": "vocab-000048",
+      "english": "difficult",
+      "japanese": {
+        "display": "むずかしい",
+        "reading": "むずかしい",
+        "written_form": null
+      },
+      "vietnamese": "khó",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 49,
+      "vocab_id": "vocab-000049",
+      "english": "beautiful",
+      "japanese": {
+        "display": "きれい",
+        "reading": "きれい",
+        "written_form": null
+      },
+      "vietnamese": "đẹp",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "きれい can describe beauty or cleanliness; context determines the meaning."
+    },
+    {
+      "source_row_index": 50,
+      "vocab_id": "vocab-000050",
+      "english": "strong",
+      "japanese": {
+        "display": "つよい",
+        "reading": "つよい",
+        "written_form": null
+      },
+      "vietnamese": "mạnh",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 51,
+      "vocab_id": "vocab-000051",
+      "english": "go",
+      "japanese": {
+        "display": "いく",
+        "reading": "いく",
+        "written_form": null
+      },
+      "vietnamese": "đi",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 52,
+      "vocab_id": "vocab-000052",
+      "english": "read",
+      "japanese": {
+        "display": "よむ",
+        "reading": "よむ",
+        "written_form": null
+      },
+      "vietnamese": "đọc",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 53,
+      "vocab_id": "vocab-000053",
+      "english": "write",
+      "japanese": {
+        "display": "かく",
+        "reading": "かく",
+        "written_form": "書く"
+      },
+      "vietnamese": "viết",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "かく can refer to writing or drawing; 書く denotes writing text."
+    },
+    {
+      "source_row_index": 54,
+      "vocab_id": "vocab-000054",
+      "english": "study",
+      "japanese": {
+        "display": "べんきょうする",
+        "reading": "べんきょうする",
+        "written_form": null
+      },
+      "vietnamese": "học tập",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 55,
+      "vocab_id": "vocab-000055",
+      "english": "work",
+      "japanese": {
+        "display": "はたらく",
+        "reading": "はたらく",
+        "written_form": null
+      },
+      "vietnamese": "làm việc",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 56,
+      "vocab_id": "vocab-000056",
+      "english": "sleep",
+      "japanese": {
+        "display": "ねる",
+        "reading": "ねる",
+        "written_form": null
+      },
+      "vietnamese": "ngủ",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 57,
+      "vocab_id": "vocab-000057",
+      "english": "eat",
+      "japanese": {
+        "display": "たべる",
+        "reading": "たべる",
+        "written_form": null
+      },
+      "vietnamese": "ăn",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 58,
+      "vocab_id": "vocab-000058",
+      "english": "drink",
+      "japanese": {
+        "display": "のむ",
+        "reading": "のむ",
+        "written_form": null
+      },
+      "vietnamese": "uống",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 59,
+      "vocab_id": "vocab-000059",
+      "english": "buy",
+      "japanese": {
+        "display": "かう",
+        "reading": "かう",
+        "written_form": null
+      },
+      "vietnamese": "mua",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 60,
+      "vocab_id": "vocab-000060",
+      "english": "help",
+      "japanese": {
+        "display": "たすける",
+        "reading": "たすける",
+        "written_form": null
+      },
+      "vietnamese": "giúp đỡ",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "たすける often means aid or rescue someone in difficulty; ordinary assistance may use a different expression."
+    },
+    {
+      "source_row_index": 61,
+      "vocab_id": "vocab-000061",
+      "english": "understand",
+      "japanese": {
+        "display": "わかる",
+        "reading": "わかる",
+        "written_form": null
+      },
+      "vietnamese": "hiểu",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 62,
+      "vocab_id": "vocab-000062",
+      "english": "remember",
+      "japanese": {
+        "display": "おぼえる",
+        "reading": "おぼえる",
+        "written_form": null
+      },
+      "vietnamese": "nhớ",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 63,
+      "vocab_id": "vocab-000063",
+      "english": "receive",
+      "japanese": {
+        "display": "うけとる",
+        "reading": "うけとる",
+        "written_form": null
+      },
+      "vietnamese": "nhận",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 64,
+      "vocab_id": "vocab-000064",
+      "english": "choose",
+      "japanese": {
+        "display": "えらぶ",
+        "reading": "えらぶ",
+        "written_form": null
+      },
+      "vietnamese": "chọn",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 65,
+      "vocab_id": "vocab-000065",
+      "english": "swim",
+      "japanese": {
+        "display": "およぐ",
+        "reading": "およぐ",
+        "written_form": null
+      },
+      "vietnamese": "bơi",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 66,
+      "vocab_id": "vocab-000066",
+      "english": "software",
+      "japanese": {
+        "display": "ソフトウェア",
+        "reading": "ソフトウェア",
+        "written_form": null
+      },
+      "vietnamese": "phần mềm",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 67,
+      "vocab_id": "vocab-000067",
+      "english": "database",
+      "japanese": {
+        "display": "データベース",
+        "reading": "データベース",
+        "written_form": null
+      },
+      "vietnamese": "cơ sở dữ liệu",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 68,
+      "vocab_id": "vocab-000068",
+      "english": "password",
+      "japanese": {
+        "display": "パスワード",
+        "reading": "パスワード",
+        "written_form": null
+      },
+      "vietnamese": "mật khẩu",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 69,
+      "vocab_id": "vocab-000069",
+      "english": "music",
+      "japanese": {
+        "display": "おんがく",
+        "reading": "おんがく",
+        "written_form": null
+      },
+      "vietnamese": "âm nhạc",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 70,
+      "vocab_id": "vocab-000070",
+      "english": "language",
+      "japanese": {
+        "display": "ことば",
+        "reading": "ことば",
+        "written_form": null
+      },
+      "vietnamese": "ngôn ngữ",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "ことば may mean language, words, or speech; intended scope needs review."
+    },
+    {
+      "source_row_index": 71,
+      "vocab_id": "vocab-000071",
+      "english": "problem",
+      "japanese": {
+        "display": "もんだい",
+        "reading": "もんだい",
+        "written_form": null
+      },
+      "vietnamese": "vấn đề",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 72,
+      "vocab_id": "vocab-000072",
+      "english": "business",
+      "japanese": {
+        "display": "ビジネス",
+        "reading": "ビジネス",
+        "written_form": null
+      },
+      "vietnamese": "kinh doanh",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 73,
+      "vocab_id": "vocab-000073",
+      "english": "university",
+      "japanese": {
+        "display": "だいがく",
+        "reading": "だいがく",
+        "written_form": null
+      },
+      "vietnamese": "trường đại học",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 74,
+      "vocab_id": "vocab-000074",
+      "english": "project",
+      "japanese": {
+        "display": "プロジェクト",
+        "reading": "プロジェクト",
+        "written_form": null
+      },
+      "vietnamese": "dự án",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 75,
+      "vocab_id": "vocab-000075",
+      "english": "experience",
+      "japanese": {
+        "display": "けいけん",
+        "reading": "けいけん",
+        "written_form": null
+      },
+      "vietnamese": "kinh nghiệm",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 76,
+      "vocab_id": "vocab-000076",
+      "english": "vegetable",
+      "japanese": {
+        "display": "やさい",
+        "reading": "やさい",
+        "written_form": null
+      },
+      "vietnamese": "rau",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 77,
+      "vocab_id": "vocab-000077",
+      "english": "important",
+      "japanese": {
+        "display": "たいせつ",
+        "reading": "たいせつ",
+        "written_form": null
+      },
+      "vietnamese": "quan trọng",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 78,
+      "vocab_id": "vocab-000078",
+      "english": "different",
+      "japanese": {
+        "display": "ちがう",
+        "reading": "ちがう",
+        "written_form": null
+      },
+      "vietnamese": "khác",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "ちがう is verbal: AとBはちがう means A and B differ."
+    },
+    {
+      "source_row_index": 79,
+      "vocab_id": "vocab-000079",
+      "english": "dangerous",
+      "japanese": {
+        "display": "あぶない",
+        "reading": "あぶない",
+        "written_form": null
+      },
+      "vietnamese": "nguy hiểm",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 80,
+      "vocab_id": "vocab-000080",
+      "english": "impossible",
+      "japanese": {
+        "display": "ふかのう",
+        "reading": "ふかのう",
+        "written_form": null
+      },
+      "vietnamese": "không thể",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 81,
+      "vocab_id": "vocab-000081",
+      "english": "because",
+      "japanese": {
+        "display": "なぜなら",
+        "reading": "なぜなら",
+        "written_form": null
+      },
+      "vietnamese": "bởi vì",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "なぜなら introduces an explanation, often followed by a reason and から; clause placement matters."
+    },
+    {
+      "source_row_index": 82,
+      "vocab_id": "vocab-000082",
+      "english": "always",
+      "japanese": {
+        "display": "いつも",
+        "reading": "いつも",
+        "written_form": null
+      },
+      "vietnamese": "luôn luôn",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 83,
+      "vocab_id": "vocab-000083",
+      "english": "sometimes",
+      "japanese": {
+        "display": "ときどき",
+        "reading": "ときどき",
+        "written_form": null
+      },
+      "vietnamese": "thỉnh thoảng",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 84,
+      "vocab_id": "vocab-000084",
+      "english": "together",
+      "japanese": {
+        "display": "いっしょに",
+        "reading": "いっしょに",
+        "written_form": null
+      },
+      "vietnamese": "cùng nhau",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 85,
+      "vocab_id": "vocab-000085",
+      "english": "where",
+      "japanese": {
+        "display": "どこ",
+        "reading": "どこ",
+        "written_form": null
+      },
+      "vietnamese": "ở đâu",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 86,
+      "vocab_id": "vocab-000086",
+      "english": "why",
+      "japanese": {
+        "display": "なぜ",
+        "reading": "なぜ",
+        "written_form": null
+      },
+      "vietnamese": "tại sao",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 87,
+      "vocab_id": "vocab-000087",
+      "english": "hello",
+      "japanese": {
+        "display": "こんにちは",
+        "reading": "こんにちは",
+        "written_form": null
+      },
+      "vietnamese": "xin chào",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "こんにちは is commonly a daytime greeting."
+    },
+    {
+      "source_row_index": 88,
+      "vocab_id": "vocab-000088",
+      "english": "please",
+      "japanese": {
+        "display": "おねがいします",
+        "reading": "おねがいします",
+        "written_form": null
+      },
+      "vietnamese": "làm ơn/xin vui lòng",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "おねがいします is a polite request formula, not a standalone equivalent in every use of please."
+    },
+    {
+      "source_row_index": 89,
+      "vocab_id": "vocab-000089",
+      "english": "thanks",
+      "japanese": {
+        "display": "ありがとう",
+        "reading": "ありがとう",
+        "written_form": null
+      },
+      "vietnamese": "cảm ơn",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 90,
+      "vocab_id": "vocab-000090",
+      "english": "sorry",
+      "japanese": {
+        "display": "すみません",
+        "reading": "すみません",
+        "written_form": null
+      },
+      "vietnamese": "xin lỗi",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "すみません may be apology, excuse me, or attention-getting; use an apology context for sorry."
+    },
+    {
+      "source_row_index": 91,
+      "vocab_id": "vocab-000091",
+      "english": "apartment",
+      "japanese": {
+        "display": "アパート",
+        "reading": "アパート",
+        "written_form": null
+      },
+      "vietnamese": "căn hộ",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "アパート may denote a narrower housing type than generic apartment; intended housing scope needs review."
+    },
+    {
+      "source_row_index": 92,
+      "vocab_id": "vocab-000092",
+      "english": "dictionary",
+      "japanese": {
+        "display": "じしょ",
+        "reading": "じしょ",
+        "written_form": null
+      },
+      "vietnamese": "từ điển",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 93,
+      "vocab_id": "vocab-000093",
+      "english": "supermarket",
+      "japanese": {
+        "display": "スーパーマーケット",
+        "reading": "スーパーマーケット",
+        "written_form": null
+      },
+      "vietnamese": "siêu thị",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 94,
+      "vocab_id": "vocab-000094",
+      "english": "pharmacy",
+      "japanese": {
+        "display": "やっきょく",
+        "reading": "やっきょく",
+        "written_form": null
+      },
+      "vietnamese": "nhà thuốc",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 95,
+      "vocab_id": "vocab-000095",
+      "english": "museum",
+      "japanese": {
+        "display": "はくぶつかん",
+        "reading": "はくぶつかん",
+        "written_form": null
+      },
+      "vietnamese": "bảo tàng",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 96,
+      "vocab_id": "vocab-000096",
+      "english": "waterfall",
+      "japanese": {
+        "display": "たき",
+        "reading": "たき",
+        "written_form": null
+      },
+      "vietnamese": "thác nước",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 97,
+      "vocab_id": "vocab-000097",
+      "english": "firefighter",
+      "japanese": {
+        "display": "しょうぼうし",
+        "reading": "しょうぼうし",
+        "written_form": null
+      },
+      "vietnamese": "lính cứu hỏa",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 98,
+      "vocab_id": "vocab-000098",
+      "english": "neighbor",
+      "japanese": {
+        "display": "となりのひと",
+        "reading": "となりのひと",
+        "written_form": null
+      },
+      "vietnamese": "hàng xóm",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "となりのひと means the person next door; broader neighborhood scope needs review."
+    },
+    {
+      "source_row_index": 99,
+      "vocab_id": "vocab-000099",
+      "english": "daughter",
+      "japanese": {
+        "display": "むすめ",
+        "reading": "むすめ",
+        "written_form": null
+      },
+      "vietnamese": "con gái",
+      "semantic_review_status": "unreviewed",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": null
+    },
+    {
+      "source_row_index": 100,
+      "vocab_id": "vocab-000100",
+      "english": "grandmother",
+      "japanese": {
+        "display": "そぼ",
+        "reading": "そぼ",
+        "written_form": null
+      },
+      "vietnamese": "bà",
+      "semantic_review_status": "needs_decision",
+      "target_sense": null,
+      "image_search_intent": null,
+      "usage_note": "そぼ commonly refers to one's own grandmother when speaking to others; not a direct respectful address."
+    }
+  ]
+}

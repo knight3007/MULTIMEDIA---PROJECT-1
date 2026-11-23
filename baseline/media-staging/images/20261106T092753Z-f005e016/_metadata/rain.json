@@ -1,0 +1,21 @@
+{
+  "word": "rain",
+  "search_query": "rain illumination",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://newlifetravel.vn/wp-content/uploads/2024/06/vinpearl-harbour-nha-trang-newlifetravelvn.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.KQyFPSZDQtf56aTRDDWGQwHaEK&pid=15.1",
+  "source_page_url": "https://newlifetravel.vn/du-lich-nha-trang-thang-2/",
+  "title": "Có Nên Du Lịch Nha Trang Tháng 2? Review Từ A - Z",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "newlifetravel.vn",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -11.90625
+  }
+}

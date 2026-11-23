@@ -1,0 +1,21 @@
+{
+  "word": "family",
+  "search_query": "family institution",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://image.slidesharecdn.com/socialinsti-160127020733/75/Social-institutions-10-2048.jpg",
+  "thumbnail_url": "https://ts2.mm.bing.net/th?id=OIP.hheCGFE3UhTuc4_7Ekh00AHaFj&pid=15.1",
+  "source_page_url": "https://www.slideshare.net/slideshow/social-institutions-57536719/57536719",
+  "title": "Social institutions | PPTX",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "slideshare.net",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": -0.2734375
+  }
+}

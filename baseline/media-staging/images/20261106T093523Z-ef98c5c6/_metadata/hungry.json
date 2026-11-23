@@ -1,0 +1,21 @@
+{
+  "word": "hungry",
+  "search_query": "hungry appetite",
+  "query_provenance": "model_generated_unreviewed",
+  "provider": "duckduckgo",
+  "image_url": "https://i.pinimg.com/736x/68/78/91/6878912409bd822fd31aeb327b15d60d.jpg",
+  "thumbnail_url": "https://ts1.mm.bing.net/th?id=OIP.-mxXYE4yDqZs7mz8XAFshgHaHa&pid=15.1",
+  "source_page_url": "https://www.pinterest.com/pin/discover-the-difference-between-appetite-and-hunger--242209286201481785/",
+  "title": "Discover the Difference Between Appetite and Hunger | Pretty notes ...",
+  "width": null,
+  "height": null,
+  "source": "duckduckgo",
+  "result_source": "www.pinterest.com",
+  "search_client": "ddgs",
+  "search_backend": "bing",
+  "image_selection": {
+    "method": "siglip2",
+    "model": "google/siglip2-so400m-patch16-384",
+    "score": 1.9921875
+  }
+}

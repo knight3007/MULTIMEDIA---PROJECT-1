@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-11-22T09:45:45+07:00",
+  "branch": "main",
+  "head": "936d9fdd27810e50a144fb6399e647b1ba18c371",
+  "git_status_short": " M comand.txt\n M \"schedule/20-9 list\"\n?? .github/\n?? AGENTS.md\n?? Kaggle_Qwen3_4B_Cloudflare_Quick_Tunnel_V4.ipynb\n?? baseline/\n?? batch_inputs/\n?? \"collect data script/fixtures/\"\n?? \"collect data script/image_query_benchmark.py\"\n?? \"collect data script/image_retrieval_benchmark.py\"\n?? \"collect data script/remote_qwen_client.py\"\n?? \"collect data script/remote_qwen_probe.py\"\n?? \"collect data script/remote_qwen_v4_benchmark.py\"\n?? \"collect data script/test_image_query_benchmark.py\"\n?? \"collect data script/test_image_retrieval_benchmark.py\"\n?? \"collect data script/test_remote_qwen_client.py\"\n?? \"collect data script/test_remote_qwen_probe.py\"\n?? \"collect data script/test_remote_qwen_v4.py\"\n?? docs/KAGGLE_BATCH_AUTOMATION_ARCHITECTURE.md\n?? docs/KAGGLE_BATCH_AUTOMATION_CONTEXT.md\n?? docs/REMOTE_QWEN_API_V1.md\n?? docs/REMOTE_QWEN_API_V2.md\n?? kaggle_batch/\n?? lenh.txt\n?? reports/architecture_reassessment/\n?? reports/chicken_image_comparison.png\n?? reports/full_media_staging_inventory_v1.json\n?? reports/full_media_staging_preflight_hashes.json\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/02_qwen_queries_100.csv\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/02_qwen_queries_100.json\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/03_image_lineage_100.csv\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/03_image_lineage_100.json\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/04_image_quality_review.csv\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/05_repository_inventory.csv\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/audit_manifest.json\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/audit_statistics.json\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/build_audit.py\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/contact_sheets/\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/finalize_audit.py\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/git_status_final.txt\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/git_status_initial.txt\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/protected_hash_comparison.json\n?? reports/image_pipeline_audit/20261106T102750Z-cd93f8a1/protected_hashes_before.json\n?? reports/image_pipeline_benchmark/\n?? reports/phase0_quality_review/\n?? reports/phase_h_vocabulary_alignment.csv\n?? reports/remote_qwen/\n",
+  "sha256": {
+    "AGENTS.md": "2aeebabb9b5551b82ae5995eefc5b737c8ed2bcd2f643fb8f50e2ea968557c26",
+    "PROJECT_CONTEXT.md": "3071b90057811bb92ce80a63246d555e80c53a40d11f1028b560523f8c106200",
+    "CODEX_PROGRESS.md": "4ffd08db86f39a2f5dda983c5da5005540d614d2b1a3a5f3252f5253a6fddeb2",
+    "tasks/plan.md": "b265b54f6be4598c5f81a7982857ed59bb0a4c57934a912fdb5366a6bb7f08fb",
+    "tasks/todo.md": "76a99915fe225b96142729f8756ee2ac375ba36e0019fd375e7e866b577b6b3f",
+    "reports/architecture_reassessment/01_current_project_audit.md": "afd5fe3c438abc05dcba6c353c9f01445ea3aa17ddc3de041b8452f6feb6a62f",
+    "reports/architecture_reassessment/02_architecture_comparison.md": "f18b037b4c5d3ad74fe4913a2aedb725ca984986363c715a44cb2326b093e7aa",
+    "reports/architecture_reassessment/03_ai_infrastructure_assessment.md": "e309bfbf1af7e99f60a816148a669618438a0067302cf96b7c504dced852890c",
+    "reports/architecture_reassessment/04_recommended_architecture.md": "591112b79fad1d214de8d44a22f2885dc6fd8dc557f35c8bb08f4afa2e6cb677",
+    "reports/architecture_reassessment/05_migration_roadmap.md": "b3ec810cba7441fdb502fc93f8ca93e210468fc4b6f31283472c280efa271b3a",
+    "reports/architecture_reassessment/06_executive_summary.md": "f4ed15953f8cd4ab4670442fe62a2b0cf2b0efd55f639956a8cac0f9947d9af7",
+    "reports/phase0_quality_review/00_scope_adjustment.md": "b50154ec29ede83d28626c9b303eed375c4dec33d6c0d915d75615e290c2d5af",
+    "reports/phase0_quality_review/01_revised_roadmap.md": "ab1c41d51f1e76698df3a99b47f5b2d1c10862728ed1bde5a561d1584db4a680",
+    "reports/phase0_quality_review/02_initial_quality_findings.md": "797ffeb569be8c93b6eb367b9b5f7c770b35955a5254d045b0b6aeb4a1a1d792",
+    "reports/phase0_quality_review/03_existing_evidence_100.csv": "0c0571541175a2ed42a1b05fe3051ad5958eaf54c62373452d9c872abe39b1e5",
+    "reports/phase0_quality_review/04_review_input_hashes.json": "a34409585d08413016061317bc7f557f4e7b5a474de7f7feb549283709282a8e"
+  }
+}

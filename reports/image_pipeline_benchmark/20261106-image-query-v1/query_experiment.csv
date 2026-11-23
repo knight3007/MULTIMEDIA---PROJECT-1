@@ -1,0 +1,176 @@
+source_row_index,vocab_id,english,japanese,vietnamese,semantic_review_status,target_sense,usage_note,historical_raw_model_query,historical_effective_search_query,historical_query_provenance,variant_a_raw_decoded_text,variant_a_raw_model_query,variant_a_effective_search_query,variant_a_status,variant_a_error,variant_b_raw_decoded_text,variant_b_visual_type,variant_b_raw_model_query,variant_b_effective_search_query,variant_b_status,variant_b_error
+4,vocab-000004,rice,ごはん,cơm,approved,cooked rice,,rice grain,cooked rice,human_approved,rice grain,rice grain,cooked rice,valid,,"{
+  ""visual_type"": ""concrete_object"",
+  ""search_query"": ""cooked rice"",
+  ""visual_description"": ""A bowl of cooked rice with a spoon in hand, showing the texture and appearance of the rice"",
+  ""negative_constraints"": [],
+  ""reason"": ""The image captures the target sense of cooked rice as a concrete object, with no misleading elements.""
+}",concrete_object,cooked rice,cooked rice,valid,
+9,vocab-000009,chicken,とりにく,thịt gà,approved,chicken meat,,chicken animal,chicken meat,human_approved,chicken animal,chicken animal,chicken meat,valid,,"{
+  ""visual_type"": ""concrete_object"",
+  ""search_query"": ""chicken meat"",
+  ""visual_description"": ""A visible slice of chicken meat, showing the texture and color of the flesh."",
+  ""negative_constraints"": [],
+  ""reason"": ""The image search intent is for chicken meat, and the visual depicts a concrete object that aligns with the target sense.""
+}",concrete_object,chicken meat,chicken meat,valid,
+19,vocab-000019,rain,あめ,mưa,needs_decision,,あめ can also mean candy; 雨 denotes rain.,rain illumination,rain illumination,model_generated_unreviewed,rain illumination,rain illumination,rain illumination,valid,,"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""rain"",
+  ""visual_description"": ""A person standing under an umbrella during a rainy day"",
+  ""negative_constraints"": [""not a literal photo of rain"", ""not a photo of candy""],
+  ""reason"": ""The image shows a person under an umbrella during rain, which represents the action of rain in a visual context. The uncertainty lies in the target sense of 'rain' as both weather and candy, which is not fully clear from the provided information.""
+}",action,rain,rain,valid,
+35,vocab-000035,shirt,シャツ,áo sơ mi,needs_decision,,Vietnamese áo sơ mi is narrower than general English shirt; intended garment type needs review.,shirt clothing,shirt clothing,model_generated_unreviewed,shirt clothing,shirt clothing,shirt clothing,valid,,"{
+  ""visual_type"": ""concrete_object"",
+  ""search_query"": ""shirt"",
+  ""visual_description"": ""A white shirt worn by a person standing in a typical clothing store"",
+  ""negative_constraints"": [""not a clothing item"", ""not a specific type of shirt""],
+  ""reason"": ""The image should show a specific type of shirt (e.g., formal or casual) to distinguish it from a general shirt. The semantic review status indicates uncertainty in the target sense.""
+}",concrete_object,shirt,shirt,valid,
+41,vocab-000041,today,きょう,hôm nay,unreviewed,,,today timepiece,today timepiece,model_generated_unreviewed,today timepiece,today timepiece,today timepiece,valid,,"{
+  ""visual_type"": ""time_weather"",
+  ""search_query"": ""a calendar showing today's date"",
+  ""visual_description"": ""A calendar displaying the current day with the date marked clearly"",
+  ""negative_constraints"": [""no time indicators"", ""no weather elements""],
+  ""reason"": ""The visual depicts a calendar showing today's date, which aligns with the target sense of 'today' in the context of time. The uncertainty lies in the exact representation of the date and the absence of weather elements, which may not be relevant to the target sense.""
+}",time_weather,a calendar showing today's date,a calendar showing today's date,valid,
+42,vocab-000042,tomorrow,あした,ngày mai,unreviewed,,,tomorrow timepiece,tomorrow timepiece,model_generated_unreviewed,tomorrow timepiece,tomorrow timepiece,tomorrow timepiece,valid,,"{
+  ""visual_type"": ""time_weather"",
+  ""search_query"": ""a calendar showing a future date"",
+  ""visual_description"": ""A calendar displaying a future date with a day marked as 'tomorrow'"",
+  ""negative_constraints"": [""no time indicators"", ""no visual representation of the day""],
+  ""reason"": ""A calendar showing a future date is a provisional depiction of 'tomorrow' and may not accurately represent the actual time.""
+}",time_weather,a calendar showing a future date,a calendar showing a future date,valid,
+43,vocab-000043,yesterday,きのう,hôm qua,unreviewed,,,yesterday place,yesterday place,model_generated_unreviewed,yesterday place,yesterday place,yesterday place,valid,,"{
+  ""visual_type"": ""time_weather"",
+  ""search_query"": ""a calendar showing a day before today"",
+  ""visual_description"": ""A calendar displaying a day before today with a date marker and a sun icon"",
+  ""negative_constraints"": [""no time markers"", ""no sun icon""],
+  ""reason"": ""A calendar showing a day before today is an appropriate visual for the concept of 'yesterday' in the target sense, with uncertainty about the exact representation of time.""
+}",time_weather,a calendar showing a day before today,a calendar showing a day before today,valid,
+47,vocab-000047,easy,やさしい,dễ,needs_decision,,やさしい may mean easy or kind; 易しい denotes not difficult.,easy object,easy object,model_generated_unreviewed,easy object,easy object,easy object,valid,,"{
+  ""visual_type"": ""educational_visual"",
+  ""search_query"": ""easy in a learning context"",
+  ""visual_description"": ""A simple, clear illustration of a learning concept, such as a child learning to read or a student solving a math problem."",
+  ""negative_constraints"": [""avoid abstract concepts not related to learning""],
+  ""reason"": ""The image should represent a clear, straightforward learning scenario to convey the meaning of 'easy' in a practical context.""
+}",educational_visual,easy in a learning context,easy in a learning context,valid,
+48,vocab-000048,difficult,むずかしい,khó,unreviewed,,,difficult object,difficult object,model_generated_unreviewed,difficult object,difficult object,difficult object,valid,,"{
+  ""visual_type"": ""abstract_concept"",
+  ""search_query"": ""difficult concept"",
+  ""visual_description"": ""A person looking at a complex puzzle or a challenging task."",
+  ""negative_constraints"": [],
+  ""reason"": ""The image depicts a challenging task, which aligns with the abstract concept of 'difficult' in a educational context.""
+}",abstract_concept,difficult concept,difficult concept,valid,
+49,vocab-000049,beautiful,きれい,đẹp,needs_decision,,きれい can describe beauty or cleanliness; context determines the meaning.,beautiful object,beautiful object,model_generated_unreviewed,beautiful object,beautiful object,beautiful object,valid,,"{
+  ""visual_type"": ""abstract_concept"",
+  ""search_query"": ""beautiful scenery"",
+  ""visual_description"": ""A serene landscape with vibrant colors and natural elements representing beauty"",
+  ""negative_constraints"": [""not a literal photo"", ""not a real object""],
+  ""reason"": ""The image should represent the abstract concept of beauty, with a focus on visual harmony and natural elements, while avoiding misleading or non-literal interpretations.""
+}",abstract_concept,beautiful scenery,beautiful scenery,valid,
+50,vocab-000050,strong,つよい,mạnh,unreviewed,,,strong object,strong object,model_generated_unreviewed,strong object,strong object,strong object,valid,,"{
+  ""visual_type"": ""abstract_concept"",
+  ""search_query"": ""a strong feeling or force"",
+  ""visual_description"": ""A person standing confidently with a determined expression, surrounded by a visual representation of strength (e.g., a mountain or a powerful object)"",
+  ""negative_constraints"": [""not a literal image of a physical object"", ""avoid abstract concepts that are too vague""],
+  ""reason"": ""The image should represent the concept of strength in a visual form that is clear and educational, while avoiding ambiguous or misleading representations.""
+}",abstract_concept,a strong feeling or force,a strong feeling or force,valid,
+51,vocab-000051,go,いく,đi,unreviewed,,,person going,person going,model_generated_unreviewed,go verb,,,invalid,Qwen output for 'go' after one retry: Qwen returned meta text instead of concrete search terms: 'go verb',"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""a person walking"",
+  ""visual_description"": ""A person walking across a grassy field, moving forward with a determined expression"",
+  ""negative_constraints"": [""no background elements"", ""no lighting effects""],
+  ""reason"": ""The depiction shows a person performing the action of walking, which is the target sense for the word 'go' in the context of movement. The uncertainty arises from the lack of specific details in the target sense, which may require further clarification.""
+}",action,a person walking,a person walking,valid,
+53,vocab-000053,write,かく,viết,needs_decision,,かく can refer to writing or drawing; 書く denotes writing text.,write action,write action,model_generated_unreviewed,write action,write action,write action,valid,,"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""person writing"",
+  ""visual_description"": ""A person holding a pen and writing on a paper"",
+  ""negative_constraints"": [""not a literal photo"", ""not a textbook illustration""],
+  ""reason"": ""The image shows a person performing the action of writing, which aligns with the target sense of 'write' in the context of writing text, while the alternative meaning of 'draw' is not shown.""
+}",action,person writing,person writing,valid,
+54,vocab-000054,study,べんきょうする,học tập,unreviewed,,,study object,study object,model_generated_unreviewed,study object,study object,study object,valid,,"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""person studying"",
+  ""visual_description"": ""A student sitting at a desk, looking at a textbook and a notebook, with a pen in hand"",
+  ""negative_constraints"": [""no background noise"", ""no lighting issues""],
+  ""reason"": ""A student studying is a common visual representation of the action 'study' in educational contexts, and the constraints ensure a clear and accurate depiction.""
+}",action,person studying,person studying,valid,
+55,vocab-000055,work,はたらく,làm việc,unreviewed,,,work object,work object,model_generated_unreviewed,work object,work object,work object,valid,,"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""person working"",
+  ""visual_description"": ""A person performing a task in a workplace"",
+  ""negative_constraints"": [""non-literal imagery"", ""abstract concepts""],
+  ""reason"": ""The depiction shows a person performing an action, which is a common way to represent 'work' in educational visuals.""
+}",action,person working,person working,valid,
+61,vocab-000061,understand,わかる,hiểu,unreviewed,,,understand action,understand action,model_generated_unreviewed,understand action,understand action,understand action,valid,,"{
+  ""visual_type"": ""educational_visual"",
+  ""search_query"": ""person understanding a concept"",
+  ""visual_description"": ""A teacher demonstrating a concept to a group of students, showing a clear visual of the learning process"",
+  ""negative_constraints"": [""no literal images of abstract concepts"", ""no images of actions in a literal sense""],
+  ""reason"": ""The visual depicts a person demonstrating understanding, which aligns with the target sense of 'understand' in an educational context, but the semantic review status indicates uncertainty about the exact meaning.""
+}",educational_visual,person understanding a concept,person understanding a concept,valid,
+62,vocab-000062,remember,おぼえる,nhớ,unreviewed,,,remember object,remember object,model_generated_unreviewed,remember object,remember object,remember object,valid,,"{
+  ""visual_type"": ""educational_visual"",
+  ""search_query"": ""person remembering information"",
+  ""visual_description"": ""A person looking at a book or screen with a focused expression, showing they are trying to recall information"",
+  ""negative_constraints"": [""no action"", ""no emotion"", ""no object""],
+  ""reason"": ""The depiction shows a person engaged in the action of remembering, which aligns with the target sense of 'remember' in an educational context. The uncertainty is in the exact visual representation of the cognitive process, which may vary based on the learner's individual experience.""
+}",educational_visual,person remembering information,person remembering information,valid,
+65,vocab-000065,swim,およぐ,bơi,unreviewed,,,person swimming,person swimming,model_generated_unreviewed,swim verb,,,invalid,Qwen output for 'swim' after one retry: Qwen returned meta text instead of concrete search terms: 'swim verb',"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""a person swimming in a pool"",
+  ""visual_description"": ""A person performing the action of swimming in a pool, showing the motion and the water environment"",
+  ""negative_constraints"": [""no action visible"", ""no water depicted""],
+  ""reason"": ""The depiction shows a person performing the action of swimming, which is the target sense. The uncertainty is in the exact context of the swimming activity and the environment, but the visual captures the action itself.""
+}",action,a person swimming in a pool,a person swimming in a pool,valid,
+66,vocab-000066,software,ソフトウェア,phần mềm,unreviewed,,,software device,software device,model_generated_unreviewed,software device,software device,software device,valid,,"{
+  ""visual_type"": ""abstract_concept"",
+  ""search_query"": ""software"",
+  ""visual_description"": ""A digital interface with icons and text representing a program or application"",
+  ""negative_constraints"": [],
+  ""reason"": ""The target sense is unreviewed, so the depiction is provisional and uncertain.""
+}",abstract_concept,software,software,valid,
+67,vocab-000067,database,データベース,cơ sở dữ liệu,unreviewed,,,database object,database object,model_generated_unreviewed,database object,database object,database object,valid,,"{
+  ""visual_type"": ""educational_visual"",
+  ""search_query"": ""database interface"",
+  ""visual_description"": ""A screen displaying a database structure with icons and labels for data organization"",
+  ""negative_constraints"": [""non-literal imagery"", ""abstract concepts not visually represented""],
+  ""reason"": ""A database interface is an educational visual that represents the concept of a database, but the semantic review status indicates uncertainty about the target sense.""
+}",educational_visual,database interface,database interface,valid,
+71,vocab-000071,problem,もんだい,vấn đề,unreviewed,,,problem object,problem object,model_generated_unreviewed,problem object,problem object,problem object,valid,,"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""person solving a problem"",
+  ""visual_description"": ""A person looking at a puzzle or a complex task, indicating they are trying to solve a problem."",
+  ""negative_constraints"": [""no literal photo of a problem"", ""no action of solving a problem""],
+  ""reason"": ""The depiction shows a person engaged in an action that represents the concept of solving a problem, which is a common way to visualize the idea in educational contexts.""
+}",action,person solving a problem,person solving a problem,valid,
+74,vocab-000074,project,プロジェクト,dự án,unreviewed,,,project object,project object,model_generated_unreviewed,project object,project object,project object,valid,,"{
+  ""visual_type"": ""educational_visual"",
+  ""search_query"": ""project in a workspace"",
+  ""visual_description"": ""A person working on a computer with a document open, showing a project management interface"",
+  ""negative_constraints"": [""not a literal photo"", ""no specific context""],
+  ""reason"": ""A provisional depiction of a project in a workspace, with uncertainty about the exact meaning due to unreviewed semantic status.""
+}",educational_visual,project in a workspace,project in a workspace,valid,
+77,vocab-000077,important,たいせつ,quan trọng,unreviewed,,,important object,important object,model_generated_unreviewed,important object,important object,important object,valid,,"{
+  ""visual_type"": ""abstract_concept"",
+  ""search_query"": ""important concept"",
+  ""visual_description"": ""A person holding a book with the word 'important' highlighted in bold text"",
+  ""negative_constraints"": [""not a literal image"", ""no specific context""],
+  ""reason"": ""The image should represent a concept that is visually emphasized, but the exact visual representation is pending review.""
+}",abstract_concept,important concept,important concept,valid,
+82,vocab-000082,always,いつも,luôn luôn,unreviewed,,,always object,always object,model_generated_unreviewed,always object,always object,always object,valid,,"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""person doing an action repeatedly"",
+  ""visual_description"": ""A person repeatedly performing an action, such as smiling or waving, in a dynamic and clear visual context"",
+  ""negative_constraints"": [""not a literal photo"", ""not a brand name"", ""not a logo""],
+  ""reason"": ""The visual depicts a person performing an action repeatedly, which aligns with the semantic review status of 'unreviewed' and the target sense of 'always' as an action verb.""
+}",action,person doing an action repeatedly,person doing an action repeatedly,valid,
+87,vocab-000087,hello,こんにちは,xin chào,needs_decision,,こんにちは is commonly a daytime greeting.,hello object,hello object,model_generated_unreviewed,hello object,hello object,hello object,valid,,"{
+  ""visual_type"": ""action"",
+  ""search_query"": ""person greeting with hand towards face"",
+  ""visual_description"": ""A person extending their hand towards their face, making a greeting gesture"",
+  ""negative_constraints"": [""not a literal photo"", ""not a real person""],
+  ""reason"": ""The gesture is a common way to greet in Japanese, but the image should focus on the action rather than a literal photo of a person""
+}",action,person greeting with hand towards face,person greeting with hand towards face,valid,
