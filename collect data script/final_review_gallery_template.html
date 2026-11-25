@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thư viện duyệt multimedia</title>
+  <style>
+    :root { color-scheme: light; --ink:#19312c; --muted:#536a61; --paper:#f4f5f0; --surface:#fff; --line:#d9e2da; --accent:#146d5b; --accent-soft:#e5f3eb; --warn:#8a4a16; --warn-soft:#fff3dd; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    button,input,select { font:inherit; }
+    button { cursor:pointer; }
+    :focus-visible { outline:3px solid #d1812f; outline-offset:2px; }
+    header { background:#143f35; color:#fff; padding:1.5rem max(1rem,calc((100vw - 1440px)/2)); }
+    header h1 { font-size:1.55rem; line-height:1.25; margin:0 0 .35rem; }
+    header p { margin:0; color:#d7eee2; }
+    .stats { max-width:1440px; margin:1rem auto; padding:0 1rem; display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.5rem; }
+    .stat { background:var(--surface); border:1px solid var(--line); padding:.65rem .8rem; min-width:0; }
+    .stat strong { display:block; font-size:1.45rem; line-height:1.2; font-variant-numeric:tabular-nums; }
+    .stat span { display:block; color:var(--muted); font-size:.78rem; }
+    .layout { max-width:1440px; margin:auto; padding:0 1rem 1.5rem; display:grid; grid-template-columns:290px minmax(0,1fr); gap:1rem; align-items:start; }
+    .sidebar,.detail { background:var(--surface); border:1px solid var(--line); }
+    .sidebar { position:sticky; top:.75rem; max-height:calc(100vh - 1.5rem); display:flex; flex-direction:column; }
+    .controls { padding:1rem; border-bottom:1px solid var(--line); display:grid; gap:.7rem; }
+    label { display:grid; gap:.25rem; font-weight:600; font-size:.85rem; }
+    input,select { width:100%; min-height:2.5rem; border:1px solid #93a69a; border-radius:4px; padding:.4rem .6rem; background:#fff; color:var(--ink); }
+    #match-count { color:var(--muted); font-size:.8rem; }
+    #item-list { overflow:auto; padding:.35rem; min-height:5rem; }
+    .item-button { display:block; text-align:left; width:100%; border:1px solid transparent; border-radius:4px; background:transparent; padding:.55rem .6rem; color:var(--ink); }
+    .item-button:hover { background:#f2f6f1; }
+    .item-button[aria-current="true"] { border-color:var(--accent); background:var(--accent-soft); }
+    .item-button strong { display:block; overflow-wrap:anywhere; }
+    .item-button small { display:block; color:var(--muted); overflow-wrap:anywhere; }
+    .detail { padding:1.25rem; min-height:70vh; }
+    .detail-top { display:flex; gap:.75rem; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; border-bottom:1px solid var(--line); padding-bottom:1rem; }
+    .eyebrow { color:var(--muted); font-size:.82rem; overflow-wrap:anywhere; }
+    h2 { font-size:clamp(1.8rem,3vw,2.65rem); line-height:1.15; margin:.2rem 0; overflow-wrap:anywhere; }
+    .translation { font-size:1.25rem; margin:.3rem 0 0; }
+    .nav { display:flex; gap:.4rem; align-items:center; }
+    .nav button,.open-image,.dialog-close { border:1px solid #8da69b; border-radius:4px; background:#fff; color:var(--ink); padding:.45rem .7rem; }
+    .nav button:disabled { opacity:.45; cursor:default; }
+    .status-line { display:flex; flex-wrap:wrap; gap:.4rem; margin:1rem 0; }
+    .tag { display:inline-block; border:1px solid var(--line); background:#f5f7f3; padding:.18rem .45rem; font-size:.78rem; border-radius:3px; }
+    .tag.warning { border-color:#dfb276; background:var(--warn-soft); color:var(--warn); }
+    .review-grid { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(270px,1fr); gap:1.1rem; }
+    h3 { font-size:1rem; margin:.1rem 0 .6rem; }
+    .image-box { border:1px solid var(--line); background:#f8f9f6; min-height:360px; display:grid; place-items:center; padding:.75rem; }
+    .image-box img { display:block; width:100%; max-height:500px; object-fit:contain; background:#fff; }
+    .missing { padding:2rem; text-align:center; color:var(--warn); font-weight:600; }
+    .open-image { margin-top:.6rem; }
+    .language-card { border:1px solid var(--line); padding:.75rem; margin-bottom:.75rem; }
+    .language-card.active { border-color:var(--accent); background:var(--accent-soft); }
+    .language-card strong { display:block; font-size:1.2rem; overflow-wrap:anywhere; }
+    .language-card small { display:block; color:var(--muted); margin-bottom:.4rem; }
+    audio { width:100%; display:block; }
+    .media-error { color:#9c2f26; font-size:.82rem; min-height:1.1em; }
+    .warning-list { margin:.4rem 0; padding-left:1.2rem; color:var(--warn); }
+    details { margin-top:1.25rem; border-top:1px solid var(--line); padding-top:.85rem; }
+    summary { cursor:pointer; font-weight:600; }
+    pre { white-space:pre-wrap; overflow-wrap:anywhere; font:12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace; color:#33483f; }
+    dialog { border:0; max-width:min(94vw,1200px); max-height:94vh; padding:1rem; background:#fff; box-shadow:0 12px 50px #0005; }
+    dialog::backdrop { background:#12271fd9; }
+    dialog img { display:block; max-width:88vw; max-height:78vh; object-fit:contain; margin:auto; }
+    .dialog-close { float:right; margin-bottom:.6rem; }
+    @media(max-width:1000px) { .stats { grid-template-columns:repeat(4,minmax(0,1fr)); } .review-grid { grid-template-columns:1fr; } }
+    @media(max-width:650px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } .layout { grid-template-columns:1fr; } .sidebar { position:static; max-height:none; } #item-list { max-height:220px; } .detail { min-height:0; padding:1rem; } .image-box { min-height:260px; } }
+  </style>
+</head>
+<body>
+  <header><h1>Thư viện duyệt multimedia</h1><p>Kiểm tra hình ảnh và nghe phát âm Anh · Nhật. Bản xem nội bộ.</p></header>
+  <section class="stats" aria-label="Tổng quan dữ liệu">
+    <div class="stat"><strong id="count-items"></strong><span>Từ vựng</span></div>
+    <div class="stat"><strong id="count-images"></strong><span>Ảnh hợp lệ</span></div>
+    <div class="stat"><strong id="count-missing-images"></strong><span>Thiếu ảnh</span></div>
+    <div class="stat"><strong id="count-en"></strong><span>Audio Anh</span></div>
+    <div class="stat"><strong id="count-ja"></strong><span>Audio Nhật</span></div>
+    <div class="stat"><strong id="count-review"></strong><span>Cần duyệt</span></div>
+    <div class="stat"><strong id="count-errors"></strong><span>Mục có lỗi</span></div>
+  </section>
+  <main class="layout">
+    <aside class="sidebar" aria-label="Danh sách từ vựng">
+      <div class="controls">
+        <label for="mode">Chế độ xem<select id="mode"><option value="en">English → Vietnamese</option><option value="ja">Japanese → Vietnamese</option></select></label>
+        <label for="search">Tìm từ hoặc ID<input id="search" type="search" autocomplete="off" placeholder="Anh, Nhật, Việt hoặc ID"></label>
+        <label for="filter">Lọc trạng thái<select id="filter"><option value="all">Tất cả</option><option value="success">Đủ media</option><option value="warnings">Cảnh báo</option><option value="errors">Lỗi</option><option value="missing-image">Thiếu ảnh</option><option value="missing-en">Thiếu audio Anh</option><option value="missing-ja">Thiếu audio Nhật</option><option value="issues">Cảnh báo hoặc lỗi</option></select></label>
+        <span id="match-count" role="status"></span>
+      </div>
+      <div id="item-list"></div>
+    </aside>
+    <article class="detail" id="detail" aria-live="polite">
+      <div class="detail-top"><div><div class="eyebrow" id="item-id"></div><h2 id="term"></h2><p class="translation" id="meaning"></p></div><div class="nav"><button id="prev" type="button">← Trước</button><span id="position"></span><button id="next" type="button">Tiếp →</button></div></div>
+      <div class="status-line" id="status-line"></div>
+      <div class="review-grid">
+        <section><h3>Hình minh họa</h3><div class="image-box" id="image-box"><img id="image" alt=""></div><button class="open-image" id="open-image" type="button">Mở ảnh lớn</button><p class="media-error" id="image-error" role="status"></p></section>
+        <section><h3>Phát âm</h3>
+          <div class="language-card" id="card-en"><small>English · tiếng Anh</small><strong id="text-en"></strong><audio id="audio-en" controls preload="metadata" aria-label="Phát âm tiếng Anh"></audio><span class="media-error" id="error-en" role="status"></span></div>
+          <div class="language-card" id="card-ja"><small>日本語 · tiếng Nhật</small><strong id="text-ja"></strong><audio id="audio-ja" controls preload="metadata" aria-label="Phát âm tiếng Nhật"></audio><span class="media-error" id="error-ja" role="status"></span></div>
+          <h3>Cảnh báo</h3><ul class="warning-list" id="warnings"></ul>
+        </section>
+      </div>
+      <details><summary>Chi tiết kỹ thuật</summary><pre id="technical"></pre></details>
+    </article>
+  </main>
+  <dialog id="image-dialog" aria-label="Ảnh phóng to"><button class="dialog-close" id="close-image" type="button">Đóng ×</button><img id="large-image" alt=""></dialog>
+  <script>
+    const items = __CARDS_JSON__;
+    const imageElement = document.getElementById("image");
+    const summary = __SUMMARY_JSON__;
+    const byId = id => document.getElementById(id);
+    let selectedId = items[0]?.id ?? null;
+    let visible = items;
+    const pauseAudio = () => { for (const id of ["audio-en", "audio-ja"]) { const player = byId(id); player.pause(); player.removeAttribute("src"); player.load(); } };
+    const addTag = (text, warning = false) => { const tag = document.createElement("span"); tag.className = warning ? "tag warning" : "tag"; tag.textContent = text; byId("status-line").append(tag); };
+    function matchesFilter(item, filter) {
+      if (filter === "success") return !!item.image && !!item.audio_en && !!item.audio_ja;
+      if (filter === "warnings") return item.warnings.length > 0;
+      if (filter === "errors") return item.status === "failed";
+      if (filter === "missing-image") return !item.image;
+      if (filter === "missing-en") return !item.audio_en;
+      if (filter === "missing-ja") return !item.audio_ja;
+      if (filter === "issues") return item.warnings.length > 0 || item.status === "failed";
+      return true;
+    }
+    function filteredItems() {
+      const query = byId("search").value.trim().toLocaleLowerCase();
+      const filter = byId("filter").value;
+      return items.filter(item => matchesFilter(item, filter) && [item.id,item.english,item.japanese,item.vietnamese].some(value => value.toLocaleLowerCase().includes(query)));
+    }
+    function renderList() {
+      visible = filteredItems();
+      if (!visible.some(item => item.id === selectedId)) selectedId = visible[0]?.id ?? null;
+      byId("match-count").textContent = `${visible.length} / ${items.length} mục`;
+      const list = byId("item-list"); list.replaceChildren();
+      for (const item of visible) {
+        const button = document.createElement("button"); button.type = "button"; button.className = "item-button";
+        button.setAttribute("aria-current", String(item.id === selectedId));
+        const primary = document.createElement("strong"); primary.textContent = byId("mode").value === "en" ? item.english : item.japanese;
+        const secondary = document.createElement("small"); secondary.textContent = `${item.vietnamese} · ${item.image ? "có ảnh" : "thiếu ảnh"}`;
+        button.append(primary, secondary); button.addEventListener("click", () => { selectedId = item.id; renderList(); renderDetail(); }); list.append(button);
+      }
+      renderDetail();
+    }
+    function setAudio(locale, item) {
+      const asset = item[`audio_${locale}`], player = byId(`audio-${locale}`), error = byId(`error-${locale}`);
+      error.textContent = asset ? "" : "Không có audio cho ngôn ngữ này.";
+      if (asset) { player.hidden = false; player.src = asset.path; player.load(); }
+      else player.hidden = true;
+      byId(`card-${locale}`).classList.toggle("active", byId("mode").value === locale);
+    }
+    function renderDetail() {
+      pauseAudio();
+      const item = visible.find(entry => entry.id === selectedId);
+      const detail = byId("detail");
+      if (!item) { detail.hidden = true; return; }
+      detail.hidden = false;
+      const mode = byId("mode").value, position = visible.findIndex(entry => entry.id === selectedId);
+      byId("item-id").textContent = `Mục ${position + 1}/${visible.length} · ${item.id} · dòng Excel ${item.row}`;
+      byId("term").textContent = mode === "en" ? item.english : item.japanese;
+      byId("meaning").textContent = item.vietnamese;
+      byId("text-en").textContent = item.english; byId("text-ja").textContent = item.japanese;
+      byId("position").textContent = `${position + 1}/${visible.length}`;
+      byId("prev").disabled = position <= 0; byId("next").disabled = position >= visible.length - 1;
+      byId("status-line").replaceChildren(); addTag(`Xử lý: ${item.status}`); addTag(`Ảnh: ${item.image_status}`, !item.image); addTag(`Nội dung: ${item.review_status}`);
+      const image = imageElement, open = byId("open-image"), box = byId("image-box"); box.replaceChildren(); byId("image-error").textContent = "";
+      if (item.image) { image.src = item.image.path; image.alt = `Hình minh họa cho ${item.english} / ${item.japanese}`; box.append(image); open.hidden = false; }
+      else { const missing = document.createElement("p"); missing.className = "missing"; missing.textContent = "NO_SUITABLE_IMAGE · Chưa có ảnh phù hợp"; box.append(missing); open.hidden = true; }
+      setAudio("en", item); setAudio("ja", item);
+      const warnings = byId("warnings"); warnings.replaceChildren();
+      if (item.warnings.length) for (const warning of item.warnings) { const li = document.createElement("li"); li.textContent = warning; warnings.append(li); }
+      else { const li = document.createElement("li"); li.textContent = "Không có cảnh báo kỹ thuật."; warnings.append(li); }
+      byId("technical").textContent = JSON.stringify({status:item.status,review_status:item.review_status,technical:item.technical,target_sense:item.target_sense,image:item.image,audio_english:item.audio_en,audio_japanese:item.audio_ja},null,2);
+    }
+    for (const [label,key] of [["items","items"],["images","images"],["missing-images","missing_images"],["en","english_audio"],["ja","japanese_audio"],["review","needs_review"],["errors","errors"]]) byId(`count-${label}`).textContent = summary[key];
+    byId("mode").addEventListener("change", () => { renderList(); });
+    byId("search").addEventListener("input", renderList); byId("filter").addEventListener("change", renderList);
+    byId("prev").addEventListener("click", () => { const index = visible.findIndex(item => item.id === selectedId); if (index > 0) { selectedId = visible[index-1].id; renderList(); } });
+    byId("next").addEventListener("click", () => { const index = visible.findIndex(item => item.id === selectedId); if (index < visible.length-1) { selectedId = visible[index+1].id; renderList(); } });
+    imageElement.addEventListener("error", () => { byId("image-error").textContent = "Không tải được ảnh đã chọn."; byId("open-image").hidden = true; });
+    for (const locale of ["en","ja"]) byId(`audio-${locale}`).addEventListener("error", event => { if (event.currentTarget.getAttribute("src")) byId(`error-${locale}`).textContent = `Không tải được audio ${locale.toUpperCase()}.`; });
+    byId("open-image").addEventListener("click", () => { const large = byId("large-image"); large.src = byId("image").src; large.alt = byId("image").alt; byId("image-dialog").showModal(); });
+    byId("close-image").addEventListener("click", () => byId("image-dialog").close());
+    renderList();
+  </script>
+</body>
+</html>
