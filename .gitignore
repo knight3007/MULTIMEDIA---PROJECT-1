@@ -43,6 +43,16 @@ models/
 *.bin
 
 # Generated multimedia data
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.img
+*.mp3
+*.wav
+*.flac
+*.ogg
 data/image/en/*.jpg
 data/image/en/_metadata/*.json
 data/audio/en/*.mp3
@@ -51,6 +61,8 @@ data/description/en/*.txt
 # Local Codex context and isolated audio environment
 CODEX_CONTEXT_BUNDLE/
 .venv-audio/
+docker-output/
+docker-model-cache/
 
 # Generated Japanese audio; keep legacy WAV files local too
 data/audio/jp/*.mp3

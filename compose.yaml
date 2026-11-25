@@ -1,0 +1,60 @@
+x-pipeline: &pipeline
+  build: .
+  image: multimedia-project-1:local
+  working_dir: /app
+  environment:
+    HF_HOME: /root/.cache/huggingface
+    HF_HUB_OFFLINE: ${HF_HUB_OFFLINE:-0}
+    HF_ENDPOINT: ${HF_ENDPOINT:-https://huggingface.co}
+    HF_TOKEN: ${HF_TOKEN:-}
+    HTTP_PROXY: ${HTTP_PROXY:-}
+    HTTPS_PROXY: ${HTTPS_PROXY:-}
+    NO_PROXY: ${NO_PROXY:-}
+  volumes:
+    - type: bind
+      source: ${INPUT_DIR:-./tests/fixtures/b001}
+      target: /input
+      read_only: true
+    - type: bind
+      source: ${OUTPUT_DIR:-./docker-output}
+      target: /app/reports/EXCEL_FULL_PIPELINE_FINAL
+    - type: bind
+      source: ${MODEL_CACHE_DIR:-./docker-model-cache}
+      target: /root/.cache/huggingface
+    - type: bind
+      source: ./data
+      target: /app/data
+      read_only: true
+    - type: bind
+      source: ./baseline
+      target: /app/baseline
+      read_only: true
+    - type: bind
+      source: ./tests/fixtures
+      target: /app/tests/fixtures
+      read_only: true
+    - type: bind
+      source: ./batch_inputs
+      target: /app/batch_inputs
+      read_only: true
+    - type: bind
+      source: ./.github
+      target: /app/.github
+      read_only: true
+    - type: bind
+      source: ./reports
+      target: /app/reports
+      read_only: true
+    - type: bind
+      source: ./.git
+      target: /app/.git
+      read_only: true
+
+services:
+  pipeline:
+    <<: *pipeline
+
+  pipeline-gpu:
+    <<: *pipeline
+    profiles: [gpu]
+    gpus: all
