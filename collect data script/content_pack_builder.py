@@ -69,7 +69,8 @@ def asset_file(asset, root, where, errors, check_assets):
         return
     mime, digest, rel = asset.get("mime_type"), asset.get("sha256"), asset.get("path")
     extension = EXTENSIONS.get(mime)
-    if mime not in EXTENSIONS or not mime.startswith(where.rsplit(".", 1)[-1] + "/"):
+    kind = where.rsplit(".", 1)[-1].split("_", 1)[0]
+    if mime not in EXTENSIONS or not mime.startswith(kind + "/"):
         errors.append(f"{where}.mime_type: unsupported for this field")
     if not isinstance(digest, str) or not SHA.fullmatch(digest):
         errors.append(f"{where}.sha256: expected lowercase SHA-256")
@@ -157,7 +158,7 @@ def validate_pack(pack, asset_root=None, check_assets=True, mode="private"):
     seen_ids, seen_keys, ready = set(), set(), 0
     for index, item in enumerate(items):
         where = f"items[{index}]"
-        if not fields(item, ITEM_KEYS, where, errors, optional={"extensions"}):
+        if not fields(item, ITEM_KEYS, where, errors, optional={"extensions", "audio_english", "audio_japanese"}):
             continue
         if not valid_id(item["item_id"], "item-") or item["item_id"] in seen_ids:
             errors.append(f"{where}.item_id: invalid or duplicate UUIDv4")
@@ -219,8 +220,23 @@ def validate_pack(pack, asset_root=None, check_assets=True, mode="private"):
                 errors.append(f"{where}.distribution.evidence: expected text or null")
             if dist["status"] == "permitted" and not dist["evidence"]:
                 errors.append(f"{where}.distribution: permission evidence required")
-        for kind in ("image", "audio"):
-            if item[kind] is not None:
+        dual = "audio_english" in item or "audio_japanese" in item
+        if dual and item.get("audio") != item.get("audio_japanese"):
+            errors.append(f"{where}: legacy audio must match Japanese audio")
+        if dual:
+            modes = (pack.get("extensions") or {}).get("language_modes", {}) if isinstance(pack.get("extensions"), dict) else {}
+            expected = {"ENGLISH_TO_VIETNAMESE": {"source": "english", "translation": "vietnamese", "audio": "audio_english"},
+                        "JAPANESE_TO_VIETNAMESE": {"source": "japanese", "translation": "vietnamese", "audio": "audio_japanese"}}
+            if modes != expected:
+                errors.append(f"{where}: dual language mode mapping required")
+            metadata = (item.get("extensions") or {}).get("dual_audio_v1", {}) if isinstance(item.get("extensions"), dict) else {}
+            for locale, field, asset_name in (("en", "english", "audio_english"), ("ja", "japanese", "audio_japanese")):
+                entry = metadata.get(locale, {})
+                asset = item.get(asset_name)
+                if entry.get("locale") != locale or entry.get("text") != item[field] or entry.get("sha256") != (asset or {}).get("sha256"):
+                    errors.append(f"{where}.{asset_name}: source text, locale or hash mismatch")
+        for kind in ("image", "audio", "audio_english", "audio_japanese"):
+            if item.get(kind) is not None:
                 asset_file(item[kind], asset_root, where + "." + kind, errors, check_assets)
         item_errors = item["errors"]
         if not isinstance(item_errors, list):
@@ -233,14 +249,15 @@ def validate_pack(pack, asset_root=None, check_assets=True, mode="private"):
                     errors.append(f"{prefix}: invalid error entry")
         if bool(item_errors) != (status == "failed"):
             errors.append(f"{where}.errors: failed requires errors; other states require empty errors")
-        if status in {"needs_review", "ready"} and (not item["image"] or not item["audio"] or item["technical_integrity"] != "pass"):
+        if status in {"needs_review", "ready"} and (not item["image"] or not item["audio"] or dual and (not item.get("audio_english") or not item.get("audio_japanese")) or item["technical_integrity"] != "pass"):
             errors.append(f"{where}.status: both verified media and technical pass required")
         if status == "ready":
             ready += 1
             if item["review_status"] != "approved" or not isinstance(quality, dict) or any(quality.get(key) != "pass" for key in QUALITY):
                 errors.append(f"{where}.status: ready requires approval and four quality passes")
         else:
-            unavailable.append({"item_id": item["item_id"], "status": status, "missing_media": [k for k in ("image", "audio") if item[k] is None]})
+            kinds = ("image", "audio_english", "audio_japanese") if dual else ("image", "audio")
+            unavailable.append({"item_id": item["item_id"], "status": status, "missing_media": [k for k in kinds if item.get(k) is None]})
     if mode == "public":
         if pack["test_only"]:
             errors.append("pack.test_only: synthetic/test content cannot be released")
@@ -274,7 +291,7 @@ def source_pack(source, import_path=None):
             raise PackError("Changed B-003 processing snapshot requires explicit pack_version")
         pack = {"contract_version": 1, "pack_id": record["pack_id"], "pack_version": record.get("pack_version", 1),
                 "import_id": record["import_id"], "test_only": True,
-                "items": [{key: item[key] for key in ITEM_KEYS} for item in record["items"]]}
+                "items": [{key: item[key] for key in ITEM_KEYS | {"audio_english", "audio_japanese", "extensions"} if key in item} for item in record["items"]]}
     else:
         raise PackError("Expected B-003.1 processing manifest or Content Pack v1")
     if import_path is not None:
@@ -306,7 +323,7 @@ def build_pack(source, output, import_path=None, asset_root=None, mode="private"
     output = Path(output)
     if output.exists():
         raise PackError(f"Output exists: {output}")
-    assets = {asset["path"] for item in pack["items"] for asset in (item["image"], item["audio"]) if asset}
+    assets = {asset["path"] for item in pack["items"] for asset in (item.get("image"), item.get("audio"), item.get("audio_english"), item.get("audio_japanese")) if asset}
     try:
         output.mkdir(parents=True, exist_ok=False)
         for relative in sorted(assets):

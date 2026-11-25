@@ -2,6 +2,12 @@
 
 Status: **PROPOSED implementation contract**, B-001, 2026-11-22. UTF-8 JSON plus relative media files, independent of framework/transport. This is a new interchange format, not a replacement for `unified_dataset_v1.json`. [Excel input](excel_v1.md) defines IDs; [adapters](integration_notes.md) explain compatibility. Fixtures are synthetic only.
 
+## Private dual-language extension (2026-11-24)
+
+Existing v1 packs remain valid. A private pack with two pronunciation modes may add `audio_english` and `audio_japanese` Asset fields to an Item. The legacy `audio` field is an exact alias of `audio_japanese`. A partial or failed item may have only one of the new assets; `needs_review` and `ready` require both. The validator checks their bytes, hashes, paths and MIME types independently, and reports the missing language by field name.
+
+For such items, `pack.extensions.language_modes` must map `ENGLISH_TO_VIETNAMESE` to `english` + `vietnamese` + `audio_english`, and `JAPANESE_TO_VIETNAMESE` to `japanese` + `vietnamese` + `audio_japanese`. `item.extensions.dual_audio_v1.en/ja` binds each source text, locale and asset hash, plus provider, voice and duration where available. This metadata does not imply phonetic verification or human approval. The private exporter copies both assets with pack-relative paths. Public export remains blocked by the current builder until rights and metadata handling are established.
+
 ## Envelope and record shape
 
 All listed keys are required unless explicitly optional. Nullable fields must be present with null. Integers are positive safe JSON integers (`<= 9007199254740991`). Reject unknown core fields in v1 to catch typos; optional `extensions` object may carry namespaced, non-executable metadata and is ignored by v1 consumers. Reject unsupported contract_version and duplicate JSON keys. No implicit locale coercion.

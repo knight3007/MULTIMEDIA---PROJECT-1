@@ -163,14 +163,16 @@ class AudioPermanentError(CollectionError):
     """A configuration or provider refusal that should not be retried."""
 
 
-def synthesize_gtts_mp3(reading: str, destination: Path, *, timeout: int) -> None:
+def synthesize_gtts_mp3(reading: str, destination: Path, *, timeout: int, locale: str = AUDIO_LOCALE) -> None:
     """Download Google Translate speech once; the caller controls retry and cache."""
     try:
         from gtts import gTTS, gTTSError
     except ImportError as error:
         raise AudioPermanentError("gTTS is missing; install requirements-audio.txt") from error
     try:
-        gTTS(text=reading, lang=AUDIO_LOCALE, tld=AUDIO_VOICE["tld"],
+        if locale not in {"ja", "en"}:
+            raise AudioPermanentError(f"Unsupported pronunciation locale: {locale}")
+        gTTS(text=reading, lang=locale, tld=AUDIO_VOICE["tld"],
              slow=AUDIO_VOICE["slow"], timeout=timeout).save(str(destination))
     except gTTSError as error:
         status = getattr(getattr(error, "rsp", None), "status_code", None)
