@@ -1,0 +1,20 @@
+# Scope: this Unity project only. Unity writes Force Text YAML with LF (EditorSettings m_SerializationMode: 2).
+# Keep LF so the repo's core.autocrlf=true does not churn scene/asset diffs. merge=unityyamlmerge applies only
+# on machines that configure the UnityYAMLMerge driver; elsewhere Git falls back to its normal text merge.
+*.unity        text eol=lf merge=unityyamlmerge
+*.prefab       text eol=lf merge=unityyamlmerge
+*.asset        text eol=lf merge=unityyamlmerge
+*.mat          text eol=lf merge=unityyamlmerge
+*.meta         text eol=lf
+*.shadergraph  text eol=lf
+*.asmdef       text eol=lf
+
+# TextMesh Pro font atlases: multi-MB generated YAML, regenerated rather than reviewed.
+Assets/Fonts/*SDF.asset                                      -diff linguist-generated
+Assets/TextMesh?Pro/Resources/Fonts?&?Materials/*SDF.asset   -diff linguist-generated
+
+# Binaries stay in normal Git (no LFS): the largest file is 5.5 MB and the project is about 30 MB (G-008 audit).
+*.ttf  binary
+*.otf  binary
+*.png  binary
+*.ogg  binary
