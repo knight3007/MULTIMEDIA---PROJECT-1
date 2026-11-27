@@ -1,0 +1,95 @@
+{
+  "contract_version": 1,
+  "pack_version": 1,
+  "test_only": true,
+  "pack_id": "pack-dddddddd-dddd-4ddd-8ddd-dddddddddddd",
+  "import_id": "imp-dddddddd-dddd-4ddd-8ddd-dddddddddddd",
+  "items": [
+    {
+      "item_id": "item-33333333-3333-4333-8333-333333333333",
+      "source_row": 2,
+      "english": "apple",
+      "japanese": "りんご",
+      "vietnamese": "quả táo",
+      "target_sense": null,
+      "status": "ready",
+      "review_status": "approved",
+      "quality": {
+        "semantic_correctness": "pass",
+        "image_relevance": "pass",
+        "image_visual_quality": "pass",
+        "audio_pronunciation": "pass",
+        "evidence": [
+          {
+            "dimension": "semantic_correctness",
+            "reviewer": "fixture-simulator",
+            "basis": "SIMULATED contract state only; not AI/educational approval",
+            "asset_sha256": null
+          },
+          {
+            "dimension": "image_relevance",
+            "reviewer": "fixture-simulator",
+            "basis": "SIMULATED contract state only; not AI/educational approval",
+            "asset_sha256": "394c481706bf244d3015217d17dca8a9351630b281671acf9472712884d9664d"
+          },
+          {
+            "dimension": "image_visual_quality",
+            "reviewer": "fixture-simulator",
+            "basis": "SIMULATED contract state only; not AI/educational approval",
+            "asset_sha256": "394c481706bf244d3015217d17dca8a9351630b281671acf9472712884d9664d"
+          },
+          {
+            "dimension": "audio_pronunciation",
+            "reviewer": "fixture-simulator",
+            "basis": "SIMULATED contract state only; not AI/educational approval",
+            "asset_sha256": "49ae419f5e01e849da23deb5edae715b6f75c74e13f3deaecea8f601fd0d5f17"
+          },
+          {
+            "dimension": "content_review",
+            "reviewer": "fixture-simulator",
+            "basis": "SIMULATED contract state only; not AI/educational approval",
+            "asset_sha256": null
+          },
+          {
+            "dimension": "technical_integrity",
+            "reviewer": "fixture-simulator",
+            "basis": "Synthetic PNG/tone bytes for checksum tests only",
+            "asset_sha256": null
+          }
+        ]
+      },
+      "technical_integrity": "pass",
+      "distribution": {
+        "status": "unknown",
+        "evidence": null
+      },
+      "image": {
+        "path": "assets/394c481706bf244d3015217d17dca8a9351630b281671acf9472712884d9664d.png",
+        "mime_type": "image/png",
+        "sha256": "394c481706bf244d3015217d17dca8a9351630b281671acf9472712884d9664d",
+        "size_bytes": 80,
+        "source": {
+          "provider": "fixture-simulator",
+          "url": null,
+          "query": null,
+          "model": null,
+          "revision": null
+        }
+      },
+      "audio": {
+        "path": "assets/49ae419f5e01e849da23deb5edae715b6f75c74e13f3deaecea8f601fd0d5f17.wav",
+        "mime_type": "audio/wav",
+        "sha256": "49ae419f5e01e849da23deb5edae715b6f75c74e13f3deaecea8f601fd0d5f17",
+        "size_bytes": 3244,
+        "source": {
+          "provider": "fixture-simulator",
+          "url": null,
+          "query": null,
+          "model": null,
+          "revision": null
+        }
+      },
+      "errors": []
+    }
+  ]
+}
