@@ -1,0 +1,6 @@
+{
+    "name": "MultimediaProject.Runtime",
+    "rootNamespace": "MP1",
+    "references": ["Unity.TextMeshPro", "UnityEngine.UI"],
+    "autoReferenced": true
+}

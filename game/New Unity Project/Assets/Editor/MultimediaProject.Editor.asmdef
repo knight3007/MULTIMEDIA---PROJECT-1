@@ -1,0 +1,7 @@
+{
+    "name": "MultimediaProject.Editor",
+    "rootNamespace": "MP1.EditorTools",
+    "references": ["MultimediaProject.Runtime", "Unity.TextMeshPro", "UnityEngine.UI"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": false
+}
