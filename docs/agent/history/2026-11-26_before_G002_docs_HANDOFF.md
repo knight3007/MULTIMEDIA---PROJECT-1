@@ -1,0 +1,11 @@
+# Latest handoff — G-002.1 planning drafts
+
+Updated 2026-11-26 (Asia/Saigon) by Codex root. Repository `D:/MULTIMEDIA - PROJECT 1`, branch `main`, HEAD `57b6ccb09d25945eb4301f41af2342eb37ea2bda`. The working tree had unrelated pre-existing edits and an untracked `game/background/` at task start; these were not touched. No active write claim. Previous PUSH-001 handoff is preserved in [history](history/2026-11-26_before_G002_1_HANDOFF.md).
+
+## Status: G-002.1 DRAFT, ready for owner review
+
+The owner authorized UX/UI planning while Unity 6 downloads, then added mandatory multilingual typography criteria for a proposed Galaxy asset kit. New drafts: [User Flow](../game/USER_FLOW_v0.1.md), [UX/UI Spec](../game/UX_UI_SPEC_v0.1.md), [Game Asset Inventory](../game/GAME_ASSET_INVENTORY.md). They separate confirmed requirements from proposed mechanics, screen routes, question eligibility, Japanese IME options, historical background adaptation, font and art candidates. Noto Sans JP is the first research candidate, not approved. Kenney packs were researched through official pages, not downloaded. Font binaries and image ZIP were not made.
+
+G-001 documentation/migration is locally complete, with GDD still DRAFT; the protected background SHA-256 is `B33CC9780FC82664608A621BFEE7EC30DCBB6B1D450F2AB11BCAF9F637298DF4`, and current `game/background/background_idea.md` has the same Git blob as HEAD `web/background_idea.md`. Canonical `japanese.display` has 87 Hiragana and 13 Katakana values, no displayed Kanji; imported Excel may contain Kanji. Official Google Fonts metadata confirms Noto Sans JP Japanese/Latin/Latin Extended/Vietnamese subsets, OFL and weights 100–900; IBM, Unity and Kenney official documentation were also checked. These source facts do not prove Unity rendering or visual fit. All three new Markdown files passed `git diff --no-index --check`; no runtime tests, Unity test, performance benchmark or font rendering test was run.
+
+No GDD text, protected background, AI Pipeline, Docker implementation or production asset was changed. No commit/push. Next action: owner reviews the three drafts and decides `NO_HINT` semantics, Japanese input, Tab/partial-input behavior, mechanics values after playtest, visual/font direction and Desktop submission with lecturer. Do not promote any proposal to CONFIRMED without that review.

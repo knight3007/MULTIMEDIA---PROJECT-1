@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository prepares vocabulary and media for a planned web learning game. The working Python pipeline lives in `collect data script/`: collectors, query generation, validation, dataset building, and adjacent `test_*.py` files. `kaggle_batch/` contains the batch runner and its `tests/`. Source vocabulary and review decisions live in `data/vocabulary/`; collected images, audio, and query data live under `data/`. Use `docs/` for contracts and architecture notes, `reports/` for experiment results, and `tasks/` for work plans. `web/` and `game/` are placeholders, not runnable applications.
+This repository prepares vocabulary and media for a planned learning game. The owner prefers Unity Desktop 2D; the draft product design is in `docs/game/GDD_v0.1.md`. `game/` holds a protected historical background concept, not a runnable application. The working Python pipeline lives in `collect data script/`: collectors, query generation, validation, dataset building, and adjacent `test_*.py` files. `kaggle_batch/` contains the batch runner and its `tests/`. Source vocabulary and review decisions live in `data/vocabulary/`; collected images, audio, and query data live under `data/`. Use `docs/` for contracts and architecture notes, `reports/` for experiment results, and `tasks/` for work plans.
 
 ## Build, Test, and Development Commands
 

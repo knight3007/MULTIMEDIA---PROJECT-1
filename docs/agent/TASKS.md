@@ -1,6 +1,152 @@
 # Current tasks
 
-This is the authoritative current task list. Historical DDG tasks in `tasks/plan.md` and `tasks/todo.md` remain complete and unchanged. Status vocabulary: TODO, IN_PROGRESS, BLOCKED, DONE, NEEDS_REVIEW, PARTIAL. DONE requires verified acceptance; dependencies do not grant execution authority. A-004R's 100-ID experimental routing/execution and review package are DONE with 26 explicit query blockers and owner image decisions pending. A-004 remains the historical default-query baseline. A-001.1 quality-baseline preparation, B-002 importer and B-003.1 offline adapter are complete; parent A-001 still needs human query/image review. B-003.2 live processing is paused. Web Game and Game UX/UI remain undecided (D-014). No automatic inference, implementation or deployment.
+## VC-001 — Version control checkpoint (Unity G-008 baseline)
+
+- Status: **COMMITTED LOCALLY, NOT PUSHED**, 2026-11-27 (owner approved; D-053 CONFIRMED). Branch `feature/unity-g008-baseline`: `2429b13` (ignore/attributes), `c4aa296` (project, 303 files), `58e7bc8` (tests, 41 files), then the docs commit. Audit and plan: [version-control audit](VERSION_CONTROL_AUDIT_G008.md).
+- **Candidates:** 346 files (Assets with all .meta, ProjectSettings, Packages, fixtures, tools, licenses). No secrets found. No restricted assets. One machine path made overridable.
+- **LFS:** not needed.
+- **Plan:** branch `feature/unity-g008-baseline`, 4 core commits plus 2 optional.
+- **Excluded:** `Kaggle_…V4.ipynb` (token-like content), `reports/**`, `game/UXUI/`, `data/vocabulary/unified_dataset_v1.json` (needs owner review).
+- **Next:** push and merge only on separate owner approval. Optional commits 5 (promotion tool) and 6 (background/mockup, `web/` deletions) await the owner. `unified_dataset_v1.json`, README, comand.txt, schedule and integration_notes stay uncommitted.
+
+## G-007-R3 — Vocabulary coverage fix
+
+- Status: **DONE, OWNER_VERIFICATION_REQUIRED**, 2026-11-27 (D-051). The owner saw missing words in play. Reproduced on G007_R2 (4 dev-bot sessions on v47, 15 usable items each): per-word counts 0–3 over 30 spawns, and one session never showed `backpack`. Root cause: `VocabularyDeck` drew 10 of a fresh shuffle per wave. Fixed with deck cycles of all items. The regression tests cover pack sizes 10, 12, 15, 20, 30 and 31, with simulated lane postponements. R3 runtime: every word exactly twice in all 5 sessions, cycles 15+15, waves distinct. New logs `G007_SPAWN` (index, item, cycle, wave) and `G007_DEFER`. EditMode 120/120, PlayMode 60/60. Build `game/New Unity Project/Builds/G007_R3_Win64/WordOrbit.exe` (0 warnings, 0 errors). **On owner instruction it also contains the G-008 code** (see below); G007_R2 is kept. Dev-bot runs no longer write learning history; the 4 bot lines written by the first R3 build were removed.
+
+## G-008 — Scoring, audio, waves and results
+
+- Status: **IMPLEMENTED, OWNER_VERIFICATION_REQUIRED**, 2026-11-27 (finalization).
+  - **Build:** `game/New Unity Project/Builds/G008_Win64/WordOrbit.exe`, 0 warnings, 0 errors. EditMode 123/123, PlayMode 62/62.
+  - **Added in finalization:**
+    - Vocabulary coverage in Results, logs and history (usable / encountered / answered correctly / review).
+    - Current and highest combo on the HUD.
+    - `LearningHistory.Target`, so dev bots never write player history (tested).
+    - A genuine lane-deferral PlayMode scenario: 15 deferrals, every word still exactly twice.
+  - **Perf matrix:** Comparable runs, `Logs/g008_perf/`. Workload A (no kills, Normal, seed 60, up to 3 meteors in every build), avg/p95 ms uncapped: 1920 R1 3.61/6.28, R2 2.89/4.26, G008 2.76/4.16; 1366 R1 1.95/2.50, R2 1.99/3.15, G008 2.55/4.74; 1280 R1 1.81/2.51, R2 1.98/3.00, G008 2.05/4.02. With vsync at 1920 all three run at about 7.0 ms (143 FPS). Workload B (bot answers every 2 s, 1 meteor on screen), repeated twice: R2 2.96–3.14, G008 3.01–3.10, equal (a first single G008 run of 3.92 was noise). Spikes over 33 ms (1–11 per 25 s, max 66 ms) come in clusters with no speech or answer event nearby, and also happen in R1 and R2 (max 42–78 ms), so they are not attributed to G-008. Limits: one run per cell, except repeated B (run-to-run noise about ±0.7 ms); R1 bot submits whole words (no per-character typing); R1 and R2 do not log spike counts; the windowed runs shared the desktop with other apps; Expert lane capacity was not part of the comparison.
+  - **Owner request:** a breach now flashes the screen red under the HUD for 0.4 s and shakes the camera lightly for 0.25 s. With reduced motion (F2) the flash is softer and there is no shake. PlayMode test added.
+  - **Owner checks open:** feel of pacing, combo and score, speech and SFX by ear, native JA IME, Results/Review readability.
+  - Earlier status line follows.
+- Earlier: **IMPLEMENTED (in working tree and the G007_R3 build), OWNER_VERIFICATION_REQUIRED**, 2026-11-27. The owner approved O1–O6 as recommended and authorised G-008. G-008.1–.7 are done, with the history writer skipping dev-bot runs. G-008.8 is partly done: spike and postponed counters were added, but the comparable R1/R2/G-008 perf matrix has not run. The G-008 spec notes and a dedicated `G008_Win64` build are still open. Earlier planning status: PLANNED, IMPLEMENTATION_PENDING. Plan: [G-008 plan](../game/G008_IMPLEMENTATION_PLAN_v0.1.md). Tasks G-008.1 session model (waves/combo/points/typos/per-item), .2 wave flow, .3 HUD, .4 audio pending slot + clip cache + SFX roles, .5 Results, .6 Review via VocabularyPreview filter, .7 local history (needs owner O5), .8 comparable perf verification, .9 docs/build. Proposed rules D-046–D-050. Owner decisions O1–O6 open. No gameplay code changed; waits for owner authorization. G-007-R2 owner playtest pending.
+
+## G-007-R2 — Character-Based Combat & Responsive Laser Feedback
+
+- Status: **DONE, OWNER_VERIFICATION_REQUIRED**, 2026-11-27 (D-044, D-045). Each correct answer unit fires one laser at the target and deals damage; wrong units give feedback without damage; the last correct unit destroys the meteor without Enter (score and pronunciation once). Damage = expected answer units (Full Word: whole term; Fill: missing units only); separators are not shots. Damage bar, ship aims at the target, pooled beams (max 3 per input), quiet rate-limited laser SFX. No farming via Backspace/unchanged input; paste counted but beams capped; no damage while an IME composes. Long Fill labels are clamped inside the screen (owner report, D-045); the console mode line is one line with autosize. New `Scripts/Game/TypingCombat.cs`, `Tools/headless.ps1`. EditMode 101/101, PlayMode 55/55 (headless on the real project, Editor closed); build `game/New Unity Project/Builds/G007_R2_Win64/WordOrbit.exe` (0 warnings, 0 errors); captures `Screenshots/g007_r2/` (8 PNG). Videos skipped at owner request (owner will test and report). Native IME and audio by ear still need the owner. R1 build kept.
+
+## G-007-R1 — Remove image hints from gameplay
+
+- Status: **DONE, OWNER_VERIFICATION_REQUIRED**, 2026-11-27 (D-043). Hint options now Chỉ nghĩa / Nghĩa + chữ đầu; image code removed from gameplay and the setup preview. EditMode 87/87, PlayMode 46/46 (live Editor); build `game/New Unity Project/Builds/G007_R1_Win64/WordOrbit.exe` (0 warnings, 0 errors); captures in `Screenshots/g007_r1/` (6 PNG, Easy JA Fill victory 30/30). G007_Win64 kept as the earlier build.
+
+## G-007 — Gameplay Configuration, Difficulty & Answer Modes
+
+- Status: **IMPLEMENTED, OWNER_VERIFICATION_REQUIRED**, 2026-11-27. Owner authorised work while remote; G-006 manual checks remain open.
+  - G-007.1 Game Configuration screen (`GameSetup` scene) — done.
+  - G-007.2 Difficulty presets Easy/Normal/Hard/Expert from spec §5 (D-038) — done.
+  - G-007.3 Hint modes: Chỉ nghĩa, Nghĩa + chữ đầu, Nghĩa + chữ đầu + ảnh, Chỉ ảnh (D-040) — done.
+  - G-007.4 Answer modes: Gõ cả từ, Điền chỗ trống (D-039) — done.
+  - G-007.5 Targeting: Tự động + Tab (default), Tự động, Thủ công (D-041) — done.
+  - G-007.6 Configuration compatibility with reasons (D-040) — done.
+  - G-007.7 Safe spawn below the HUD (D-042) — done.
+  - G-007.8 Tests, build, evidence — done: EditMode 87/87, PlayMode 46/46, build `game/New Unity Project/Builds/G007_Win64/WordOrbit.exe` (0 warnings, 0 errors), gallery `game/New Unity Project/Screenshots/g007/index.html` (19 screenshots, 4 videos without audio).
+  - Final-build performance (uncapped avg / p95, vsync avg): 1920×1080 3.20 / 5.38 ms, 6.97 ms; 1366×768 1.62 / 2.19 ms; 1280×720 1.49 / 1.99 ms; Expert + images, max 3 meteors on screen; allocated ~120 MB.
+  - Owner checks still open: IME, pronunciation by ear, balance, visuals. Details: [HANDOFF](HANDOFF.md). G-008 not started.
+
+## G-006 — Meteor Defense Core Implementation
+
+- Status: **IMPLEMENTED, OWNER_VERIFICATION_REQUIRED**, 2026-11-27. First playable Meteor Defense on the reviewed pack v47, EN-VI and JA-VI. Entry: Main Menu "Chơi Meteor Defense" → Vocabulary Library (pack + language) → MeteorDefense scene.
+  - G-006.1 session rules (`MeteorDefenseSession`, `GameConfig`, D-037) — done.
+  - G-006.2 seeded deck and spawning (`VocabularyDeck`, `LaneChooser`, 5 lanes, label overlap avoidance) — done.
+  - G-006.3 targeting (auto nearest line, Tab cycle, per-meteor drafts; `TargetSelector`) — done.
+  - G-006.4 Full Word answer check (NFC + trim; EN case-insensitive; JA exact script; `AnswerChecker`) — done.
+  - G-006.5 laser, burst, +100 popup, correct-language pronunciation (newest interrupts older) — done.
+  - G-006.6 HP, score, Pause (Resume/Restart/Main Menu with confirm), Back pauses, Victory/Game Over panel (Replay/Library/Main Menu) — done.
+  - G-006.7 developer fixtures hidden from the default Library and blocked from play (D-036) — done.
+  - G-006.8 tests, build, captures, recording, perf — done: EditMode 66/66, PlayMode 34/34, build `game/New Unity Project/Builds/G006_Win64/WordOrbit.exe` (0 warnings, 0 errors), captures and 30 s recording in `Screenshots/g006/`.
+  - Owner checks still open: Japanese IME in the build, audio by ear, playfeel and balance, visual approval. Details: [HANDOFF](HANDOFF.md). G-007 not started.
+
+## G-005 — Flashcard
+
+- Status: **CANCELLED — MERGED INTO VOCABULARY LIBRARY** (D-034, owner, 2026-11-27). Main Menu Flashcard entry removed; word/meaning/image/pronunciation viewing stays in the Vocabulary Library. Phase numbers unchanged; next product phase is G-006 (not started).
+
+## G-004-R1 — Real Content Pack readiness
+
+- Status: **DONE**, 2026-11-27. Owner approved v46 media (15/15 images, EN and JA audio); agent checked meanings (owner-delegated). `reports/EXCEL_15_SMOKE/run-bc2d5460-d9d6-4cef-8cae-1a9601ae7291/content_pack_v47_reviewed/`: 15 ready, EN-VI 15, JA-VI 15, validate_pack valid, media byte-identical to v46; v46 unchanged. Verified in the unchanged G-004 build and by a PlayMode test decoding all 45 media. Library hides unusable packs by default (owner chose hide over delete). Details: [HANDOFF](HANDOFF.md).
+
+## G-004 — Content Pack Runtime & Vocabulary Library
+
+- Status: **IMPLEMENTED, OWNER_VERIFICATION_REQUIRED**, 2026-11-27. G-004.1 contract recovery, G-004.2 reader, G-004.3 validation/eligibility, G-004.4 media runtime, G-004.5 library, G-004.6 pack + mode selection, G-004.7 shared `LearningSession`, G-004.8 tests: EditMode 47/47, PlayMode 18/18, build `Builds/G004_Win64/WordOrbit.exe`, standalone captures in `Screenshots/g004/`. Real packs: 0 eligible (no `ready` items); contract fixture b001: JA-VI 1, EN-VI 0. Details: [HANDOFF](HANDOFF.md). Owner approved G-003-R1 visuals; G-003 manual checks still open.
+
+## G-003-R1 — Owner feedback: Back navigation and denser Galaxy background
+
+- Status: **DONE, OWNER_VISUAL_REVIEW_REQUIRED**, 2026-11-27. Owner tested G-003 and requested visible Back buttons and a richer, larger starfield. Implemented in `game/New Unity Project/`; EditMode 12/12, PlayMode 11/11; build `Builds/G003_R1_Win64/WordOrbit.exe` (old `Builds/G003_Win64/` kept). Before/after and regression captures in `Screenshots/r1/`. Details: [HANDOFF](HANDOFF.md). Both requests are persistent UX requirements (D-031).
+
+## G-003 — Unity Foundation & Technical Prototype
+
+- Status: **IMPLEMENTED, OWNER_VERIFICATION_REQUIRED**, 2026-11-27. G-003.1 to G-003.9 done in `game/New Unity Project/`: EditMode 10/10, PlayMode 7/7, Windows x64 dev build succeeded, real captures at 1920x1080/1366x768/1280x720, standalone media self-test passed, about 7 ms per frame (vsync 144 Hz) with up to 40 meteors. Pending manual: Japanese IME, real-keyboard and laser visuals in the build, audio listening, visual approval. Details: [HANDOFF](HANDOFF.md). G-004 not started.
+
+## UNITY-SETUP-001 — Unity CLI and agent plugin
+
+- Status: **DONE**, 2026-11-27, by owner request. Installed Unity CLI 1.1.0 via `winget install Unity.CLI`, added marketplace `Unity-Technologies/unity-agent-plugin` and installed `unity@unity-agent-plugin` (user scope), ran `unity pipeline install` in `game/New Unity Project/` (adds `com.unity.pipeline` 1.0.1 to `Packages/manifest.json`), opened the project in Editor 6000.6.10f1. Verified: `unity status` → port 7800 `ready`; `unity pipeline editors` → hasPipelinePackage true, serverReachable true. No scenes, scripts or gameplay created; G-003 not started. The Unity project is still untracked in git.
+
+## SKILL-ZIP-001 — Export installed skills
+
+- Status: **DONE**, 2026-11-26. Codex root on `main`/`57b6ccb`; write scope was the ZIP and these three context files. `C:/Users/dotha/Downloads/skills-export-2026-11-26.zip` contains 118 skill directories and a manifest. ZIP CRC and source/destination SHA-256 checks passed. No follow-up required.
+
+## G-002 — Galaxy asset audit and UX/UI documentation
+
+- Overall status: **OWNER_REVIEW_REQUIRED**. Documentation execution is complete for the inspected evidence; this is not visual approval or Unity implementation. Codex root, `main`/`57b6ccb09d25945eb4301f41af2342eb37ea2bda`; no active write claim after checkpoint. Owner downloaded and extracted the source library into `game/UXUI/`. Original ZIPs and extracted assets remain local/untracked and unchanged by this task.
+- **G-002.1 — User flow and mechanics planning: OWNER_REVIEW_REQUIRED.** [Gameplay Mechanics Spec v0.1](../game/GAMEPLAY_MECHANICS_SPEC_v0.1.md) records the owner's preferred planning choices, compatibility and eligibility rules, provisional balance, state diagrams and acceptance scenarios. [GDD](../game/GDD_v0.1.md) remains DRAFT; [User Flow](../game/USER_FLOW_v0.1.md) retains S01–S11 and [UX/UI Spec](../game/UX_UI_SPEC_v0.1.md) remains a screen proposal. Acceptance for closure: owner reviews the complete mechanics draft, including numerical tuning and unresolved runtime behavior. Documentation verification only; no Unity test or playtest.
+- **G-002.2 — Source asset audit: DONE at reported inspection depth.** Dependency: owner-extracted library. [Audit](../game/ASSET_AUDIT.md) records 1,576 extracted files + four ZIPs, metadata/alpha/licensing, 66 exact duplicate pairs, representative visual inspections and unreviewed assets. Verification: recursive metadata/PNG open/SVG parse/hash checks; seven OGG files not listened to and every sprite not visually inspected.
+- **G-002.3 — Asset evaluation and selection: OWNER_REVIEW_REQUIRED.** Dependency: G-002.2. Option A is the **PROPOSED** primary set, score 4.35/5 by the weighted sampled rubric; B 4.30, C 3.53. Deliverables: [audit](../game/ASSET_AUDIT.md) and [inventory](../game/GAME_ASSET_INVENTORY.md). Acceptance: owner reviews the composite at real text sizes and chooses assets; no asset is promoted by documentation alone.
+- **G-002.4 — Visual design system: OWNER_REVIEW_REQUIRED.** Dependency: G-002.3 candidate set. [Proposal](../game/VISUAL_DESIGN_SYSTEM.md) documents dark Galaxy/2D Space Arcade, Blue/Default UI, contrast/layout and the separate protected background plan. Verification: contrast calculations recorded; no Unity composite or background rendered.
+- **G-002.5 — Multilingual typography: PARTIAL.** Dependency: downloaded Noto fonts. Local cmap checks passed requested EN/VI/JA samples for Noto Sans JP Regular/Medium; [visual proposal](../game/VISUAL_DESIGN_SYSTEM.md) and [UX/UI spec](../game/UX_UI_SPEC_v0.1.md) record the TMP plan. Acceptance: later authorized Windows build confirms glyphs, line wrapping, IME and atlas memory; those runtime checks remain BLOCKED by current documentation-only scope.
+- **G-002.6 — Screen asset mapping: OWNER_REVIEW_REQUIRED.** Dependency: G-002.3–4 candidate direction. [UX/UI spec](../game/UX_UI_SPEC_v0.1.md) maps UI-01–09 to S01–S11 and exact source paths, preserving AI Progress and Language Selection. Verification: references and source paths checked; no visual mockup or scene approved.
+- **G-002.7 — Procedural VFX planning: OWNER_REVIEW_REQUIRED.** Dependency: G-002.3 candidate set. [VFX plan](../game/VFX_PLAN.md) covers 13 effects, input assets, components, motion reduction and risks. Verification: documentation review only; no effect built or measured.
+- **G-002.8 — Documentation and context synchronization: DONE for this checkpoint.** Dependency: G-002.2–7 documentation. Updated current agent context and decision register without changing AI/Docker statuses. Verification: documentation links, protected-background SHA-256, source-library fingerprint, scope diff and whitespace checks recorded in [handoff](HANDOFF.md).
+- **G-002.9 — Interactive UI mockup & visual review: OWNER_REVIEW_REQUIRED.** Prototype at [game/prototypes/g0029_ui_mockup/](../../game/prototypes/g0029_ui_mockup/README.md) (HTML/CSS/vanilla JS, Canvas starfield, local Kenney/Noto assets, three needs_review Content Pack v46 items). S01–S11 screens, review toolbar, layout A/B and Full Word/Fill-in-the-Blank toggles. Built by Codex 2026-11-26; 2026-11-27 Claude fixed unreadable primary-button labels, toolbar covering HUD, blurry/opaque reticle, static Full Word placeholder, fixed-point laser, input focus loss, footer/help overlap and mid-word JA wrapping, and replaced the 754×440 screenshots with 13 real 1920×1080 captures. Launch: `python -m http.server 8765 --bind 127.0.0.1` from repo root, open `http://127.0.0.1:8765/game/prototypes/g0029_ui_mockup/`. Verification: browser pane at 1366×768 (navigation, typing, Tab, Enter, laser, JA/EN, layout B, Fill mode), headless Edge 1920×1080 captures, `node --check app.js`, background SHA-256 unchanged. Not verified: audio playback by ear, 1280×720 visual pass, real IME composition. Owner chose label Layout A (D-029). Impeccable critique 24/40 (dual-agent, snapshot in `.impeccable/critique/`); owner chose top 3, fixed: flashcard front hides meaning + Space/arrow keys, one-way meteor descent with near-line and impact (HP/edge flash) states, single-surface Kenney `buttonBlue.png` primary button; plus wrong-answer copy/combo reset and placeholder contrast. Open from critique: Play-now path, single simulation badge, nested flashcard panel. Same day UX polish pass (ui-ux-pro-max + emil-design-eng): screen-change transition, press/hover feedback, toast entry, wrong-answer label flash, minimum text sizes; screenshots re-captured. Still open: primary-button style, reticle style, Option A approval. Acceptance: owner approves or requests revision; no Unity/G-003.
+- Next planning action: owner reviews the gameplay mechanics draft alongside Option A, optional planet use, label placement and font direction; separately confirms lecturer acceptance of Desktop. A `ready` Content Pack or separately authorized labeled synthetic prototype set is needed before real gameplay testing. G-003 is not started. No commit/push.
+
+## PUSH-001 — Push finalized code without media
+
+- Priority/status: P0 / DONE. Owner authorized pushing to `main` only finalized work and cleaning unused scratch; Codex root, `main`/`57b6ccb09d25945eb4301f41af2342eb37ea2bda`. No active write claim.
+- Pushed: three scoped commits for private bilingual Excel pipeline, final gallery and Docker packaging. Included regression tests, usage/contract docs, Docker verification report and the 15-word XLSX fixture. No image/audio additions; `.gitignore` now excludes generated media extensions. Remote `origin/main` was verified at the final SHA.
+- Verification: collector 209 OK, Kaggle 19 OK, B-001 fixtures PASS, Compose config exit 0 with local config warnings, committed diff check PASS and 20 changed paths checked for media. Removed five superseded local backup reports and unused `lenh.txt` only.
+- Remaining local: G-001 GDD and migration are DRAFT/unpushed; other pre-existing working-tree edits and generated media stay local. No automatic follow-on push.
+
+## G-001 — Draft GDD and preserve legacy background
+
+- Priority/status: P0 / DONE for the authorized documentation and migration; **GDD v0.1 DRAFT pending detailed owner review**. Codex root, `main`/`9f6c54e4b708b7cfb9c477f801875b1f460cc511`; no active write claim after checkpoint.
+- Scope: move the protected `web/background_idea.md` unchanged to `game/background_idea.md`; remove only the redundant `web/.gitkeep`; retain `game/.gitkeep`; write [GDD v0.1](../game/GDD_v0.1.md), update active repository context and add D-024 preference. No Unity initialization or G-002.
+- Acceptance/verification: protected SHA-256 before and after `B33CC9780FC82664608A621BFEE7EC30DCBB6B1D450F2AB11BCAF9F637298DF4`; `web/` retired; GDD, links, decision history and scoped diff checked. No application tests required for documentation-only work. See [handoff](HANDOFF.md) for exact results.
+- Remaining: owner reviews GDD details; lecturer acceptance of Desktop and any public-URL requirement, Japanese input, targeting, hint semantics, balance and local Docker handoff are open. G-002 and later milestones require separate authorization.
+
+## DOCKER-MOVE-001 — Move Docker Desktop data disk to D
+
+- Priority/status: P0 / DONE. Codex root, `main`/`9f6c54e4b708b7cfb9c477f801875b1f460cc511`; no active write claim. Owner operated Docker Desktop disk-location UI; Docker Desktop updated to 4.100.1. Active WSL VHDX is `D:/DockerDataFinal/DockerDesktopWSL/disk/docker_data.vhdx`; old C disk and redundant D copies are absent. C free 34.7 GB (about 11.8 GB before successful move), D free 29.0 GB. Docker Engine running, same three image IDs and PostgreSQL volume, PostgreSQL healthy/accepting connections, project image container smoke and Compose config PASS. Repo changes: agent checkpoint docs and correction to DOCKER-001 report only. No commit/push. See [handoff](HANDOFF.md).
+
+## DOCKER-001 — Package finalized Excel-to-multimedia pipeline
+
+- Priority/status: P0 / DONE. Codex root, `main`/`9f6c54e4b708b7cfb9c477f801875b1f460cc511`; no active write claim. Added root Dockerfile/Compose/ignore, private Docker entry point and tests, [usage](../DOCKER_PIPELINE.md), [verification report](../../reports/DOCKER_001/verification_report.md). 15-word run `docker-output/run-cb0ffd4f-b21b-4baa-8522-d35cbd961acc`: 15 reviewed private image choices reused with identical SHA to native and same PHOTO6/ICON8/SCENE1 routing, 15 EN + 15 JA audio generated, valid pack/gallery, 45/45 HTTP media hashes and Edge mode/search/filter checks. 100-word reconstructed workbook full run `docker-output/run-be401d25-b38d-4cc4-bfcd-fe25cd5e001a`: 99 approved image reuse, one explicit `sometimes` no-image, 100 EN generated, 100 JA reused, valid pack/gallery, 299/299 media hashes and Edge missing-image/internal-only checks. Collector 209 OK; Kaggle 19 OK; B-001 fixture verifier PASS; Compose config PASS. Canonical dataset SHA unchanged `644c2dc9…`. Diagnostic failed runs preserved; live uncached DDG/SigLIP ranking not reverified end-to-end. No model/provider/scoring redesign, commit/push, public deployment or Game work. Next owner action: build image, run the documented Excel command, inspect gallery.
+
+## E2E-015 — New 15-word Excel-to-multimedia run
+
+- Priority/status: P0 / DONE. Codex root on `main`/`9f6c54e4b708b7cfb9c477f801875b1f460cc511`; no active write claim after this checkpoint. Exact owner workbook copied to `tests/fixtures/b001/test_vocabulary_15_B001.xlsx`, SHA-256 `00f0056564167dd681bc48bde482b6c91a61068e76b0f119747b1b390f0b3800`.
+- [Isolated run](../../reports/EXCEL_15_SMOKE/run-bc2d5460-d9d6-4cef-8cae-1a9601ae7291/): import `imp-6a2afe8b-ccf6-4ff9-94d0-6b05790182bf`, 15 unique items/rows 2–16, 20 actual image searches, PHOTO 6/ICON 8/SCENE 1, 15 selected images/0 NO_SUITABLE_IMAGE, EN 15 generated/0 reused/0 failed, JA 15 generated/0 reused/0 failed, 30/30 audio valid. [Content Pack](../../reports/EXCEL_15_SMOKE/run-bc2d5460-d9d6-4cef-8cae-1a9601ae7291/content_pack_v46/content_pack.json) valid; all 15 needs_review/pending, none READY. [Final gallery](../../reports/EXCEL_15_SMOKE/run-bc2d5460-d9d6-4cef-8cae-1a9601ae7291/final_review_gallery.html), [quality report](../../reports/EXCEL_15_SMOKE/run-bc2d5460-d9d6-4cef-8cae-1a9601ae7291/e2e_15_quality_report.md), [browser/asset validation](../../reports/EXCEL_15_SMOKE/run-bc2d5460-d9d6-4cef-8cae-1a9601ae7291/final_gallery_validation_report.json). Browser verified 15 cards, both modes/audio controls, search/filters/navigation/enlargement and no console errors; HTTP 45/45 media hashes. Collector 206 OK, Kaggle 19 OK, fixture verifier PASS. Canonical 100-word data hash unchanged. Exact opening command and limitations in [handoff](HANDOFF.md). No commit/push, no Game UX/UI.
+
+This is the authoritative current task list. Historical DDG tasks in `tasks/plan.md` and `tasks/todo.md` remain complete and unchanged. Status vocabulary: TODO, IN_PROGRESS, BLOCKED, DONE, NEEDS_REVIEW, PARTIAL. DONE requires verified acceptance; dependencies do not grant execution authority. B-003.2's earlier integration remains PARTIAL pending owner content review. The owner now prefers Unity Desktop, while Game UX/UI remains undecided (D-014). No public deployment.
+
+## R-001 — Final multimedia HTML review gallery
+
+- Priority/status: P0 / DONE. Codex root, `main`/`9f6c54e4b708b7cfb9c477f801875b1f460cc511`; no active write claim after checkpoint. Source Content Pack SHA-256 `08baaf667609a104846804209c53059ccf04f5f8a6ba533cb5006442db903d06`. Created gallery generator, HTML template and focused tests in `collect data script/`, plus [final gallery](../../reports/EXCEL_FULL_PIPELINE_FINAL/run-88c4196d-dc59-497e-a389-76a564615483/final_review_gallery.html) and [validation report](../../reports/EXCEL_FULL_PIPELINE_FINAL/run-88c4196d-dc59-497e-a389-76a564615483/final_gallery_validation_report.json). Existing pack/media, prior gallery, pipeline and canonical data stayed untouched. No commit/push.
+- Acceptance: load and validate actual `content_pack_v301`, show 100 items in EN–VI and JA–VI with 99 images and 200 audio, explicit `sometimes` missing-image state, computed summary, search/filters/navigation, accessible responsive review UI, local HTTP and browser verification when available. Preserve review status and restrictions.
+- Verified: pack/manifests and hashes valid; 100 IDs, 99 images, 100 EN audio, 100 JA audio, 99 `needs_review`, one failed, `because` INTERNAL_ONLY. Browser over localhost HTTP tested both modes, selected image, search/filters/navigation/enlargement, `sometimes`, and both audio controls loading and starting playback. Initial image-return bug fixed; clean reload had no new console error. Collector 204 OK; Kaggle 19 OK. Mobile viewport not directly emulated; human content review remains B-003.2's next action. See [handoff](HANDOFF.md).
+
+## B-003.2 — Full Excel-to-multimedia dual-mode integration
+
+- Priority/status: P0 / **PARTIAL pending direct gallery review**, current owner instruction, Codex root on `main`/`9f6c54e4b708b7cfb9c477f801875b1f460cc511`; no active write claim after this checkpoint. Scope: importer, adapter, private per-run runner, frozen image v2 integration, EN/JA gTTS, Content Pack extension, internal gallery, tests and reports. No commit/push, canonical data mutation, frozen image file change or game UX.
+- Code/docs: [runner](../../collect%20data%20script/excel_multimedia_runner.py), [verification](../../collect%20data%20script/verify_multimedia_run.py), [reconstructed fixture tool](../../collect%20data%20script/reconstruct_benchmark_workbook.py), [usage](../EXCEL_FULL_PIPELINE.md), [dual audio contract](../contracts/content_pack_v1.md). `audiocollector.py` gained explicit `en` locale, and `content_pack_builder.py` validates both assets and mode mappings. Focused tests in `test_excel_multimedia_runner.py`.
+- Final run: [execution report](../../reports/EXCEL_FULL_PIPELINE_FINAL/run-88c4196d-dc59-497e-a389-76a564615483/execution_report.md), [gallery](../../reports/EXCEL_FULL_PIPELINE_FINAL/run-88c4196d-dc59-497e-a389-76a564615483/review_gallery.html). Reconstructed workbook, not owner's original, SHA-256 `8e920528835edffaef422e0eaf9362227ad27ea4c6b4fb50b4cfba30efa90bfe`; 100 rows. Images 99 approved reuse/1 historical NO_SUITABLE_IMAGE (`sometimes`), `because` restricted. Audio EN 100 generated/0 reused/0 failed after sandbox network access was granted; JA 0 generated/100 reused/0 failed. 200/200 audio assets valid. Active `content_pack_v301/` valid; 99 needs_review, one failed for missing image, 0 ready. All 100 gallery item/media references checked; no browser interaction check because file URL blocked. Automatic repairs 0.
+- Verification: collector suite 202 OK, Kaggle 19 OK; focused runner/pack 14 OK; `node --check` gallery script and structural gallery verifier pass. No subjective pronunciation or translation certification. Current working tree already contained unrelated changes (`comand.txt`, `schedule/20-9 list`, `unified_dataset_v1.json`) and numerous untracked media before this task; they were not altered by this implementation.
+- Next action: owner opens the single final gallery, listens to both modes and inspects overall content. Browser automation was blocked by the local file URL policy, so direct playback verification remains unobserved. Do not mark DONE until review/acceptance is verified. Historical B-003.2 TODO note below is superseded by this entry.
 
 ## PIPELINE-V2 — Optimise the image pipeline from the owner-approved selection
 
