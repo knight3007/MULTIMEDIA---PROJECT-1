@@ -1,6 +1,8 @@
 # Version control audit: Unity project at the G-008 baseline
 
-Status: **COMMITTED LOCALLY, NOT PUSHED** (2026-11-27). The owner approved the 4 core commits on `feature/unity-g008-baseline`: `2429b13` (ignore/attributes), `c4aa296` (project, 303 files), `58e7bc8` (tests, 41 files), then the docs commit. D-053 is CONFIRMED. Push and the optional commits 5–6 need separate approval.
+Status: **PUSHED, NOT MERGED** (2026-11-28). **VC-001 PUSHED (2026-11-28):** `origin/feature/unity-g008-baseline` = local HEAD `8cefee7` (verified with `git ls-remote`), plus this docs-sync commit. Not merged into `main` (still `57b6ccb`); no force-push, no history rewrite. Commits: `2429b13` ignore/attributes, `c4aa296` Unity project (303), `58e7bc8` tests (41), `0c12d8b` docs, `738c402` promotion tool, `8cefee7` background move + mockup. `origin` is the **public** repository `knight3007/MULTIMEDIA---PROJECT-1`. Not committed: the downloaded background `.jfif` (licence unknown), the Kaggle notebook, `.claude/`, `reports/**`, `game/UXUI/`, `unified_dataset_v1.json`, README, comand.txt, `schedule/`, `docs/contracts/integration_notes.md`.
+
+Previous status: committed locally (2026-11-27). The owner approved the 4 core commits on `feature/unity-g008-baseline`: `2429b13` (ignore/attributes), `c4aa296` (project, 303 files), `58e7bc8` (tests, 41 files), then the docs commit. D-053 is CONFIRMED. Push and the optional commits 5–6 need separate approval.
 
 ## Repository state
 

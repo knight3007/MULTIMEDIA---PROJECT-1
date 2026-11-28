@@ -2,12 +2,13 @@
 
 ## VC-001 — Version control checkpoint (Unity G-008 baseline)
 
-- Status: **COMMITTED LOCALLY, NOT PUSHED**, 2026-11-27 (owner approved; D-053 CONFIRMED). Branch `feature/unity-g008-baseline`: `2429b13` (ignore/attributes), `c4aa296` (project, 303 files), `58e7bc8` (tests, 41 files), then the docs commit. Audit and plan: [version-control audit](VERSION_CONTROL_AUDIT_G008.md).
+- Status: **PUSHED, NOT MERGED**, 2026-11-28. **VC-001 PUSHED (2026-11-28):** `origin/feature/unity-g008-baseline` = local HEAD `8cefee7` (verified with `git ls-remote`), plus this docs-sync commit. Not merged into `main` (still `57b6ccb`); no force-push, no history rewrite. Commits: `2429b13` ignore/attributes, `c4aa296` Unity project (303), `58e7bc8` tests (41), `0c12d8b` docs, `738c402` promotion tool, `8cefee7` background move + mockup. `origin` is the **public** repository `knight3007/MULTIMEDIA---PROJECT-1`. Not committed: the downloaded background `.jfif` (licence unknown), the Kaggle notebook, `.claude/`, `reports/**`, `game/UXUI/`, `unified_dataset_v1.json`, README, comand.txt, `schedule/`, `docs/contracts/integration_notes.md`.
+- Earlier status: COMMITTED LOCALLY, 2026-11-27 (owner approved; D-053 CONFIRMED). Branch `feature/unity-g008-baseline`: `2429b13` (ignore/attributes), `c4aa296` (project, 303 files), `58e7bc8` (tests, 41 files), then the docs commit. Audit and plan: [version-control audit](VERSION_CONTROL_AUDIT_G008.md).
 - **Candidates:** 346 files (Assets with all .meta, ProjectSettings, Packages, fixtures, tools, licenses). No secrets found. No restricted assets. One machine path made overridable.
 - **LFS:** not needed.
 - **Plan:** branch `feature/unity-g008-baseline`, 4 core commits plus 2 optional.
 - **Excluded:** `Kaggle_…V4.ipynb` (token-like content), `reports/**`, `game/UXUI/`, `data/vocabulary/unified_dataset_v1.json` (needs owner review).
-- **Next:** push and merge only on separate owner approval. Optional commits 5 (promotion tool) and 6 (background/mockup, `web/` deletions) await the owner. `unified_dataset_v1.json`, README, comand.txt, schedule and integration_notes stay uncommitted.
+- **Next:** a PR or merge into `main` only on separate owner approval. The owner decides whether the `.jfif` may be published (licence) and reviews the remaining modified files. `unified_dataset_v1.json`, README, comand.txt, schedule and integration_notes stay uncommitted.
 
 ## G-007-R3 — Vocabulary coverage fix
 

@@ -2,7 +2,11 @@
 
 Updated 2026-11-27 (Asia/Saigon) by Claude Code, `main`/`57b6ccb`. Nothing committed or pushed. Pre-existing unrelated tracked edits and untracked files remain. The previous handoff (G-006) is in [history](history/2026-11-27_before_G007_HANDOFF.md). No active write claim.
 
-## Update VC-001 version-control checkpoint (same day)
+## Update VC-001 push (2026-11-28)
+
+**VC-001 PUSHED (2026-11-28):** `origin/feature/unity-g008-baseline` = local HEAD `8cefee7` (verified with `git ls-remote`), plus this docs-sync commit. Not merged into `main` (still `57b6ccb`); no force-push, no history rewrite. Commits: `2429b13` ignore/attributes, `c4aa296` Unity project (303), `58e7bc8` tests (41), `0c12d8b` docs, `738c402` promotion tool, `8cefee7` background move + mockup. `origin` is the **public** repository `knight3007/MULTIMEDIA---PROJECT-1`. Not committed: the downloaded background `.jfif` (licence unknown), the Kaggle notebook, `.claude/`, `reports/**`, `game/UXUI/`, `unified_dataset_v1.json`, README, comand.txt, `schedule/`, `docs/contracts/integration_notes.md`. Pre-push audit of `origin/main..HEAD` (390 files): no credentials or tokens, no Content Pack media, reports, `game/UXUI/`, builds, Library or player history; largest blob 6.9 MB (`NotoSans-Regular SDF.asset`), no LFS (0 LFS files); 346 Unity files tracked, every Assets file has a `.meta`, 8 scenes, Packages and ProjectSettings present; `git fsck` clean. `C:/Users/dotha/...` paths appear in docs, but the same username was already public in 4 files on `origin/main`. Only `test_promote_reviewed_pack.py` was run (10/10 OK); Unity suites were not rerun (unchanged).
+
+## Update VC-001 version-control checkpoint (2026-11-27)
 
 **Committed locally after owner approval, not pushed.** Branch `feature/unity-g008-baseline`: `2429b13` (ignore/attributes), `c4aa296` (project, 303 files), `58e7bc8` (tests, 41 files), then the docs commit. Staged by explicit paths only; the Unity project has no untracked files left. Optional commits 5–6 and excluded files remain in the working tree.
 - **Report:** [version-control audit](VERSION_CONTROL_AUDIT_G008.md).
