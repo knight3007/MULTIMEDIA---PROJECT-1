@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>G-002.9 · Galaxy UI preview</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="reviewToolbar" class="review-toolbar" aria-label="Công cụ xem thử thiết kế">
+    <div class="review-head"><strong>G-002.9 · REVIEW</strong><button id="hideToolbar" type="button" aria-label="Ẩn thanh công cụ">Ẩn</button></div>
+    <label>Màn hình <select id="screenJump"></select></label>
+    <label>Ngôn ngữ <select id="languageJump"><option value="EN">EN → VI</option><option value="JA">JA → VI</option></select></label>
+    <label>Khung hình <select id="resolutionJump"><option value="1920">1920 × 1080</option><option value="1366">1366 × 768</option><option value="1280">1280 × 720</option></select></label>
+    <label>Bố cục chữ <select id="layoutJump"><option value="A">A · Trên / dưới (đã chọn)</option><option value="B">B · Chữ trên thiên thạch (đã loại, D-029)</option></select></label>
+    <label>Đáp án <select id="answerJump"><option value="FULL_WORD">Full Word</option><option value="FILL_IN_THE_BLANK">Fill-in-the-Blank</option></select></label>
+    <label class="check"><input id="animationJump" type="checkbox" checked> Sao chuyển động</label>
+    <label class="check"><input id="motionJump" type="checkbox"> Giảm chuyển động</label>
+    <button id="effectTrigger" type="button">Thử laser + nổ</button>
+    <button id="resetPreview" type="button">Đặt lại bản xem thử</button>
+  </div>
+  <button id="showToolbar" class="show-toolbar" type="button" aria-label="Hiện thanh công cụ xem thử" hidden>REVIEW</button>
+
+  <div id="frame" class="frame">
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="nebula nebula-left" aria-hidden="true"></div>
+    <div class="nebula nebula-right" aria-hidden="true"></div>
+    <main id="screen" tabindex="-1"></main>
+    <div id="effectLayer" class="effect-layer" aria-hidden="true"></div>
+    <div id="liveStatus" class="sr-only" aria-live="polite"></div>
+  </div>
+</body>
+</html>
